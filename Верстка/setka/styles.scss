@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    outline: 0;
+}
+@mixin adaptive($media) {
+    @if $media == smart {
+        @media only screen and (max-width: 480px) {@content}
+    }
+    @else if $media == tablet {
+        @media only screen and (min-width: 481px) and (max-width: 1024px) {@content}
+    }
+    @else if $media == pc {
+        @media only screen and (min-width: 1025px) {@content}
+    }
+}
+$height: 100px;
+$width: 100%;
+$offset: 1%;
+.big {
+    background: red;
+    height: $height;
+    width:($width - $offset);
+    margin: $offset/2;
+    box-shadow: 0 0 5px;
+}
+.medium {
+    background: yellow;
+    height: $height;
+    display: inline-block;
+    width:($width - $offset*2)/2;
+    margin: $offset/2;
+    box-shadow: 0 0 5px;
+    @include adaptive(smart) {
+        width:($width - $offset);
+    }
+    @include adaptive(tablet) {
+        width:($width - $offset*2)/2;
+    }
+}
+.small {
+    background: lime;
+    height: $height;
+    display: inline-block;
+    width:($width - $offset*4)/4;
+    margin: $offset/2;
+    box-shadow: 0 0 5px; 
+    @include adaptive(smart) {
+        width:($width - $offset*2)/2;
+    }
+    @include adaptive(tablet) {
+        width:($width - $offset*2)/2;
+    }
+}
