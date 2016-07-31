@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Магазин</title>
 </head>
 <body>
   <header class="main-header">
@@ -21,10 +21,10 @@
 						<a href="#">Новости</a>
 					</li>
 					<li>
-						<a href="#">Прайс-лист</a>
+						<a href="price.html">Прайс-лист</a>
 					</li>
 					<li>
-						<a href="shop.html">Магазин</a>
+						<a class="active" href="shop.html">Магазин</a>
 					</li>
 					<li>
 						<a href="#">Контакты</a>
@@ -37,40 +37,94 @@
 		</div>
 	</header>
   <main>
-    <h1>Набор для путешествий "baxter of california"</h1>
+    <h1>средства для ухода</h1>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="shop.html">Магазин</a></li>
       <li><a href="#">средства для ухода</a></li>
-      <li><a href="#">набор для путешествий "baxter of california"</a></li>
     </ul>
-    <section class="cotent-left">
-      <img class="view" src="baxster.jpg" alt="current" /><br>
-      <img class="preview" src="baxster1.jpg" alt="baxster1" />
-      <img class="preview" src="baxster2.jpg" alt="baxster2" />
-      <img class="preview" src="baxster.jpg" alt="baxster" />
-    </section>
+    <form class="product-filter" action="#" method="post">
+      <b>производители:</b><br>
+      <label>
+        <input type="checkbox" name="name" value="">baxter of california <br>
+      </label>
+      <label>
+        <input type="checkbox" name="name" value="">mr natty <br>
+      </label>
+      <label>
+        <input type="checkbox" name="name" value="">suavecito <br>
+      </label>
+      <label>
+        <input type="checkbox" name="name" value="">malin+goetz <br>
+      </label>
+      <label>
+        <input type="checkbox" name="name" value="">murray's <br>
+      </label>
+      <label>
+        <input type="checkbox" name="name" value="">american crew <br>
+      </label>
+      <b>группы товаров:</b><br>
+      <label>
+        <input type="radio" name="name" value="">бритвенные<br>
+        принадлежности <br>
+      </label>
+      <label>
+        <input type="radio" name="name" value="">средства для ухода <br>
+      </label>
+      <label>
+        <input type="radio" name="name" value="">аксессуары <br>
+      </label>
+      <input type="submit" name="name" value="показать">
+    </form>
     <section class="content-right">
-      <b>есть в наличии</b>
-      <span>артикул:dexter-ae</span>
-      <p>
-        travel kit -необходимый аксесуар во время любого <br>
-        путешествия.в аккуратной кожаной сумке находится все, что <br>
-        нужно для бритья и ухода за кожей во время рабочей поездки <br>
-        или отдыха: средство для умывания, увлажняющий крем, крем <br>
-        для бритья, крем после бриться, щампунь. набор также может <br>
-        стать отличным подарком.
-      </p>
+      <figure>
+        <img src="img/baxter.jpg" alt="baxter" width="100" height="100"/>
+        <figcaption>Набор для путешествий <br>
+        <b>"baxter of california"</b></figcaption>
+      </figure>
       <span>2900 руб.</span>
       <a href="#">купить</a>
-      <b>в набор входят:</b>
-      <ul>
-        <li>средство для умывания (50 мл)</li>
-        <li>увлажняющий крем (50 мл)</li>
-        <li>крем для бритья (50 мл)</li>
-        <li>крем после бритья, шампунь (50 мл)</li>
-        <li>удобная кожанная косметичка</li>
-      </ul>
+      <figure>
+        <img src="img/conditioner-baxter.jpg" alt="conditioner-baxter" width="100" height="100"/>
+        <figcaption>Увлажняющий кондиционер <br>
+        <b>"baxter of california"</b></figcaption>
+      </figure>
+      <span>750 руб.</span>
+      <a href="#">купить</a>
+      <figure>
+        <img src="img/suavecito.jpg" alt="suavecito" width="100" height="100"/>
+        <figcaption>Гель для волос <br>
+        <b>"suavecito"</b></figcaption>
+      </figure>
+      <span>290 руб.</span>
+      <a href="#">купить</a>
+      <figure>
+        <img src="img/american-crew.jpg" alt="american crew" width="100" height="100"/>
+        <figcaption>Глина для укладки волос <br>
+        <b>"american crew"</b></figcaption>
+      </figure>
+      <span>500 руб.</span>
+      <a href="#">купить</a>
+      <figure>
+        <img src="img/american-crew-gel.jpg" alt="american crew-gel" width="100" height="100"/>
+        <figcaption>Гель для волос <br>
+        <b>"american crew"</b></figcaption>
+      </figure>
+      <span>300 руб.</span>
+      <a href="#">купить</a>
+      <figure>
+        <img src="img/baxter-shave.jpg" alt="baxter-shave" width="100" height="100"/>
+        <figcaption>Набор для бритья <br>
+        <b>"baxter of california"</b></figcaption>
+      </figure>
+      <span>3900 руб.</span>
+      <a href="#">купить</a>
+      <section class="paggination">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+      </section>
     </section>
   </main>
   <footer class="main-footer">
@@ -78,7 +132,7 @@
 			<section class="footer-contacts">
 				Барбершоп "Бородинский"<br>
 				Адрес: г.Санкт-Петербург, Б. Конюшечная, д.19/8<br>
-				<a href="#">Как нас найти?</a>
+				<a href="#">Как нас найти?</a><br>
 				Телефон: +7 (812) 666-02-66
 			</section>
 			<section class="footer-social">
