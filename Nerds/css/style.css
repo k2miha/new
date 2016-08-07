@@ -1,0 +1,100 @@
+body {
+  margin: 1px;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  outline: 1px solid;
+  width: 880px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.container img {
+  outline: 1px solid;
+}
+.main-header {
+  outline: 1px solid;
+}
+nav {
+  float: right;
+  outline: 1px solid;
+  width: 560px;
+}
+.slider {
+  outline: 1px solid;
+}
+.slider-header {
+  float: left;
+  outline: 1px solid;
+  width: 380px;
+}
+.slider-image {
+  float: right;
+  outline: 1px solid;
+  width: 480px;
+}
+.promo-blocks {
+  outline: 1px solid;
+}
+.promo-left {
+  float: left;
+  outline: 1px solid;
+  width: 240px;
+  margin-right: 80px;
+}
+.promo-center {
+  float: left;
+  outline: 1px solid;
+  width: 240px;
+}
+.promo-right {
+  float: right;
+  outline: 1px solid;
+  width: 240px
+}
+.features {
+  outline: 1px solid;
+}
+.main-promo-left {
+  float: left;
+  outline: 1px solid;
+  width: 621px;
+}
+.main-promo-right {
+  float: right;
+  outline: 1px solid;
+  width: 240px;
+}
+.logos {
+  outline: 1px solid;
+  height: 166px;
+}
+.logos a {
+  margin-right: 110px;
+}
+.logos a img:first-child {
+  margin-left: 12px;
+}
+.main-footer {
+  outline: 1px solid;
+}
+.map {
+  outline: 1px solid;
+  height: 417px;
+}
+.left-footer {
+  float: left;
+  outline: 1px solid;
+  width: 240px;
+}
+.right-footer {
+  float: right;
+  outline: 1px solid;
+  width: 550px;
+}
+.main-footer {
+  min-height: 215px;
+}

@@ -1,4 +1,5 @@
 body {
+  margin: 1px;
 }
 .clearfix::after {
   content: "";
@@ -12,19 +13,26 @@ body {
   margin: 0 auto;
 }
 .main-header {
+  margin-bottom: 55px;
+  outline: 1px solid;
+}
+.index-header {
   margin-bottom: 60px;
 }
 .main-navigation {
+  outline: 1px solid;
   float: left;
   width: 780px;
   min-height: 70px;
 }
 .user-block {
+  outline: 1px solid;
   float: right;
   width: 140px;
   min-height: 70px;
 }
 .index-logo {
+  outline: 1px solid;
   height: 204px;
   width: 368px;
   margin-left: auto;
@@ -32,9 +40,11 @@ body {
   margin-bottom: 25px;
 }
 .features {
+  outline: 1px solid;
   margin-bottom: 80px;
 }
 .features-item {
+  outline: 1px solid;
   float: left;
   width: 300px;
   min-height: 175px;
@@ -55,29 +65,71 @@ body {
   min-height: 330px;
 }
 .index-content-right {
+  outline: 1px solid;
   float: right;
   width: 300px;
   min-height: 330px;
 }
 .main-footer {
   outline: 1px solid;
-  margin-top: 65px;
+  margin-top: 50px;
   padding-top: 60px;
   padding-bottom: 40px;
 }
 .footer-contacts {
+  outline: 1px solid;
   float: left;
   width: 320px;
   min-height: 90px;
   margin-right: 60px;
 }
 .footer-social {
+  outline: 1px solid;
   float: left;
   width: 180px;
   min-height: 90px;
 }
 .footer-copyright {
+  outline: 1px solid;
   float: right;
   width: 180px;
   min-height: 90px;
+}
+.top-column {
+  outline: 1px solid;
+  margin-bottom: 55px;
+}
+.left-column {
+  float: left;
+  outline: 1px solid;
+  width: 460px;
+}
+.left-column-shop {
+  width: 220px;
+}
+.left-column-item {
+  font-size: 0;
+}
+.right-column {
+  float: right;
+  outline: 1px solid;
+  width: 400px;
+}
+.right-column-price {
+  width: 460px;
+}
+.right-column-shop {
+  width: 700px;
+}
+.preview {
+  margin-right: 20px;
+}
+.preview:last-child {
+  margin-right: 0;
+}
+.index-footer {
+    margin-top: 65px;
+}
+.price-footer {
+    margin-top: 82px;
 }
