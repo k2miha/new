@@ -17,6 +17,7 @@ body {
 }
 .main-header {
   outline: 1px solid;
+  margin-bottom: 53px;
 }
 nav {
   float: right;
@@ -25,6 +26,9 @@ nav {
 }
 .slider {
   outline: 1px solid;
+  padding-top: 53px;
+  padding-bottom: 69px;
+  margin-bottom: 80px;
 }
 .slider-header {
   float: left;
@@ -36,8 +40,21 @@ nav {
   outline: 1px solid;
   width: 480px;
 }
+.slider-image img {
+  float: right;
+}
+.tumbler {
+  outline: 1px solid;
+  width: 60px;
+  float: left;
+}
+.tumbler input {
+  margin: 0;
+}
 .promo-blocks {
   outline: 1px solid;
+  padding-bottom: 80px;
+  margin-bottom: 59px;
 }
 .promo-left {
   float: left;
@@ -57,6 +74,7 @@ nav {
 }
 .features {
   outline: 1px solid;
+  margin-bottom: 72px;
 }
 .main-promo-left {
   float: left;
@@ -73,7 +91,11 @@ nav {
   height: 166px;
 }
 .logos a {
-  margin-right: 110px;
+  font-size: 0;
+  margin-right: 113px;
+}
+.logos a img {
+  font-size: 16px;
 }
 .logos a img:first-child {
   margin-left: 12px;
