@@ -53,9 +53,15 @@ nav {
 }
 .paggination {
   float: left;
+  margin-bottom: 79px;
+}
+.layouts {
+  min-height: 700px;
 }
 .layout {
-  min-height: 700px;
+  outline: 1px solid;
+  height: 270px;
+  margin-bottom: 80px;
 }
 .slider {
   outline: 1px solid;
@@ -137,10 +143,15 @@ nav {
   outline: 1px solid;
 }
 .map {
+  padding-top: 89px;
+  padding-bottom: 87px;
   outline: 1px solid;
-  height: 417px;
-  float: left;
-  width: inherit;
+  width: 880px;
+}
+.contacts {
+  width: 250px;
+  min-height: 240px;
+  outline: 1px solid;
 }
 .left-footer {
   float: left;

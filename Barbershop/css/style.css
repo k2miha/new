@@ -25,6 +25,9 @@ body {
   width: 780px;
   min-height: 70px;
 }
+ul li{
+  display: inline-block;
+}
 .user-block {
   outline: 1px solid;
   float: right;
@@ -80,20 +83,23 @@ body {
   outline: 1px solid;
   float: left;
   width: 320px;
-  min-height: 90px;
+  min-height: 88px;
   margin-right: 60px;
 }
 .footer-social {
   outline: 1px solid;
   float: left;
   width: 180px;
-  min-height: 90px;
+  min-height: 88px;
+}
+.footer-social p {
+  margin: 0;
 }
 .footer-copyright {
   outline: 1px solid;
   float: right;
   width: 180px;
-  min-height: 90px;
+  min-height: 88px;
 }
 .top-column {
   outline: 1px solid;
@@ -115,11 +121,45 @@ body {
   outline: 1px solid;
   width: 400px;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid;
+  width: 50%;
+  height: 43px;
+}
+.wrap {
+  width: 220px;
+  min-height: 286px;
+  outline: 1px solid;
+  float: left;
+  margin-right: 20px;
+}
+.first-raw {
+  margin-bottom: 20px;
+}
+.first-raw .wrap:last-child {
+  margin-right: 0;
+}
+.second-raw {
+  margin-bottom: 45px;
+}
+.second-raw .wrap:last-child {
+  margin-right: 0;
+}
 .right-column-price {
   width: 460px;
 }
 .right-column-shop {
   width: 700px;
+}
+.paggination {
+  margin-bottom: 49px;
+}
+.view {
+  margin-bottom: 21px;
 }
 .preview {
   margin-right: 20px;
