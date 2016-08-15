@@ -1,5 +1,6 @@
 body {
   margin: 1px;
+  font: PT Sans Narrow;
 }
 .clearfix::after {
   content: "";
@@ -75,7 +76,6 @@ ul li{
 }
 .main-footer {
   outline: 1px solid;
-  margin-top: 50px;
   padding-top: 60px;
   padding-bottom: 40px;
 }
@@ -103,7 +103,7 @@ ul li{
 }
 .top-column {
   outline: 1px solid;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 .left-column {
   float: left;
@@ -112,14 +112,17 @@ ul li{
 }
 .left-column-shop {
   width: 220px;
+  min-height: 506px;
 }
 .left-column-item {
   font-size: 0;
+  margin-bottom: 49px;
 }
 .right-column {
   float: right;
   outline: 1px solid;
   width: 400px;
+  min-height: 519px;
 }
 table {
   width: 100%;
@@ -156,7 +159,13 @@ td {
   width: 700px;
 }
 .paggination {
-  margin-bottom: 49px;
+  margin-bottom: 43px;
+}
+.paggination a {
+  outline: 1px solid;
+  display: inline-block;
+  width: 43px;
+  height: 43px;
 }
 .view {
   margin-bottom: 21px;
@@ -166,6 +175,10 @@ td {
 }
 .preview:last-child {
   margin-right: 0;
+}
+input[type="submit"] {
+  height: 43px;
+  width: 112px;
 }
 .index-footer {
     margin-top: 65px;

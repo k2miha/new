@@ -1,5 +1,6 @@
 body {
   margin: 1px;
+  font: Roboto;
 }
 .clearfix::after {
   content: "";
@@ -14,6 +15,7 @@ body {
 }
 .container img {
   outline: 1px solid;
+  font-size: 14px;
 }
 .main-header {
   outline: 1px solid;
@@ -152,6 +154,26 @@ nav {
   width: 250px;
   min-height: 240px;
   outline: 1px solid;
+}
+.marker {
+  display: inline-block;
+	width: 20px;
+  height: 20px;
+  outline: 1px solid;
+}
+.marker:hover {
+  cursor: pointer;
+}
+.range {
+  height: 81px;
+  outline: 1px solid;
+}
+.range-input {
+  width: 80px;
+  height: 38px;
+}
+fieldset {
+  padding: 0;
 }
 .left-footer {
   float: left;

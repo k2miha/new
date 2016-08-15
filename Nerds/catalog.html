@@ -30,12 +30,15 @@
     <form action="#" class="left-content">
       <fieldset>
         <legend>стоимость:</legend><br>
-          <input type="range" name="slider" value="0"><br>
+          <div class="range">
+            <div class="marker"></div>
+            <div class="marker"></div>
+          </div><br>
         <label>от
-          <input type="text" name="cost" value="">
+          <input class="range-input" type="text" name="cost" value="">
         </label>
         <label>до
-          <input type="text" name="cost" value=""><br>
+          <input class="range-input" type="text" name="cost" value=""><br>
         </label>
       </fieldset>
       <fieldset>
@@ -150,7 +153,7 @@
          </section>
      </section>
      <section class="paggination">
-       <a href="#">1</a>
+       <span>1</span>
        <a href="#">2</a>
        <a href="#">3</a>
        <a href="#">Следующая</a>
