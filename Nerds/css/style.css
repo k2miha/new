@@ -17,13 +17,22 @@ body {
   outline: 1px solid;
   font-size: 14px;
 }
+.container>a {
+  display: inline-block;
+  height: 56px;
+  width: 139px;
+}
 .main-header {
   outline: 1px solid;
+  padding-top: 27px;
 }
 nav {
   float: right;
   outline: 1px solid;
   width: 560px;
+}
+.main-menu li {
+  display: inline-block;
 }
 .top-column {
 		outline: 1px solid;
@@ -75,6 +84,7 @@ nav {
   float: left;
   outline: 1px solid;
   width: 380px;
+  min-height: 231px;
 }
 .slider-image {
   float: right;
@@ -112,6 +122,11 @@ nav {
   float: right;
   outline: 1px solid;
   width: 240px
+}
+.promo-btn {
+  display: inline-block;
+  width: 140px;
+  height: 38px;
 }
 .features {
   outline: 1px solid;

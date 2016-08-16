@@ -12,6 +12,7 @@ body {
   width: 940px;
   padding: 0 10px;
   margin: 0 auto;
+  display: block;
 }
 .main-header {
   margin-bottom: 55px;
@@ -26,7 +27,10 @@ body {
   width: 780px;
   min-height: 70px;
 }
-ul li{
+.main-navigation li{
+  display: inline-block;
+}
+.breadcrumbs li {
   display: inline-block;
 }
 .user-block {
@@ -46,6 +50,10 @@ ul li{
 .features {
   outline: 1px solid;
   margin-bottom: 80px;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .features-item {
   outline: 1px solid;
@@ -58,8 +66,11 @@ ul li{
   margin-right: 0;
 }
 .index-content {
+	width: 780px;
   outline: 1px solid;
   padding: 50px 80px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 35px;
 }
 .index-content-left {
@@ -104,6 +115,9 @@ ul li{
 .top-column {
   outline: 1px solid;
   margin-bottom: 60px;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .left-column {
   float: left;
@@ -180,9 +194,9 @@ input[type="submit"] {
   height: 43px;
   width: 112px;
 }
+figure {
+  margin: 0;
+}
 .index-footer {
     margin-top: 65px;
-}
-.price-footer {
-    margin-top: 82px;
 }
