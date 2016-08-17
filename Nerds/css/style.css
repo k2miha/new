@@ -12,6 +12,7 @@ body {
   width: 880px;
   padding: 0 10px;
   margin: 0 auto;
+  display: block;
 }
 .container img {
   outline: 1px solid;
@@ -38,12 +39,17 @@ nav {
 		outline: 1px solid;
     min-height: 245px;
     margin-bottom: 82px;
-    padding-top: 74px;
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-column h1 {
+  margin: 0;
 }
 .left-column {
 		outline: 1px solid;
 		float: left;
-		min-height: 694px;
+		min-height: 728px;
     width: 240px;
 }
 .right-column {
@@ -51,6 +57,12 @@ nav {
 		float:right;
 		width: 560px;
     min-height: 1094px;
+}
+.sort li {
+  display: inline-block;
+}
+.sort ul {
+  margin: 0;
 }
 .left-layout {
   width: 240px;
@@ -79,6 +91,9 @@ nav {
   padding-top: 53px;
   padding-bottom: 69px;
   margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 880px;
 }
 .slider-header {
   float: left;
@@ -104,8 +119,11 @@ nav {
 }
 .promo-blocks {
   outline: 1px solid;
-  padding-bottom: 80px;
+  padding-bottom: 27px;
   margin-bottom: 59px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 880px;
 }
 .promo-left {
   float: left;
@@ -131,6 +149,10 @@ nav {
 .features {
   outline: 1px solid;
   margin-bottom: 72px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 880px;
+  min-height: 394px;
 }
 .main-promo-left {
   float: left;
@@ -145,16 +167,24 @@ nav {
 .logos {
   outline: 1px solid;
   height: 166px;
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.logos a {
+.logos-picture {
   font-size: 0;
   margin-right: 113px;
 }
 .logos a img {
-  font-size: 16px;
-}
-.logos a img:first-child {
   margin-left: 12px;
+  border: 0;
+}
+.last-logo {
+  margin-right: 0;
+  font-size: 0;
+}
+.last-logo img {
+  margin-left: 0;
 }
 .main-footer {
   outline: 1px solid;
@@ -164,6 +194,7 @@ nav {
   padding-bottom: 87px;
   outline: 1px solid;
   width: 880px;
+  margin-top: 89px;
 }
 .contacts {
   width: 250px;
@@ -185,6 +216,9 @@ nav {
 }
 .range-input {
   width: 80px;
+  height: 38px;
+}
+input[type="submit"] {
   height: 38px;
 }
 fieldset {
