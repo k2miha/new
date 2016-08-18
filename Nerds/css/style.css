@@ -20,6 +20,7 @@ body {
 }
 .container>a {
   display: inline-block;
+  vertical-align: baseline;
   height: 56px;
   width: 139px;
 }
@@ -34,6 +35,7 @@ nav {
 }
 .main-menu li {
   display: inline-block;
+  vertical-align: baseline;
 }
 .top-column {
 		outline: 1px solid;
@@ -52,6 +54,9 @@ nav {
 		min-height: 728px;
     width: 240px;
 }
+legend {
+  margin-bottom: 19px;
+}
 .right-column {
 		outline: 1px solid;
 		float:right;
@@ -60,6 +65,7 @@ nav {
 }
 .sort li {
   display: inline-block;
+  vertical-align: baseline;
 }
 .sort ul {
   margin: 0;
@@ -85,6 +91,9 @@ nav {
   outline: 1px solid;
   height: 270px;
   margin-bottom: 80px;
+}
+.content h2 {
+  margin: 0;
 }
 .slider {
   outline: 1px solid;
@@ -143,6 +152,7 @@ nav {
 }
 .promo-btn {
   display: inline-block;
+  vertical-align: baseline;
   width: 140px;
   height: 38px;
 }
@@ -195,6 +205,13 @@ nav {
   outline: 1px solid;
   width: 880px;
   margin-top: 89px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.catalog {
+  margin-top: 17px;
 }
 .contacts {
   width: 250px;
@@ -203,6 +220,7 @@ nav {
 }
 .marker {
   display: inline-block;
+  vertical-align: baseline;
 	width: 20px;
   height: 20px;
   outline: 1px solid;
@@ -213,16 +231,21 @@ nav {
 .range {
   height: 81px;
   outline: 1px solid;
+  margin-bottom: 13px;
 }
 .range-input {
   width: 80px;
-  height: 38px;
+  height: 33px;
+  margin-bottom: 47px;
 }
 input[type="submit"] {
   height: 38px;
 }
 fieldset {
   padding: 0;
+}
+fieldset:nth-child(2) {
+  margin-bottom: 65px;
 }
 .left-footer {
   float: left;

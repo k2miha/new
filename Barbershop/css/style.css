@@ -29,9 +29,11 @@ body {
 }
 .main-navigation li{
   display: inline-block;
+  vertical-align: middle;
 }
 .breadcrumbs li {
   display: inline-block;
+  vertical-align: baseline;
 }
 .user-block {
   outline: 1px solid;
@@ -62,7 +64,7 @@ body {
   min-height: 175px;
   margin-right: 20px;
 }
-.features-item:last-child {
+.features-item:nth-child(3n) {
   margin-right: 0;
 }
 .index-content {
@@ -153,17 +155,15 @@ td {
   outline: 1px solid;
   float: left;
   margin-right: 20px;
-}
-.first-raw {
   margin-bottom: 20px;
 }
-.first-raw .wrap:last-child {
+.first-raw .wrap:nth-child(3n) {
   margin-right: 0;
 }
 .second-raw {
   margin-bottom: 45px;
 }
-.second-raw .wrap:last-child {
+.second-raw .wrap:nth-child(3n) {
   margin-right: 0;
 }
 .right-column-price {
@@ -178,6 +178,7 @@ td {
 .paggination a {
   outline: 1px solid;
   display: inline-block;
+  vertical-align: baseline;
   width: 43px;
   height: 43px;
 }
@@ -187,7 +188,7 @@ td {
 .preview {
   margin-right: 20px;
 }
-.preview:last-child {
+.preview:nth-child(5) {
   margin-right: 0;
 }
 input[type="submit"] {
