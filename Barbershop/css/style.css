@@ -33,7 +33,7 @@ body {
 }
 .breadcrumbs li {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
 }
 .user-block {
   outline: 1px solid;
@@ -178,7 +178,7 @@ td {
 .paggination a {
   outline: 1px solid;
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
   width: 43px;
   height: 43px;
 }

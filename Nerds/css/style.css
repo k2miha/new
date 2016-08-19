@@ -14,13 +14,14 @@ body {
   margin: 0 auto;
   display: block;
 }
-.container img {
+.aviator-img {
   outline: 1px solid;
   font-size: 14px;
+  padding-top: 30px;
 }
 .container>a {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
   height: 56px;
   width: 139px;
 }
@@ -35,7 +36,7 @@ nav {
 }
 .main-menu li {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
 }
 .top-column {
 		outline: 1px solid;
@@ -65,7 +66,7 @@ legend {
 }
 .sort li {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
 }
 .sort ul {
   margin: 0;
@@ -78,7 +79,8 @@ legend {
 .right-layout {
   width: 240px;
   outline: 1px solid;
-  float: right;
+  float: left;
+  margin-left: 80px;
 }
 .paggination {
   float: left;
@@ -91,6 +93,12 @@ legend {
   outline: 1px solid;
   height: 270px;
   margin-bottom: 80px;
+}
+.content {
+  display: none;
+}
+.content:hover {
+  display: block;
 }
 .content h2 {
   margin: 0;
@@ -120,7 +128,6 @@ legend {
 }
 .tumbler {
   outline: 1px solid;
-  width: 60px;
   float: left;
 }
 .tumbler input {
@@ -134,6 +141,12 @@ legend {
   margin-right: auto;
   width: 880px;
 }
+.promo-blocks section {
+	margin-right: 80px;
+}
+.promo-blocks section:nth-child(3n){
+	margin-right:0;
+}
 .promo-left {
   float: left;
   outline: 1px solid;
@@ -146,13 +159,13 @@ legend {
   width: 240px;
 }
 .promo-right {
-  float: right;
+  float: left;
   outline: 1px solid;
   width: 240px
 }
 .promo-btn {
   display: inline-block;
-  vertical-align: baseline;
+  vertical-align: top;
   width: 140px;
   height: 38px;
 }
@@ -220,8 +233,8 @@ legend {
 }
 .marker {
   display: inline-block;
-  vertical-align: baseline;
-	width: 20px;
+  vertical-align: top;
+		width: 20px;
   height: 20px;
   outline: 1px solid;
 }
