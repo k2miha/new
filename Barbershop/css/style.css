@@ -1,6 +1,13 @@
 body {
   margin: 1px;
-  font: PT Sans Narrow;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  min-width: 960px;
+  text-transform: uppercase;
+  background: #070707 url("../img/tint.png") center top;
 }
 .clearfix::after {
   content: "";

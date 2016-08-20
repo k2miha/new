@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
   display: block;
 }
-.aviator-img {
+.layout-picture {
   outline: 1px solid;
   font-size: 14px;
   padding-top: 30px;
@@ -93,11 +93,14 @@ legend {
   outline: 1px solid;
   height: 270px;
   margin-bottom: 80px;
+  position: relative;
 }
 .content {
+  position: absolute;
+  top: 50px;
   display: none;
 }
-.content:hover {
+.layout:hover .content{
   display: block;
 }
 .content h2 {
