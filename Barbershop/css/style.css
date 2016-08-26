@@ -49,6 +49,9 @@ body {
   background-color: #000000;
   color: #ffffff;
 }
+.item .main-header {
+  margin-bottom: 59px;
+}
 .index-header {
   margin-bottom: 58px;
 }
@@ -102,6 +105,9 @@ body {
   color: #aba9a7;
   margin-left: 17px;
 }
+.breadcrumbs-price li:last-child {
+  margin-left: 12px;
+}
 .breadcrumbs li:last-child::after {
   content: "";
   display: none;
@@ -115,6 +121,9 @@ body {
   background: black;
   margin-left: 17px;
   transform: rotate(45deg);
+}
+.item li::after {
+  margin-left: 19px;
 }
 .breadcrumbs li {
   display: inline-block;
@@ -266,16 +275,23 @@ body {
   text-decoration: none;
 }
 .price-label {
-  background: #e5e5e5 none repeat scroll 0 0;
   display: inline-block;
-  padding: 10px 20px;
+  background: #E5E5E5 none repeat scroll 0% 0%;
+  margin-left: 15px;
+  padding: 10px 23px 10px 29px;
+  margin-left: 10px;
+  margin-right: -1px;
 }
 .buy {
-  background: black none repeat scroll 0 0;
-  color: white;
   display: inline-block;
-  padding: 10px 20px;
+  color: #FFF;
+  background: #000 none repeat scroll 0% 0%;
+  padding: 9px 17px 10px 20px;
   text-decoration: none;
+  margin-bottom: 39px;
+}
+.buy:hover, .buy:active {
+  background-color: #663d15;
 }
 button {
   text-transform: uppercase;
@@ -413,7 +429,7 @@ button {
   padding-top: 63px;
   padding-bottom: 40px;
   color: #ffffff;
-  background: #252525 url("../img/Layer 23.jpg");
+  background: url("../img/Layer 37.png") repeat-x, #252525 url("../img/Layer 23.jpg");
 }
 .footer-contacts {
   outline: 1px solid;
@@ -511,6 +527,9 @@ button {
   margin-right: auto;
   position: relative;
 }
+.item .top-column {
+  margin-bottom: 54px;
+}
 .price .top-column {
   margin-bottom: 13px;
 }
@@ -549,19 +568,20 @@ button {
 }
 .left-column-item {
   font-size: 0;
-  margin-bottom: 49px;
+  margin-bottom: 35px;
 }
 .right-column {
-  position: relative;
   float: right;
   outline: 1px solid;
   width: 400px;
   min-height: 519px;
+  padding-top: 17px;
 }
 .right-column ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-left: 12px;
 }
 .right-column li::before {
   background: black none repeat scroll 0 0;
@@ -574,11 +594,12 @@ button {
   width: 6px;
 }
 .article {
-  position: absolute;
-  right: 0;
+  margin-left: 173px;
+  color: #aeaeae;
 }
 .right-column b {
   font-weight: 400;
+  margin-left: 10px;
 }
 table {
   width: 100%;
@@ -596,8 +617,9 @@ td {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
+  box-shadow: 0px 0px 15px #000101;
 }
-.wrap div {
+.goods-card {
   padding-right: 56px;
 }
 .wrap a {
@@ -610,6 +632,9 @@ td {
   background: black;
   padding: 10px 20px;
   padding-right: 17px;
+}
+.wrap>a:hover, .wrap>a:active {
+  background-color: #663d15;
 }
 .wrap .cost {
   display: inline-block;
@@ -640,7 +665,7 @@ td {
   margin-right: 0;
 }
 .second-raw {
-  margin-bottom: 45px;
+  margin-bottom: 27px;
 }
 .second-raw .wrap:nth-child(3n) {
   margin-right: 0;
@@ -659,11 +684,12 @@ td {
   margin-top: -5px;
 }
 .paggination {
-  margin-bottom: 43px;
+  margin-bottom: 47px;
 }
 .paggination span {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 22px;
+  margin-top: -4px;
 }
 .paggination a {
   outline: 1px solid;
@@ -673,12 +699,29 @@ td {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
+  margin-top: -4px;
+}
+.paggination a:hover, .paggination a:active {
+  background-color: #663d15;
+}
+.paggination a:first-child {
+  padding-right: 17px;
+}
+.paggination a:nth-child(3) {
+  padding-right: 17px;
+  margin-right: 4px;
+}
+.paggination a:last-child {
+  padding-right: 18px;
+  padding-left: 18px;
 }
 .view {
-  margin-bottom: 21px;
+  margin-bottom: 9px;
+  box-shadow: 0px 0px 15px #000101;
 }
 .preview {
   margin-right: 20px;
+  box-shadow: 0px 0px 15px #000101;
 }
 .preview:nth-child(5) {
   margin-right: 0;
@@ -692,9 +735,8 @@ figure {
 }
 .index-footer {
   margin-top: 65px;
-}
-.index-footer {
   padding-top: 62px;
+    background: #252525 url("../img/Layer 23.jpg");
 }
 h2 {
   font-size: 30px;
@@ -703,6 +745,9 @@ h2 {
 }
 .shop h2 {
   letter-spacing: normal;
+}
+.item h2 {
+  letter-spacing: -0.05px;
 }
 .price h2 {
   margin-top: 61px;
@@ -745,6 +790,10 @@ h1 {
 h3 {
   font-size: 24px;
   font-weight: 400;
+}
+.item h3 {
+  margin-left: 10px;
+  margin-bottom: 32px;
 }
 .price h3 {
   padding-right: 158px;
@@ -792,6 +841,10 @@ label:hover {
   padding-left: 10px;
   letter-spacing: -0.4px;
 }
+.product-filter>input:hover, .product-filter>input:active {
+  background-color: #663d15;
+  cursor: pointer;
+}
 .price h1 {
   margin-left: 184px;
   margin-top: 59px;
@@ -810,6 +863,12 @@ input[type=radio] {
   margin-right: 28px;
   margin-bottom: 17px;
 }
+.goods-groups label:last-child {
+  color: #ABA9A7;
+}
+.brands label:nth-child(4) {
+  color: #ABA9A7;
+}
 .goods-href span {
   line-height: 18px;
   display: inline-block;
@@ -818,4 +877,12 @@ input[type=radio] {
 }
 .gel{
   padding-right: 10px;
+}
+.wrap:last-child .goods-card {
+  padding-right: 65px;
+}
+.good-description {
+  margin-top: 29px;
+  margin-left: 11px;
+  margin-bottom: 35px;
 }
