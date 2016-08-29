@@ -3,8 +3,7 @@
   font-style: normal;
 
   font-family: "symbols-nerds";
-  src: url("../fonts/symbols-nerds.woff") format("woff"),
-       url("../fonts/symbols-nerds.woff2") format("woff2");
+  src: url("../fonts/symbols-nerds.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,

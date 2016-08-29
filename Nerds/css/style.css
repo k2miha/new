@@ -86,14 +86,21 @@ nav {
 }
 .top-column {
 		outline: 1px solid;
-    min-height: 245px;
-    margin-bottom: 82px;
-    width: 880px;
+    min-height: 234px;
+    margin-bottom: 78px;
     margin-left: auto;
     margin-right: auto;
+    background: #eeeeee;
 }
 .top-column h1 {
   margin: 0;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 27px;
+  padding-top: 54px;
+  padding-left: 17px;
 }
 .left-column {
 		outline: 1px solid;
@@ -102,7 +109,10 @@ nav {
     width: 240px;
 }
 legend {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
+  font-size: 18px;
+  margin-left: -3px;
+  text-transform: uppercase;
 }
 .right-column {
 		outline: 1px solid;
@@ -227,6 +237,7 @@ legend {
 }
 .promo-left a:active {
   background: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 .promo-left p {
   letter-spacing: 0.15px;
@@ -258,6 +269,7 @@ legend {
 }
 .promo-center a:active {
   background: #009053;
+  box-shadow: inset 0 3px 0 0 #007b47;
 }
 .promo-center p {
   padding-right: 19px;
@@ -276,6 +288,7 @@ legend {
 }
 .promo-right a:active {
   background: #c09b24;
+  box-shadow: inset 0 3px 0 0 #a3841f;
 }
 .promo-right p {
   letter-spacing: normal;
@@ -412,17 +425,38 @@ legend {
   margin-right: auto;
   position: relative;
 }
+.logos a {
+  display: inline-block;
+}
+.glukhnako {
+  width: 198px;
+  height: 37px;
+  background: url("../img/slider background copy.png") 7px -27px;
+}
+.glukhnako:hover {
+  background-position: 7px 73px;
+}
+.glukhnako:active {
+  background-position: 7px 228px;
+}
 .logos-picture {
   font-size: 0;
   margin-right: 113px;
-}
-.logos-picture img {
   margin-top: 26px;
 }
-.html-academy {
-  position: relative;
+.htmlacademy {
+  width: 199px;
+  height: 68px;
+  background: url("../img/slider background copy.png") 537px -15px;
   top: 19px;
-  left: -5px;
+  position: relative;
+  right: -16px;
+}
+.htmlacademy:hover {
+  background-position: 537px 85px;
+}
+.htmlacademy:active {
+  background-position: 537px 240px;
 }
 .logos img {
   margin-left: 12px;
@@ -434,11 +468,18 @@ legend {
 .last-logo {
   margin-right: 0;
   font-size: 0;
-}
-.last-logo img {
-  margin-left: 5px;
+  margin-left: 22px;
   position: relative;
   top: 27px;
+  width: 209px;
+  height: 86px;
+  background: url("../img/slider background copy.png") 214px -5px;
+}
+.last-logo:hover {
+  background-position: 214px 95px;
+}
+.last-logo:active {
+  background-position: 214px 250px;
 }
 .main-footer {
   outline: 1px solid;
@@ -499,9 +540,11 @@ legend {
 .marker {
   display: inline-block;
   vertical-align: top;
-		width: 20px;
+	width: 20px;
   height: 20px;
   outline: 1px solid;
+  position: relative;
+  border-radius: 50%;
 }
 .marker:hover {
   cursor: pointer;
@@ -510,6 +553,15 @@ legend {
   height: 81px;
   outline: 1px solid;
   margin-bottom: 13px;
+  position: relative;
+}
+.marker:first-child {
+  top: 31px;
+  left: 17px;
+}
+.marker:last-child {
+  top: 31px;
+  right: -135px;
 }
 .range-input {
   width: 80px;
@@ -521,6 +573,7 @@ input[type="submit"] {
 }
 fieldset {
   padding: 0;
+  border: none;
 }
 fieldset:nth-child(2) {
   margin-bottom: 65px;
@@ -538,6 +591,13 @@ fieldset:nth-child(2) {
   font-size: 0;
   margin-right: 25px;
   padding-left: 13px;
+}
+.left-footer a:hover {
+  background: #fb565a;
+}
+.left-footer a:active {
+  background: #d6494d;
+  box-shadow: inset 0 3px 0 0 #bb4a4e;
 }
 .left-footer a:last-child {
   margin-right: 0;
@@ -567,6 +627,6 @@ fieldset:nth-child(2) {
 .main-footer>div {
   margin-top: 74px;
 }
-.icon-basket::before {
+.main-menu .icon-basket::before {
   margin-right: 13px;
 }
