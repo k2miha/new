@@ -33,9 +33,6 @@ body {
   height: 56px;
   width: 139px;
 }
-.container img {
-  margin-top: -2px;
-}
 .main-header {
   outline: 1px solid;
   padding-top: 27px;
@@ -106,7 +103,7 @@ nav {
 		outline: 1px solid;
 		float: left;
 		min-height: 728px;
-    width: 240px;
+    width: 244px;
 }
 legend {
   margin-bottom: 17px;
@@ -120,12 +117,38 @@ legend {
 		width: 560px;
     min-height: 1094px;
 }
+.sort {
+  position: relative;
+  margin-bottom: 19px;
+}
 .sort li {
   display: inline-block;
   vertical-align: top;
+  margin-right: 40px;
 }
 .sort ul {
   margin: 0;
+  display: inline-block;
+  padding-left: 38px;
+  top: -2px;
+  position: relative;
+}
+.sort b {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-left: -2px;
+  position: relative;
+  top: -3px;
+}
+.sort button {
+  border: none;
+  padding: 0;
+  background: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #00ca74;
+  color: #b7b7b7;
 }
 .left-layout {
   width: 240px;
@@ -150,17 +173,34 @@ legend {
   height: 270px;
   margin-bottom: 80px;
   position: relative;
+  background: url("../img/browser.png") no-repeat;
+}
+.layout:hover {
+  background: url("../img/browser1.png") no-repeat;
 }
 .content {
   position: absolute;
   top: 50px;
+  left: 50%;
+  margin-left: -100px;
   display: none;
+  width: 200px;
+  height: 200px;
+  background: #ffffff;
 }
 .layout:hover .content{
   display: block;
 }
 .content h2 {
-  margin: 0;
+  margin-top: 32px;
+  margin-left: 67px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.content b {
+  
 }
 .slider {
   outline: 1px solid;
@@ -201,12 +241,24 @@ legend {
   top: -1px;
 }
 .tumbler {
-  margin-top: 189px;
-  margin-left: 5px;
-  float: left;
+  margin-left: 48px;
+  display: inline-block;
+  margin-top: -2px;
 }
 .tumbler input {
   margin-right: 3px;
+}
+.tumbler button {
+  width: 0px;
+}
+.tumbler button::before {
+  font-size: 23px;
+}
+.icon-down-dir {
+  margin-right: 13px;
+}
+.icon-down-dir::before {
+  color: #00ca74;
 }
 .promo-blocks {
   outline: 1px solid;
@@ -545,6 +597,18 @@ legend {
   outline: 1px solid;
   position: relative;
   border-radius: 50%;
+  box-shadow: 0 2px 0 0 #000101;
+}
+.marker::before {
+  content: "";
+  width: 4px;
+  height: 5px;
+  background: #ababab;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 40%;
 }
 .marker:hover {
   cursor: pointer;
@@ -554,29 +618,87 @@ legend {
   outline: 1px solid;
   margin-bottom: 13px;
   position: relative;
+  background: #f1f1f1;
+  border-radius: 9px;
 }
 .marker:first-child {
   top: 31px;
   left: 17px;
 }
+.marker:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 122px;
+  height: 2px;
+  background: #00CA74 none repeat scroll 0% 0%;
+  position: absolute;
+  top: 9px;
+  left: 19px;
+}
 .marker:last-child {
   top: 31px;
   right: -135px;
 }
+.marker:last-child::after {
+  content: "";
+  display: inline-block;
+  background: #D7DCDE none repeat scroll 0% 0%;
+  width: 42px;
+  height: 2px;
+  position: absolute;
+  top: 9px;
+  left: 19px;
+}
 .range-input {
   width: 80px;
-  height: 33px;
+  height: 38px;
   margin-bottom: 47px;
+  margin-left: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+.start {
+  margin-right: 16px;
+}
+.end {
+  margin-left: 8px;
 }
 input[type="submit"] {
   height: 38px;
+  margin-top: 19px;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0 45px;
+  border-radius: 6px;
+  border: none;
+  padding-left: 48px;
 }
 fieldset {
   padding: 0;
   border: none;
 }
+fieldset:first-child label {
+  text-transform: uppercase;
+  margin-left: -2px;
+}
 fieldset:nth-child(2) {
-  margin-bottom: 65px;
+  margin-bottom: 9px;
+}
+fieldset:nth-child(2) legend {
+  margin-bottom: 19px;
+}
+fieldset:nth-child(2) label, fieldset:nth-child(3) label {
+  margin-left: 4px;
+}
+fieldset:nth-child(2) input, fieldset:nth-child(3) input {
+  margin-right: 16px;
+  margin-bottom: 24px;
+}
+fieldset:nth-child(3) legend {
+  margin-bottom: 19px;
 }
 .left-footer {
   float: left;
