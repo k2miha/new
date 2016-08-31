@@ -1,6 +1,6 @@
 body {
   margin: 1px;
-  font-family: "Roboto Medium", "Arial";
+  font-family: "Roboto Medium", "Arial", sans-serif;
 }
 @font-face {
   src: url(../fonts/roboto.woff2);
@@ -10,6 +10,45 @@ body {
   src: url(../fonts/robotomedium.woff2);
   font-family: "Roboto Medium";
 }
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-nerds";
+  src: url("../fonts/symbols-nerds.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-nerds";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-basket::before { content: "\62"; } /* "b" */
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-vk::before { content: "\76"; } /* "v" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-circle::before { content: "\25cb"; } /* "○" */
+.icon-circle-dot::before { content: "\25cf"; } /* "●" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
+
 .clearfix::after {
   content: "";
   display: table;
@@ -56,6 +95,9 @@ nav {
   vertical-align: top;
   margin-right: 40px;
 }
+.main-menu li:nth-child(3) {
+  margin-right: 41px;
+}
 .main-menu a:hover {
   color: #fb565a;
 }
@@ -63,7 +105,7 @@ nav {
   color: #8f8f8f;
 }
 .main-menu li:last-child {
-  margin-left: 23px;
+  margin-left: 22px;
   margin-right: 0px;
 }
 .menu-element {
@@ -150,6 +192,9 @@ legend {
   border-bottom: 1px dotted #00ca74;
   color: #b7b7b7;
 }
+.sort button:hover {
+  border-bottom: 1px solid #00ca74;
+}
 .left-layout {
   width: 240px;
   outline: 1px solid;
@@ -163,7 +208,36 @@ legend {
 }
 .paggination {
   float: left;
-  margin-bottom: 79px;
+  margin-bottom: 2px;
+  margin-top: 8px;
+}
+.paggination a {
+  background: #f1f1f1 none repeat scroll 0 0;
+  border-radius: 4px;
+  color: #000000;
+  font-size: 12px;
+  margin-right: 7px;
+  padding: 11px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.paggination a:hover {
+  background: #e5e5e5;
+}
+.paggination a:active {
+  background: #d5d5d5;
+  box-shadow: 0 3px 0 0 #b5b5b5 inset;
+}
+.paggination a:last-child {
+  padding: 11px 30px;
+}
+.paggination span {
+  border: 2px solid #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-left: 1px;
+  margin-right: 8px;
+  padding: 9px 13px;
 }
 .layouts {
   min-height: 700px;
@@ -193,14 +267,43 @@ legend {
 }
 .content h2 {
   margin-top: 32px;
-  margin-left: 67px;
+  text-align: center;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
 }
-.content b {
-  
+.modern-organic-thai h2 {
+  font-size: 17.8px;
+  margin-left: 0;
+}
+.avenue {
+  margin-bottom: 0;
+}
+.content p {
+  font-size: 14px;
+  margin-left: 1px;
+  margin-top: 12px;
+  text-align: center;
+  margin-bottom: 36px;
+  color: #283136;
+}
+.content span {
+  background: #fb565a none repeat scroll 0 0;
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  margin-left: 30px;
+  padding: 8px 33px 9px 36px;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.content span:hover {
+  background: #d6494d;
+}
+.content span:active {
+  background: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 .slider {
   outline: 1px solid;
@@ -240,30 +343,48 @@ legend {
   right: -2px;
   top: -1px;
 }
+.slider-tumbler {
+  margin-left: 5px;
+  position: absolute;
+  bottom: -209px;
+}
+.slider-tumbler input {
+  margin-right: 2px;
+}
 .tumbler {
-  margin-left: 48px;
   display: inline-block;
+  margin-left: 59px;
   margin-top: -2px;
 }
 .tumbler input {
   margin-right: 3px;
 }
 .tumbler button {
-  width: 0px;
+  width: 9px;
+  position: relative;
+  border: none;
 }
 .tumbler button::before {
   font-size: 23px;
+  left: -12px;
+  position: relative;
+}
+.icon-up-dir {
+  margin-left: 0;
+}
+.tumbler button:active {
+  color:#000000;
+}
+.tumbler button:hover {
+  border: none;
 }
 .icon-down-dir {
-  margin-right: 13px;
-}
-.icon-down-dir::before {
-  color: #00ca74;
+  margin-right: 4px;
 }
 .promo-blocks {
   outline: 1px solid;
   padding-bottom: 27px;
-  margin-top: 83px;
+  margin-top: 81px;
   margin-bottom: 55px;
   margin-left: auto;
   margin-right: auto;
@@ -373,7 +494,7 @@ legend {
 .main-promo-left ul {
   position: relative;
   list-style: none;
-  margin-top: 25px;
+  margin-top: 23px;
   padding-left: 0;
 }
 .main-promo-left li {
@@ -398,14 +519,15 @@ legend {
 }
 .main-promo-left p:first-child {
   margin-top: 60px;
-  margin-bottom: 19px;
+  margin-bottom: 20px;
 }
 .main-promo-left p:nth-child(2) {
   font-family: "Roboto";
   padding-right: 20px;
   letter-spacing: 0.2px;
   line-height: 22px;
-  margin-bottom: 44px;
+  margin-bottom: 46px;
+  margin-top: -2px;
 }
 .promo-type {
   text-transform: uppercase;
@@ -536,6 +658,7 @@ legend {
 .main-footer {
   outline: 1px solid;
   min-height: 215px;
+  background: url("../img/Слой 2.jpg") no-repeat;
 }
 .map {
   padding-top: 0;
@@ -547,6 +670,7 @@ legend {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  height: 416px;
 }
 .map img {
   border-style: none;
@@ -584,7 +708,7 @@ legend {
   text-transform: uppercase;
   font-size: 12px;
   padding: 11px 53px;
-  margin-top: 14px;
+  margin-top: 15px;
   display: inline-block;
   margin-left: 23px;
   border-radius: 2px;
@@ -653,18 +777,20 @@ legend {
   width: 80px;
   height: 38px;
   margin-bottom: 47px;
-  margin-left: 5px;
+  margin-left: 6px;
   padding-left: 0px;
   padding-right: 0px;
   border: none;
   background: #f1f1f1;
   border-radius: 4px;
+  text-align: center;
+  color: #283136;
 }
 .start {
   margin-right: 16px;
 }
 .end {
-  margin-left: 8px;
+  margin-left: 5px;
 }
 input[type="submit"] {
   height: 38px;
@@ -675,6 +801,13 @@ input[type="submit"] {
   border-radius: 6px;
   border: none;
   padding-left: 48px;
+}
+input[type="submit"]:hover {
+  background: #e5e5e5;
+}
+input[type="submit"]:active {
+  background: #d5d5d5;
+  box-shadow: 0 3px 0 0 #b5b5b5 inset;
 }
 fieldset {
   padding: 0;
@@ -751,4 +884,7 @@ fieldset:nth-child(3) legend {
 }
 .main-menu .icon-basket::before {
   margin-right: 13px;
+}
+.map .catalog-map {
+  margin-left: -599px;
 }
