@@ -4,27 +4,27 @@ body {
 }
 @font-face {
   src: url(../fonts/roboto.woff2);
+  src: url(../fonts/roboto.woff);
   font-family: "Roboto";
 }
 @font-face {
   src: url(../fonts/robotomedium.woff2);
+  src: url(../fonts/robotomedium.woff);
   font-family: "Roboto Medium";
 }
 @font-face {
   font-weight: normal;
   font-style: normal;
-
   font-family: "symbols-nerds";
   src: url("../fonts/symbols-nerds.woff2") format("woff2");
+  src: url("../fonts/symbols-nerds.woff") format("woff");
 }
-
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
   display: inline-block;
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
-
   font-weight: normal;
   line-height: 1em;
   font-family: "symbols-nerds";
@@ -33,10 +33,8 @@ body {
   text-decoration: inherit;
   font-style: normal;
   font-variant: normal;
-
   speak: none;
 }
-
 .icon-basket::before { content: "\62"; } /* "b" */
 .icon-facebook::before { content: "\66"; } /* "f" */
 .icon-twitter::before { content: "\74"; } /* "t" */
@@ -48,7 +46,6 @@ body {
 .icon-check-off::before { content: "\2610"; } /* "☐" */
 .icon-check-on::before { content: "\2611"; } /* "☑" */
 .icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
-
 .clearfix::after {
   content: "";
   display: table;
@@ -89,6 +86,7 @@ nav {
   padding: 0;
   padding-top: 13px;
   padding-left: 3px;
+  position: relative;
 }
 .main-menu li {
   display: inline-block;
@@ -105,8 +103,9 @@ nav {
   color: #8f8f8f;
 }
 .main-menu li:last-child {
-  margin-left: 22px;
   margin-right: 0px;
+  position: absolute;
+  right: 0;
 }
 .menu-element {
   font-size: 14px;
@@ -247,10 +246,11 @@ legend {
   height: 270px;
   margin-bottom: 80px;
   position: relative;
-  background: url("../img/browser.png") no-repeat;
+  background: #f1f1f1 url("../img/browser.png") no-repeat;
+  border-radius: 5px;
 }
 .layout:hover {
-  background: url("../img/browser1.png") no-repeat;
+  background: #797979 url("../img/browser1.png") no-repeat;
 }
 .content {
   position: absolute;
@@ -353,7 +353,7 @@ legend {
 }
 .tumbler {
   display: inline-block;
-  margin-left: 59px;
+  margin-left: 58px;
   margin-top: -2px;
 }
 .tumbler input {
@@ -374,6 +374,9 @@ legend {
 }
 .tumbler button:active {
   color:#000000;
+}
+.tumbler button:focus {
+  outline: none;
 }
 .tumbler button:hover {
   border: none;
@@ -602,10 +605,11 @@ legend {
 .logos a {
   display: inline-block;
 }
-.glukhnako {
-  width: 198px;
+.logos .glukhnako {
+  width: 209px;
   height: 37px;
   background: url("../img/slider background copy.png") 7px -27px;
+  margin-right: 102px;
 }
 .glukhnako:hover {
   background-position: 7px 73px;
@@ -658,7 +662,7 @@ legend {
 .main-footer {
   outline: 1px solid;
   min-height: 215px;
-  background: url("../img/Слой 2.jpg") no-repeat;
+  background: url("../img/Слой 2.jpg") no-repeat top;
 }
 .map {
   padding-top: 0;
@@ -712,6 +716,7 @@ legend {
   display: inline-block;
   margin-left: 23px;
   border-radius: 2px;
+  vertical-align: top;
 }
 .marker {
   display: inline-block;
@@ -729,6 +734,7 @@ legend {
   height: 5px;
   background: #ababab;
   display: inline-block;
+  vertical-align: top;
   border-radius: 50%;
   position: absolute;
   top: 40%;
@@ -752,6 +758,7 @@ legend {
 .marker:first-child::after {
   content: "";
   display: inline-block;
+  vertical-align: top;
   width: 122px;
   height: 2px;
   background: #00CA74 none repeat scroll 0% 0%;
@@ -766,6 +773,7 @@ legend {
 .marker:last-child::after {
   content: "";
   display: inline-block;
+  vertical-align: top;
   background: #D7DCDE none repeat scroll 0% 0%;
   width: 42px;
   height: 2px;
@@ -842,10 +850,12 @@ fieldset:nth-child(3) legend {
   padding: 19px 16px;
   background: #e1e1e1;
   display: inline-block;
+  vertical-align: top;
   border-radius: 50%;
   font-size: 0;
   margin-right: 25px;
   padding-left: 13px;
+  text-decoration: none;
 }
 .left-footer a:hover {
   background: #fb565a;
@@ -872,6 +882,7 @@ fieldset:nth-child(3) legend {
   font-weight: 400;
   margin-top: -7px;
   display: inline-block;
+  vertical-align: top;
   margin-left: -10px;
   letter-spacing: 0.2px;
 }
