@@ -106,6 +106,7 @@ nav {
   margin-right: 0px;
   position: absolute;
   right: 0;
+  top: 13px;
 }
 .menu-element {
   font-size: 14px;
@@ -246,11 +247,11 @@ legend {
   height: 270px;
   margin-bottom: 80px;
   position: relative;
-  background: #f1f1f1 url("../img/browser.png") no-repeat;
+  background: url("../img/browser copy.png") no-repeat;
   border-radius: 5px;
 }
 .layout:hover {
-  background: #797979 url("../img/browser1.png") no-repeat;
+  background: #797979 url("../img/browser copy.png") no-repeat 0px -33px;
 }
 .content {
   position: absolute;
