@@ -10,16 +10,16 @@ body {
   background: #070707 url("../img/tint.png") no-repeat center top;
 }
 .price {
-  background: none;
+  background: #f8f5f2 url("../img/Layer 24 copy.png");
   color: black;
   font-weight: 400;
 }
 .shop {
-  background: none;
+  background: #f8f5f2 url("../img/Layer 24 copy.png");
   color: black;
 }
 .item {
-  background: none;
+  background: #f8f5f2 url("../img/Layer 24 copy.png");
   color: black;
   font-weight: 400;
 }
@@ -57,11 +57,21 @@ body {
 .index-header {
   margin-bottom: 58px;
 }
+.price .index-header {
+  margin-bottom: 62px;
+}
 .main-navigation {
   outline: 1px solid;
   float: left;
   width: 780px;
   min-height: 70px;
+}
+.main-navigation span {
+  display: inline-block;
+  padding: 24px 20px;
+  padding-right: 23px;
+  padding-bottom: 29px;
+  padding-top: 27px;
 }
 .main-navigation ul {
   margin: 0;
@@ -76,7 +86,7 @@ body {
   line-height: 14px;
 }
 .main-navigation a {
-  display: block;
+  display: inline-block;
   padding: 24px 20px;
   padding-right: 23px;
   padding-bottom: 29px;
@@ -120,6 +130,7 @@ body {
   height: 6px;
   background: black;
   margin-left: 17px;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .item li::after {
@@ -139,6 +150,9 @@ body {
 .breadcrumbs a {
   color: #000;
   text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
 }
 .user-block {
   outline: 1px solid;
@@ -234,6 +248,7 @@ body {
   height: 20px;
   margin-left: -10px;
   background-color: #ffffff;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .index-content {
@@ -564,6 +579,7 @@ button {
   width: 6px;
   height: 6px;
   background: black;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   margin-right: 11px;
   border: 1px solid #61605f;
@@ -764,19 +780,39 @@ h2 {
 .item h2 {
   letter-spacing: -0.05px;
 }
-.price h2 {
+.big-heading {
   margin-top: 61px;
-  margin-bottom: 22px;
+  margin-bottom: 35px;
+  margin-top: 59px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+.big-heading::after {
+  border-bottom: 2px solid #000000;
+  content: "";
+  position: relative;
+  display: block;
+  left: 0;
+  top: -25px;
+  z-index: 1;
+}
+.price h2 {
+  display: inline;
+  font-size: 48px;
+  z-index: 2;
+  position: relative;
+  background: #f8f5f2 url("../img/Layer 24 copy.png");
+  padding: 0 25px;
 }
 .main-navigation .main {
   width: 111px;
   padding: 0;
+  float: left;
+  height: 71px;
 }
-h1 {
-  font-size: 48px;
-  display: inline-block;
-  vertical-align: top;
-  margin-left: 186px;
+.main-navigation .main:hover {
+  background: none;
 }
 .item h1 {
   margin-left: 0;
@@ -785,23 +821,10 @@ h1 {
 .shop h1 {
   margin-left:0;
 }
-.price h1::before {
-  width: 160px;
-  height: 2px;
-  background: black;
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 143px;
-}
-.price h1::after {
-  width: 160px;
-  height: 2px;
-  background: black;
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 143px;
+.price h1 {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 h3 {
   font-size: 24px;
@@ -869,12 +892,6 @@ label:hover {
   background-color: #663d15;
   cursor: pointer;
 }
-.price h1 {
-  margin-left: 184px;
-  margin-top: 59px;
-  font-weight: 400;
-  letter-spacing: 0.3px;
-}
 input[type=checkbox] {
   margin-right: 28px;
   margin-bottom: 20px;
@@ -913,4 +930,19 @@ input[type=radio] {
   margin-top: 29px;
   margin-left: 11px;
   margin-bottom: 35px;
+}
+.active::after {
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  height: 5px;
+  background: #ffffff;
+  right: 20px;
+  left: 20px;
+}
+.active {
+  position: relative;
+}
+.active a:hover {
+  background: none;
 }

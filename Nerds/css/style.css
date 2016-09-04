@@ -356,6 +356,7 @@ legend {
   display: inline-block;
   margin-left: 58px;
   margin-top: -2px;
+  position: absolute;
 }
 .tumbler input {
   margin-right: 3px;
