@@ -901,3 +901,13 @@ fieldset:nth-child(3) legend {
 .map .catalog-map {
   margin-left: -599px;
 }
+.active {
+  position: relative;
+}
+.active::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  border-bottom: 2px solid #fb565a;
+}
