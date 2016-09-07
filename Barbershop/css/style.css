@@ -956,10 +956,11 @@ input[type=radio] {
   background: #f8f5f2 url("../img/Layer 24 copy.png");
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   margin-left: -230px;
-  position: absolute;
+  position: fixed;
   top: 120px;
   left: 50%;
   display: none;
+  z-index: 20;
 }
 .modal-content-close {
   position: absolute;
@@ -979,8 +980,8 @@ input[type=radio] {
   top: 10px;
   left: 2px;
   width: 19px;
-  height: 3px;
-  background-color: #d0d0d0;
+  height: 4px;
+  background-color: #cfcfcf;
   border-radius: 1px;
 }
 .modal-content-close::before {
@@ -1022,14 +1023,14 @@ input[type=radio] {
   border-color: #663d15;
 }
 .login-form input.icon-user {
-  background-image: url("");/*sprite*/
+  background-image: url("../img/User copy 2.png");
   background-repeat: no-repeat;
-  background-position: 100% -504px;
+  background-position: 268px 14px;
 }
 .login-form input.icon-password {
-  background-image: url("");/*sprite*/
+  background-image: url("../img/User copy 2.png");
   background-repeat: no-repeat;
-  background-position: 100% -45px;
+  background-position: 268px -470px;
 }
 .restore {
   float: right;
@@ -1077,7 +1078,7 @@ background: #000000;
 .modal-content-map {
   width: 766px;
   height: 561px;
-  background: #e9e5dc url ("img/map.png")
+  background: #e9e5dc url("../img/Слой 2.jpg");
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1086,6 +1087,8 @@ background: #000000;
   border: 7px solid white;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   z-index: 20;
+  position: fixed;
+  display: none;
 }
 .modal-overlay {
   position: fixed;
@@ -1095,4 +1098,11 @@ background: #000000;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+::-webkit-input-placeholder {
+  opacity: 1;
+}
+::-moz-placeholder {
+  opacity: 1;
 }
