@@ -545,7 +545,7 @@ button {
 }
 .top-column {
   outline: 1px solid;
-  margin-bottom: 60px;
+  margin-bottom: 61px;
   width: 940px;
   margin-left: auto;
   margin-right: auto;
@@ -821,6 +821,7 @@ h2 {
 }
 .shop h1 {
   margin-left:0;
+  margin-bottom: 24px;
   font-size: 30px;
   font-weight: 400;
 }
@@ -863,7 +864,7 @@ td:nth-child(even) {
 }
 legend {
   font-size: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 29px;
   margin-left: -2px;
 }
 fieldset {
@@ -910,8 +911,58 @@ input[type=radio] {
 .goods-groups label:last-child {
   color: #ABA9A7;
 }
-.brands label:nth-child(4) {
+.goods-groups label {
+  position: relative;
+}
+.brands label:nth-child(3) {
   color: #ABA9A7;
+}
+.brands label {
+  margin-left: 41px;
+  margin-bottom: 13.5px;
+  display: block;
+  position: relative;
+}
+.brands label:last-child {
+  margin-bottom: 13px;
+}
+.brands label:nth-child(4) {
+  margin-right: 52px;
+}
+.product-filter input {
+  display: none;
+}
+.product-filter input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 1px;
+  left: -84px;
+  width: 15px;
+  height: 16px;
+  border: 2px solid #000000;
+}
+.product-filter input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: 1px;
+  left: -84px;
+  width: 15px;
+  height: 16px;
+  border: 2px solid #000000;
+}
+.product-filter input[type="checkbox"]:checked + .checkbox-indicator::before,
+.product-filter input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  width: 15px;
+  height: 2px;
+  background: #000000;
+}
+.product-filter input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+.product-filter input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
 }
 .goods-groups .first-good {
   margin-bottom: 14px;
