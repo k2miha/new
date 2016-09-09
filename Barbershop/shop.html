@@ -78,17 +78,12 @@
 	      </fieldset>
 	      <fieldset class="goods-groups">
 	        <legend class="groups">группы товаров:</legend>
-	        <label>
-	          <input class="first-good" type="radio" name="name" value="бритвенные принадлежности">бритвенные
-	          <span>принадлежности</span>
-	        </label>
-	        <label>
-	          <input type="radio" name="name" value="средства для ухода">средства для ухода
-            <span class="radio-indicator"></span>
-	        </label>
+	        <input id="shave" class="first-good" type="radio" name="name" value="бритвенные принадлежности">
+	        <label class="radio-indicator" for="shave">бритвенные принадлежности</label>
+	        <input id="things" type="radio" name="name" value="средства для ухода">
+          <label class="radio-indicator" for="things">средства для ухода</label>
 	        <label>
 	          <input type="radio" name="name" value="аксессуары" disabled="disabled">аксессуары
-            <span class="radio-indicator"></span>
 	        </label>
 	      </fieldset>
 	      <input type="submit" name="name" value="показать">
