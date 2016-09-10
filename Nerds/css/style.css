@@ -41,8 +41,7 @@ body {
 .icon-vk::before { content: "\76"; } /* "v" */
 .icon-up-dir::before { content: "\25b2"; } /* "▲" */
 .icon-down-dir::before { content: "\25bc"; } /* "▼" */
-.icon-circle::before { content: "\25cb"; } /* "○" */
-.icon-circle-dot::before { content: "\25cf"; } /* "●" */
+.icon-circle::before { content: "\25cb"; color: #c1c1c1; font-size: 28px;}
 .icon-check-off::before { content: "\2610"; } /* "☐" */
 .icon-check-on::before { content: "\2611"; } /* "☑" */
 .icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
@@ -161,7 +160,7 @@ legend {
 }
 .sort {
   position: relative;
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 .sort li {
   display: inline-block;
@@ -172,8 +171,6 @@ legend {
   margin: 0;
   display: inline-block;
   padding-left: 38px;
-  top: -2px;
-  position: relative;
 }
 .sort b {
   font-weight: 400;
@@ -181,7 +178,7 @@ legend {
   font-size: 12px;
   margin-left: -2px;
   position: relative;
-  top: -3px;
+  top: -1px;
 }
 .sort button {
   border: none;
@@ -209,7 +206,7 @@ legend {
 .paggination {
   float: left;
   margin-bottom: 2px;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 .paggination a {
   background: #f1f1f1 none repeat scroll 0 0;
@@ -354,7 +351,7 @@ legend {
 }
 .tumbler {
   display: inline-block;
-  margin-left: 58px;
+  margin-left: 63px;
   margin-top: -2px;
   position: absolute;
 }
@@ -670,7 +667,7 @@ legend {
   padding-top: 0;
   outline: 1px solid;
   width: 880px;
-  margin-top: 87px;
+  margin-top: 88px;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: auto;
@@ -697,13 +694,13 @@ legend {
 }
 .contacts b {
   position: relative;
-  top: 28px;
+  top: 29px;
   left: 19px;
   text-transform: uppercase;
   font-weight: 400;
 }
 .contacts p {
-  margin-top: 45px;
+  margin-top: 46px;
   margin-left: 22px;
   color: #666666;
 }
@@ -714,7 +711,7 @@ legend {
   text-transform: uppercase;
   font-size: 12px;
   padding: 11px 53px;
-  margin-top: 15px;
+  margin-top: 14px;
   display: inline-block;
   margin-left: 23px;
   border-radius: 2px;
@@ -836,9 +833,29 @@ fieldset:nth-child(2) legend {
 fieldset:nth-child(2) label, fieldset:nth-child(3) label {
   margin-left: 4px;
 }
+fieldset:nth-child(2) label{
+  margin-right: 59px;
+}
+fieldset:nth-child(2) input {
+  display: none;
+}
 fieldset:nth-child(2) input, fieldset:nth-child(3) input {
   margin-right: 16px;
   margin-bottom: 24px;
+}
+fieldset:nth-child(2) input:checked + .icon-circle::before {
+  content: "\25cf";
+  font-size: 28px;
+}
+fieldset:nth-child(2) input:checked + .icon-circle-dot::before {
+  content: "\25cf";
+  font-size: 28px;
+  color: #c1c1c1;
+}
+fieldset:nth-child(2) input + .icon-circle-dot::before {
+  content: "\25cb";
+  font-size: 28px;
+  color: #c1c1c1;
 }
 fieldset:nth-child(3) legend {
   margin-bottom: 19px;
@@ -893,7 +910,7 @@ fieldset:nth-child(3) legend {
   margin-left: -10px;
 }
 .main-footer>div {
-  margin-top: 74px;
+  margin-top: 78px;
 }
 .main-menu .icon-basket::before {
   margin-right: 13px;
