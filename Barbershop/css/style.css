@@ -912,9 +912,6 @@ input[type=radio] {
   margin-right: 28px;
   margin-bottom: 17px;
 }
-.goods-groups label:last-child {
-  color: #ABA9A7;
-}
 .product-filter input[type="submit"] {
   display: block;
 }
@@ -925,6 +922,9 @@ input[type=radio] {
   line-height: 18px;
   top: 2px;
   margin-bottom: 20px;
+}
+.brands {
+  position: relative;
 }
 .brands label:nth-child(3) {
   color: #ABA9A7;
@@ -951,6 +951,23 @@ input[type=radio] {
   width: 15px;
   height: 16px;
   border: 2px solid #000000;
+}
+.product-filter input:disabled + .checkbox-indicator {
+  position: absolute;
+  top: 39px;
+  left: -43px;
+  width: 15px;
+  height: 16px;
+  border: 2px solid #ABA9A7;
+}
+.product-filter input:disabled + span + label {
+  color: #ABA9A7;
+}
+.product-filter input:disabled + label::before {
+  border: 2px solid #ABA9A7;
+}
+.product-filter input:disabled + label {
+  color: #ABA9A7;
 }
 .product-filter input[type="checkbox"]:checked + .checkbox-indicator::before,
 .product-filter input[type="checkbox"]:checked + .checkbox-indicator::after {
