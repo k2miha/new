@@ -977,10 +977,11 @@ fieldset:nth-child(3) input:disabled + .icon-check-off{
 }
 .modal-content {
   width: 630px;
-  min-height: 416px;
+  min-height: 361px;
   margin: 0 auto;
   position: relative;
   padding-top: 55px;
+  box-shadow: 0px 20px 40px rgba(0, 1, 1, 0.75)
 }
 .modal-content textarea {
   width: 441px;
@@ -1002,12 +1003,14 @@ textarea[placeholder] {
 .modal-content input[type="text"] {
   padding-left: 16px;
   padding-right: 17px;
-  width: 187px;
+  width: 186px;
+  float: left;
 }
 .modal-content input[type="email"] {
   padding-left: 15px;
   padding-right: 66px;
-  width: 137px;
+  width: 138px;
+  float: right;
 }
 .modal-content input[type="submit"] {
   width: 460px;
@@ -1040,20 +1043,39 @@ input[placeholder] {
   border: none;
 }
 .write-us {
-  display: table;
   width: 460px;
   margin: 0px auto;
 }
 .write-us>label {
   display: block;
+  margin-bottom: 12px;
 }
-.labels, .wrapper {
+.labels {
   width: 460px;
   margin: 0 auto;
-  display: table-row;
+  margin-bottom: 12px;
 }
-.labels label {
-  display: table-cell;
+.labels label:first-child {
+  margin-right: 155px;
+}
+.wrapper {
+  margin-bottom: 23px;
+}
+.modal-content-close::after {
+    transform: rotate(-45deg);
+}
+.modal-content-close::before {
+    transform: rotate(45deg);
+}
+.modal-content-close::before, .modal-content-close::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: 9px;
+    width: 23px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 1px;
 }
 body>* {
   outline: 1px solid;
