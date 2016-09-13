@@ -1051,7 +1051,7 @@ input[type=radio] {
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   margin-left: -230px;
   position: fixed;
-  top: 120px;
+  top: 121px;
   left: 50%;
   display: none;
   z-index: 20;
@@ -1071,9 +1071,9 @@ input[type=radio] {
 .modal-content-close::before, .modal-content-close::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: 2px;
-  width: 19px;
+  top: 17px;
+  left: -1px;
+  width: 25px;
   height: 4px;
   background-color: #cfcfcf;
   border-radius: 1px;
@@ -1086,24 +1086,28 @@ input[type=radio] {
 }
 .modal-content h2 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 30px;
   line-height: 42px;
+  margin-top: -5px;
 }
 .modal-content p {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: -20px;
+  letter-spacing: 0.05px;
+  margin-left: 2px;
 }
 .modal-content .login-form {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 .login-form input[type="text"],.login-form input[type="password"] {
   width: 236px;
   margin: 0;
   margin-bottom: 10px;
-  padding: 10px 20px;
-  padding-right: 40px;
+  padding: 7px 20px;
+  padding-right: 45px;
+  padding-left: 15px;
   font-size: 14px;
   line-height: 24px;
   font-family: "PT Sans Narrow bold", "Arial", sans-serif;
@@ -1112,6 +1116,9 @@ input[type=radio] {
   background-color: #f9f6f3;
   border: 2px solid #000000;
   outline: none;
+}
+.login-form input:nth-child(2) {
+  margin-bottom: 15px;
 }
 .login-form input:focus {
   border-color: #663d15;
@@ -1124,7 +1131,7 @@ input[type=radio] {
 .login-form input.icon-password {
   background-image: url("../img/User copy 2.png");
   background-repeat: no-repeat;
-  background-position: 268px -470px;
+  background-position: 268px -473px;
 }
 .restore {
   float: right;
@@ -1132,11 +1139,12 @@ input[type=radio] {
 }
 .login-form .btn {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 14px;
+  padding-left: 26px;
 }
 .login-checkbox {
   position: relative;
-  padding-left: 30px;
+  padding-left: 32px;
   cursor: pointer;
 }
 .login-checkbox:hover {
