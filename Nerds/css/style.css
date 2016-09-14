@@ -335,10 +335,12 @@ legend {
   font-weight: 400;
 }
 .slider-header p {
-  margin-top: 19px;
+  margin-top: 18px;
 }
 .slider-header p:nth-child(2) {
-  margin-bottom: 37px;
+  margin-bottom: 34px;
+  font-size: 16px;
+  line-height: 22px;
 }
 .slider-image {
   float: right;
@@ -358,6 +360,32 @@ legend {
 }
 .slider-tumbler input {
   margin-right: 2px;
+  display: none;
+}
+.slider-tumbler-marker {
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
+}
+.slider-tumbler input:checked + .slider-tumbler-marker::before {
+  content: "";
+  position: absolute;
+  width: 4.5px;
+  height: 4.5px;
+  top: 50%;
+  margin-left: -2.5px;
+  left: 50%;
+  margin-top: -2.5px;
+  border-radius: 50%;
+  background: #c1c1c1;
+}
+.slider-tumbler label::after {
+  width: 11px;
+  height: 11px;
+  background: white;
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
 }
 .tumbler {
   display: inline-block;
@@ -804,6 +832,10 @@ legend {
   text-align: center;
   color: #283136;
 }
+.range-input[placeholder] {
+  font-size: 16px;
+  color: #283136;
+}
 .start {
   margin-right: 16px;
 }
@@ -993,6 +1025,7 @@ fieldset:nth-child(3) input:disabled + .icon-check-off{
   margin-left: -325px;
   top: 20px;
   display: none;
+  z-index: 20;
 }
 .modal-content textarea {
   width: 441px;
@@ -1112,6 +1145,16 @@ input[placeholder] {
   height: 4px;
   background-color: #ffffff;
   border-radius: 1px;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 body>* {
   outline: 1px solid;

@@ -408,7 +408,8 @@ button {
   letter-spacing: 0.14px;
 }
 .index-content-left .work-time {
-  margin-bottom: 48px;
+  margin-bottom: 46px;
+  margin-top: 24px;
 }
 .index-content-left .btn {
   padding-right: 29px;
@@ -954,7 +955,7 @@ input[type=radio] {
 }
 .product-filter input:disabled + .checkbox-indicator {
   position: absolute;
-  top: 39px;
+  top: 92px;
   left: -43px;
   width: 15px;
   height: 16px;
@@ -1058,8 +1059,8 @@ input[type=radio] {
 }
 .modal-content-close {
   position: absolute;
-  top: 0;
-  right: -34px;
+  top: -9px;
+  right: -40px;
   width: 22px;
   height: 22px;
   font-size: 0;
@@ -1068,13 +1069,14 @@ input[type=radio] {
   outline: 0;
   cursor: pointer;
 }
+}
 .modal-content-close::before, .modal-content-close::after {
   content: "";
   position: absolute;
   top: 17px;
   left: -1px;
   width: 25px;
-  height: 4px;
+  height: 6px;
   background-color: #cfcfcf;
   border-radius: 1px;
 }
