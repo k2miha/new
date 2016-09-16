@@ -22,6 +22,7 @@ body {
 [class^="icon-"]::before,
 [class*=" icon-"]::before {
   display: inline-block;
+  vertical-align: baseline;
   width: 1em;
   margin-right: 0.2em;
   margin-left: 0.2em;
@@ -132,12 +133,12 @@ nav {
   border-radius: 2px;
 }
 .top-column {
-		outline: 1px solid;
-    min-height: 234px;
-    margin-bottom: 78px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #eeeeee;
+	outline: 1px solid;
+  min-height: 234px;
+  margin-bottom: 78px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #eeeeee;
 }
 .top-column h1 {
   margin: 0;
@@ -150,10 +151,10 @@ nav {
   padding-left: 17px;
 }
 .left-column {
-		outline: 1px solid;
-		float: left;
-		min-height: 728px;
-    width: 244px;
+	outline: 1px solid;
+	float: left;
+	min-height: 728px;
+  width: 244px;
 }
 legend {
   margin-bottom: 17px;
@@ -162,10 +163,10 @@ legend {
   text-transform: uppercase;
 }
 .right-column {
-		outline: 1px solid;
-		float:right;
-		width: 560px;
-    min-height: 1094px;
+	outline: 1px solid;
+	float:right;
+	width: 560px;
+  min-height: 1094px;
 }
 .sort {
   position: relative;
@@ -179,6 +180,7 @@ legend {
 .sort ul {
   margin: 0;
   display: inline-block;
+  vertical-align: top;
   padding-left: 38px;
 }
 .sort b {
@@ -204,7 +206,6 @@ legend {
 .sort button:active {
   border-bottom: none;
 }
-
 .sort button:focus {
   outline: none;
   border-bottom: none;
@@ -261,11 +262,11 @@ legend {
   height: 270px;
   margin-bottom: 80px;
   position: relative;
-  background: url("../img/browser copy.png") no-repeat;
+  background: url("../img/browser_close_bar.png") no-repeat;
   border-radius: 5px;
 }
 .layout:hover {
-  background: #797979 url("../img/browser copy.png") no-repeat 0px -33px;
+  background: #797979 url("../img/browser_close_bar.png") no-repeat 0px -33px;
 }
 .content {
   position: absolute;
@@ -336,13 +337,6 @@ legend {
   width: 380px;
   min-height: 231px;
 }
-.slider-header b {
-  font-size: 36px;
-  display: block;
-  margin-top: 18px;
-  line-height: 36px;
-  font-weight: 400;
-}
 .slider-header p {
   margin-top: 18px;
 }
@@ -350,6 +344,14 @@ legend {
   margin-bottom: 34px;
   font-size: 16px;
   line-height: 22px;
+}
+.slider-header p:nth-child(1) {
+  font-size: 36px;
+  display: block;
+  margin-top: 18px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 0px;
 }
 .slider-image {
   float: right;
@@ -394,10 +396,12 @@ legend {
   background: white;
   content: "";
   display: inline-block;
+  vertical-align: top;
   border-radius: 50%;
 }
 .tumbler {
   display: inline-block;
+  vertical-align: top;
   margin-top: -2px;
   position: absolute;
   right: 26px;
@@ -408,15 +412,18 @@ legend {
 .tumbler button {
   width: 9px;
   border: none;
+  height: 23px;
 }
 .tumbler button::before {
   font-size: 23px;
   left: -12px;
   position: absolute;
+  top: 1px;
 }
 .icon-up-dir {
   margin-left: 0;
   position: absolute;
+  left: 17px;
 }
 .tumbler button:focus {
   outline: none;
@@ -430,7 +437,6 @@ legend {
 }
 .icon-down-dir {
   position: absolute;
-  left: 17px;
 }
 .promo-blocks {
   outline: 1px solid;
@@ -557,26 +563,25 @@ legend {
   position: relative;
   content: "";
   display: inline-block;
+  vertical-align: baseline;
   height: 2px;
   width: 25px;
   background-color: #FB565A;
   margin-right: 11px;
   top: -5px;
 }
-.main-promo-left b {
+.main-promo-left p:first-child {
+  margin-top: 60px;
+  margin-bottom: 20px;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
   font-family: "Roboto";
 }
-.main-promo-left p:first-child {
-  margin-top: 60px;
-  margin-bottom: 20px;
-}
 .main-promo-left p:nth-child(2) {
   font-family: "Roboto";
   padding-right: 20px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.15px;
   line-height: 22px;
   margin-bottom: 46px;
   margin-top: -2px;
@@ -608,6 +613,7 @@ legend {
     position: relative;
     content: "";
     display: inline-block;
+    vertical-align: baseline;
     height: 2px;
     width: 25px;
     background-color: #FB565A;
@@ -617,6 +623,7 @@ legend {
 .since::before {
   content: "";
   display: inline-block;
+  vertical-align: top;
   width: 65px;
   height: 2px;
   background-color: #eeeeee;
@@ -627,6 +634,7 @@ legend {
 .since::after {
   content: "";
   display: inline-block;
+  vertical-align: top;
   width: 61px;
   height: 2px;
   background-color: #eeeeee;
@@ -640,6 +648,7 @@ legend {
 .promo-work {
   margin-top: 67px;
   display: inline-block;
+  vertical-align: top;
   text-transform: uppercase;
   margin-bottom: 8px;
 }
@@ -653,11 +662,12 @@ legend {
 }
 .logos a {
   display: inline-block;
+  vertical-align: baseline;
 }
 .logos .glukhnako {
   width: 209px;
   height: 37px;
-  background: url("../img/slider background copy.png") 7px -27px;
+  background: url("../img/logos.png") 7px -27px;
   margin-right: 102px;
 }
 .glukhnako:hover {
@@ -674,7 +684,7 @@ legend {
 .htmlacademy {
   width: 199px;
   height: 68px;
-  background: url("../img/slider background copy.png") 537px -15px;
+  background: url("../img/logos.png") 537px -15px;
   top: 19px;
   position: relative;
   right: -16px;
@@ -700,7 +710,7 @@ legend {
   top: 27px;
   width: 209px;
   height: 86px;
-  background: url("../img/slider background copy.png") 214px -5px;
+  background: url("../img/logos.png") 214px -5px;
 }
 .last-logo:hover {
   background-position: 214px 95px;
@@ -711,7 +721,7 @@ legend {
 .main-footer {
   outline: 1px solid;
   min-height: 215px;
-  background: url("../img/Слой 2.jpg") no-repeat top;
+  background: url("../img/map.jpg") no-repeat top;
 }
 .map {
   padding-top: 0;
@@ -892,6 +902,12 @@ fieldset:nth-child(2) legend, fieldset:nth-child(3) legend {
 fieldset:nth-child(2) label, fieldset:nth-child(3) label {
   margin-left: 4px;
   color: #283136;
+}
+fieldset:nth-child(2) label:hover, fieldset:nth-child(3) label:hover {
+  color: #000000;
+}
+fieldset:nth-child(2) label:hover::before, fieldset:nth-child(3) label:hover::before {
+  color: #b5b5b5;
 }
 fieldset:nth-child(3) label, fieldset:nth-child(2) label {
   display: block;
@@ -1100,7 +1116,7 @@ textarea[placeholder] {
   top: 1px;
 }
 .modal-content input[type="submit"]:active {
-  box-shadow: inset 0 3px 0 0 #9b2d30; inset;
+  box-shadow: inset 0 3px 0 0 #9b2d30 inset;
 }
 .modal-content input[type="submit"]:hover {
   background-color: #d6494d;;
@@ -1136,6 +1152,7 @@ input[placeholder] {
 }
 .write-us>label {
   display: inline-block;
+  vertical-align: top;
   margin-bottom: 8px;
 }
 .write-us>label:first-child {
@@ -1150,10 +1167,12 @@ input[placeholder] {
   margin-bottom: 18px;
 }
 .modal-content-close::after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 .modal-content-close::before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 .modal-content-close::before, .modal-content-close::after {
   content: "";
