@@ -225,6 +225,7 @@ legend {
   float: left;
   margin-bottom: 2px;
   margin-top: 7px;
+  width: 100%;
 }
 .paggination a {
   background: #f1f1f1 none repeat scroll 0 0;
@@ -281,20 +282,20 @@ legend {
 .layout:hover .content{
   display: block;
 }
-.content h2 {
+.content a {
   margin-top: 32px;
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 10px;
+  color: #000000;
+  text-decoration: none;
+  display: block;
 }
-.modern-organic-thai h2 {
+.modern-organic-thai a {
   font-size: 17.8px;
   margin-left: 0;
-}
-.avenue {
-  margin-bottom: 0;
 }
 .content p {
   font-size: 14px;

@@ -1072,6 +1072,9 @@ input[type=radio] {
   display: none;
   z-index: 20;
 }
+.modal-content-show {
+  display: block;
+}
 .modal-content-close {
   position: absolute;
   top: -9px;
