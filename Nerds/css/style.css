@@ -723,6 +723,7 @@ legend {
   outline: 1px solid;
   min-height: 215px;
   background: url("../img/map.jpg") no-repeat top;
+  position: relative;
 }
 .map {
   padding-top: 0;
@@ -752,6 +753,7 @@ legend {
   position: absolute;
   top: 89px;
   background: #ffffff;
+  z-index: 1;
 }
 .contacts b {
   position: relative;
@@ -1197,4 +1199,26 @@ input[placeholder] {
 }
 body>* {
   outline: 1px solid;
+}
+@keyframes bounce {
+  0% {transform: translateY(-2000px);}
+  70% {transform: translateY(30px);}
+  90% {transform: translateY(-10px);}
+  100% {transform: translateY(0px);}
+}
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+@keyframes shake {
+  0%, 100% {transform: translateX(0);}
+  10%,30%,50%,70%,90% {transform: translateX(10px);}
+  20%,40%,60%,80% {transform: translateX(-10px);}
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+iframe {
+  position: absolute;
+  top: 0;
 }
