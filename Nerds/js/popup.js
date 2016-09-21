@@ -5,13 +5,13 @@ var form = popup.querySelector("form");
 var login = popup.querySelector("[name=name]");
 var password = popup.querySelector("[name=email]");
 var textarea = popup.querySelector("[name=letter]")
-var storage = localStorage.getItem("name");
-var passtorage = localStorage.getItem("email");
 link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("modal-content-show");
+  var storage = localStorage.getItem("name");
   if(storage) {
     login.value = storage;
+    var passtorage = localStorage.getItem("email");
     password.value = passtorage;
     textarea.focus();
   }

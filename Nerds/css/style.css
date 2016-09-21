@@ -2,11 +2,11 @@ body {
   margin: 1px;
   font-family: "Roboto Medium", "Arial", sans-serif;
 }
-/*@font-face {
+@font-face {
   src: url(../fonts/roboto.woff2);
   src: url(../fonts/roboto.woff);
-  font-family: "Roboto";
-}*/
+  font-family: "Roboto_local";
+}
 @font-face {
   src: url(../fonts/robotomedium.woff2);
   src: url(../fonts/robotomedium.woff);
@@ -121,7 +121,7 @@ nav {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: "Roboto","Roboto_local";
 }
 .header-btn {
   text-decoration: none;
@@ -557,7 +557,7 @@ legend {
 }
 .main-promo-left li {
   margin-bottom: 24px;
-  font-family: "Roboto";
+  font-family: "Roboto","Roboto_local";
   letter-spacing: 0.05px;
 }
 .main-promo-left li::before {
@@ -577,10 +577,10 @@ legend {
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  font-family: "Roboto";
+  font-family: "Roboto","Roboto_local";
 }
 .main-promo-left p:nth-child(2) {
-  font-family: "Roboto";
+  font-family: "Roboto","Roboto_local";
   padding-right: 20px;
   letter-spacing: 0.15px;
   line-height: 22px;
@@ -589,7 +589,7 @@ legend {
 }
 .promo-type {
   text-transform: uppercase;
-  font-family: "Roboto";
+  font-family: "Roboto","Roboto_local";
   letter-spacing: 0.05px;
 }
 .main-promo-right {
@@ -761,7 +761,7 @@ legend {
   left: 19px;
   text-transform: uppercase;
   font-weight: 400;
-  font-family: "Roboto";
+  font-family: "Roboto","Roboto_local";
 }
 .contacts p {
   margin-top: 46px;
@@ -1096,14 +1096,12 @@ textarea[placeholder] {
 }
 .modal-content input[type="text"] {
   padding-left: 14px;
-  padding-right: 17px;
-  width: 186px;
+  width: 203px;
   float: left;
 }
 .modal-content input[type="email"] {
   padding-left: 15px;
-  padding-right: 64px;
-  width: 137px;
+  width: 201px;
   float: right;
 }
 .modal-content input[type="submit"] {
