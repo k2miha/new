@@ -332,21 +332,40 @@ legend {
   width: 880px;
   background: #eeeeee;
 }
+.second-slide {
+  display: none;
+}
 .slider-header {
   float: left;
   outline: 1px solid;
   width: 380px;
   min-height: 231px;
 }
+.slider-header-2 {
+  float: left;
+  outline: 1px solid;
+  width: 470px;
+  min-height: 231px;
+  position: relative;
+}
+.slider-header-2 .slider-tumbler-2 {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+}
+.slider-header-2 + .slider-image {
+  width: auto;
+}
 .slider-header p {
   margin-top: 18px;
 }
-.slider-header p:nth-child(2) {
+.slider-header p:nth-child(2), .slider-header-2 p:nth-child(2) {
   margin-bottom: 34px;
   font-size: 16px;
   line-height: 22px;
+  color: #283136;
 }
-.slider-header p:nth-child(1) {
+.slider-header p:nth-child(1), .slider-header-2 p:nth-child(1) {
   font-size: 36px;
   display: block;
   margin-top: 18px;
@@ -369,6 +388,11 @@ legend {
   margin-left: 5px;
   position: absolute;
   bottom: -209px;
+}
+.slider-header-2 .slider-tumbler {
+  right: 15px;
+  position: absolute;
+  bottom: 20px;
 }
 .slider-tumbler input {
   margin-right: 2px;
@@ -1219,4 +1243,10 @@ body>* {
 iframe {
   position: absolute;
   top: 0;
+}
+.slide-hide {
+  display: none;
+}
+.slide-show {
+  display: block;
 }

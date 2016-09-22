@@ -4,7 +4,11 @@ var close = popup.querySelector(".modal-content-close");
 var form = popup.querySelector("form");
 var login = popup.querySelector("[name=name]");
 var password = popup.querySelector("[name=email]");
-var textarea = popup.querySelector("[name=letter]")
+var textarea = popup.querySelector("[name=letter]");
+var tumbler1 = document.querySelector(".tumbler-1");
+var tumbler2 = document.querySelector(".tumbler-2");
+var firstSlide = document.querySelector(".first-slide");
+var secondSlide = document.querySelector(".second-slide");
 link.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("modal-content-show");
@@ -41,4 +45,12 @@ window.addEventListener("keydown", function(event) {
       popup.classList.remove("modal-error");
     }
   }
-})
+});
+tumbler1.addEventListener("click", function() {
+  firstSlide.classList.remove("slide-hide");
+  secondSlide.classList.remove("slide-show");
+});
+tumbler2.addEventListener("click", function() {
+  firstSlide.classList.add("slide-hide");
+  secondSlide.classList.add("slide-show");
+});
