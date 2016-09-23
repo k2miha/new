@@ -335,6 +335,9 @@ legend {
 .second-slide {
   display: none;
 }
+.third-slide {
+  display: none;
+}
 .slider-header {
   float: left;
   outline: 1px solid;
@@ -348,13 +351,10 @@ legend {
   min-height: 231px;
   position: relative;
 }
-.slider-header-2 .slider-tumbler-2 {
-  position: absolute;
-  bottom: 15px;
-  right: 10px;
-}
 .slider-header-2 + .slider-image {
   width: auto;
+  margin-right: 12px;
+  margin-top: 2px;
 }
 .slider-header p {
   margin-top: 18px;
@@ -364,6 +364,11 @@ legend {
   font-size: 16px;
   line-height: 22px;
   color: #283136;
+}
+.slider-header-2 p:nth-child(2){
+  margin-bottom: 34px;
+  margin-top: 18px;
+  letter-spacing: 0.05px;
 }
 .slider-header p:nth-child(1), .slider-header-2 p:nth-child(1) {
   font-size: 36px;
@@ -390,9 +395,9 @@ legend {
   bottom: -209px;
 }
 .slider-header-2 .slider-tumbler {
-  right: 15px;
+  right: 9px;
   position: absolute;
-  bottom: 20px;
+  bottom: 21px;
 }
 .slider-tumbler input {
   margin-right: 2px;
@@ -576,7 +581,7 @@ legend {
 .main-promo-left ul {
   position: relative;
   list-style: none;
-  margin-top: 23px;
+  margin-top: 24px;
   padding-left: 0;
 }
 .main-promo-left li {
@@ -608,7 +613,7 @@ legend {
   padding-right: 20px;
   letter-spacing: 0.15px;
   line-height: 22px;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
   margin-top: -2px;
 }
 .promo-type {
@@ -781,8 +786,8 @@ legend {
 }
 .contacts b {
   position: relative;
-  top: 29px;
-  left: 19px;
+  top: 28px;
+  left: 21px;
   text-transform: uppercase;
   font-weight: 400;
   font-family: "Roboto","Roboto_local";
@@ -1249,4 +1254,7 @@ iframe {
 }
 .slide-show {
   display: block;
+}
+.third-slide img {
+  top: -24px;
 }
