@@ -331,6 +331,7 @@ legend {
   margin-right: auto;
   width: 880px;
   background: #eeeeee;
+  display: none;
 }
 .second-slide {
   display: none;
@@ -390,9 +391,10 @@ legend {
   top: -1px;
 }
 .slider-tumbler {
-  margin-left: 5px;
+  margin-left: 406px;
   position: absolute;
-  bottom: -209px;
+  bottom: 87px;
+  z-index: 1;
 }
 .slider-header-2 .slider-tumbler {
   right: 9px;
@@ -404,30 +406,19 @@ legend {
   display: none;
 }
 .slider-tumbler-marker {
-  position: relative;
+  display: inline-block;
   top: -2px;
   margin-right: 5px;
-}
-.slider-tumbler input:checked + .slider-tumbler-marker::before {
-  content: "";
-  position: absolute;
   width: 4.5px;
   height: 4.5px;
-  top: 50%;
-  margin-left: -2.5px;
-  left: 50%;
-  margin-top: -2.5px;
   border-radius: 50%;
-  background: #c1c1c1;
-}
-.slider-tumbler label::after {
-  width: 11px;
-  height: 11px;
   background: white;
-  content: "";
-  display: inline-block;
-  vertical-align: baseline;
-  border-radius: 50%;
+  border: 3px solid white;
+}
+#btn-1:checked ~ .slider-tumbler label[for="btn-1"],
+#btn-2:checked ~ .slider-tumbler label[for="btn-2"],
+#btn-3:checked ~ .slider-tumbler label[for="btn-3"] {
+  background: #c1c1c1;
 }
 .tumbler {
   display: inline-block;
@@ -1257,4 +1248,19 @@ iframe {
 }
 .third-slide img {
   top: -24px;
+}
+.slider-container {
+  position: relative;
+}
+.slider-container input {
+  display: none;
+}
+#btn-1:checked ~ .slides .slider:nth-child(1) {
+  display: block;
+}
+#btn-2:checked ~ .slides .slider:nth-child(2) {
+  display: block;
+}
+#btn-3:checked ~ .slides .slider:nth-child(3) {
+  display: block;
 }
