@@ -51,7 +51,6 @@
   clear: both;
 }
 .container {
-  outline: 1px solid;
   width: 940px;
   padding: 0 10px;
   margin: 0 auto;
@@ -59,7 +58,6 @@
 }
 .main-header {
   margin-bottom: 57px;
-  outline: 1px solid;
   background-color: #000000;
   color: #ffffff;
 }
@@ -73,7 +71,6 @@
   margin-bottom: 62px;
 }
 .main-navigation {
-  outline: 1px solid;
   float: left;
   width: 780px;
   min-height: 70px;
@@ -167,7 +164,6 @@
   text-decoration: underline;
 }
 .user-block {
-  outline: 1px solid;
   float: right;
   max-width: 140px;
   min-height: 70px;
@@ -201,7 +197,6 @@
   opacity: 1;
 }
 .index-logo {
-  outline: 1px solid;
   height: 204px;
   width: 368px;
   margin: 0 auto;
@@ -213,7 +208,6 @@
   height: 204px;
 }
 .features {
-  outline: 1px solid;
   margin-bottom: 80px;
   width: 940px;
   margin-left: auto;
@@ -221,7 +215,6 @@
   display: block;
 }
 .features-item {
-  outline: 1px solid;
   float: left;
   width: 300px;
   min-height: 175px;
@@ -265,7 +258,6 @@
 }
 .index-content {
 	width: 780px;
-  outline: 1px solid;
   padding: 50px 80px;
   color: #000000;
   margin-left: auto;
@@ -403,7 +395,6 @@ button {
   padding-top: 8px;
 }
 .index-content-left {
-  outline: 1px solid;
   float: left;
   width: 380px;
   min-height: 330px;
@@ -439,7 +430,6 @@ button {
   padding-left: 27px;
 }
 .index-content-right {
-  outline: 1px solid;
   float: right;
   width: 300px;
   min-height: 330px;
@@ -462,14 +452,12 @@ button {
   margin-top: -6px;
 }
 .main-footer {
-  outline: 1px solid;
   padding-top: 63px;
   padding-bottom: 40px;
   color: #ffffff;
   background: url("../img/Layer 37.png") repeat-x, #252525 url("../img/Layer 23.jpg");
 }
 .footer-contacts {
-  outline: 1px solid;
   float: left;
   width: 320px;
   min-height: 88px;
@@ -487,7 +475,6 @@ button {
   text-decoration: none;
 }
 .footer-social {
-  outline: 1px solid;
   float: left;
   width: 180px;
   min-height: 88px;
@@ -531,7 +518,6 @@ button {
   background-position: 33px 62px;
 }
 .footer-copyright {
-  outline: 1px solid;
   float: right;
   max-width: 180px;
   min-height: 88px;
@@ -557,7 +543,6 @@ button {
   background-color: #ffffff;
 }
 .top-column {
-  outline: 1px solid;
   margin-bottom: 61px;
   width: 940px;
   margin-left: auto;
@@ -572,7 +557,6 @@ button {
 }
 .left-column {
   float: left;
-  outline: 1px solid;
   width: 460px;
 }
 .left-column p {
@@ -611,7 +595,6 @@ button {
 }
 .right-column {
   float: right;
-  outline: 1px solid;
   width: 400px;
   min-height: 519px;
   padding-top: 17px;
@@ -654,7 +637,6 @@ td {
 .wrap {
   width: 220px;
   min-height: 286px;
-  outline: 1px solid;
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -739,7 +721,6 @@ td {
   margin-right: 5px;
 }
 .paggination a {
-  outline: 1px solid;
   display: inline-block;
   vertical-align: top;
   background-color: black;

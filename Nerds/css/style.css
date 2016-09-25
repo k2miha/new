@@ -60,14 +60,12 @@ body {
   clear: both;
 }
 .container {
-  outline: 1px solid;
   width: 880px;
   padding: 0 10px;
   margin: 0 auto;
   display: block;
 }
 .layout-picture {
-  outline: 1px solid;
   font-size: 14px;
   padding-top: 30px;
 }
@@ -78,7 +76,6 @@ body {
   width: 139px;
 }
 .main-header {
-  outline: 1px solid;
   padding-top: 27px;
   background: #eeeeee;
 }
@@ -87,7 +84,6 @@ body {
 }
 nav {
   float: right;
-  outline: 1px solid;
   width: 560px;
 }
 .main-menu {
@@ -133,7 +129,6 @@ nav {
   border-radius: 2px;
 }
 .top-column {
-	outline: 1px solid;
   min-height: 234px;
   margin-bottom: 78px;
   margin-left: auto;
@@ -151,7 +146,6 @@ nav {
   padding-left: 17px;
 }
 .left-column {
-	outline: 1px solid;
 	float: left;
 	min-height: 728px;
   width: 244px;
@@ -163,7 +157,6 @@ legend {
   text-transform: uppercase;
 }
 .right-column {
-	outline: 1px solid;
 	float:right;
 	width: 560px;
   min-height: 1094px;
@@ -212,12 +205,10 @@ legend {
 }
 .left-layout {
   width: 240px;
-  outline: 1px solid;
   float: left;
 }
 .right-layout {
   width: 240px;
-  outline: 1px solid;
   float: left;
   margin-left: 80px;
 }
@@ -259,7 +250,6 @@ legend {
   min-height: 700px;
 }
 .layout {
-  outline: 1px solid;
   height: 270px;
   margin-bottom: 80px;
   position: relative;
@@ -323,7 +313,6 @@ legend {
   box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 .slider {
-  outline: 1px solid;
   padding-top: 46px;
   padding-bottom: 66px;
   margin-bottom: 0px;
@@ -341,13 +330,11 @@ legend {
 }
 .slider-header {
   float: left;
-  outline: 1px solid;
   width: 380px;
   min-height: 231px;
 }
 .slider-header-2 {
   float: left;
-  outline: 1px solid;
   width: 470px;
   min-height: 231px;
   position: relative;
@@ -381,7 +368,6 @@ legend {
 }
 .slider-image {
   float: right;
-  outline: 1px solid;
   width: 480px;
   position: relative;
 }
@@ -393,7 +379,7 @@ legend {
 .slider-tumbler {
   margin-left: 406px;
   position: absolute;
-  bottom: 87px;
+  bottom: 90px;
   z-index: 1;
 }
 .slider-header-2 .slider-tumbler {
@@ -460,7 +446,6 @@ legend {
   position: absolute;
 }
 .promo-blocks {
-  outline: 1px solid;
   margin-top: 81px;
   margin-bottom: 55px;
   margin-left: auto;
@@ -476,7 +461,6 @@ legend {
 }
 .promo-left {
   float: left;
-  outline: 1px solid;
   width: 240px;
   margin-right: 80px;
 }
@@ -509,7 +493,6 @@ legend {
 }
 .promo-center {
   float: left;
-  outline: 1px solid;
   width: 240px;
 }
 .promo-center a {
@@ -528,7 +511,6 @@ legend {
 }
 .promo-right {
   float: left;
-  outline: 1px solid;
   width: 240px
 }
 .promo-right a {
@@ -557,7 +539,6 @@ legend {
   border-radius: 3px;
 }
 .features {
-  outline: 1px solid;
   margin-bottom: 49px;
   margin-left: auto;
   margin-right: auto;
@@ -566,7 +547,6 @@ legend {
 }
 .main-promo-left {
   float: left;
-  outline: 1px solid;
   width: 621px;
 }
 .main-promo-left ul {
@@ -614,7 +594,6 @@ legend {
 }
 .main-promo-right {
   float: right;
-  outline: 1px solid;
   width: 240px;
   position: relative;
 }
@@ -644,7 +623,7 @@ legend {
 .since::before {
   content: "";
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;;
   width: 65px;
   height: 2px;
   background-color: #eeeeee;
@@ -655,7 +634,7 @@ legend {
 .since::after {
   content: "";
   display: inline-block;
-  vertical-align: top;
+  vertical-align: baseline;;
   width: 61px;
   height: 2px;
   background-color: #eeeeee;
@@ -674,7 +653,6 @@ legend {
   margin-bottom: 8px;
 }
 .logos {
-  outline: 1px solid;
   height: 166px;
   width: 880px;
   margin-left: auto;
@@ -740,14 +718,12 @@ legend {
   background-position: 214px 250px;
 }
 .main-footer {
-  outline: 1px solid;
   min-height: 215px;
   background: url("../img/map.jpg") no-repeat top;
   position: relative;
 }
 .map {
   padding-top: 0;
-  outline: 1px solid;
   width: 880px;
   margin-top: 88px;
   padding-left: 10px;
@@ -769,7 +745,6 @@ legend {
 .contacts {
   width: 249px;
   min-height: 238px;
-  outline: 1px solid;
   position: absolute;
   top: 89px;
   background: #ffffff;
@@ -806,7 +781,6 @@ legend {
   vertical-align: top;
 	width: 20px;
   height: 20px;
-  outline: 1px solid;
   position: relative;
   border-radius: 50%;
   box-shadow: 0 2px 0 0 #000101;
@@ -828,7 +802,6 @@ legend {
 }
 .range {
   height: 81px;
-  outline: 1px solid;
   margin-bottom: 13px;
   position: relative;
   background: #f1f1f1;
@@ -996,7 +969,6 @@ fieldset:nth-child(3) input:disabled + .icon-check-off{
 }
 .left-footer {
   float: left;
-  outline: 1px solid;
   width: 245px;
 }
 .left-footer a {
@@ -1027,7 +999,6 @@ fieldset:nth-child(3) input:disabled + .icon-check-off{
 }
 .right-footer {
   float: right;
-  outline: 1px solid;
   width: 550px;
 }
 .right-footer b {
@@ -1214,9 +1185,6 @@ input[placeholder] {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   display: none;
-}
-body>* {
-  outline: 1px solid;
 }
 @keyframes bounce {
   0% {transform: translateY(-2000px);}
