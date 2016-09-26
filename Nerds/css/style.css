@@ -1232,3 +1232,6 @@ iframe {
 #btn-3:checked ~ .slides .slider:nth-child(3) {
   display: block;
 }
+.overlay-show {
+  display: block;
+}
