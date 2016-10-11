@@ -7,29 +7,29 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <h1>Pink</h1>
-    <button type="button" name="close" title="Меню"></button>
-    <nav>
-      <ul>
-        <li><a href="#">информация</a></li>
-        <li><a href="#">возможности</a></li>
-        <li><a href="#">отзывы</a></li>
-        <li><a href="#">стоимость</a></li>
+  <header class="main-header">
+    <h1 class="main-header__title">Pink</h1>
+    <nav class="menu">
+      <button class="menu__button" type="button" name="close" title="Меню"></button>
+      <ul class="menu__elements">
+        <li class="menu__element"><a class="menu__link" href="#">информация</a></li>
+        <li class="menu__element"><a class="menu__link" href="#">возможности</a></li>
+        <li class="menu__element"><a class="menu__link" href="#">отзывы</a></li>
+        <li class="menu__element"><a class="menu__link" href="#">стоимость</a></li>
       </ul>
     </nav>
-    <p>
+    <p class="main-header__slogan">
       Взгляните на жизнь
       иначе!
     </p>
   </header>
-  <main>
+  <main class="main-content">
     <div class="platforms">
-      <a href="#">Скачать приложение</a>
-      <img src="" alt="Apple" />
-      <img src="" alt="Android" />
-      <img src="" alt="Windows" />
-      <p>
+      <a class="platforms__download-link" href="#">Скачать приложение</a>
+      <img class="platforms__apple" src="" alt="Apple" />
+      <img class="platforms__android" src="" alt="Android" />
+      <img class="platforms__windows" src="" alt="Windows" />
+      <p class="platforms__description">
         Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8
       </p>
     </div>
