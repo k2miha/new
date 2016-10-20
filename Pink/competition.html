@@ -23,14 +23,66 @@
     </p>
   </header>
   <main class="main-content">
-    <section class="personal-info">
+    <div class="personal-info">
       <p class="personal-info__description">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
       </p>
-      <form action="" class="personal-info__form">
-        <input type="text" name="name" value="">
+      <form class="personal-info__form" action="https://echo.htmlacademy.ru" method="post" >
+        <label class="personal-info__element-label">Фамилия:
+        	<input class="personal-info__element-text" type="text" name="name" value="" placeholder="Укажите фамилию">
+        </label>
+        <label class="personal-info__element-label">Имя:
+          <input class="personal-info__element-text" type="text" name="name" value="" placeholder="Введите ваше имя">
+        </label>
+        <label class="personal-info__element-label">Отчество:
+          <input class="personal-info__element-text" type="text" name="name" value="" placeholder="Ну и отчество тоже">
+        </label>
+        <section class="personal-info__achievements">
+          <h2 class="personal-info__title">Ваши безбашенные
+            достижения в путешествии</h2>
+          <label class="personal-info__element-label">Сделал селфи с акулой
+            <input class="personal-info__element  personal-info__element--checked" type="checkbox" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Обгорел на пляже
+            <input class="personal-info__element  personal-info__element--checked" type="checkbox" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Видел Чака Норриса
+            <input class="personal-info__element" type="checkbox" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Накупил сувениров
+            <input class="personal-info__element" type="checkbox" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Удержал башню
+            <input class="personal-info__element  personal-info__element--checked" type="checkbox" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Разгромил отель
+            <input class="personal-info__element" type="checkbox" name="name" value="">
+          </label>
+        </section>
+        <div class="personal-info__contacts">
+          <label class="personal-info__element-label">Номерок телефончика
+            <input class="personal-info__element-text" type="text" name="name" value="" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="personal-info__element-label">адресок почты
+            <input class="personal-info__element-text" type="text" name="name" value="" placeholder="E-mail, пожалуйста">
+          </label>
+        </div>
+        <section class="personal-info__journey-application">
+          <h2 class="personal-info__title">С каким приложением
+            путешествовали?</h2>
+          <label class="personal-info__element-label">Pink для iOS
+            <input class="personal-info__element  personal-info__element--checked" type="radio" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Pink на Android
+            <input class="personal-info__element" type="radio" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Windows Phone
+            <input class="personal-info__element" type="radio" name="name" value="">
+          </label>
+        </section>
+        <input type="submit" name="name" value="">
       </form>
-    </section>
+    </div>
   </main>
 </body>
 </html>
