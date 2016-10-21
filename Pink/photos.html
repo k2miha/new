@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=320, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Фотографии</title>
+</head>
+<body>
+  <header class="photos-header">
+    <h1 class="photos-header__title">Pink</h1>
+    <nav class="menu">
+      <button class="menu__button" type="button" name="close" title="Меню"></button>
+      <ul class="menu__elements">
+        <li class="menu__element"><a class="menu__link" href="index.html">Главная</a></li>
+        <li class="menu__element"><a class="menu__link">Фотографии</a></li>
+        <li class="menu__element"><a class="menu__link" href="competition.html">Конкурс</a></li>
+        <li class="menu__element"><a class="menu__link" href="#">HMTL Academy</a></li>
+      </ul>
+    </nav>
+    <p class="photos-header__slogan">Фотографии пользователей</p>
+  </header>
+  <main class="main-content">
+    <div class="photos">
+      <p class="photos__description">
+        Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?
+      </p>
+      <div class="photos__element--panorama">
+        <img class="photos__element--panorama-image" src="" alt="panorama" />
+        <span class="photos__element--panorama-label">ПАНОРАМА ДНЯ</span>
+        <p class="photos__element--panorama-comment">
+          <b class="photos__element--panorama-author">Анна</b>
+          <span class="photos__element--panorama-time"> (5 минут назад)</span>
+          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
+        </p>
+        <img class="photos__element--panorama-like" src="" alt="like" />
+        <span class="photos__element--panorama-like-count">Нравится: 215</span>
+      </div>
+    </div>
+    <div class="photos__element--auto">
+      <img class="photos__element--auto-image" src="" alt="auto" />
+      <p class="photos__element--auto-comment">
+        <b class="photos__element--auto-author">Левон</b>
+        <span class="photos__element--auto-time"> (5 часов назад)</span>
+        Вчера он на луну летал, сегодня в руки к нам попал.
+      </p>
+      <img class="photos__element--auto-like" src="" alt="like" />
+      <span class="photos__element--auto-like-count">Нравится: 356</span>
+    </div>
+    <div class="photos__element--drums">
+      <img class="photos__element--drums-image" src="" alt="drums" />
+      <p class="photos__element--drums-comment">
+        <b class="photos__element--drums-author">Антон</b>
+        <span class="photos__element--drums-time"> (12 часов  назад)</span>
+        Соседи будут рады!
+      </p>
+      <img class="photos__element--drums-like" src="" alt="like" />
+      <span class="photos__element--drums-like-count">Нравится: 666</span>
+    </div>
+    <div class="photos__element--roof">
+      <img class="photos__element--roof-image" src="" alt="roof" />
+      <p class="photos__element--roof-comment">
+        <b class="photos__element--roof-author">Борис</b>
+        <span class="photos__element--roof-time"> (20 часов  назад)</span>
+        Здесь могла быть ваша цитата о высоком и вечном.
+      </p>
+      <img class="photos__element--roof-like" src="" alt="like" />
+      <span class="photos__element--roof-like-count">Нравится: 215</span>
+    </div>
+    <div class="photos__element--bakhcha">
+      <img class="photos__element--bakhcha-image" src="" alt="bakhcha" />
+      <p class="photos__element--bakhcha-comment">
+        <b class="photos__element--bakhcha-author">Сергей</b>
+        <span class="photos__element--bakhcha-time"> (25 часов  назад)</span>
+        Самая кубанская в мире!
+      </p>
+      <img class="photos__element--bakhcha-like" src="" alt="like" />
+      <span class="photos__element--bakhcha-like-count">Нравится: 4</span>
+    </div>
+    <div class="photos__element--legs">
+      <img class="photos__element--legs-image" src="" alt="legs" />
+      <p class="photos__element--legs-comment">
+        <b class="photos__element--legs-author">Максим</b>
+        <span class="photos__element--legs-time"> (40 часов  назад)</span>
+        Где снег-то?
+      </p>
+      <img class="photos__element--legs-like" src="" alt="like" />
+      <span class="photos__element--legs-like-count">Нравится: 150</span>
+    </div>
+    <div class="photos__element--plane">
+      <img class="photos__element--plane-image" src="" alt="plane" />
+      <p class="photos__element--plane-comment">
+        <b class="photos__element--plane-author">Надежда</b>
+        <span class="photos__element--plane-time"> (45 часов  назад)</span>
+        Всем GM и взаимные лайки!
+      </p>
+      <img class="photos__element--plane-like" src="" alt="like" />
+      <span class="photos__element--plane-like-count">Нравится: 2560</span>
+    </div>
+    <p class="photos__description">
+      Затмите их всех!
+      Выкладывайте все, что накопилось в телефоне!
+     </p>
+    <div class="photo-editor">
+      <img class="photo-editor__image" src="" alt="winter-road" />
+      <div class="photo-editor__functions">
+        <img class="photo-editor__crop" src="" alt="crop" />
+        <img class="photo-editor__fill" src="" alt="fill" />
+        <img class="photo-editor__contrast" src="" alt="contrast" />
+      </div>
+      <form class="photo-editor__function-tuning" action="index.html" method="post">
+        <input type="range" name="name" value="">
+        <hr>
+        <input type="submit" name="name" value="Запостить">
+        <button type="button" name="button" value="">Отмена</button>
+      </form>
+    </div>
+  </main>
+  <footer class="competition-footer">
+    <section class="site-logo">
+      <img class="site-logo__image" src="" alt="glases">
+	  	<h1 class="site-logo__title">Pink</h1>
+  	</section>
+  	<div class="socials">
+        <img class="socials__element--twitter" src="" alt="twitter">
+        <img class="socials__element--facebook" src="" alt="facebook">
+        <img class="socials__element--youtube" src="" alt="youtube">
+  	</div>
+  	<div class="copyright">
+  		<span class="copyright__maked">Разработано</span>
+  		<img class="copyright__image" src="" alt="html academy">
+  	</div>
+  </footer>
+</body>
