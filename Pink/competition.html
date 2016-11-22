@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=320, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Конкурс</title>
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+</head>
+<body>
+  <header class="competition-header">
+    <h1 class="competition-header__title">Pink</h1>
+    <nav class="menu">
+      <button class="menu__button" type="button" name="close" title="Меню"></button>
+      <ul class="menu__elements">
+        <li class="menu__element"><a class="menu__link" href="index.html">Главная</a></li>
+        <li class="menu__element"><a class="menu__link" href="photos.html">Фотографии</a></li>
+        <li class="menu__element"><a class="menu__link">Конкурс</a></li>
+        <li class="menu__element"><a class="menu__link" href="http://htmlacademy.ru">HMTL Academy</a></li>
+      </ul>
+    </nav>
+    <p class="competition-header__slogan">
+    Конкурс на самое безбашеное путешествие с Пинк
+    </p>
+  </header>
+  <main class="main-content">
+    <div class="personal-info">
+      <p class="personal-info__description">
+        Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+      </p>
+      <form class="personal-info__form" action="https://echo.htmlacademy.ru" method="post" >
+        <label class="personal-info__element-label">Фамилия:
+        	<input class="personal-info__element-text" type="text" name="name" value="" placeholder="Укажите фамилию">
+        </label>
+        <label class="personal-info__element-label">Имя:
+          <input class="personal-info__element-text" type="text" name="name" value="" placeholder="Введите ваше имя">
+        </label>
+        <label class="personal-info__element-label">Отчество:
+          <input class="personal-info__element-text" type="text" name="name" value="" placeholder="Ну и отчество тоже">
+        </label>
+        <section class="personal-info__achievements">
+          <h2 class="personal-info__title">Ваши безбашенные
+            достижения в путешествии</h2>
+          <label class="personal-info__element-label">Сделал селфи с акулой
+            <input class="personal-info__element  personal-info__element--checked" type="checkbox" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Обгорел на пляже
+            <input class="personal-info__element  personal-info__element--checked" type="checkbox" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Видел Чака Норриса
+            <input class="personal-info__element" type="checkbox" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Накупил сувениров
+            <input class="personal-info__element" type="checkbox" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Удержал башню
+            <input class="personal-info__element  personal-info__element--checked" type="checkbox" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Разгромил отель
+            <input class="personal-info__element" type="checkbox" name="name" value="">
+          </label>
+        </section>
+        <div class="personal-info__contacts">
+          <label class="personal-info__element-label">Номерок телефончика
+            <input class="personal-info__element-text" type="text" name="name" value="" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="personal-info__element-label">адресок почты
+            <input class="personal-info__element-text" type="text" name="name" value="" placeholder="E-mail, пожалуйста">
+          </label>
+        </div>
+        <section class="personal-info__journey-application">
+          <h2 class="personal-info__title">С каким приложением
+            путешествовали?</h2>
+          <label class="personal-info__element-label">Pink для iOS
+            <input class="personal-info__element  personal-info__element--checked" type="radio" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Pink на Android
+            <input class="personal-info__element" type="radio" name="name" value="">
+          </label>
+          <label class="personal-info__element-label">Windows Phone
+            <input class="personal-info__element" type="radio" name="name" value="">
+          </label>
+        </section>
+        <section class="personal-info__emotions">
+        	<h2 class="personal-info__title">Опишите свои эмоции</h2>
+        	<textarea class="personal-info__description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </section>
+        <input type="submit" name="name" value="Отправить форму">
+      </form>
+     </div>
+  </main>
+  <footer class="competition-footer">
+  	<p class="competition-footer__form-field-requerements"><span>*</span> — обязательные поля</p>
+    <a class="site-logo" href="index.html" title="Pink">Pink</a>
+    <div class="socials">
+        <a class="socials__element--twitter" href="http://twitter.com" title="twitter">twitter</a>
+        <a class="socials__element--facebook" href="http://facebook.com" title="facebook">facebook</a>
+        <a class="socials__element--youtube" href="http://youtube.com" title="youtube">youtube</a>
+  	</div>
+  	<div class="copyright">
+  		<span class="copyright__maked">Разработано</span>
+  		<a class="copyright__image" href="http://htmlacademy.ru" title="html academy">html academy</a>
+  	</div>
+  </footer>
+</body>
+</html>

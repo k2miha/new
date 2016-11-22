@@ -1,0 +1,19 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": "adaptive template",
+  "main": "Gruntfile.js",
+  "repository": "github.com/k2miha/new",
+  "dependencies": {
+    "grunt-postcss": "^0.8.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-postcss": "^0.8.0"
+  },
+  "author": "k2miha",
+  "license": "ISC"
+}

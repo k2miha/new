@@ -1,0 +1,18 @@
+  .menu__elements {
+    background-color: #283645;
+  }
+  .menu-elements__item {
+    border-top: 1px solid #485461;
+    border-bottom: 1px solid;
+  }
+  .menu-elements__link {
+      font-family: "[OpenSans]";
+      font-size: 18px;
+      line-height: 32px;
+      color: #fff;
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+      padding-top: 25px;
+      padding-bottom: 24px;
+  }
