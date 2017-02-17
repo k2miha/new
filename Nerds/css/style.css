@@ -970,6 +970,7 @@ fieldset:nth-child(3) input:disabled + .icon-check-off{
 .left-footer {
   float: left;
   width: 245px;
+  margin-bottom: 78px;
 }
 .left-footer a {
   padding: 19px 16px;
@@ -1063,6 +1064,7 @@ fieldset:nth-child(3) input:disabled + .icon-check-off{
   text-transform: uppercase;
   border: 2px solid #d7dcde;
   border-radius: 3px;
+  resize: none;
 }
 .modal-content textarea:hover {
   border-color: #a2a9ac;
@@ -1135,6 +1137,9 @@ input[placeholder] {
 }
 .modal-content-close:focus {
   outline: none;
+}
+.modal-content-close:hover {
+  cursor: pointer;
 }
 .write-us {
   width: 460px;
