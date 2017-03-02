@@ -1,6 +1,14 @@
 module.exports = function(grunt) {
-  grunt.loadNpmTasks('grunt-postcss');
   grunt.initConfig({
+    watch: {
+                css: {
+                    files: ['postcss/style.css'],
+                    tasks: ['postcss'],
+                    options: {
+                        spawn: false,
+                    }
+                }
+            },
     postcss: {
       style: {
         files: {
@@ -9,4 +17,6 @@ module.exports = function(grunt) {
       }
     }
   });
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-postcss');
 };

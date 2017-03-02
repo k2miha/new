@@ -4,7 +4,7 @@
   "scripts": {
     "start": "npm run watch",
     "build": "grunt postcss",
-    "watch": "supervisor --watch postcss--extensions сss --no-restart-on exit --exec npm -- run build"
+    "watch": "grunt watch"
   },
   "engines": {
     "node": "^5.0.0"
@@ -17,8 +17,9 @@
   },
   "devDependencies": {
     "grunt": "^1.0.1",
-    "supervisor": "*",
-    "grunt-postcss": "^0.8.0"
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "grunt-reload": "^0.2.0"
   },
   "author": "k2miha",
   "license": "ISC"
