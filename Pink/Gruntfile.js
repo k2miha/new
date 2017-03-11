@@ -6,6 +6,7 @@ module.exports = function(grunt) {
                     tasks: ['postcss'],
                     options: {
                         spawn: false,
+                        livereload: true,
                     }
                 }
             },
@@ -15,8 +16,21 @@ module.exports = function(grunt) {
             "css/style.css": "postcss/style.css"
         }
       }
+    },
+    browserSync: {
+      bsFiles: {
+        src : ['css/*.css', '/*.html']
+      },
+      options: {
+        watchTask: true,
+        server: {
+          baseDir: "./"
+        }
+      }
     }
   });
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.registerTask('start', ['browserSync', 'watch']);
 };

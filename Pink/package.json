@@ -2,9 +2,10 @@
   "name": "pink",
   "version": "0.0.1",
   "scripts": {
-    "start": "npm run watch",
+    "start": "npm run watch && npm run browserSync",
     "build": "grunt postcss",
-    "watch": "grunt watch"
+    "watch": "grunt watch",
+    "browserSync": "grunt browserSync"
   },
   "engines": {
     "node": "^5.0.0"
@@ -17,9 +18,9 @@
   },
   "devDependencies": {
     "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-postcss": "^0.8.0",
-    "grunt-reload": "^0.2.0"
   },
   "author": "k2miha",
   "license": "ISC"
