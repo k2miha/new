@@ -2,7 +2,7 @@
   "name": "pink",
   "version": "0.0.1",
   "scripts": {
-    "start": "npm run watch && npm run browserSync",
+    "start": "grunt start",
     "build": "grunt postcss",
     "watch": "grunt watch",
     "browserSync": "grunt browserSync"
