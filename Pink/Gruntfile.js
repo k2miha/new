@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     watch: {
                 css: {
-                    files: ['postcss/style.css'],
+                    files: ['postcss/**/*.css'],
                     tasks: ['postcss'],
                     options: {
                         spawn: false,
