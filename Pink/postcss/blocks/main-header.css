@@ -1,6 +1,7 @@
 .main-header {
   background-color: #283645;
   background-image: url("../../img/back-mobile@1x.jpg");
+  background-repeat: no-repeat;
 }
 .main-header__title {
   opacity: .3;
