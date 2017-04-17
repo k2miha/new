@@ -4,21 +4,22 @@
   padding-bottom: 35px;
   }
 .platforms__download-link {
-  font-family: "[OpenSans]";
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+  font-weight: bold;
   line-height: 18px;
   color: #fff;
   display: inline-block;
   vertical-align: middle;
-  padding-left: 54px;
-  padding-top: 21px;
-  padding-right: 54px;
-  padding-bottom: 18px;
+  padding-left: 37px;
+  padding-top: 17px;
+  padding-right: 36px;
+  padding-bottom: 14px;
   border: 3px solid #fff;
+  text-decoration: none;
 }
 .platforms__description {
-  font-family: "[OpenSans]";
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #fff;

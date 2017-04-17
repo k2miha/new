@@ -20,3 +20,7 @@
 @import "../postcss/blocks/site-logo.css";
 @import "../postcss/blocks/slider.css";
 @import "../postcss/blocks/socials.css";
+@import "../postcss/blocks/logotype.css";
+body {
+  margin: 0;
+}
