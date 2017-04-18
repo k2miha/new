@@ -21,6 +21,7 @@
 @import "../postcss/blocks/slider.css";
 @import "../postcss/blocks/socials.css";
 @import "../postcss/blocks/logotype.css";
+@import "../postcss/blocks/promo_item.css";
 body {
   margin: 0;
 }

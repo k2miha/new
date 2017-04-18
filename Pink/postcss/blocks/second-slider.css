@@ -4,3 +4,26 @@
 .second-slider__header {
   background-color: #283645;
 }
+.second-slider__package {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+.second-slider__price {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 30px;
+}
+.second-slider__hit {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  line-height: 30px;
+  background-color: #d22856;
+}
