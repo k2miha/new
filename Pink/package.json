@@ -14,14 +14,15 @@
   "main": "Gruntfile.js",
   "repository": "github.com/k2miha/new",
   "dependencies": {
-    "grunt-postcss": "^0.8.0"
+
   },
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-postcss": "^0.8.0"
+    "grunt-postcss": "^0.8.0",
+    "precss": "^1.4.0"
   },
-  "author": "k2miha",
+  "author": "Kolotovich Mike",
   "license": "ISC"
 }

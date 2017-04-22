@@ -10,13 +10,31 @@ module.exports = function(grunt) {
                     }
                 }
             },
+    // postcss: {
+    //     		options: {
+    //   		processors: [
+    //   			require('precss')()
+    //   		]
+    //         		},
+    //   style: {
+    //     files: {
+    //         "css/style.css": "postcss/style.css"
+    //     }
+    //   }
+    // },
     postcss: {
-      style: {
-        files: {
-            "css/style.css": "postcss/style.css"
-        }
-      }
-    },
+  		options: {
+  			processors: [
+  				require('precss')()
+  			]
+  		},
+  		dist: {
+        src: 'postcss/style.css',
+        dest: 'css/style.css'
+  		}
+  	},
+
+
     browserSync: {
       bsFiles: {
         src : ['css/*.css', '*.html']

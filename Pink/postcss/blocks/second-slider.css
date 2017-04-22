@@ -1,3 +1,4 @@
+$blue: #283645;
 .second-slider {
   background-image: url("../../img/Shape_2_copy.png");
 }
@@ -26,4 +27,10 @@
   color: #fff;
   line-height: 30px;
   background-color: #d22856;
+}
+.second-slider__option {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: $blue;
 }
