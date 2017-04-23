@@ -1,12 +1,12 @@
 .slider__title {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 30px;
+  font-family: $OpenSans;
+  font-size: $medium;
+  font-weight: $bold;
+  line-height: $biggest;
 }
 .slider__description {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 30px;
-  color: #283645;
+  font-family: $OpenSans;
+  font-size: $small;
+  line-height: $biggest;
+  color: $blue;
 }

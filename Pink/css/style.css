@@ -1,29 +1,29 @@
 .competition-footer__form-field-requerements {
-  font-family: "[OpenSans]";
+  font-family: 'Open Sans',sans-serif;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
   text-transform: uppercase;
 }
 .content__slogan {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 24px;
   color: #283645;
 }
 .main-footer__description {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-weight: 300;
   font-size: 24px;
   color: #283645;
 }
 .main-footer__block-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
 }
 .main-header {
   background-color: #283645;
   background-image: url("../../img/back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  height: 462px;
+  min-height: 462px;
 }
 .menu__button {
   padding: 0;
@@ -36,16 +36,16 @@
   border-top: 1px solid #485461;
   border-bottom: 1px solid;
 }
-.menu-elements__link {
-  font-family: "[OpenSans]";
+.menu__link {
+  font-family: 'Open Sans',sans-serif;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 18px;
   color: #fff;
   text-align: center;
   display: inline-block;
   vertical-align: middle;
-  padding-top: 25px;
-  padding-bottom: 24px;
+  padding-top: 26px;
+  padding-bottom: 23px;
 }
 .menu {
   background-color: #283645;
@@ -57,13 +57,13 @@
   padding-bottom: 35px;
 }
 .platforms__download-link {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 18px;
   color: #fff;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   padding-left: 37px;
   padding-top: 17px;
   padding-right: 36px;
@@ -72,7 +72,7 @@
   text-decoration: none;
 }
 .platforms__description {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -89,7 +89,7 @@
   background-color: #283645;
 }
 .second-slider__package {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #fff;
@@ -97,14 +97,14 @@
   line-height: 30px;
 }
 .second-slider__price {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 24px;
   font-weight: 300;
   color: #fff;
   line-height: 30px;
 }
 .second-slider__hit {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #fff;
@@ -112,19 +112,19 @@
   background-color: #d22856;
 }
 .second-slider__option {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
 }
 .slider__title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
 }
 .slider__description {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
@@ -137,13 +137,13 @@
   background-color: rgba(178,178,178,.3);
 }
 .content__title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
 .content__description {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #283645;

@@ -1,3 +1,4 @@
+@import "../postcss/variables.css";
 @import "../postcss/blocks/competition-footer.css";
 @import "../postcss/blocks/competition-header.css";
 @import "../postcss/blocks/content.css";

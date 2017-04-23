@@ -1,12 +1,12 @@
 .content__title {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 24px;
+  font-family: $OpenSans;
+  font-weight: $bold;
+  font-size: $medium;
+  line-height: $big;
 }
 .content__description {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  color: #283645;
+  font-family: $OpenSans;
+  font-size: $small;
+  line-height: $big;
+  color: $blue;
 }

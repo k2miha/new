@@ -1,5 +1,5 @@
 .content__slogan {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
-  color: #283645;
+  font-family: $OpenSans;
+  font-size: $big;
+  color: $blue;
 }

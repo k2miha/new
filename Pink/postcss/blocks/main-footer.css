@@ -1,9 +1,9 @@
 .main-footer__description {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  color: #283645;
+  font-family: $OpenSans;
+  font-weight: $light;
+  font-size: $big;
+  color: $blue;
 }
 .main-footer__block-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $OpenSans;
 }

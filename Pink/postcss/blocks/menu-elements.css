@@ -1,18 +1,18 @@
   .menu__elements {
-    background-color: #283645;
+    background-color: $blue;
   }
   .menu-elements__item {
     border-top: 1px solid #485461;
     border-bottom: 1px solid;
   }
-  .menu-elements__link {
-      font-family: "[OpenSans]";
-      font-size: 18px;
-      line-height: 32px;
-      color: #fff;
+  .menu__link {
+      font-family: $OpenSans;
+      font-size: $medium;
+      line-height: $medium;
+      color: $white;
       text-align: center;
-      display: inline-block;
+      display: $inline-block;
       vertical-align: middle;
-      padding-top: 25px;
-      padding-bottom: 24px;
+      padding-top: 26px;
+      padding-bottom: 23px;
   }

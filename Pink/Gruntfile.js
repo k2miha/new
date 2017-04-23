@@ -10,18 +10,6 @@ module.exports = function(grunt) {
                     }
                 }
             },
-    // postcss: {
-    //     		options: {
-    //   		processors: [
-    //   			require('precss')()
-    //   		]
-    //         		},
-    //   style: {
-    //     files: {
-    //         "css/style.css": "postcss/style.css"
-    //     }
-    //   }
-    // },
     postcss: {
   		options: {
   			processors: [

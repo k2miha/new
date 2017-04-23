@@ -1,4 +1,4 @@
 .promo {
   background-image: url("../../img/promo-background.png");
-  background-repeat: no-repeat;
+  background-repeat: $no-repeat;
 }

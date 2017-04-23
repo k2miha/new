@@ -1,6 +1,6 @@
 .main-header {
-  background-color: #283645;
+  background-color: $blue;
   background-image: url("../../img/back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  height: 462px;
+  background-repeat: $no-repeat;
+  min-height: 462px;
 }

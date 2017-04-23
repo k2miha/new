@@ -1,36 +1,35 @@
-$blue: #283645;
 .second-slider {
   background-image: url("../../img/Shape_2_copy.png");
 }
 .second-slider__header {
-  background-color: #283645;
+  background-color: $blue;
 }
 .second-slider__package {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  line-height: 30px;
+  font-family: $OpenSans;
+  font-size: $medium;
+  font-weight: $bold;
+  color: $white;
+  text-transform: $uppercase;
+  line-height: $biggest;
 }
 .second-slider__price {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
-  font-weight: 300;
-  color: #fff;
-  line-height: 30px;
+  font-family: $OpenSans;
+  font-size: $big;
+  font-weight: $light;
+  color: $white;
+  line-height: $biggest;
 }
 .second-slider__hit {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $OpenSans;
   font-weight: 600;
-  font-size: 14px;
-  color: #fff;
-  line-height: 30px;
+  font-size: $small;
+  color: $white;
+  line-height: $biggest;
   background-color: #d22856;
 }
 .second-slider__option {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 30px;
+  font-family: $OpenSans;
+  font-size: $small;
+  line-height: $biggest;
   color: $blue;
 }
