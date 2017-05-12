@@ -3,4 +3,8 @@
   background-image: url("../../img/back-mobile@1x.jpg");
   background-repeat: $no-repeat;
   min-height: 462px;
+
+  &--short {
+    min-height: 243px;
+  }
 }

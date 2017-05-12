@@ -1,4 +1,17 @@
 .promo {
   background-image: url("../../img/promo-background.png");
   background-repeat: $no-repeat;
+
+  &__content-title {
+    font-family: $OpenSans;
+    font-weight: $bold;
+    font-size: $medium;
+    line-height: $big;
+  }
+  &__content-description {
+    font-family: $OpenSans;
+    font-size: $small;
+    line-height: $big;
+    color: $blue;
+  }
 }

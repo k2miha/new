@@ -8,8 +8,13 @@
   <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
 </head>
 <body>
-  <header class="photos-header">
-    <h1 class="photos-header__title">Pink</h1>
+  <header class="main-header main-header--short">
+    <div class="logotype">
+      <a class="site-logo" href="index.html" title="Pink">
+          <img class="site-logo__image" src="img/logotype-white-mobile.svg" alt="Logo" />
+      </a>
+      <img class="logotype__menu-button" src="img/menu-burger.svg" alt="Menu-button" />
+    </div>
     <nav class="menu">
       <button class="menu__button" type="button" name="close" title="Меню"></button>
       <ul class="menu__elements">
@@ -19,7 +24,7 @@
         <li class="menu__element"><a class="menu__link" href="http://htmlacademy.ru">HMTL Academy</a></li>
       </ul>
     </nav>
-    <p class="photos-header__slogan">Фотографии пользователей</p>
+    <p class="main-header__slogan">Фотографии пользователей</p>
   </header>
   <main class="main-content">
     <div class="photos">
@@ -27,12 +32,12 @@
         Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?
       </p>
-      <div class="photos__element--panorama">
-        <img class="photos__element--panorama-image" src="http://placehold.it/320x137" alt="panorama" />
-        <span class="photos__element--panorama-label">ПАНОРАМА ДНЯ</span>
-        <p class="photos__element--panorama-comment">
-          <b class="photos__element--panorama-author">Анна</b>
-          <span class="photos__element--panorama-time"> (5 минут назад)</span>
+      <div class="photos__element photos__element--panorama">
+        <img class="photos__element photos__element--panorama-image" src="http://placehold.it/320x137" alt="panorama" />
+        <span class="photos__element photos__element--panorama-label">ПАНОРАМА ДНЯ</span>
+        <p class="photos__element photos__element--panorama-comment">
+          <b class="photos__element photos__element--panorama-author">Анна</b>
+          <span class="photos__element photos__element--panorama-time"> (5 минут назад)</span>
           Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
         </p>
         <div class="like">
@@ -42,11 +47,11 @@
         </div>
       </div>
     </div>
-    <div class="photos__element--auto">
-      <img class="photos__element--auto-image" src="http://placehold.it/280x180" alt="auto" />
-      <p class="photos__element--auto-comment">
-        <b class="photos__element--auto-author">Левон</b>
-        <span class="photos__element--auto-time"> (5 часов назад)</span>
+    <div class="photos__element photos__element--auto">
+      <img class="photos__element photos__element--auto-image" src="http://placehold.it/280x180" alt="auto" />
+      <p class="photos__element photos__element--auto-comment">
+        <b class="photos__element photos__element--auto-author">Левон</b>
+        <span class="photos__element photos__element--auto-time"> (5 часов назад)</span>
         Вчера он на луну летал, сегодня в руки к нам попал.
       </p>
       <div class="like">
@@ -55,11 +60,11 @@
         <span class="like__count">356</span>
       </div>
     </div>
-    <div class="photos__element--drums">
-      <img class="photos__element--drums-image" src="http://placehold.it/280x180" alt="drums" />
-      <p class="photos__element--drums-comment">
-        <b class="photos__element--drums-author">Антон</b>
-        <span class="photos__element--drums-time"> (12 часов  назад)</span>
+    <div class="photos__element photos__element--drums">
+      <img class="photos__element photos__element--drums-image" src="http://placehold.it/280x180" alt="drums" />
+      <p class="photos__element photos__element--drums-comment">
+        <b class="photos__element photos__element--drums-author">Антон</b>
+        <span class="photos__element photos__element--drums-time"> (12 часов  назад)</span>
         Соседи будут рады!
       </p>
       <div class="like">
@@ -68,11 +73,11 @@
         <span class="like__count">666</span>
       </div>
     </div>
-    <div class="photos__element--roof">
-      <img class="photos__element--roof-image" src="http://placehold.it/280x180" alt="roof" />
-      <p class="photos__element--roof-comment">
-        <b class="photos__element--roof-author">Борис</b>
-        <span class="photos__element--roof-time"> (20 часов  назад)</span>
+    <div class="photos__element photos__element--roof">
+      <img class="photos__element photos__element--roof-image" src="http://placehold.it/280x180" alt="roof" />
+      <p class="photos__element photos__element--roof-comment">
+        <b class="photos__element photos__element--roof-author">Борис</b>
+        <span class="photos__element photos__element--roof-time"> (20 часов  назад)</span>
         Здесь могла быть ваша цитата о высоком и вечном.
       </p>
       <div class="like">
@@ -81,11 +86,11 @@
         <span class="like__count">215</span>
       </div>
     </div>
-    <div class="photos__element--bakhcha">
-      <img class="photos__element--bakhcha-image" src="http://placehold.it/280x180" alt="bakhcha" />
-      <p class="photos__element--bakhcha-comment">
-        <b class="photos__element--bakhcha-author">Сергей</b>
-        <span class="photos__element--bakhcha-time"> (25 часов  назад)</span>
+    <div class="photos__element photos__element--bakhcha">
+      <img class="photos__element photos__element--bakhcha-image" src="http://placehold.it/280x180" alt="bakhcha" />
+      <p class="photos__element photos__element--bakhcha-comment">
+        <b class="photos__element photos__element--bakhcha-author">Сергей</b>
+        <span class="photos__element photos__element--bakhcha-time"> (25 часов  назад)</span>
         Самая кубанская в мире!
       </p>
       <div class="like">
@@ -94,11 +99,11 @@
         <span class="like__count">4</span>
       </div>
     </div>
-    <div class="photos__element--legs">
-      <img class="photos__element--legs-image" src="http://placehold.it/280x180" alt="legs" />
-      <p class="photos__element--legs-comment">
-        <b class="photos__element--legs-author">Максим</b>
-        <span class="photos__element--legs-time"> (40 часов  назад)</span>
+    <div class="photos__element photos__element--legs">
+      <img class="photos__element photos__element--legs-image" src="http://placehold.it/280x180" alt="legs" />
+      <p class="photos__element photos__element--legs-comment">
+        <b class="photos__element photos__element--legs-author">Максим</b>
+        <span class="photos__element photos__element--legs-time"> (40 часов  назад)</span>
         Где снег-то?
       </p>
       <div class="like">
@@ -107,11 +112,11 @@
         <span class="like__count">150</span>
       </div>
     </div>
-    <div class="photos__element--plane">
-      <img class="photos__element--plane-image" src="http://placehold.it/280x180" alt="plane" />
-      <p class="photos__element--plane-comment">
-        <b class="photos__element--plane-author">Надежда</b>
-        <span class="photos__element--plane-time"> (45 часов  назад)</span>
+    <div class="photos__element photos__element--plane">
+      <img class="photos__element photos__element--plane-image" src="http://placehold.it/280x180" alt="plane" />
+      <p class="photos__element photos__element--plane-comment">
+        <b class="photos__element photos__element--plane-author">Надежда</b>
+        <span class="photos__element photos__element--plane-time"> (45 часов  назад)</span>
         Всем GM и взаимные лайки!
       </p>
       <div class="like">
@@ -140,11 +145,16 @@
     </div>
   </main>
   <footer class="competition-footer">
-    <a class="site-logo" href="index.html" title="Pink">Pink</a>
+    <div class="logotype-bottom">
+        <img class="logotype-bottom__image" src="img/" alt="Logo image" />
+        <a class="site-logo" href="index.html" title="Pink">
+            <img class="site-logo__image" src="img/logotype-white-mobile.svg" alt="Logo" />
+        </a>
+    </div>
   	<div class="socials">
-        <a class="socials__element--twitter" href="http://twitter.com" title="twitter">twitter</a>
-        <a class="socials__element--facebook" href="http://facebook.com" title="facebook">facebook</a>
-        <a class="socials__element--youtube" href="http://youtube.com" title="youtube">youtube</a>
+        <a class="socials__element socials__element--twitter" href="http://twitter.com" title="twitter">twitter</a>
+        <a class="socials__element socials__element--facebook" href="http://facebook.com" title="facebook">facebook</a>
+        <a class="socials__element socials__element--youtube" href="http://youtube.com" title="youtube">youtube</a>
   	</div>
   	<div class="copyright">
   		<span class="copyright__maked">Разработано</span>
