@@ -1,4 +1,5 @@
 @import "../postcss/variables.css";
+@import "../postcss/mixins.css";
 @import "../postcss/blocks/competition-footer.css";
 @import "../postcss/blocks/content.css";
 @import "../postcss/blocks/copyright.css";

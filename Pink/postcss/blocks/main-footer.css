@@ -1,9 +1,8 @@
-.main-footer__description {
-  font-family: $OpenSans;
-  font-weight: $light;
-  font-size: $big;
-  color: $blue;
-}
 .main-footer__block-title {
   font-family: $OpenSans;
+}
+.main-footer__description {
+  @mixin font_options $OpenSans, $big, $blue, $line-height; {
+    font-weight: $light;
+  }
 }
