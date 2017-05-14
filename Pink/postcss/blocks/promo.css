@@ -3,15 +3,9 @@
   background-repeat: $no-repeat;
 
   &__content-title {
-    font-family: $OpenSans;
-    font-weight: $bold;
-    font-size: $medium;
-    line-height: $big;
+    @mixin font_options $OpenSans, $medium, black, $big, $bold;
   }
   &__content-description {
-    font-family: $OpenSans;
-    font-size: $small;
-    line-height: $big;
-    color: $blue;
+    @mixin font_options $OpenSans, $small, $blue, $big, $normal;
   }
 }

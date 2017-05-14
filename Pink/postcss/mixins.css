@@ -1,7 +1,7 @@
-@define-mixin font_options $OpenSans, $big, $blue, $line-height {
+@define-mixin font_options $OpenSans, $big, $blue, $normal, $regular: {
   font-family: $OpenSans;
   font-size: $big;
   color: $blue;
-  line-height: $line-height;
-  @mixin-content;
+  line-height: $normal;
+  font-weight: $regular;
 }

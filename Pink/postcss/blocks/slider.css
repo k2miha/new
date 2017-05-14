@@ -1,12 +1,6 @@
 .slider__title {
-  font-family: $OpenSans;
-  font-size: $medium;
-  font-weight: $bold;
-  line-height: $biggest;
+  @mixin font_options $OpenSans, $medium, black, $biggest, $bold;
 }
 .slider__description {
-  font-family: $OpenSans;
-  font-size: $small;
-  line-height: $biggest;
-  color: $blue;
+  @mixin font_options $OpenSans, $small, $blue, $biggest, $regular;
 }

@@ -1,5 +1,3 @@
 .content__slogan {
-  font-family: $OpenSans;
-  font-size: $big;
-  color: $blue;
+  @mixin font_options $OpenSans, $big, $blue, $normal, $normal;
 }

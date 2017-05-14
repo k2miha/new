@@ -3,34 +3,23 @@
 
   &__header {
     background-color: $blue;
-}
-  &__package {
-    font-family: $OpenSans;
-    font-size: $medium;
-    font-weight: $bold;
-    color: $white;
-    text-transform: $uppercase;
-    line-height: $biggest;
-}
-  &__price {
-    font-family: $OpenSans;
-    font-size: $big;
-    font-weight: $light;
-    color: $white;
-    line-height: $biggest;
-}
-  &__hit {
-    font-family: $OpenSans;
-    font-weight: 600;
-    font-size: $small;
-    color: $white;
-    line-height: $biggest;
-    background-color: #d22856;
-}
-  &__option {
-    font-family: $OpenSans;
-    font-size: $small;
-    line-height: $biggest;
-    color: $blue;
-}
+  }
+    &__package {
+      @mixin font_options $OpenSans, $medium, $white, $biggest, $bold;
+      text-transform: $uppercase;
+  }
+    &__price {
+      @mixin font_options $OpenSans, $big, $white, $biggest, $light;
+  }
+    &__hit {
+      @mixin font_options $OpenSans, $small, $white, $biggest, 600;
+      background-color: #d22856;
+  }
+    &__option {
+      @mixin font_options $OpenSans, $small, $blue, $biggest, $normal;
+      }
+    &__options {
+      background-color: #fff;
+      margin: 0;
+    }
 }

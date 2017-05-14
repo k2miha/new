@@ -10,15 +10,12 @@
     border-bottom: 1px solid;
   }
   &__link {
-      font-family: $OpenSans;
-      font-size: $medium;
-      line-height: $medium;
-      color: $white;
-      text-align: center;
-      display: $inline-block;
-      vertical-align: middle;
-      padding-top: 26px;
-      padding-bottom: 23px;
+      @mixin font_options $OpenSans, $medium, $white, $medium, $normal;
+        text-align: center;
+        display: $inline-block;
+        vertical-align: middle;
+        padding-top: 26px;
+        padding-bottom: 23px;
   }
   &__button {
     padding: 0;
