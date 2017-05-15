@@ -1,17 +1,26 @@
 .main-footer {
   background-image: url("../img/Layer 153.jpg");
+  background-repeat: $no-repeat;
   min-height: 645px;
-  
+
   &__block-title {
     @mixin font_options $OpenSans, $medium, $blue, $normal, $bold;
-    background-color: #fff;
+    @mixin white_background;
+    padding-top: 28px;
+    padding-bottom: 11px;
   }
   &__description {
     @mixin font_options $OpenSans, $big, $blue, $normal, $light;
-    background-color: #fff;
+    @mixin white_background;
+    padding-top: 48px;
+    padding-bottom: 17px;
   }
   &__block-content {
-    @mixin font_options $OpenSans, $big, #d22856, $normal, $light;
-    background-color: #fff;
+    @mixin font_options $OpenSans, $big, $magenta, $normal, $light;
+    @mixin white_background;
+    display: block;
+  }
+  &__block-content:first-of-type {
+    text-decoration: none;
   }
 }

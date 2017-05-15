@@ -13,13 +13,13 @@
   }
     &__hit {
       @mixin font_options $OpenSans, $small, $white, $biggest, 600;
-      background-color: #d22856;
+      background-color: $magenta;
   }
     &__option {
       @mixin font_options $OpenSans, $small, $blue, $biggest, $normal;
       }
     &__options {
-      background-color: #fff;
+      background-color: $white;
       margin: 0;
     }
 }

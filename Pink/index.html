@@ -12,12 +12,16 @@
   <header class="main-header">
     <div class="logotype">
       <a class="site-logo" title="Pink">
-          <img class="site-logo__image" src="img/logotype-white-mobile.svg" alt="Logo" />
+        <img class="site-logo__image" src="img/logotype-white-mobile.svg" alt="Logo" />
       </a>
-      <img class="logotype__menu-button" src="img/menu-burger.svg" alt="Menu-button" />
+      <button class="logotype__menu-button" type="button" name="open" title="Меню">
+        <img class="logotype__menu-button-img" src="img/menu-burger.svg" alt="Menu-button" />
+      </button>
     </div>
     <nav class="menu">
-      <button class="menu__button" type="button" name="close" title="Меню"></button>
+      <button class="menu__button" type="button" name="close" title="Меню">
+        <img class="menu__button-image" src="img/menu-cross.svg" alt="Cross" />
+      </button>
       <ul class="menu__elements">
         <li class="menu__element"><a class="menu__link">Главная</a></li>
         <li class="menu__element"><a class="menu__link" href="photos.html">Фотографии</a></li>

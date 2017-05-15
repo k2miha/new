@@ -1,11 +1,16 @@
 .promo {
-  background-image: url("../../img/promo-background.png");
-  background-repeat: $no-repeat;
+  background-color: #f2f2f2;
+  @mixin list_reset;
 
   &__content-title {
     @mixin font_options $OpenSans, $medium, black, $big, $bold;
+    margin: 0;
   }
   &__content-description {
     @mixin font_options $OpenSans, $small, $blue, $big, $normal;
+  }
+  &__item {
+    text-align: center;
+    padding: 0px 24px;
   }
 }

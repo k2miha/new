@@ -4,18 +4,21 @@
 
   &__elements {
     background-color: $blue;
+    @mixin list_reset;
   }
   &__element {
     border-top: 1px solid #485461;
     border-bottom: 1px solid;
+    text-align: $center;
   }
   &__link {
-      @mixin font_options $OpenSans, $medium, $white, $medium, $normal;
-        text-align: center;
-        display: $inline-block;
-        vertical-align: middle;
-        padding-top: 26px;
-        padding-bottom: 23px;
+    @mixin font_options $OpenSans, $medium, $white, $medium, $bold;
+    text-transform: $uppercase;
+    text-decoration: none;
+    display: $inline-block;
+    vertical-align: middle;
+    padding-top: 26px;
+    padding-bottom: 23px;
   }
   &__button {
     padding: 0;
