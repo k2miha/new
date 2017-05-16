@@ -7,4 +7,7 @@
   &--short {
     min-height: 243px;
   }
+  &__slogan {
+    @mixin font_options $OpenSans, $big, $white, $normal, $light, $center;
+  }
 }

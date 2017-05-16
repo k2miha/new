@@ -1,16 +1,25 @@
 .promo {
-  background-color: #f2f2f2;
+  background-color: $grey;
   @mixin list_reset;
+  text-align: center;
+  overflow: hidden;
 
   &__content-title {
-    @mixin font_options $OpenSans, $medium, black, $big, $bold;
+    @mixin font_options $OpenSans, $medium, black, $big, $bold, $center;
     margin: 0;
   }
   &__content-description {
-    @mixin font_options $OpenSans, $small, $blue, $big, $normal;
+    @mixin font_options $OpenSans, $small, $blue, $big, $normal, $center;
+    margin-bottom: 40px;
+    margin-top: 19px;
   }
   &__item {
-    text-align: center;
     padding: 0px 24px;
+  }
+  &__item:last-child {
+    padding: 0px 20px;
+  }
+  &__content-image {
+    margin-bottom: -49px;
   }
 }

@@ -11,8 +11,12 @@
     border-bottom: 1px solid;
     text-align: $center;
   }
+  &__element:first-child {
+    text-align: left;
+    padding-left: 20px;
+  }
   &__link {
-    @mixin font_options $OpenSans, $medium, $white, $medium, $bold;
+    @mixin font_options $OpenSans, $medium, $white, $medium, $bold, $center;
     text-transform: $uppercase;
     text-decoration: none;
     display: $inline-block;
@@ -23,5 +27,6 @@
   &__button {
     padding: 0;
     border: 0;
+    background: transparent;
   }
 }

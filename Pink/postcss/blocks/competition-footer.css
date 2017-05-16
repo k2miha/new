@@ -1,4 +1,4 @@
-.competition-footer__form-field-requerements {
-  @mixin font_options $OpenSans, $small, $blue, $biggest, $normal;
+.competition-footer__form-field-requirements {
+  @mixin font_options $OpenSans, $small, $blue, $biggest, $normal, $center;
       text-transform: $uppercase;
 }

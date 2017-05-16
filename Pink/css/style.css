@@ -1,9 +1,10 @@
-.competition-footer__form-field-requerements {
+.competition-footer__form-field-requirements {
   font-family: 'Open Sans',sans-serif;
   font-size: 14px;
   color: #283645;
   line-height: 30px;
   font-weight: normal;
+  text-align: center;
   text-transform: uppercase;
 }
 .content {
@@ -36,6 +37,7 @@
   color: #283645;
   line-height: normal;
   font-weight: bold;
+  text-align: center;
   background-color: #fff;
   margin: 0;
   padding-top: 28px;
@@ -47,6 +49,7 @@
   color: #283645;
   line-height: normal;
   font-weight: 300;
+  text-align: center;
   background-color: #fff;
   margin: 0;
   padding-top: 48px;
@@ -58,9 +61,11 @@
   color: #d22856;
   line-height: normal;
   font-weight: 300;
+  text-align: center;
   background-color: #fff;
   margin: 0;
   display: block;
+  padding: 0 2px;
 }
 .main-footer__block-content:first-of-type {
   text-decoration: none;
@@ -73,6 +78,14 @@
 }
 .main-header--short {
   min-height: 243px;
+}
+.main-header__slogan {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 24px;
+  color: #fff;
+  line-height: normal;
+  font-weight: 300;
+  text-align: center;
 }
 .menu {
   background-color: #283645;
@@ -89,12 +102,17 @@
   border-bottom: 1px solid;
   text-align: center;
 }
+.menu__element:first-child {
+  text-align: left;
+  padding-left: 20px;
+}
 .menu__link {
   font-family: 'Open Sans',sans-serif;
   font-size: 18px;
   color: #fff;
   line-height: 18px;
   font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
@@ -105,6 +123,32 @@
 .menu__button {
   padding: 0;
   border: 0;
+  background: transparent;
+}
+.photos__description {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 14px;
+  color: #283645;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 46px 30px 48px;
+}
+.photos__element {
+  background-color: #f2f2f2;
+}
+.photos__element--panorama-label {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 12px;
+  color: #fff;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #d22856;
+  padding-top: 13px;
+  padding-right: 21px;
+  padding-bottom: 11px;
+  padding-left: 20px;
 }
 .platforms {
   background-color: #1d2631;
@@ -117,6 +161,7 @@
   color: #fff;
   line-height: 18px;
   font-weight: bold;
+  text-align: center;
   vertical-align: top;
   padding-top: 17px;
   padding-bottom: 14px;
@@ -125,7 +170,6 @@
   margin: auto;
   margin-bottom: 32px;
   display: block;
-  text-align: center;
   width: 258px;
 }
 .platforms__description {
@@ -144,6 +188,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  text-align: center;
+  overflow: hidden;
 }
 .promo__content-title {
   font-family: 'Open Sans',sans-serif;
@@ -151,6 +197,7 @@
   color: black;
   line-height: 24px;
   font-weight: bold;
+  text-align: center;
   margin: 0;
 }
 .promo__content-description {
@@ -159,16 +206,27 @@
   color: #283645;
   line-height: 24px;
   font-weight: normal;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 19px;
 }
 .promo__item {
-  text-align: center;
   padding: 0px 24px;
+}
+.promo__item:last-child {
+  padding: 0px 20px;
+}
+.promo__content-image {
+  margin-bottom: -49px;
 }
 .second-slider {
   background-image: url("../../img/Shape_2_copy.png");
+  padding-top: 133px;
 }
 .second-slider__header {
   background-color: #283645;
+  text-align: center;
+  padding-bottom: 20px;
 }
 .second-slider__package {
   font-family: 'Open Sans',sans-serif;
@@ -176,7 +234,11 @@
   color: #fff;
   line-height: 30px;
   font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
+  padding-top: 19px;
+  margin: 0;
+  margin-bottom: 3px;
 }
 .second-slider__price {
   font-family: 'Open Sans',sans-serif;
@@ -184,6 +246,7 @@
   color: #fff;
   line-height: 30px;
   font-weight: 300;
+  text-align: center;
 }
 .second-slider__hit {
   font-family: 'Open Sans',sans-serif;
@@ -191,6 +254,7 @@
   color: #fff;
   line-height: 30px;
   font-weight: 600;
+  text-align: center;
   background-color: #d22856;
 }
 .second-slider__option {
@@ -199,10 +263,23 @@
   color: #283645;
   line-height: 30px;
   font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: 2px solid #e5e5e5;
+  padding-left: 44px;
+  padding-top: 14px;
+  padding-bottom: 15px;
 }
 .second-slider__options {
   background-color: #fff;
+  list-style: none;
+  padding: 0;
   margin: 0;
+}
+.second-slider__tumbler {
+  padding-top: 40px;
+  padding-bottom: 47px;
+  background-color: #f2f2f2;
 }
 .slider__title {
   font-family: 'Open Sans',sans-serif;
@@ -210,6 +287,9 @@
   color: black;
   line-height: 30px;
   font-weight: bold;
+  text-align: center;
+  margin-top: 49px;
+  margin-bottom: 25px;
 }
 .slider__description {
   font-family: 'Open Sans',sans-serif;
@@ -217,6 +297,9 @@
   color: #283645;
   line-height: 30px;
   font-weight: 400;
+  text-align: center;
+  margin: 0px 17px;
+  margin-bottom: 39px;
 }
 .logotype {
   padding-left: 20px;

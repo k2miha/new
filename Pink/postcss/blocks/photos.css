@@ -1,0 +1,15 @@
+.photos__description {
+  @mixin font_options $OpenSans, $small, $blue, $biggest, $regular, $center;
+  margin: 46px 30px 48px;
+}
+.photos__element {
+  background-color: $grey;
+}
+.photos__element--panorama-label {
+  @mixin font_options $OpenSans, 12px, $white, $big, $bold, $center;
+  background-color: $magenta;
+  padding-top: 13px;
+  padding-right: 21px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+}

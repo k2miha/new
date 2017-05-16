@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=320, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Конкурс</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
 </head>
 <body>
@@ -13,11 +14,18 @@
       <a class="site-logo" href="index.html" title="Pink">
           <img class="site-logo__image" src="img/logotype-white-mobile.svg" alt="Logo" />
       </a>
-      <img class="logotype__menu-button" src="img/menu-burger.svg" alt="Menu-button" />
+      <button class="logotype__menu-button" type="button" name="open" title="Меню">
+        <img class="logotype__menu-button-img" src="img/menu-burger.svg" alt="Menu-button" />
+      </button>
     </div>
     <nav class="menu">
-      <button class="menu__button" type="button" name="close" title="Меню"></button>
       <ul class="menu__elements">
+        <li class="menu__element"><a class="menu__link" title="Pink">
+            <img class="site-logo__image" src="img/logotype-white-mobile.svg" alt="Logo" />
+          <button class="menu__button" type="button" name="close" title="Меню">
+            <img class="menu__button-image" src="img/menu-cross.svg" alt="Cross" />
+          </button>
+        </a></li>
         <li class="menu__element"><a class="menu__link" href="index.html">Главная</a></li>
         <li class="menu__element"><a class="menu__link" href="photos.html">Фотографии</a></li>
         <li class="menu__element"><a class="menu__link">Конкурс</a></li>
@@ -95,7 +103,7 @@
      </div>
   </main>
   <footer class="competition-footer">
-  	<p class="competition-footer__form-field-requerements"><span>*</span> — обязательные поля</p>
+  	<p class="competition-footer__form-field-requirements"><span>*</span> — обязательные поля</p>
     <div class="logotype-bottom">
         <img class="logotype-bottom__image" src="img/" alt="Logo image" />
         <a class="site-logo" href="index.html" title="Pink">
