@@ -1,0 +1,15 @@
+.photo-editor {
+  text-align: $center;
+  background-image: url("../../img/grey-back.jpg");
+
+  &__image {
+    display: block;
+    margin-left: 18px;
+    margin-right: 20px;
+    padding-top: 20px;
+    width: 87%;
+  }
+  &__button {
+    @mixin button_reset;
+  }
+}

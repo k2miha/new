@@ -20,12 +20,14 @@
     </div>
     <nav class="menu">
       <ul class="menu__elements">
-        <li class="menu__element"><a class="menu__link" title="Pink">
+        <li class="menu__element">
+          <a class="menu__link" title="Pink">
             <img class="site-logo__image" src="img/logotype-white-mobile.svg" alt="Logo" />
+          </a>
           <button class="menu__button" type="button" name="close" title="Меню">
             <img class="menu__button-image" src="img/menu-cross.svg" alt="Cross" />
           </button>
-        </a></li>
+        </li>
         <li class="menu__element"><a class="menu__link" href="index.html">Главная</a></li>
         <li class="menu__element"><a class="menu__link">Фотографии</a></li>
         <li class="menu__element"><a class="menu__link" href="competition.html">Конкурс</a></li>
@@ -41,107 +43,135 @@
         Видите, как не хватает ваших?
       </p>
       <div class="photos__element photos__element--panorama">
-        <img class="photos__element photos__element--panorama-image" src="img/panorama-mobile.jpg" alt="panorama" />
-        <span class="photos__element photos__element--panorama-label">ПАНОРАМА ДНЯ</span>
-        <p class="photos__element photos__element--panorama-comment">
-          <b class="photos__element photos__element--panorama-author">Анна</b>
-          <span class="photos__element photos__element--panorama-time"> (5 минут назад)</span>
-          Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
-        </p>
+        <div class="photos__element photos__element--panorama-image-block">
+          <img class="photos__element photos__element--panorama-image" src="img/panorama-mobile.jpg" alt="panorama" />
+          <span class="photos__element photos__element--panorama-label">ПАНОРАМА ДНЯ</span>
+        </div>
+        <div class="photos__element-comment">
+          <b class="photos__element-author">Анна</b>
+          <span class="photos__element-time"> (5 минут назад)</span>
+          <p class="photos__element-message">
+            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
+          </p>
+        </div>
         <div class="like">
-          <button class="like__button" title="like"></button>
+          <button class="like__button" title="like">
+            <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+          </button>
           <span class="like__description">Нравится:</span>
           <span class="like__count">215</span>
         </div>
       </div>
-    </div>
     <div class="photos__element photos__element--auto">
-      <img class="photos__element photos__element--auto-image" src="http://placehold.it/280x180" alt="auto" />
-      <p class="photos__element photos__element--auto-comment">
-        <b class="photos__element photos__element--auto-author">Левон</b>
-        <span class="photos__element photos__element--auto-time"> (5 часов назад)</span>
-        Вчера он на луну летал, сегодня в руки к нам попал.
-      </p>
+      <img class="photos__element-image" src="img/photo-1-mobile.jpg" alt="auto" />
+      <div class="photos__element-comment">
+        <b class="photos__element-author">Левон</b>
+        <span class="photos__element-time"> (5 часов назад)</span>
+        <p class="photos__element-message">
+          Вчера он на луну летал, сегодня в руки к нам попал.
+        </p>
+      </div>
       <div class="like">
-        <button class="like__button" title="like"></button>
+        <button class="like__button" title="like">
+          <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+        </button>
         <span class="like__description">Нравится:</span>
         <span class="like__count">356</span>
       </div>
     </div>
     <div class="photos__element photos__element--drums">
-      <img class="photos__element photos__element--drums-image" src="http://placehold.it/280x180" alt="drums" />
-      <p class="photos__element photos__element--drums-comment">
-        <b class="photos__element photos__element--drums-author">Антон</b>
-        <span class="photos__element photos__element--drums-time"> (12 часов  назад)</span>
-        Соседи будут рады!
-      </p>
+      <img class="photos__element-image" src="img/photo-2-mobile.jpg" alt="drums" />
+      <div class="photos__element-comment">
+        <b class="photos__element-author">Антон</b>
+        <span class="photos__element-time"> (12 часов  назад)</span>
+        <p class="photos__element-message">
+          Соседи будут рады!
+        </p>
+      </div>
       <div class="like">
-        <button class="like__button" title="like"></button>
+        <button class="like__button" title="like">
+          <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+        </button>
         <span class="like__description">Нравится:</span>
         <span class="like__count">666</span>
       </div>
     </div>
     <div class="photos__element photos__element--roof">
-      <img class="photos__element photos__element--roof-image" src="http://placehold.it/280x180" alt="roof" />
-      <p class="photos__element photos__element--roof-comment">
-        <b class="photos__element photos__element--roof-author">Борис</b>
-        <span class="photos__element photos__element--roof-time"> (20 часов  назад)</span>
-        Здесь могла быть ваша цитата о высоком и вечном.
-      </p>
+      <img class="photos__element-image" src="img/photo-3-mobile.jpg" alt="roof" />
+      <div class="photos__element-comment">
+        <b class="photos__element-author">Борис</b>
+        <span class="photos__element-time"> (20 часов  назад)</span>
+        <p class="photos__element-message">
+          Здесь могла быть ваша цитата о высоком и вечном.
+        </p>
+      </div>
       <div class="like">
-        <button class="like__button" title="like"></button>
+        <button class="like__button" title="like">
+          <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+        </button>
         <span class="like__description">Нравится:</span>
         <span class="like__count">215</span>
       </div>
     </div>
     <div class="photos__element photos__element--bakhcha">
-      <img class="photos__element photos__element--bakhcha-image" src="http://placehold.it/280x180" alt="bakhcha" />
-      <p class="photos__element photos__element--bakhcha-comment">
-        <b class="photos__element photos__element--bakhcha-author">Сергей</b>
-        <span class="photos__element photos__element--bakhcha-time"> (25 часов  назад)</span>
-        Самая кубанская в мире!
-      </p>
+      <img class="photos__element-image" src="img/photo-4-mobile.jpg" alt="bakhcha" />
+      <div class="photos__element-comment">
+        <b class="photos__element-author">Сергей</b>
+        <span class="photos__element-time"> (25 часов  назад)</span>
+        <p class="photos__element-message">Самая кубанская в мире!</p>
+      </div>
       <div class="like">
-        <button class="like__button" title="like"></button>
+        <button class="like__button" title="like">
+          <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+        </button>
         <span class="like__description">Нравится:</span>
         <span class="like__count">4</span>
       </div>
     </div>
     <div class="photos__element photos__element--legs">
-      <img class="photos__element photos__element--legs-image" src="http://placehold.it/280x180" alt="legs" />
-      <p class="photos__element photos__element--legs-comment">
-        <b class="photos__element photos__element--legs-author">Максим</b>
-        <span class="photos__element photos__element--legs-time"> (40 часов  назад)</span>
-        Где снег-то?
-      </p>
+      <img class="photos__element-image" src="img/photo-5-mobile.jpg" alt="legs" />
+      <div class="photos__element-comment">
+        <b class="photos__element-author">Максим</b>
+        <span class="photos__element-time"> (40 часов  назад)</span>
+        <p class="photos__element-message">Где снег-то?</p>
+      </div>
       <div class="like">
-        <button class="like__button" title="like"></button>
+        <button class="like__button" title="like">
+          <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+        </button>
         <span class="like__description">Нравится:</span>
         <span class="like__count">150</span>
       </div>
     </div>
     <div class="photos__element photos__element--plane">
-      <img class="photos__element photos__element--plane-image" src="http://placehold.it/280x180" alt="plane" />
-      <p class="photos__element photos__element--plane-comment">
-        <b class="photos__element photos__element--plane-author">Надежда</b>
-        <span class="photos__element photos__element--plane-time"> (45 часов  назад)</span>
-        Всем GM и взаимные лайки!
-      </p>
+      <img class="photos__element-image" src="img/photo-6-mobile.jpg" alt="plane" />
+      <div class="photos__element-comment">
+        <b class="photos__element-author">Надежда</b>
+        <span class="photos__element-time"> (45 часов  назад)</span>
+        <p class="photos__element-message">Всем GM и взаимные лайки!</p>
+      </div>
       <div class="like">
-        <button class="like__button" title="like"></button>
+        <button class="like__button" title="like">
+          <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+        </button>
         <span class="like__description">Нравится:</span>
         <span class="like__count">2560</span>
       </div>
     </div>
     <p class="photos__description">
-      Затмите их всех!
+      Затмите их всех!<br>
       Выкладывайте все, что накопилось в телефоне!
      </p>
+    </div>
     <div class="photo-editor">
-      <img class="photo-editor__image" src="http://placehold.it/280x374" alt="winter-road" />
+      <img class="photo-editor__image" src="img/photo-7-mobile.jpg" alt="winter-road" />
       <div class="photo-editor__functions">
-        <button class="photo-editor__crop" title="crop"></button>
-        <button class="photo-editor__fill" title="fill"></button>
+        <button class="photo-editor__button" title="crop">
+          <img class="photo-editor__crop-image" src="img/crop.svg" alt="crop-icon" />
+        </button>
+        <button class="photo-editor__button" title="fill">
+          <img class="photo-editor__fill-image" src="img/fill.svg" alt="crop-icon" />
+        </button>
         <button class="photo-editor__contrast" title="contrast"></button>
       </div>
       <form class="photo-editor__function-tuning" action="https://echo.htmlacademy.ru" method="post">

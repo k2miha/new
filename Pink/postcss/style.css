@@ -1,3 +1,4 @@
+@import "../postcss/global/fonts.css";
 @import "../postcss/variables.css";
 @import "../postcss/mixins.css";
 @import "../postcss/blocks/competition-footer.css";

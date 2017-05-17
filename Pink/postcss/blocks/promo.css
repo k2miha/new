@@ -1,15 +1,15 @@
 .promo {
   background-color: $grey;
   @mixin list_reset;
-  text-align: center;
+  text-align: $center;
   overflow: hidden;
 
   &__content-title {
-    @mixin font_options $OpenSans, $medium, black, $big, $bold, $center;
+    @mixin font_options $OpenSans_bold, $medium, black, $big, $bold, $center;
     margin: 0;
   }
   &__content-description {
-    @mixin font_options $OpenSans, $small, $blue, $big, $normal, $center;
+    @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $center;
     margin-bottom: 40px;
     margin-top: 19px;
   }

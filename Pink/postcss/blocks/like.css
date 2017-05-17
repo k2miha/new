@@ -1,0 +1,19 @@
+.like {
+  background-color: $grey;
+  width: 246px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 26px;
+  padding-left: 17px;
+
+  &__button {
+    @mixin button_reset;
+  }
+  &__description {
+    @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center;
+    text-transform: $uppercase;
+  }
+  &__count {
+    @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center;
+  }
+}

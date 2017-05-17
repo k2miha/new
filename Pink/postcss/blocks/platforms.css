@@ -4,7 +4,7 @@
   padding-bottom: 35px;
 
   &__download-link {
-    @mixin font_options $OpenSans, $medium, $white, $medium, $bold, $center;
+    @mixin font_options $OpenSans_bold, $medium, $white, $medium, $bold, $center;
     vertical-align: top;
     padding-top: 17px;
     padding-bottom: 14px;
@@ -16,7 +16,7 @@
     width: 258px;
   }
   &__description {
-    @mixin font_options $OpenSans, $small, $white, $big, $light, $center;
+    @mixin font_options $OpenSans_light, $small, $white, $big, $light, $center;
     padding-left: 33px;
     padding-right: 33px;
     margin: 0;

@@ -8,6 +8,6 @@
     min-height: 243px;
   }
   &__slogan {
-    @mixin font_options $OpenSans, $big, $white, $normal, $light, $center;
+    @mixin font_options $OpenSans_light, $big, $white, $normal, $light, $center;
   }
 }
