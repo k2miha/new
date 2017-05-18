@@ -1,0 +1,7 @@
+.copyright {
+  text-align: $center;
+
+  &__maked {
+    @mixin font_options $OpenSans_regular, $small, $blue, $medium, $regular, $center;
+  }
+}

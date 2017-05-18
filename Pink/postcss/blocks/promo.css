@@ -6,7 +6,7 @@
 
   &__content-title {
     @mixin font_options $OpenSans_bold, $medium, black, $big, $bold, $center;
-    margin: 0;
+    margin: $zero;
   }
   &__content-description {
     @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $center;
@@ -14,10 +14,10 @@
     margin-top: 19px;
   }
   &__item {
-    padding: 0px 24px;
+    padding: $zero 24px;
   }
   &__item:last-child {
-    padding: 0px 20px;
+    padding: $zero 20px;
   }
   &__content-image {
     margin-bottom: -49px;

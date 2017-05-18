@@ -54,6 +54,17 @@
 .content__slogan:last-child {
   padding-bottom: 119px;
 }
+.copyright {
+  text-align: center;
+}
+.copyright__maked {
+  font-family: 'Open Sans','open_sansregular',sans-serif;
+  font-size: 14px;
+  color: #283645;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
 .like {
   background-color: #f2f2f2;
   width: 246px;
@@ -180,8 +191,8 @@
 }
 .menu__button {
   padding: 0;
-  border: 0;
-  background: transparent;
+  border: none;
+  background-color: transparent;
 }
 .photo-editor {
   text-align: center;
@@ -193,11 +204,39 @@
   margin-right: 20px;
   padding-top: 20px;
   width: 87%;
+  margin-bottom: 42px;
 }
-.photo-editor__button {
+.photo-editor__image-modification-button {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+.photo-editor__functions {
+  margin-bottom: 33px;
+}
+.photo-editor__range {
+  margin-bottom: 28px;
+}
+.photo-editor__button {
+  font-family: 'Open Sans','open_sansbold',sans-serif;
+  font-size: 18px;
+  color: #d22856;
+  line-height: 18px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 12px;
+}
+.photo-editor__button--cancel {
+  color: #283645;
+  opacity: .1;
+}
+.photo-editor__function-tuning {
+  padding-bottom: 41px;
+}
+hr {
+  margin-bottom: 38px;
 }
 .photos__description {
   font-family: 'Open Sans','open_sansregular',sans-serif;
@@ -331,16 +370,17 @@
   margin-top: 19px;
 }
 .promo__item {
-  padding: 0px 24px;
+  padding: 0 24px;
 }
 .promo__item:last-child {
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 .promo__content-image {
   margin-bottom: -49px;
 }
 .second-slider {
   background-image: url("../../img/Shape_2_copy.png");
+  background-repeat: no-repeat;
   padding-top: 133px;
 }
 .second-slider__header {
@@ -401,6 +441,15 @@
   padding-bottom: 47px;
   background-color: #f2f2f2;
 }
+.site-logo {
+  text-decoration: none;
+}
+.site-logo--footer {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 43px;
+}
 .slider__title {
   font-family: 'Open Sans','open_sansbold',sans-serif;
   font-size: 18px;
@@ -418,8 +467,15 @@
   line-height: 30px;
   font-weight: 400;
   text-align: center;
-  margin: 0px 17px;
+  margin: 0 17px;
   margin-bottom: 39px;
+}
+.socials {
+  text-align: center;
+  margin-bottom: 42px;
+}
+.socials__element {
+  text-decoration: none;
 }
 .logotype {
   padding-left: 20px;
@@ -431,6 +487,15 @@
 .logotype__menu-button {
   background-color: transparent;
   border: none;
+}
+.site-logo {
+  text-decoration: none;
+}
+.site-logo--footer {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 43px;
 }
 body {
   margin: 0;

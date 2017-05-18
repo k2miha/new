@@ -5,7 +5,7 @@
 .photos__element-comment {
   background-color: $grey;
   width: 240px;
-  margin: 0 auto;
+  margin: $zero $auto;
   margin-top: -4px;
   padding-top: 25px;
   padding-left: 17px;
@@ -20,7 +20,7 @@
   padding-bottom: 5px;
   padding-left: 20px;
   position: absolute;
-  top: 0;
+  top: $zero;
 }
 .photos__element--panorama-image {
   width: 100%;
@@ -36,11 +36,11 @@
   text-transform: $uppercase;
 }
 .photos__element-message {
-  margin: 0;
+  margin: $zero;
   @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, left;
 }
 .photos__element-image {
-  display: block;
-  margin: 0 20px;
+  display: $block;
+  margin: $zero 20px;
   width: 87%;
 }

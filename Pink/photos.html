@@ -166,37 +166,44 @@
     <div class="photo-editor">
       <img class="photo-editor__image" src="img/photo-7-mobile.jpg" alt="winter-road" />
       <div class="photo-editor__functions">
-        <button class="photo-editor__button" title="crop">
+        <button class="photo-editor__image-modification-button" title="crop">
           <img class="photo-editor__crop-image" src="img/crop.svg" alt="crop-icon" />
         </button>
-        <button class="photo-editor__button" title="fill">
+        <button class="photo-editor__image-modification-button" title="fill">
           <img class="photo-editor__fill-image" src="img/fill.svg" alt="crop-icon" />
         </button>
-        <button class="photo-editor__contrast" title="contrast"></button>
+        <button class="photo-editor__image-modification-button" title="contrast">
+          <img class="photo-editor__contrast-image" src="img/contrast.svg" alt="crop-icon" />
+        </button>
       </div>
       <form class="photo-editor__function-tuning" action="https://echo.htmlacademy.ru" method="post">
         <input class="photo-editor__range" type="range" name="name" value="5">
         <hr>
-        <input class="photo-editor__send-button" type="submit" name="name" value="Запостить">
-        <button class="photo-editor__cancel-button" type="button" name="button" value="">Отмена</button>
+        <input class="photo-editor__button" type="submit" name="name" value="Запостить">
+        <button class="photo-editor__button photo-editor__button--cancel" type="button" name="button" value="">Отмена</button>
       </form>
     </div>
   </main>
   <footer class="competition-footer">
-    <div class="logotype-bottom">
-        <img class="logotype-bottom__image" src="img/" alt="Logo image" />
-        <a class="site-logo" href="index.html" title="Pink">
-            <img class="site-logo__image" src="img/logotype-white-mobile.svg" alt="Logo" />
-        </a>
-    </div>
+    <a class="site-logo site-logo--footer" href="index.html" title="Pink">
+        <img class="site-logo__image" src="img/logotype-blue-tablet.svg" alt="Logo" />
+    </a>
   	<div class="socials">
-        <a class="socials__element socials__element--twitter" href="http://twitter.com" title="twitter">twitter</a>
-        <a class="socials__element socials__element--facebook" href="http://facebook.com" title="facebook">facebook</a>
-        <a class="socials__element socials__element--youtube" href="http://youtube.com" title="youtube">youtube</a>
+        <a class="socials__element socials__element--twitter" href="http://twitter.com" title="twitter">
+          <img class="socials__element-image" src="img/twitter.svg" alt="twitter" />
+        </a>
+        <a class="socials__element socials__element--facebook" href="http://facebook.com" title="facebook">
+          <img class="socials__element-image" src="img/facebook.svg" alt="facebook" />
+        </a>
+        <a class="socials__element socials__element--youtube" href="http://youtube.com" title="youtube">
+          <img class="socials__element-image" src="img/youtube.svg" alt="youtube" />
+        </a>
   	</div>
   	<div class="copyright">
   		<span class="copyright__maked">Разработано</span>
-  		<a class="copyright__image" href="http://htmlacademy.ru" title="html academy">html academy</a>
+  		<a class="copyright__link" href="http://htmlacademy.ru" title="html academy">
+        <img class="copyright__image" src="img/htmlacademy.svg" alt="htmlacademy" />
+      </a>
   	</div>
   </footer>
 </body>

@@ -9,16 +9,16 @@
     padding-top: 17px;
     padding-bottom: 14px;
     border: 3px solid $white;
-    text-decoration: none;
-    margin: auto;
+    text-decoration: $none;
+    margin: $auto;
     margin-bottom: 32px;
-    display: block;
+    display: $block;
     width: 258px;
   }
   &__description {
     @mixin font_options $OpenSans_light, $small, $white, $big, $light, $center;
     padding-left: 33px;
     padding-right: 33px;
-    margin: 0;
+    margin: $zero;
   }
 }

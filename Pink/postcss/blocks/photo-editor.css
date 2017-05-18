@@ -3,13 +3,36 @@
   background-image: url("../../img/grey-back.jpg");
 
   &__image {
-    display: block;
+    display: $block;
     margin-left: 18px;
     margin-right: 20px;
     padding-top: 20px;
     width: 87%;
+    margin-bottom: 42px;
   }
-  &__button {
+  &__image-modification-button {
     @mixin button_reset;
   }
+  &__functions {
+    margin-bottom: 33px;
+  }
+  &__range {
+    margin-bottom: 28px;
+  }
+  &__button {
+    @mixin font_options $OpenSans_bold, $medium, $magenta, $medium, $bold, $center;
+    display: $block;
+    margin: $auto;
+    margin-bottom: $smallest;
+  }
+  &__button--cancel {
+    color: $blue;
+    opacity: .1;
+  }
+  &__function-tuning {
+    padding-bottom: 41px;
+  }
+}
+hr {
+  margin-bottom: 38px;
 }

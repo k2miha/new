@@ -1,6 +1,6 @@
 .menu {
   background-color: $blue;
-  display: none;
+  display: $none;
 
   &__elements {
     background-color: $blue;
@@ -18,15 +18,13 @@
   &__link {
     @mixin font_options $OpenSans_bold, $medium, $white, $medium, $bold, $center;
     text-transform: $uppercase;
-    text-decoration: none;
+    text-decoration: $none;
     display: $inline-block;
     vertical-align: middle;
     padding-top: 26px;
     padding-bottom: 23px;
   }
   &__button {
-    padding: 0;
-    border: 0;
-    background: transparent;
+    @mixin button_reset;
   }
 }

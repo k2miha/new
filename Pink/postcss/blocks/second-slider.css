@@ -1,5 +1,6 @@
 .second-slider {
   background-image: url("../../img/Shape_2_copy.png");
+  background-repeat: $no-repeat;
   padding-top: 133px;
 
   &__header {
@@ -11,7 +12,7 @@
     @mixin font_options $OpenSans_bold, $medium, $white, $biggest, $bold, $center;
     text-transform: $uppercase;
     padding-top: 19px;
-    margin: 0;
+    margin: $zero;
     margin-bottom: 3px;
   }
   &__price {

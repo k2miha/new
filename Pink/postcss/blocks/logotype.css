@@ -1,12 +1,12 @@
 .logotype {
   padding-left: 20px;
   padding-top: 22px;
-  margin-right: auto;
+  margin-right: $auto;
   padding-bottom: 22px;
   background-color: rgba(0,0,0,.3);
 
   &__menu-button {
     background-color: transparent;
-    border: none;
+    border: $none;
   }
 }

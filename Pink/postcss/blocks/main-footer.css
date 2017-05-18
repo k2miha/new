@@ -18,10 +18,10 @@
   &__block-content {
     @mixin font_options $OpenSans_light, $big, $magenta, $normal, $light, $center;
     @mixin white_background;
-    display: block;
-    padding: 0 2px;
+    display: $block;
+    padding: $zero 2px;
   }
   &__block-content:first-of-type {
-    text-decoration: none;
+    text-decoration: $none;
   }
 }

@@ -7,7 +7,7 @@
   &__slogan {
     @mixin font_options $OpenSans_light, $big, $blue, $normal, $light, $center;
     margin-top: 39px;
-    margin-bottom: 0;
+    margin-bottom: $zero;
   }
   &__slogan:last-child {
     padding-bottom: 119px;
