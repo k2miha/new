@@ -1,0 +1,25 @@
+.personal-info__description {
+  @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center;
+  margin: auto;
+  margin-top: 47px;
+  margin-bottom: 41px;
+  width: 90%;
+}
+.personal-info__form {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+.personal-info__name-section {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.personal-info__name-element-label {
+  @mixin font_options $OpenSans_regular, $small, $magenta, $biggest, $regular, $center;
+  text-transform: $uppercase;
+}
+.personal-info__element-text {
+  display: $block;
+  width: calc(100% - 20px);
+  padding-left: 20px;
+}
