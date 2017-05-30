@@ -16,8 +16,7 @@
     padding-left: 20px;
   }
   &__link {
-    @mixin font_options $OpenSans_bold, $medium, $white, $medium, $bold, $center;
-    text-transform: $uppercase;
+    @mixin font_options $OpenSans_bold, $medium, $white, $medium, $bold, $center, $uppercase;
     text-decoration: $none;
     display: $inline-block;
     vertical-align: middle;

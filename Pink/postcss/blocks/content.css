@@ -5,7 +5,7 @@
   background-position-y: 174px;
 
   &__slogan {
-    @mixin font_options $OpenSans_light, $big, $blue, $normal, $light, $center;
+    @mixin font_options $OpenSans_light, $big, $blue, $normal, $light, $center, $none;
     margin-top: 39px;
     margin-bottom: $zero;
   }

@@ -48,6 +48,7 @@
   line-height: normal;
   font-weight: 300;
   text-align: center;
+  text-transform: none;
   margin-top: 39px;
   margin-bottom: 0;
 }
@@ -64,6 +65,7 @@
   line-height: 18px;
   font-weight: 400;
   text-align: center;
+  text-transform: none;
 }
 .like {
   background-color: #f2f2f2;
@@ -94,6 +96,7 @@
   line-height: 24px;
   font-weight: 400;
   text-align: center;
+  text-transform: none;
 }
 .main-footer {
   background-image: url("../img/Layer 153.jpg");
@@ -107,6 +110,7 @@
   line-height: normal;
   font-weight: bold;
   text-align: center;
+  text-transform: none;
   background-color: #fff;
   margin: 0;
   padding-top: 28px;
@@ -119,6 +123,7 @@
   line-height: normal;
   font-weight: 300;
   text-align: center;
+  text-transform: none;
   background-color: #fff;
   margin: 0;
   padding-top: 48px;
@@ -131,6 +136,7 @@
   line-height: normal;
   font-weight: 300;
   text-align: center;
+  text-transform: none;
   background-color: #fff;
   margin: 0;
   display: block;
@@ -155,6 +161,7 @@
   line-height: normal;
   font-weight: 300;
   text-align: center;
+  text-transform: none;
 }
 .menu {
   background-color: #283645;
@@ -201,6 +208,7 @@
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+  text-transform: none;
   margin: auto;
   margin-top: 47px;
   margin-bottom: 41px;
@@ -224,10 +232,30 @@
   text-align: center;
   text-transform: uppercase;
 }
+.personal-info__title {
+  font-family: 'Open Sans','open_sansregular',sans-serif;
+  font-size: 14px;
+  color: #d22856;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 27px;
+}
 .personal-info__element-text {
+  font-family: 'Open Sans','open_sansregular',sans-serif;
+  font-size: 18px;
+  color: #283645;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
   display: block;
   width: calc(100% - 20px);
   padding-left: 20px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
 }
 .photo-editor {
   text-align: center;
@@ -259,6 +287,7 @@
   line-height: 18px;
   font-weight: bold;
   text-align: center;
+  text-transform: none;
   display: block;
   margin: auto;
   margin-bottom: 12px;
@@ -280,6 +309,7 @@ hr {
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+  text-transform: ;
   margin: 46px 29px 48px;
 }
 .photos__element-comment {
@@ -299,6 +329,7 @@ hr {
   line-height: 24px;
   font-weight: bold;
   text-align: center;
+  text-transform: none;
   background-color: #d22856;
   padding-top: 7px;
   padding-right: 21px;
@@ -320,6 +351,7 @@ hr {
   line-height: 24px;
   font-weight: bold;
   text-align: center;
+  text-transform: none;
 }
 .photos__element-time {
   font-family: 'Open Sans','open_sanslight',sans-serif;
@@ -338,6 +370,7 @@ hr {
   line-height: 24px;
   font-weight: 400;
   text-align: left;
+  text-transform: none;
 }
 .photos__element-image {
   display: block;
@@ -356,6 +389,7 @@ hr {
   line-height: 18px;
   font-weight: bold;
   text-align: center;
+  text-transform: none;
   vertical-align: top;
   padding-top: 17px;
   padding-bottom: 14px;
@@ -373,6 +407,7 @@ hr {
   line-height: 24px;
   font-weight: 300;
   text-align: center;
+  text-transform: none;
   padding-left: 33px;
   padding-right: 33px;
   margin: 0;
@@ -388,10 +423,11 @@ hr {
 .promo__content-title {
   font-family: 'Open Sans','open_sansbold',sans-serif;
   font-size: 18px;
-  color: black;
+  color: #000;
   line-height: 24px;
   font-weight: bold;
   text-align: center;
+  text-transform: ;
   margin: 0;
 }
 .promo__content-description {
@@ -401,6 +437,7 @@ hr {
   line-height: 24px;
   font-weight: 400;
   text-align: center;
+  text-transform: ;
   margin-bottom: 40px;
   margin-top: 19px;
 }
@@ -442,6 +479,7 @@ hr {
   line-height: 30px;
   font-weight: 300;
   text-align: center;
+  text-transform: none;
 }
 .second-slider__hit {
   font-family: 'Open Sans',sans-serif;
@@ -450,6 +488,7 @@ hr {
   line-height: 30px;
   font-weight: 600;
   text-align: center;
+  text-transform: none;
   background-color: #d22856;
 }
 .second-slider__option {
@@ -488,10 +527,11 @@ hr {
 .slider__title {
   font-family: 'Open Sans','open_sansbold',sans-serif;
   font-size: 18px;
-  color: black;
+  color: #000;
   line-height: 30px;
   font-weight: bold;
   text-align: center;
+  text-transform: none;
   margin-top: 49px;
   margin-bottom: 25px;
 }
@@ -502,6 +542,7 @@ hr {
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+  text-transform: none;
   margin: 0 17px;
   margin-bottom: 39px;
 }

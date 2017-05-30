@@ -20,7 +20,7 @@
     margin-bottom: 28px;
   }
   &__button {
-    @mixin font_options $OpenSans_bold, $medium, $magenta, $medium, $bold, $center;
+    @mixin font_options $OpenSans_bold, $medium, $magenta, $medium, $bold, $center, $none;
     display: $block;
     margin: $auto;
     margin-bottom: $smallest;

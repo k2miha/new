@@ -13,7 +13,7 @@
   padding-bottom: 13px;
 }
 .photos__element--panorama-label {
-  @mixin font_options $OpenSans_bold, $smallest, $white, $big, $bold, $center;
+  @mixin font_options $OpenSans_bold, $smallest, $white, $big, $bold, $center, $none;
   background-color: $magenta;
   padding-top: 7px;
   padding-right: 21px;
@@ -29,15 +29,14 @@
   position: relative;
 }
 .photos__element-author {
-  @mixin font_options $OpenSans_bold, $small, $blue, $big, $bold, $center;
+  @mixin font_options $OpenSans_bold, $small, $blue, $big, $bold, $center, $none;
 }
 .photos__element-time {
-  @mixin font_options $OpenSans_light, $smallest, $blue, $big, $light, $center;
-  text-transform: $uppercase;
+  @mixin font_options $OpenSans_light, $smallest, $blue, $big, $light, $center, $uppercase;
 }
 .photos__element-message {
   margin: $zero;
-  @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, left;
+  @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $left, $none;
 }
 .photos__element-image {
   display: $block;

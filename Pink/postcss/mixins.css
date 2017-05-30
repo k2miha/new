@@ -1,10 +1,11 @@
-@define-mixin font_options $OpenSans, $big, $blue, $normal, $regular, $center {
+@define-mixin font_options $OpenSans, $big, $blue, $normal, $regular, $center, $none {
   font-family: $OpenSans;
   font-size: $big;
   color: $blue;
   line-height: $normal;
   font-weight: $regular;
   text-align: $center;
+  text-transform: $none;
 }
 @define-mixin white_background {
   background-color: $white;

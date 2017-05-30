@@ -10,10 +10,9 @@
     @mixin button_reset;
   }
   &__description {
-    @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center;
-    text-transform: $uppercase;
+    @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center, $uppercase;
   }
   &__count {
-    @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center;
+    @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center, $none;
   }
 }

@@ -1,10 +1,10 @@
 .slider__title {
-  @mixin font_options $OpenSans_bold, $medium, black, $biggest, $bold, $center;
+  @mixin font_options $OpenSans_bold, $medium, $black, $biggest, $bold, $center, $none;
   margin-top: 49px;
   margin-bottom: 25px;
 }
 .slider__description {
-  @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center;
+  @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
   margin: $zero 17px;
   margin-bottom: 39px;
 }

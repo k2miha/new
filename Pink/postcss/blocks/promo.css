@@ -5,7 +5,7 @@
   overflow: hidden;
 
   &__content-title {
-    @mixin font_options $OpenSans_bold, $medium, black, $big, $bold, $center;
+    @mixin font_options $OpenSans_bold, $medium, $black, $big, $bold, $center;
     margin: $zero;
   }
   &__content-description {

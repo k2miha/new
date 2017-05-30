@@ -1,5 +1,5 @@
 .personal-info__description {
-  @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center;
+  @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
   margin: auto;
   margin-top: 47px;
   margin-bottom: 41px;
@@ -15,11 +15,18 @@
   margin: 0;
 }
 .personal-info__name-element-label {
-  @mixin font_options $OpenSans_regular, $small, $magenta, $biggest, $regular, $center;
-  text-transform: $uppercase;
+  @mixin font_options $OpenSans_regular, $small, $magenta, $biggest, $regular, $center, $uppercase;
+}
+.personal-info__title {
+  @mixin font_options $OpenSans_regular, $small, $magenta, $medium, $regular, $center, $uppercase;
+  margin-top: 27px;
 }
 .personal-info__element-text {
+  @mixin font_options $OpenSans_regular, $medium, $blue, $biggest, $regular, $left, $none;
   display: $block;
   width: calc(100% - 20px);
   padding-left: 20px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
 }
