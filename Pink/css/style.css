@@ -182,6 +182,9 @@
   text-align: left;
   padding-left: 20px;
 }
+.menu__element:first-child .menu__link {
+  display: inline-block;
+}
 .menu__link {
   font-family: 'Open Sans','open_sansbold',sans-serif;
   font-size: 18px;
@@ -191,7 +194,7 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   padding-top: 26px;
   padding-bottom: 23px;

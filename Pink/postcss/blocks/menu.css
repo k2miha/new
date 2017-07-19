@@ -15,10 +15,13 @@
     text-align: left;
     padding-left: 20px;
   }
+  &__element:first-child &__link {
+      display: $inline-block;
+  }
   &__link {
     @mixin font_options $OpenSans_bold, $medium, $white, $medium, $bold, $center, $uppercase;
     text-decoration: $none;
-    display: $inline-block;
+    display: $block;
     vertical-align: middle;
     padding-top: 26px;
     padding-bottom: 23px;
