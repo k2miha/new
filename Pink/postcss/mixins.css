@@ -21,3 +21,8 @@
   border: none;
   background-color: transparent;
 }
+@define-mixin input_border {
+  border-radius: 3px;
+  border-color: #e5e5e5;
+  border-style: solid;
+}

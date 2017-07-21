@@ -35,7 +35,7 @@
       </ul>
     </nav>
     <p class="main-header__slogan">
-    Конкурс на самое безбашеное путешествие с Пинк
+    Конкурс на самое безбашеное <br> путешествие с Пинк
     </p>
   </header>
   <main class="main-content">
@@ -56,52 +56,59 @@
           </label>
         </fieldset>
         <section class="personal-info__achievements">
-          <h2 class="personal-info__title">Ваши безбашенные
-            достижения в путешествии</h2>
+          <h2 class="personal-info__title">Ваши безбашенные<br>достижения в путешествии</h2>
           <input class="personal-info__element personal-info__element--checked" id="shark" type="checkbox" name="name" value="">
-          <label class="personal-info__element-label" for="shark">Сделал селфи с акулой</label>
+          <span class="personal-info__custom-element"></span>
+          <label class="personal-info__achievements-element-label" for="shark">Сделал селфи с акулой</label><br>
           <input class="personal-info__element personal-info__element--checked" id="beach" type="checkbox" name="name" value="">
-          <label class="personal-info__element-label" for="beach">Обгорел на пляже</label>
+          <span class="personal-info__custom-element"></span>
+          <label class="personal-info__achievements-element-label" for="beach">Обгорел на пляже</label><br>
           <input class="personal-info__element" id="chuck" type="checkbox" name="name" value="">
-          <label class="personal-info__element-label" for="chuck">Видел Чака Норриса</label>
+          <span class="personal-info__custom-element"></span>
+          <label class="personal-info__achievements-element-label" for="chuck">Видел Чака Норриса</label><br>
           <input class="personal-info__element" id="souvenir" type="checkbox" name="name" value="">
-          <label class="personal-info__element-label" for="souvenir">Накупил сувениров</label>
+          <span class="personal-info__custom-element"></span>
+          <label class="personal-info__achievements-element-label" for="souvenir">Накупил сувениров</label><br>
           <input class="personal-info__element personal-info__element--checked" id="tower" type="checkbox" name="name" value="">
-          <label class="personal-info__element-label" for="tower">Удержал башню</label>
+          <span class="personal-info__custom-element"></span>
+          <label class="personal-info__achievements-element-label" for="tower">Удержал башню</label><br>
           <input class="personal-info__element" id="hotel" type="checkbox" name="name" value="">
-          <label class="personal-info__element-label" for="hotel">Разгромил отель</label>
+          <span class="personal-info__custom-element"></span>
+          <label class="personal-info__achievements-element-label" for="hotel">Разгромил отель</label><br>
         </section>
         <div class="personal-info__contacts">
-          <label class="personal-info__element-label">Номерок телефончика
-            <input class="personal-info__element-text" type="text" name="name" value="" placeholder="Номер, пожалуйста">
+          <label class="personal-info__name-element-label" for="tel">Номерок телефончика
+            <input class="personal-info__element-text" id="tel" type="text" name="name" value="" placeholder="Номер, пожалуйста">
           </label>
-          <label class="personal-info__element-label">адресок почты
+          <label class="personal-info__name-element-label">адресок почты
             <input class="personal-info__element-text" type="text" name="name" value="" placeholder="E-mail, пожалуйста">
           </label>
         </div>
         <section class="personal-info__journey-application">
           <h2 class="personal-info__title">С каким приложением
             путешествовали?</h2>
-          <label class="personal-info__element-label">Pink для iOS
-            <input class="personal-info__element  personal-info__element--checked" type="radio" name="name" value="">
-          </label>
-          <label class="personal-info__element-label">Pink на Android
-            <input class="personal-info__element" type="radio" name="name" value="">
-          </label>
-          <label class="personal-info__element-label">Windows Phone
-            <input class="personal-info__element" type="radio" name="name" value="">
-          </label>
+          <input class="personal-info__element  personal-info__element--checked" id="ios" type="radio" name="name" value="">
+          <span class="personal-info__custom-radio-element"></span>
+          <label class="personal-info__element-label" for="ios">Pink для iOS</label><br>
+          <input class="personal-info__element" id="android" type="radio" name="name" value="">
+          <span class="personal-info__custom-radio-element"></span>
+          <label class="personal-info__element-label" for="android">Pink на Android</label><br>
+          <input class="personal-info__element" id="windows" type="radio" name="name" value="">
+          <span class="personal-info__custom-radio-element"></span>
+          <label class="personal-info__element-label" for="windows">Windows Phone</label><br>
         </section>
         <section class="personal-info__emotions">
         	<h2 class="personal-info__title">Опишите свои эмоции</h2>
-        	<textarea class="personal-info__description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        	<textarea class="personal-info__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </section>
         <input type="submit" name="name" value="Отправить форму">
       </form>
      </div>
   </main>
   <footer class="competition-footer">
-  	<p class="competition-footer__form-field-requirements"><span>*</span> — обязательные поля</p>
+  	<p class="competition-footer__form-field-requirements">
+      <span class="competition-footer__form-field-marker">*</span> — обязательные поля
+    </p>
     <a class="site-logo site-logo--footer" href="index.html" title="Pink">
         <img class="site-logo__image" src="img/logotype-blue-tablet.svg" alt="Logo" />
     </a>

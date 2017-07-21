@@ -1,32 +1,96 @@
 .personal-info__description {
   @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
-  margin: auto;
+  margin: $auto;
   margin-top: 47px;
   margin-bottom: 41px;
   width: 90%;
 }
 .personal-info__form {
-  margin-left: 22px;
-  margin-right: 22px;
+  margin-left: $margin;
+  margin-right: $margin;
+}
+.personal-info__form [type=submit] {
+  background-color: #2aab6d;
+  @mixin font_options $OpenSans_regular, $medium, $white, $biggest, $bold, $center, $uppercase;
+  cursor: pointer;
+  border: $none;
+  width: $full-width;
+  height: 63px;
+  border-radius: 3px;
 }
 .personal-info__name-section {
-  border: none;
-  padding: 0;
-  margin: 0;
+  border: $none;
+  padding: $zero;
+  margin: $zero;
 }
 .personal-info__name-element-label {
   @mixin font_options $OpenSans_regular, $small, $magenta, $biggest, $regular, $center, $uppercase;
+  margin-left: 23px;
 }
 .personal-info__title {
   @mixin font_options $OpenSans_regular, $small, $magenta, $medium, $regular, $center, $uppercase;
-  margin-top: 27px;
+  padding-top: 39px;
+  margin-top: $zero;
+  margin-bottom: 42px;
+}
+.personal-info__title:last-of-type {
+  margin-bottom: 20px;
 }
 .personal-info__element-text {
-  @mixin font_options $OpenSans_regular, $medium, $blue, $biggest, $regular, $left, $none;
+  @mixin font_options $OpenSans_regular, $medium, $blue, 62px, $regular, $left, $none;
   display: $block;
-  width: calc(100% - 20px);
+  width: calc($full-width - 20px);
   padding-left: 20px;
-  padding-top: 16px;
-  padding-bottom: 12px;
+  height: 62px;
   margin-bottom: 18px;
+  margin-top: 6px;
+  @mixin input_border;
+}
+.personal-info__element-text::-webkit-input-placeholder, .personal-info__textarea::-webkit-input-placeholder {
+  color: $blue;
+}
+.personal-info__achievements, .personal-info__journey-application {
+  background-color: #f2f2f2;
+  margin-left: -$margin;
+  margin-right: -$margin;
+  padding-left: $margin;
+  padding-right: $margin;
+  margin-bottom: 38px;
+}
+.personal-info__journey-application {
+  margin-bottom: 21px;
+}
+.personal-info__achievements-element-label, .personal-info__element-label {
+  @mixin font_options $OpenSans_regular, $medium, $blue, $biggest, $regular, $left, $none;
+  margin-bottom: 52px;
+  margin-left: 5px;
+  display: $inline-block;
+}
+.personal-info__element-label {
+  margin-bottom: 46px;
+}
+.personal-info__achievements-element-label:last-of-type {
+  margin-bottom: 45px;
+}
+.personal-info__custom-element {
+  width: 39px;
+  height: 39px;
+  display: $inline-block;
+  background: $white;
+}
+.personal-info__custom-radio-element {
+  width: 40px;
+  height: 40px;
+  display: $inline-block;
+  background: $white;
+  border-radius: 50%;
+}
+.personal-info__textarea {
+  width: calc($full-width - 19px) ;
+  height: 201px;
+  resize: $none;
+  @mixin font_options $OpenSans_regular, $medium, $blue, $biggest, $regular, $left, $none;
+  padding-left: 19px;
+  @mixin input_border;
+  margin-bottom: 47px;
 }

@@ -35,6 +35,9 @@
   text-align: center;
   text-transform: uppercase;
 }
+.competition-footer__form-field-marker {
+  color: #d22856;
+}
 .content {
   margin-top: 46px;
   background-image: url("../../img/promo-background.png");
@@ -221,6 +224,21 @@
   margin-left: 22px;
   margin-right: 22px;
 }
+.personal-info__form [type=submit] {
+  background-color: #2aab6d;
+  font-family: 'Open Sans','open_sansregular',sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 63px;
+  border-radius: 3px;
+}
 .personal-info__name-section {
   border: none;
   padding: 0;
@@ -234,6 +252,7 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
+  margin-left: 23px;
 }
 .personal-info__title {
   font-family: 'Open Sans','open_sansregular',sans-serif;
@@ -243,9 +262,46 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 27px;
+  padding-top: 39px;
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+.personal-info__title:last-of-type {
+  margin-bottom: 20px;
 }
 .personal-info__element-text {
+  font-family: 'Open Sans','open_sansregular',sans-serif;
+  font-size: 18px;
+  color: #283645;
+  line-height: 62px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+  display: block;
+  width: calc(100% - 20px);
+  padding-left: 20px;
+  height: 62px;
+  margin-bottom: 18px;
+  margin-top: 6px;
+  border-radius: 3px;
+  border-color: #e5e5e5;
+  border-style: solid;
+}
+.personal-info__element-text::-webkit-input-placeholder, .personal-info__textarea::-webkit-input-placeholder {
+  color: #283645;
+}
+.personal-info__achievements, .personal-info__journey-application {
+  background-color: #f2f2f2;
+  margin-left: -22px;
+  margin-right: -22px;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 38px;
+}
+.personal-info__journey-application {
+  margin-bottom: 21px;
+}
+.personal-info__achievements-element-label, .personal-info__element-label {
   font-family: 'Open Sans','open_sansregular',sans-serif;
   font-size: 18px;
   color: #283645;
@@ -253,12 +309,45 @@
   font-weight: 400;
   text-align: left;
   text-transform: none;
-  display: block;
-  width: calc(100% - 20px);
-  padding-left: 20px;
-  padding-top: 16px;
-  padding-bottom: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 52px;
+  margin-left: 5px;
+  display: inline-block;
+}
+.personal-info__element-label {
+  margin-bottom: 46px;
+}
+.personal-info__achievements-element-label:last-of-type {
+  margin-bottom: 45px;
+}
+.personal-info__custom-element {
+  width: 39px;
+  height: 39px;
+  display: inline-block;
+  background: #fff;
+}
+.personal-info__custom-radio-element {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+}
+.personal-info__textarea {
+  width: calc(100% - 19px);
+  height: 201px;
+  resize: none;
+  font-family: 'Open Sans','open_sansregular',sans-serif;
+  font-size: 18px;
+  color: #283645;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: none;
+  padding-left: 19px;
+  border-radius: 3px;
+  border-color: #e5e5e5;
+  border-style: solid;
+  margin-bottom: 47px;
 }
 .photo-editor {
   text-align: center;
