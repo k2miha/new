@@ -22,6 +22,7 @@ body {
   text-transform: uppercase;
   background: #070707 url("../img/tint.png") no-repeat center top;
 }
+/*Стили для адаптива*/
 .page-header {
   min-height: 395px;
 }
@@ -30,6 +31,44 @@ body {
 }
 .visually-hidden {
   display: none;
+}
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+.main-nav__items, .main-nav__user-items, .advantages__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.advantages__item {
+  min-height: 145px;
+  margin-bottom: 23px;
+  padding: 0 44px;
+  padding-top: 125px;
+}
+.advantages__item:nth-child(n+2) {
+  display: none;
+}
+.main-nav__items {
+  min-height: 255px;
+}
+.main-nav__user-items {
+  min-height: 55px;
+}
+.stats {
+  margin: 0 auto;
+}
+.stats__header {
+  min-height: 130px;
+  padding-top: 27px;
+  padding-right: 38px;
+  padding-bottom: 26px;
+  padding-left: 38px;
+}
+.stats__items {
+  width: 100%;
+  height: 320px;
 }
 @media (min-width: 768px) {
   .page-header {
@@ -43,6 +82,47 @@ body {
     width: 100%;
     height: 400px;
   }
+  .main-nav {
+    width: auto;
+    min-height: 70px;
+    margin: 0;
+  }
+  .main-nav__wrapper, .advantages__wrapper, .stats {
+    width: 640px;
+    margin: 0 auto;
+  }
+  .advantages__wrapper {
+    min-height: 320px;
+    padding-top: 30px;
+  }
+  .main-nav__wrapper::after, .stats__header::after, .stats__list::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .main-nav__items {
+    min-height: 70px;
+    float: left;
+    width: 570px;
+  }
+  .main-nav__user-items {
+    min-height: 70px;
+    float: right;
+    width: 60px;
+  }
+  .stats {
+    position: relative;
+    z-index: 1;
+    margin-top: -184px;
+  }
+  .stats__header {
+    padding: 0;
+    padding-top: 31px;
+    padding-bottom: 24px;
+  }
+  .stats__items {
+    display: block;
+  }
 }
 @media (min-width: 1200px) {
   .page-header {
@@ -51,7 +131,38 @@ body {
   .page-header__logo {
     height: 648px;
   }
+  .main-nav__wrapper {
+      width: 960px;
+  }
+  .main-nav__items {
+    width: 780px;
+  }
+  .main-nav__user-items {
+    width: 160px;
+  }
+  .stats {
+    margin-top: -159px;
+    width: 960px;
+  }
+  .stats::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .stats__header {
+    float: left;
+    width: 240px;
+    min-height: 263px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .stats__items {
+    float: right;
+    display: block;
+    width: 640px;
+  }
 }
+/*Стили для адаптива*/
 .price {
   background: #f8f5f2 url("../img/Layer 24 copy.png");
   color: black;
