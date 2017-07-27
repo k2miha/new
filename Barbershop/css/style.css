@@ -56,7 +56,7 @@ body {
 .main-nav__user-items {
   min-height: 55px;
 }
-.stats {
+.stats, .news__wrapper {
   margin: 0 auto;
 }
 .stats__header {
@@ -69,6 +69,35 @@ body {
 .stats__items {
   width: 100%;
   height: 320px;
+}
+.advantages__wrapper {
+  min-height: 320px;
+  padding-top: 30px;
+}
+.news__wrapper {
+  min-height: 440px;
+  padding-top: 67px;
+  padding-bottom: 28px;
+}
+.news__items {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 7px;
+  list-style: none;
+}
+.news__item {
+  min-height: 110px;
+  margin: 0 20px;
+  margin-bottom: 16px;
+  padding-bottom: 18px;
+  padding-left: 70px;
+}
+.news__item:nth-child(n+3) {
+  display: none;
+}
+.news__item:nth-child(2) {
+  min-height: 165px;
+  padding-bottom: 0;
 }
 @media (min-width: 768px) {
   .page-header {
@@ -92,8 +121,48 @@ body {
     margin: 0 auto;
   }
   .advantages__wrapper {
-    min-height: 320px;
-    padding-top: 30px;
+    padding-top: 42px;
+  }
+  .advantages__items {
+    padding-bottom: 4px;
+  }
+  .advantages__item {
+    min-height: 95px;
+    margin: 0 30px;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-bottom: 39px;
+    padding-left: 128px;
+  }
+  .advantages__item:nth-child(n+2) {
+    display: block;
+  }
+  .advantages__item:last-child {
+      margin-bottom: 0;
+  }
+  .news {
+    padding-top: 90px;
+    padding-bottom: 28px;
+  }
+  .news__wrapper {
+    min-height: 270px;
+    padding: 0;
+  }
+  .news__title {
+    min-height: 40px;
+    margin-right: 200px;
+    margin-bottom: 55px;
+  }
+  .news__items {
+    font-size: 0;
+  }
+  .news__item {
+    display: inline-block;
+    width: 220px;
+    margin: 0;
+    padding: 0 30px;
+    padding-left: 70px;
+    vertical-align: top;
   }
   .main-nav__wrapper::after, .stats__header::after, .stats__list::after {
     clear: both;
@@ -160,6 +229,41 @@ body {
     float: right;
     display: block;
     width: 640px;
+  }
+  .advantages__items {
+    display: table;
+    width: 100%;
+    height: 275px;
+  }
+  .advantages__item {
+    display: table-cell;
+    width: 240px;
+    margin: 0;
+    padding: 0 40px;
+    padding-top: 130px;
+  }
+  .advantages__item:nth-child(n+2) {
+    display: table-cell;
+  }
+  .advantages__item:nth-child(2) {
+    width: 200px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .advantages__wrapper {
+    min-height: 275px;
+    padding-top: 75px;
+    padding-bottom: 59px;
+  }
+  .news {
+    padding-top: 88px;
+    padding-bottom: 32px;
+  }
+  .news__title {
+    margin-left: 70px;
+  }
+  .news__item:nth-child(n+3) {
+    display: inline-block;
   }
 }
 /*Стили для адаптива*/
