@@ -3,11 +3,48 @@
   background-image: url("../../img/back-mobile@1x.jpg");
   background-repeat: $no-repeat;
   min-height: 462px;
-
+  @mixin mobile;
   &--short {
     min-height: 243px;
   }
   &__slogan {
     @mixin font_options $OpenSans_light, $big, $white, $normal, $light, $center, $none;
+  }
+  &__title {
+    @mixin font_options $OpenSans_light, 40px, $white, $normal, $light, $center, $none;
+    margin-bottom: $zero;
+    display: $none;
+  }
+  &__right-side {
+    min-width: 283px;
+    height: 314px;
+    position: absolute;
+    top: 174px;
+    background-image: url("../../img/iphone-5-in-hand-png.png");
+  }
+}
+@media (min-width: 700px) {
+    .main-header {
+      max-width: $full-width;
+      min-height: 729px;
+      background-image: url("../../img/back-tablet@1x.jpg");
+    &__title {
+      width: 300px;
+      margin-left: 40px;
+      margin-top: 103px;
+      display: $block;
+    }
+    &__right-side {
+      min-width: 683px;
+      height: 545px;
+      position: absolute;
+      top: 184px;
+      background-image: url("../../img/iphone-6 copy.png");
+    }
+    &__image {
+      position: absolute;
+      top: 53px;
+      left: 391px;
+    }
   }
 }

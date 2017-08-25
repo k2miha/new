@@ -34,26 +34,31 @@
         <li class="menu__element"><a class="menu__link" href="http://htmlacademy.ru">HMTL Academy</a></li>
       </ul>
     </nav>
-  </header>
-  <main class="main-content">
+    <h1 class="main-header__title">Взгляните<br> на жизнь иначе!</h1>
     <div class="platforms">
       <a class="platforms__download-link" href="#">Скачать приложение</a>
-      <img class="platforms__apple" src="img/apple-logo.svg" alt="Apple" />
-      <img class="platforms__android" src="img/android-logo.svg" alt="Android" />
-      <img class="platforms__windows" src="img/microsoft-logo.svg" alt="Windows" />
+      <div class="platforms__images">
+        <img class="platforms__apple" src="img/apple-logo.svg" alt="Apple" />
+        <img class="platforms__android" src="img/android-logo.svg" alt="Android" />
+        <img class="platforms__windows" src="img/microsoft-logo.svg" alt="Windows" />
+      </div>
       <p class="platforms__description">
         Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows 8
       </p>
     </div>
+    <div class="main-header__right-side"></div>
+  </header>
+  <main class="main-content">
     <div class="content">
       <p class="content__slogan">
         Устали от серости мегаполиса?
       </p>
-      <p class="content__slogan">
+      <p class="content__slogan content">
         Нам есть, что вам
         предложить!
       </p>
     </div>
+    <div class="promo-container">
       <ul class="promo">
         <li class="promo__item">
           <h2 class="promo__content-title">Поднимает настроение</h2>
@@ -73,10 +78,27 @@
             Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
           </p>
         </li>
-        <img class="promo__content-image" src="img/iphone_screen_3.png" alt="iphone" />
       </ul>
+      <div class="promo-container__content-image"></div>
+    </div>
     <div class="slider">
-      <h2 class="slider__title">Николай Петров</h2>
+      <div class="slider__top-content">
+        <div class="slider__top-content-image-container">
+          <img class="slider__top-content-image" src="img/diagram-fill.svg" alt="diagram" />
+          <span class="slider__top-content-number">24</span>
+        </div>
+        <div class="slider__top-conten-right-side">
+          <h2 class="slider__top-conten-right-side-title">Эффект <br> на 24 часа!</h2>
+          <p class="slider__top-conten-right-side-content">
+            Британские ученые провели исследования
+            и доказали, что положительный эффект <br>
+            от использования приложения длится
+            целые сутки!
+          </p>
+          <a class="slider__top-conten-right-link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
+      <h2 class="slider__title">Николай Петров <span class="slider__subtitle">25 лет, водитель трамвая</span></h2>
       <p class="slider__description">
         «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
       </p>
@@ -87,17 +109,46 @@
       </div>
     </div>
     <div class="second-slider">
-      <div class="second-slider__header">
-        <p class="second-slider__package">
-          <b class="second-slider__package-item">Стандарт</b>
-        </p>
-        <span class="second-slider__price">3,99 USD</span>
-        <span class="second-slider__hit">ХИТ</span>
+      <div class="second-slider__header-group">
+        <div class="second-slider__header">
+          <p class="second-slider__package">
+            <b class="second-slider__package-item">База</b>
+          </p>
+          <span class="second-slider__price">1,99 USD</span>
+        </div>
+        <div class="second-slider__header">
+          <p class="second-slider__package">
+            <b class="second-slider__package-item">Стандарт</b>
+          </p>
+          <span class="second-slider__price">3,99 USD</span>
+          <span class="second-slider__hit">ХИТ</span>
+        </div>
+        <div class="second-slider__header">
+          <p class="second-slider__package">
+            <b class="second-slider__package-item">АНЛИМ</b>
+          </p>
+          <span class="second-slider__price">9,99 USD</span>
+        </div>
       </div>
       <ul class="second-slider__options">
-        <li class="second-slider__option">Розовый фильтр</li>
-        <li class="second-slider__option">Смайлики</li>
-        <li class="second-slider__option  second-slider__option--not-selected">Комментарии</li>
+        <li class="second-slider__option">
+          <div class="second-slider__option-check">Розовый фильтр</div>
+          <div class="second-slider__option-check"></div>
+          <div class="second-slider__option-check"></div>
+          <div class="second-slider__option-check"></div>
+        </li>
+        <li class="second-slider__option">
+          <div class="second-slider__option-check">Смайлики</div>
+          <div class="second-slider__option-check"></div>
+          <div class="second-slider__option-check"></div>
+          <div class="second-slider__option-check"></div>
+        </li>
+        <li class="second-slider__option second-slider__option--not-selected">
+          <div class="second-slider__option-check">Комментарии</div>
+          <div class="second-slider__option-check"></div>
+          <div class="second-slider__option-check"></div>
+          <div class="second-slider__option-check"></div>
+        </li>
       </ul>
       <div class="second-slider__tumbler">
         <button class="second-slider__tumbler-element" type="button" name="button"></button>

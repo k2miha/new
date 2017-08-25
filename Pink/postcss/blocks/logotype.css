@@ -1,12 +1,23 @@
 .logotype {
   padding-left: 20px;
+  padding-right: 20px;
   padding-top: 22px;
   margin-right: $auto;
   padding-bottom: 22px;
   background-color: rgba(0,0,0,.3);
-
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
   &__menu-button {
     background-color: transparent;
     border: $none;
+  }
+}
+@media (min-width: 700px) {
+.logotype {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 27px;
+  padding-bottom: 39px;
   }
 }

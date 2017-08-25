@@ -1,10 +1,21 @@
 .site-logo {
   text-decoration: $none;
-
   &--footer {
     display: $block;
     text-align: $center;
     margin-top: 40px;
     margin-bottom: 43px;
+  }
+}
+@media (min-width: 700px) {
+.site-logo::before {
+  content: "";
+  display: $inline-block;
+  width: 147px;
+  height: 40px;
+  background: url("../../img/logotype-white-tablet.svg");
+}
+.site-logo__image {
+  display: $none;
   }
 }

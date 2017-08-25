@@ -2,11 +2,13 @@
   background-image: url("../../img/Shape_2_copy.png");
   background-repeat: $no-repeat;
   padding-top: 133px;
-
   &__header {
     background-color: $blue;
     text-align: $center;
     padding-bottom: 20px;
+  }
+  &__header:first-child, &__header:last-child {
+    display: $none;
   }
   &__package {
     @mixin font_options $OpenSans_bold, $medium, $white, $biggest, $bold, $center, $uppercase;
@@ -36,5 +38,45 @@
     padding-top: 40px;
     padding-bottom: 47px;
     background-color: $grey;
+    text-align: $center;
   }
+}
+@media (min-width: 700px) {
+  .second-slider {
+    display: table;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: calc(100% - 80px);
+    border-collapse: collapse;
+  &__header, &__header:first-child, &__header:last-child {
+    display: table-cell;
+    border-right: 2px solid #e5e5e5;
+  }
+  &__header:last-child {
+    border-right: $none;
+  }
+  &__header-group::before {
+    content: "";
+    display: table-cell;
+  }
+  &__tumbler {
+  display: $none;
+  }
+  &__header-group {
+    display: table-header-group;
+  }
+  &__options {
+    display: table-row-group;
+  }
+  &__option {
+    display: table-row;
+  }
+  &__option:first-child &__option-check:not(:first-child) {
+    border-top: $none;
+  }
+  &__option-check {
+    display: table-cell;
+    border: 2px solid #e5e5e5;
+  }
+ }
 }

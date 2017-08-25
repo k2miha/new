@@ -3,7 +3,6 @@
   background-image: url("../../img/promo-background.png");
   background-repeat: $no-repeat;
   background-position-y: 174px;
-
   &__slogan {
     @mixin font_options $OpenSans_light, $big, $blue, $normal, $light, $center, $none;
     margin-top: 39px;
@@ -12,4 +11,19 @@
   &__slogan:last-child {
     padding-bottom: 119px;
   }
+}
+@media (min-width: 700px) {
+.content {
+  background-image: $none;
+  margin-bottom: -26px;
+  &__slogan {
+    font-size: 40px;
+  }
+  &__slogan:last-child {
+    margin-top: $zero;
+    width: 334px;
+    margin: $auto;
+    padding-bottom: $zero;
+  }
+ }
 }

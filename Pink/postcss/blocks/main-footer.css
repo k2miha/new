@@ -2,7 +2,7 @@
   background-image: url("../img/Layer 153.jpg");
   background-repeat: $no-repeat;
   min-height: 645px;
-
+  @mixin mobile;
   &__block-title {
     @mixin font_options $OpenSans_bold, $medium, $blue, $normal, $bold, $center, $none;
     @mixin white_background;

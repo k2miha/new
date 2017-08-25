@@ -2,7 +2,9 @@
   background-color: #1d2631;
   padding-top: 28px;
   padding-bottom: 35px;
-
+  margin-top: 389px;
+  position: relative;
+  z-index: 1;
   &__download-link {
     @mixin font_options $OpenSans_bold, $medium, $white, $medium, $bold, $center, $none;
     vertical-align: top;
@@ -20,5 +22,37 @@
     padding-left: 33px;
     padding-right: 33px;
     margin: $zero;
+  }
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 57px;
+    margin-right: 57px;
+    margin-bottom: 28px;
+  }
+}
+@media (min-width: 700px) {
+  .platforms {
+    margin-top: $zero;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 300px;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    padding-top: 39px;
+    &__download-link {
+      width:$auto;
+      margin-bottom: 46px;
+    }
+    &__images {
+      margin-left: 47px;
+      margin-right: 47px;
+      margin-bottom: 41px;
+    }
+    &__description {
+      font-size: $medium;
+      padding: $zero;
+    }
   }
 }

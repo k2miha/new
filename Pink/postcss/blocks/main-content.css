@@ -1,0 +1,8 @@
+.main-content {
+    @mixin mobile;
+}
+@media (min-width: 700px) {
+.main-content {
+  max-width: $full-width;
+  }
+}

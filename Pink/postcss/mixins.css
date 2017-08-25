@@ -26,3 +26,11 @@
   border-color: #e5e5e5;
   border-style: solid;
 }
+@define-mixin mobile {
+  max-width: 320px;
+  margin: auto;
+}
+@define-mixin tablet_padding {
+padding-right: 40px;
+padding-left: 40px;
+}

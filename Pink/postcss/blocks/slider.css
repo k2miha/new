@@ -8,3 +8,64 @@
   margin: $zero 17px;
   margin-bottom: 39px;
 }
+.slider__subtitle {
+  display: $none;
+}
+.slider__tumbler {
+  text-align: $center;
+}
+.slider__top-content {
+  display: $none;
+}
+@media (min-width: 700px) {
+  .slider {
+    @mixin tablet_padding;
+    margin-top: 58px;
+    display: flex;
+    flex-direction: column;
+  &__title {
+    font-size: 20px;
+    order: 2;
+     }
+  &__tumbler {
+    order: 2;
+  }
+  &__subtitle {
+    @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
+    display: $block;
+  }
+  &__description {
+    font-size: $medium;
+    margin: 106px $zero $zero;
+    order: 1;
+  }
+  &__top-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__top-conten-right-side {
+    flex-basis: $half-width;
+  }
+  &__top-conten-right-side-title {
+    @mixin font_options $OpenSans_bold, $biggest, $black, 36px, $regular, $left, $none;
+    margin-top: 44px;
+  }
+  &__top-conten-right-side-content {
+    @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $left, $none;
+  }
+  &__top-conten-right-link {
+    @mixin font_options $OpenSans_regular, $small, $magenta, $big, $regular, $left, $none;
+  }
+  &__top-content-image-container {
+    position: relative;
+    text-align: $center;
+  }
+  &__top-content-number {
+    position: absolute;
+    top: $half-width;
+    left: $zero;
+    right: $zero;
+    @mixin font_options $OpenSans_bold, 96px, $magenta, $biggest, $regular, $center, $none;
+  }
+ }
+}

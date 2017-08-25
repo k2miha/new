@@ -1,9 +1,5 @@
 .promo {
-  background-color: $grey;
   @mixin list_reset;
-  text-align: $center;
-  overflow: hidden;
-
   &__content-title {
     @mixin font_options $OpenSans_bold, $medium, $black, $big, $bold, $center;
     margin: $zero;
@@ -19,7 +15,19 @@
   &__item:last-child {
     padding: $zero 20px;
   }
-  &__content-image {
-    margin-bottom: -49px;
+}
+@media (min-width: 700px) {
+  .promo {
+      flex-basis: 50%;
+      min-width: 310px;
+      position: relative;
+      top: 117px;
+  }
+  .promo__content-title, .promo__content-description {
+    text-align: left;
+  }
+  .promo__item, .promo__item:last-child {
+    padding-right: $zero;
+    padding-left: $zero;
   }
 }
