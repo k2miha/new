@@ -9,6 +9,8 @@
   }
   &__slogan {
     @mixin font_options $OpenSans_light, $big, $white, $normal, $light, $center, $none;
+    padding-left: 2px;
+    padding-right: 2px;
   }
   &__title {
     @mixin font_options $OpenSans_light, 40px, $white, $normal, $light, $center, $none;
@@ -28,6 +30,9 @@
       max-width: $full-width;
       min-height: 729px;
       background-image: url("../../img/back-tablet@1x.jpg");
+    &--short {
+        min-height: 440px;
+    }
     &__title {
       width: 300px;
       margin-left: 40px;
@@ -45,6 +50,12 @@
       position: absolute;
       top: 53px;
       left: 391px;
+    }
+    &__slogan {
+      font-size: 50px;
+      padding-left: 13px;
+      padding-right: 13px;
+      margin-top: 73px;
     }
   }
 }

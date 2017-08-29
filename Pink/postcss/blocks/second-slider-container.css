@@ -1,0 +1,10 @@
+.second-slider-container {
+      padding-top: 114px;
+      padding-bottom: 48px;
+      background-image: url("../../img/Shape 2 copy.png");
+}
+@media (min-width: 700px) {
+  .second-slider-container {
+        padding-bottom: 70px;
+      }
+}

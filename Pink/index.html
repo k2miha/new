@@ -12,7 +12,7 @@
   <header class="main-header">
     <div class="logotype">
       <a class="site-logo" title="Pink">
-        <img class="site-logo__image" src="img/logotype-white-mobile.svg" alt="Logo" />
+        <img class="site-logo__text" src="img/logotype-white-mobile.svg" alt="Logo" />
       </a>
       <button class="logotype__menu-button" type="button" name="open" title="Меню">
         <img class="logotype__menu-button-img" src="img/menu-burger.svg" alt="Menu-button" />
@@ -108,52 +108,54 @@
         <button class="slider__tumbler-element" type="button" name="button"></button>
       </div>
     </div>
-    <div class="second-slider">
-      <div class="second-slider__header-group">
-        <div class="second-slider__header">
-          <p class="second-slider__package">
-            <b class="second-slider__package-item">База</b>
-          </p>
-          <span class="second-slider__price">1,99 USD</span>
+    <div class="second-slider-container">
+      <div class="second-slider">
+        <div class="second-slider__header-group">
+          <div class="second-slider__header">
+            <p class="second-slider__package">
+              <b class="second-slider__package-item">База</b>
+            </p>
+            <span class="second-slider__price">1,99 USD</span>
+          </div>
+          <div class="second-slider__header">
+            <p class="second-slider__package">
+              <b class="second-slider__package-item">Стандарт</b>
+            </p>
+            <span class="second-slider__price">3,99 USD</span>
+            <span class="second-slider__hit">ХИТ</span>
+          </div>
+          <div class="second-slider__header">
+            <p class="second-slider__package">
+              <b class="second-slider__package-item">АНЛИМ</b>
+            </p>
+            <span class="second-slider__price">9,99 USD</span>
+          </div>
         </div>
-        <div class="second-slider__header">
-          <p class="second-slider__package">
-            <b class="second-slider__package-item">Стандарт</b>
-          </p>
-          <span class="second-slider__price">3,99 USD</span>
-          <span class="second-slider__hit">ХИТ</span>
+        <ul class="second-slider__options">
+          <li class="second-slider__option">
+            <div class="second-slider__option-check">Розовый фильтр</div>
+            <div class="second-slider__option-check"></div>
+            <div class="second-slider__option-check"></div>
+            <div class="second-slider__option-check"></div>
+          </li>
+          <li class="second-slider__option">
+            <div class="second-slider__option-check">Смайлики</div>
+            <div class="second-slider__option-check"></div>
+            <div class="second-slider__option-check"></div>
+            <div class="second-slider__option-check"></div>
+          </li>
+          <li class="second-slider__option second-slider__option--not-selected">
+            <div class="second-slider__option-check">Комментарии</div>
+            <div class="second-slider__option-check"></div>
+            <div class="second-slider__option-check"></div>
+            <div class="second-slider__option-check"></div>
+          </li>
+        </ul>
+        <div class="second-slider__tumbler">
+          <button class="second-slider__tumbler-element" type="button" name="button"></button>
+          <button class="second-slider__tumbler-element  second-slider__tumbler-element--active" type="button" name="active"></button>
+          <button class="second-slider__tumbler-element" type="button" name="button"></button>
         </div>
-        <div class="second-slider__header">
-          <p class="second-slider__package">
-            <b class="second-slider__package-item">АНЛИМ</b>
-          </p>
-          <span class="second-slider__price">9,99 USD</span>
-        </div>
-      </div>
-      <ul class="second-slider__options">
-        <li class="second-slider__option">
-          <div class="second-slider__option-check">Розовый фильтр</div>
-          <div class="second-slider__option-check"></div>
-          <div class="second-slider__option-check"></div>
-          <div class="second-slider__option-check"></div>
-        </li>
-        <li class="second-slider__option">
-          <div class="second-slider__option-check">Смайлики</div>
-          <div class="second-slider__option-check"></div>
-          <div class="second-slider__option-check"></div>
-          <div class="second-slider__option-check"></div>
-        </li>
-        <li class="second-slider__option second-slider__option--not-selected">
-          <div class="second-slider__option-check">Комментарии</div>
-          <div class="second-slider__option-check"></div>
-          <div class="second-slider__option-check"></div>
-          <div class="second-slider__option-check"></div>
-        </li>
-      </ul>
-      <div class="second-slider__tumbler">
-        <button class="second-slider__tumbler-element" type="button" name="button"></button>
-        <button class="second-slider__tumbler-element  second-slider__tumbler-element--active" type="button" name="active"></button>
-        <button class="second-slider__tumbler-element" type="button" name="button"></button>
       </div>
     </div>
    </main>
@@ -162,16 +164,47 @@
       Остались вопросы?
       Свяжитесь с нами!
     </p>
-    <h2 class="main-footer__block-title">Звоните:</h2>
-    <a href="tel:+7(812)555-66-66" class="main-footer__block-content">+7 (812) 555-66-66</a>
-    <h2 class="main-footer__block-title">Пишите:</h2>
-    <span class="main-footer__block-content">mail@htmlacademy.ru</span>
+    <div class="main-footer__contacts">
+      <div class="main-footer__tel">
+        <h2 class="main-footer__block-title">Звоните:</h2>
+        <a href="tel:+7(812)555-66-66" class="main-footer__block-content">+7 (812) 555-66-66</a>
+      </div>
+      <div class="main-footer__email">
+        <h2 class="main-footer__block-title">Пишите:</h2>
+        <span class="main-footer__block-content">mail@htmlacademy.ru</span>
+      </div>
+    </div>
     <h2 class="main-footer__block-title">Приезжайте в гости:</h2>
     <p class="main-footer__block-content">
           ул. Большая
       Конюшенная, 19/8
     </p>
-    <span class="main-footer__map-marker"></span>
+    <div class="main-footer__map">
+      <div class="main-footer__map-triangle"></div>
+      <span class="main-footer__map-marker"></span>
+    </div>
+    <div class="competition-footer">
+      <a class="site-logo site-logo--footer" title="Pink">
+          <img class="site-logo__image" src="img/logotype-blue-tablet.svg" alt="Logo" />
+      </a>
+      <div class="socials">
+          <a class="socials__element socials__element--twitter" href="http://twitter.com" title="twitter">
+            <img class="socials__element-image" src="img/twitter.svg" alt="twitter" />
+          </a>
+          <a class="socials__element socials__element--facebook" href="http://facebook.com" title="facebook">
+            <img class="socials__element-image" src="img/facebook.svg" alt="facebook" />
+          </a>
+          <a class="socials__element socials__element--youtube" href="http://youtube.com" title="youtube">
+            <img class="socials__element-image" src="img/youtube.svg" alt="youtube" />
+          </a>
+      </div>
+      <div class="copyright">
+        <span class="copyright__maked">Разработано</span>
+        <a class="copyright__link" href="http://htmlacademy.ru" title="html academy">
+          <img class="copyright__image" src="img/htmlacademy.svg" alt="htmlacademy" />
+        </a>
+      </div>
+    </div>
   </footer>
   </body>
   </html>

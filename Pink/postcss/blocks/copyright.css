@@ -1,8 +1,14 @@
 .copyright {
-  text-align: $center;
-
+  justify-content: $center;
+  display: flex;
+  align-items: center;
   &__maked {
     @mixin font_options $OpenSans_regular, $small, $blue, $medium, $regular, $center, $none;
     margin-right: 15px;
+  }
+}
+@media (min-width: 700px) {
+.copyright {
+  flex-basis: 150px;
   }
 }

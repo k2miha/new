@@ -1,16 +1,27 @@
 .photos__description {
   @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center;
-  margin: 46px 29px 48px;
+  margin-top: 46px;
+  margin-left: 29px;
+  margin-right: 29px;
+  margin-bottom: 48px;
 }
 .photos__element-comment {
   background-color: $grey;
-  width: 240px;
-  margin: $zero $auto;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: -4px;
   padding-top: 25px;
   padding-left: 17px;
   padding-right: 6px;
   padding-bottom: 13px;
+}
+.photos__element--panorama .photos__element-comment {
+  padding-bottom: $zero;
+  margin-bottom: 20px;
+}
+.photos__element-comment .like {
+  padding-left: $zero;
+  margin-bottom: $zero;
 }
 .photos__element--panorama-label {
   @mixin font_options $OpenSans_bold, $smallest, $white, $big, $bold, $center, $none;
@@ -34,6 +45,9 @@
 .photos__element-time {
   @mixin font_options $OpenSans_light, $smallest, $blue, $big, $light, $center, $uppercase;
 }
+.photos__element--panorama .photos__element-message {
+  padding-bottom: 13px;
+}
 .photos__element-message {
   margin: $zero;
   @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $left, $none;
@@ -42,4 +56,66 @@
   display: $block;
   margin: $zero 20px;
   width: 87%;
+}
+@media (min-width: 700px) {
+  .photos__description {
+    font-size: $medium;
+    margin-left: 57px;
+    margin-right: 57px;
+    margin-bottom: 80px;
+    margin-top: 74px;
+  }
+  .photos__container {
+    display: flex;
+    flex-wrap: wrap;
+    @mixin tablet_padding;
+    justify-content: space-between;
+  }
+  .photos__container .photos__element {
+    width: calc($half-width - 10px);
+  }
+  .photos__element--panorama-image-block {
+    background-image: url("../../img/panorama-tablet.jpg");
+    min-height: 509px;
+  }
+  .photos__element--panorama-image {
+    display: $none;
+  }
+  .photos__element--panorama {
+    margin-bottom: 50px;
+  }
+  .photos__element--panorama .photos__element-comment {
+    width: calc(100% - 103px);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: $zero;
+    position: relative;
+    padding-bottom: 28px;
+    padding-top: 31px;
+  }
+  .photos__element-comment {
+    width: $auto;
+  }
+  .photos__element-comment .like {
+    position: absolute;
+    top: 30px;
+    right: $zero;
+    display: flex;
+    margin-bottom: $zero;
+    padding-bottom: $zero;
+    padding-left: $zero;
+    justify-content: flex-end;
+  }
+  .photos__element-comment .like__button {
+    order: 1;
+    margin-right: 28px;
+  }
+  .photos__element-image {
+    width: $full-width;
+    @mixin margin_reset;
+  }
+  .photos__element-comment {
+    @mixin margin_reset;
+    margin-top: $zero;
+  }
 }

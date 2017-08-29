@@ -1,11 +1,11 @@
 .like {
   background-color: $grey;
-  width: 246px;
   margin: $zero $auto;
   margin-bottom: 20px;
   padding-bottom: 26px;
   padding-left: 17px;
-
+  margin-left: 20px;
+  margin-right: 20px;
   &__button {
     @mixin button_reset;
   }
@@ -14,5 +14,10 @@
   }
   &__count {
     @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center, $none;
+  }
+}
+@media (min-width: 700px) {
+.like {
+  @mixin margin_reset;
   }
 }

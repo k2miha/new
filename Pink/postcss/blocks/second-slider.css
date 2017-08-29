@@ -1,7 +1,6 @@
 .second-slider {
   background-image: url("../../img/Shape_2_copy.png");
   background-repeat: $no-repeat;
-  padding-top: 133px;
   &__header {
     background-color: $blue;
     text-align: $center;
@@ -36,7 +35,6 @@
   }
   &__tumbler {
     padding-top: 40px;
-    padding-bottom: 47px;
     background-color: $grey;
     text-align: $center;
   }
@@ -48,9 +46,12 @@
     margin-right: 40px;
     width: calc(100% - 80px);
     border-collapse: collapse;
+    background-image: none;
   &__header, &__header:first-child, &__header:last-child {
     display: table-cell;
     border-right: 2px solid #e5e5e5;
+    width: 25%;
+    padding-bottom: 15px;
   }
   &__header:last-child {
     border-right: $none;
@@ -77,6 +78,17 @@
   &__option-check {
     display: table-cell;
     border: 2px solid #e5e5e5;
+    text-transform: $none;
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+  }
+  &__package {
+    font-size: 16px;
+    padding-top: 12px;
+  }
+  &__price {
+    font-size: 18px;
   }
  }
 }

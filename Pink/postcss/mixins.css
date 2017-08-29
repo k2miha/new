@@ -9,15 +9,15 @@
 }
 @define-mixin white_background {
   background-color: $white;
-  margin: 0;
+  margin: $zero;
 }
 @define-mixin list_reset {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: $zero;
+  margin: $zero;
 }
 @define-mixin button_reset {
-  padding: 0;
+  padding: $zero;
   border: none;
   background-color: transparent;
 }
@@ -31,6 +31,10 @@
   margin: auto;
 }
 @define-mixin tablet_padding {
-padding-right: 40px;
-padding-left: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+@define-mixin margin_reset {
+  margin-left: $zero;
+  margin-right: $zero;
 }

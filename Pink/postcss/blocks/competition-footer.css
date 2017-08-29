@@ -4,3 +4,8 @@
 .competition-footer__form-field-marker {
   color: $magenta;
 }
+@media (min-width: 700px) {
+.competition-footer .site-logo::before {
+  display: $none;
+  }
+}

@@ -1,7 +1,8 @@
 .menu {
   background-color: $blue;
   display: $none;
-
+  position: relative;
+  z-index: 1;
   &__elements {
     background-color: $blue;
     @mixin list_reset;
@@ -18,6 +19,13 @@
   &__element:first-child &__link {
       display: $inline-block;
   }
+  &__element:first-child &__link::before {
+    content: "";
+    display: inline-block;
+    width: 147px;
+    height: 40px;
+    background: url("../../img/logotype-white-tablet.svg");
+  }
   &__link {
     @mixin font_options $OpenSans_bold, $medium, $white, $medium, $bold, $center, $uppercase;
     text-decoration: $none;
@@ -28,5 +36,18 @@
   }
   &__button {
     @mixin button_reset;
+  }
+}
+@media (min-width: 700px) {
+  .menu__element:first-child .site-logo {
+      display: $none;
+  }
+  .menu__element:first-child {
+    display: flex;
+    justify-content: space-between;
+    @mixin tablet_padding;
+  }
+  .menu__element:first-child .menu__link {
+    padding-bottom: 42px;
   }
 }

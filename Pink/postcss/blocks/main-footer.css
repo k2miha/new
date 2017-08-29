@@ -1,8 +1,9 @@
 .main-footer {
-  background-image: url("../img/Layer 153.jpg");
-  background-repeat: $no-repeat;
   min-height: 645px;
   @mixin mobile;
+  & > .competition-footer {
+    display: $none;
+  }
   &__block-title {
     @mixin font_options $OpenSans_bold, $medium, $blue, $normal, $bold, $center, $none;
     @mixin white_background;
@@ -19,9 +20,59 @@
     @mixin font_options $OpenSans_light, $big, $magenta, $normal, $light, $center, $none;
     @mixin white_background;
     display: $block;
-    padding: $zero 2px;
+    padding-left: 11px;
+    padding-right: 11px;
   }
   &__block-content:first-of-type {
     text-decoration: $none;
   }
+  &__map {
+    background-image: url("../img/Layer 153.jpg");
+    background-repeat: $no-repeat;
+    min-height: 253px;
+    margin-top: -57px;
+    }
+  &__map-triangle {
+    min-height: 123px;
+    background-image: url("../img/triangle-white-footer-mobile.svg");
+  }
+}
+@media (min-width: 700px) {
+.main-footer {
+  max-width: $full-width;
+  &__description {
+      font-size: 40px;
+      padding-left: 54px;
+      padding-right: 54px;
+  }
+  &__contacts {
+    display: flex;
+    justify-content: space-around;
+    @mixin tablet_padding;
+  }
+  .main-footer > &__block-content {
+    padding-left: 195px;
+    padding-right: 195px;
+  }
+  &__map {
+    background-image: url("../img/Layer_153.jpg");
+    min-height: 350px;
+    margin-top: -33px;
+    z-index: -1;
+    position: relative;
+  }
+  &__map-triangle {
+    max-width: $full-width;
+    min-height: 123px;
+    background-image: url("../img/triangle-white-footer.svg");
+  }
+  & > .competition-footer {
+    display: flex;
+    @mixin tablet_padding;
+    align-items: center;
+  }
+  & .site-logo--footer {
+      flex-basis: 150px;
+    }
+ }
 }
