@@ -118,4 +118,9 @@
     @mixin margin_reset;
     margin-top: $zero;
   }
+  .photos__element--auto .photos__element-image {
+    background-image: url("../../img/photo-1-tablet.jpg");
+    width: 300px;
+    height: 300px;
+  }
 }
