@@ -57,6 +57,28 @@
   margin: $zero 20px;
   width: 87%;
 }
+.photos__container .photos__element-image {
+  width: 280px;
+  height: 180px;
+}
+.photos__element--auto .photos__element-image {
+  background-image: url("../../img/photo-1-mobile.jpg");
+}
+.photos__element--drums .photos__element-image {
+  background-image: url("../../img/photo-2-mobile.jpg");
+}
+.photos__element--roof .photos__element-image {
+  background-image: url("../../img/photo-3-mobile.jpg");
+}
+.photos__element--bakhcha .photos__element-image {
+  background-image: url("../../img/photo-4-mobile.jpg");
+}
+.photos__element--legs .photos__element-image {
+  background-image: url("../../img/photo-5-mobile.jpg");
+}
+.photos__element--plane .photos__element-image {
+  background-image: url("../../img/photo-6-mobile.jpg");
+}
 @media (min-width: 700px) {
   .photos__description {
     font-size: $medium;
@@ -118,9 +140,26 @@
     @mixin margin_reset;
     margin-top: $zero;
   }
-  .photos__element--auto .photos__element-image {
-    background-image: url("../../img/photo-1-tablet.jpg");
+  .photos__container .photos__element-image {
     width: 300px;
     height: 300px;
+  }
+  .photos__element--auto .photos__element-image {
+    background-image: url("../../img/photo-1-tablet.jpg");
+  }
+  .photos__element--drums .photos__element-image {
+    background-image: url("../../img/photo-2-tablet.jpg");
+  }
+  .photos__element--roof .photos__element-image {
+    background-image: url("../../img/photo-3-tablet.jpg");
+  }
+  .photos__element--bakhcha .photos__element-image {
+    background-image: url("../../img/photo-4-tablet.jpg");
+  }
+  .photos__element--legs .photos__element-image {
+    background-image: url("../../img/photo-5-tablet.jpg");
+  }
+  .photos__element--plane .photos__element-image {
+    background-image: url("../../img/photo-6-tablet.jpg");
   }
 }
