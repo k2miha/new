@@ -79,6 +79,9 @@
 .photos__element--plane .photos__element-image {
   background-image: url("../../img/photo-6-mobile.jpg");
 }
+.photos__container .photos__element {
+  margin-bottom: 20px;
+}
 @media (min-width: 700px) {
   .photos__description {
     font-size: $medium;
@@ -87,14 +90,22 @@
     margin-bottom: 80px;
     margin-top: 74px;
   }
+  .photos__element-comment-container {
+    padding-top: 25px;
+    flex-grow: 1;
+  }
   .photos__container {
     display: flex;
     flex-wrap: wrap;
     @mixin tablet_padding;
     justify-content: space-between;
   }
+  .photos__container .like {
+    margin-bottom: 30px;
+  }
   .photos__container .photos__element {
     width: calc($half-width - 10px);
+    background-color: $grey;
   }
   .photos__element--panorama-image-block {
     background-image: url("../../img/panorama-tablet.jpg");
@@ -118,15 +129,24 @@
   .photos__element-comment {
     width: $auto;
   }
-  .photos__element-comment .like {
+  .photos__container .photos__element-comment {
+    min-height: 155px;
+    padding-bottom: $zero;
+    padding-top: $zero;
+    display: flex;
+    flex-direction: column;
+  }
+  .photos__element--panorama .like {
     position: absolute;
     top: 30px;
     right: $zero;
-    display: flex;
     margin-bottom: $zero;
     padding-bottom: $zero;
     padding-left: $zero;
-    justify-content: flex-end;
+  }
+  .photos__element-comment .like {
+    display: flex;
+    padding-bottom: $zero;
   }
   .photos__element-comment .like__button {
     order: 1;

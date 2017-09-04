@@ -19,5 +19,6 @@
 @media (min-width: 700px) {
 .like {
   @mixin margin_reset;
+  margin-bottom: $zero;
   }
 }
