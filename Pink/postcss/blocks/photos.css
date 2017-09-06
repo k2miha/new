@@ -87,8 +87,8 @@
     font-size: $medium;
     margin-left: 57px;
     margin-right: 57px;
-    margin-bottom: 80px;
-    margin-top: 74px;
+    margin-bottom: 72px;
+    margin-top: 54px;
   }
   .photos__element-comment-container {
     padding-top: 25px;
@@ -110,6 +110,7 @@
   .photos__element--panorama-image-block {
     background-image: url("../../img/panorama-tablet.jpg");
     min-height: 509px;
+    background-repeat: $no-repeat;
   }
   .photos__element--panorama-image {
     display: $none;
@@ -128,6 +129,7 @@
   }
   .photos__element-comment {
     width: $auto;
+    padding-left: 28px;
   }
   .photos__container .photos__element-comment {
     min-height: 155px;

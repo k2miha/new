@@ -29,9 +29,11 @@
 }
 .personal-info__title {
   @mixin font_options $OpenSans_regular, $small, $magenta, $medium, $regular, $center, $uppercase;
-  padding-top: 39px;
-  margin-top: $zero;
   margin-bottom: 42px;
+}
+.personal-info__title-application {
+  position: relative;
+  top: 46px;
 }
 .personal-info__title:last-of-type {
   margin-bottom: 20px;
@@ -56,6 +58,9 @@
   padding-left: $margin;
   padding-right: $margin;
   margin-bottom: 38px;
+}
+.personal-info__achievements, .personal-info__journey-application  {
+  border-color: $transparent;;
 }
 .personal-info__journey-application {
   margin-bottom: 21px;
@@ -85,6 +90,9 @@
   background: $white;
   border-radius: 50%;
 }
+.personal-info__custom-radio-element:first-of-type {
+  margin-top: 50px;
+}
 .personal-info__textarea {
   width: calc($full-width - 19px) ;
   height: 201px;
@@ -93,4 +101,55 @@
   padding-left: 19px;
   @mixin input_border;
   margin-bottom: 47px;
+}
+.personal-info__contacts-tablet {
+  display: $none;
+}
+@media (min-width: 700px) {
+  .personal-info__description {
+    font-size: $medium;
+    width: 72%;
+    margin-top: 100px;
+    margin-bottom: $zero;
+  }
+  .personal-info__name-element-label {
+    display: flex;
+    align-items: $center;
+  }
+  .personal-info__element-text {
+    margin-left: 22px;
+  }
+  .personal-info__form {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .personal-info__description-fill {
+    margin-top: $zero;
+    margin-bottom: 76px;
+  }
+  .personal-info__journey-application {
+    background-color: $transparent;
+    margin-right: $zero;
+    margin-left: 18px;
+    margin-top: 44px;
+    border-color: #e5e5e5;
+  }
+  .personal-info__name-section, .personal-info__journey-application {
+    order: -1;
+  }
+  .personal-info__title-application {
+    position: static;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .personal-info__custom-radio-element:first-of-type {
+    margin-top: 29px;
+  }
+  .personal-info__contacts {
+    display: $none;
+  }
+  .personal-info__contacts-tablet {
+    display: $block;
+  }
 }

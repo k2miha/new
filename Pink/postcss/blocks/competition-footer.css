@@ -5,7 +5,12 @@
   color: $magenta;
 }
 @media (min-width: 700px) {
-.competition-footer .site-logo::before {
+  .competition-footer {
+    display: flex;
+    @mixin tablet_padding;
+    align-items: $center;
+ & .site-logo::before {
   display: $none;
+    }
   }
 }

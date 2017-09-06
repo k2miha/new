@@ -1,14 +1,34 @@
 .photo-editor {
   text-align: $center;
   background-image: url("../../img/grey-back.jpg");
-
+  display: flex;
+  flex-direction: column;
   &__image {
     display: $block;
     margin-left: 18px;
     margin-right: 20px;
     padding-top: 20px;
-    width: 87%;
+    width: 280px;
+    height: 374px;
     margin-bottom: 42px;
+    background-image: url("../../img/photo-7-mobile.jpg");
+    background-repeat: $no-repeat;
+    background-position-y: 20px;
+  }
+  &__crop-image {
+    background-image: url("../../img/crop.svg");
+    width: 44px;
+    height: 44px;
+  }
+  &__fill-image {
+    background-image: url("../../img/fill.svg");
+    width: 48px;
+    height: 43px;
+  }
+  &__contrast-image {
+    background-image: url("../../img/contrast.svg");
+    width: 32px;
+    height: 32px;
   }
   &__image-modification-button {
     @mixin button_reset;
@@ -16,8 +36,15 @@
   &__functions {
     margin-bottom: 33px;
   }
-  &__range {
+  &__range:nth-child(-n+5) {
+    display: $none;
     margin-bottom: 28px;
+  }
+  &__range:nth-child(8) {
+    display: $block;
+    margin: $auto;
+    width: 240px;
+    margin-top: 33px;
   }
   &__button {
     @mixin font_options $OpenSans_bold, $medium, $magenta, $medium, $bold, $center, $none;
@@ -33,6 +60,77 @@
     padding-bottom: 41px;
   }
 }
-hr {
+hr:not(:last-of-type) {
   margin-bottom: 38px;
+  display: $none;
+}
+hr:last-of-type {
+  margin-top: 34px;
+  margin-bottom: 38px;
+}
+@media (min-width: 700px) {
+  .photo-editor {
+    flex-direction: row;
+  &__image {
+    width: 300px;
+    height: 400px;
+    background-image: url("../../img/photo-7-tablet.jpg");
+    margin-left: 40px;
+    margin-bottom: 54px;
+    margin-right: 45px;
+    padding-top: 57px;
+    background-position-y: 57px;
+  }
+  &__function-container {
+    flex-grow: 1;
+    margin-right: 40px;
+    margin-top: 66px;
+  }
+  &__crop-image {
+    width: 22px;
+    height: 22px;
+    background-image: url("../../img/crop_50.svg");
+  }
+  &__fill-image {
+    background-image: url("../../img/fill_50.svg");
+    width: 24px;
+    height: 22px;
+  }
+  &__contrast-image {
+    background-image: url("../../img/contrast_50.svg");
+    width: 16px;
+    height: 16px;
+  }
+  &__range {
+      margin-bottom: 24px;
+      margin-right: 18px;
+      width: 69%;
+  }
+  &__range:not(:first-of-type) {
+    display: $inline-block;
+  }
+  &__range:nth-child(-n+5) {
+    display: $inline-block;
+  }
+  &__range:nth-child(8) {
+    width: 69%;
+    margin-top: $zero;
+    margin-right: 18px;
+  }
+  &__image-modification-button  {
+    margin-right: 30px;
+  }
+  &__button {
+    margin-bottom: 24px;
+    }
+  }
+  hr {
+    margin-bottom: 27px;
+  }
+  hr:last-of-type {
+    margin-bottom: 67px;
+  }
+  hr:not(:last-of-type) {
+    display: $block;
+  }
 }

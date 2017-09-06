@@ -12,7 +12,7 @@
   <header class="main-header main-header--short">
     <div class="logotype">
       <a class="site-logo" href="index.html" title="Pink">
-          <img class="site-logo__image" src="img/logotype-white-mobile.svg" alt="Logo" />
+          <img class="site-logo__text" src="img/logotype-white-mobile.svg" alt="Logo" />
       </a>
       <button class="logotype__menu-button" type="button" name="open" title="Меню">
         <img class="logotype__menu-button-img" src="img/menu-burger.svg" alt="Menu-button" />
@@ -42,6 +42,7 @@
     <div class="personal-info">
       <p class="personal-info__description">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+        <p class="personal-info__description personal-info__description-fill">Пожалуйста, заполните форму ниже:</p>
       </p>
       <form class="personal-info__form" action="https://echo.htmlacademy.ru" method="post" >
         <fieldset class="personal-info__name-section">
@@ -84,9 +85,9 @@
             <input class="personal-info__element-text" type="text" name="name" value="" placeholder="E-mail, пожалуйста">
           </label>
         </div>
-        <section class="personal-info__journey-application">
-          <h2 class="personal-info__title">С каким приложением
-            путешествовали?</h2>
+        <fieldset class="personal-info__journey-application">
+          <legend class="personal-info__title personal-info__title-application">С каким приложением
+            путешествовали?</legend>
           <input class="personal-info__element  personal-info__element--checked" id="ios" type="radio" name="name" value="">
           <span class="personal-info__custom-radio-element"></span>
           <label class="personal-info__element-label" for="ios">Pink для iOS</label><br>
@@ -96,7 +97,15 @@
           <input class="personal-info__element" id="windows" type="radio" name="name" value="">
           <span class="personal-info__custom-radio-element"></span>
           <label class="personal-info__element-label" for="windows">Windows Phone</label><br>
-        </section>
+        </fieldset>
+        <div class="personal-info__contacts-tablet">
+          <label class="personal-info__name-element-label" for="tel">Номерок телефончика
+            <input class="personal-info__element-text" id="tel" type="text" name="name" value="" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="personal-info__name-element-label">адресок почты
+            <input class="personal-info__element-text" type="text" name="name" value="" placeholder="E-mail, пожалуйста">
+          </label>
+        </div>
         <section class="personal-info__emotions">
         	<h2 class="personal-info__title">Опишите свои эмоции</h2>
         	<textarea class="personal-info__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>

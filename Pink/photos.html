@@ -178,24 +178,28 @@
      </p>
     </div>
     <div class="photo-editor">
-      <img class="photo-editor__image" src="img/photo-7-mobile.jpg" alt="winter-road" />
-      <div class="photo-editor__functions">
-        <button class="photo-editor__image-modification-button" title="crop">
-          <img class="photo-editor__crop-image" src="img/crop.svg" alt="crop-icon" />
-        </button>
-        <button class="photo-editor__image-modification-button" title="fill">
-          <img class="photo-editor__fill-image" src="img/fill.svg" alt="crop-icon" />
-        </button>
-        <button class="photo-editor__image-modification-button" title="contrast">
-          <img class="photo-editor__contrast-image" src="img/contrast.svg" alt="crop-icon" />
-        </button>
+      <div class="photo-editor__image"></div>
+      <div class="photo-editor__function-container">
+        <form class="photo-editor__function-tuning" action="https://echo.htmlacademy.ru" method="post">
+          <button class="photo-editor__image-modification-button" title="crop">
+            <div class="photo-editor__crop-image"></div>
+          </button>
+          <input class="photo-editor__range" type="range" name="name" value="5">
+          <hr>
+          <button class="photo-editor__image-modification-button" title="fill">
+            <div class="photo-editor__fill-image"></div>
+          </button>
+          <input class="photo-editor__range" type="range" name="name" value="5">
+          <hr>
+          <button class="photo-editor__image-modification-button" title="contrast">
+            <div class="photo-editor__contrast-image"></div>
+          </button>
+          <input class="photo-editor__range" type="range" name="name" value="5">
+          <hr>
+          <input class="photo-editor__button" type="submit" name="name" value="Запостить">
+          <button class="photo-editor__button photo-editor__button--cancel" type="button" name="button" value="">Отмена</button>
+        </form>
       </div>
-      <form class="photo-editor__function-tuning" action="https://echo.htmlacademy.ru" method="post">
-        <input class="photo-editor__range" type="range" name="name" value="5">
-        <hr>
-        <input class="photo-editor__button" type="submit" name="name" value="Запостить">
-        <button class="photo-editor__button photo-editor__button--cancel" type="button" name="button" value="">Отмена</button>
-      </form>
     </div>
   </main>
   <footer class="competition-footer">

@@ -39,6 +39,12 @@
   color: #d22856;
 }
 @media (min-width: 700px) {
+  .competition-footer {
+    display: flex;
+    padding-right: 40px;
+    padding-left: 40px;
+    align-items: center;
+  }
   .competition-footer .site-logo::before {
     display: none;
   }
@@ -342,13 +348,16 @@
 .menu__element:first-child {
   text-align: left;
   padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .menu__element:first-child .menu__link {
   display: inline-block;
 }
 .menu__element:first-child .menu__link::before {
   content: "";
-  display: inline-block;
+  display: none;
   width: 147px;
   height: 40px;
   background: url("../../img/logotype-white-tablet.svg");
@@ -376,9 +385,10 @@
   .menu__element:first-child .site-logo {
     display: none;
   }
+  .menu__element:first-child .menu__link::before {
+    display: inline-block;
+  }
   .menu__element:first-child {
-    display: flex;
-    justify-content: space-between;
     padding-right: 40px;
     padding-left: 40px;
   }
@@ -441,9 +451,11 @@
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 39px;
-  margin-top: 0;
   margin-bottom: 42px;
+}
+.personal-info__title-application {
+  position: relative;
+  top: 46px;
 }
 .personal-info__title:last-of-type {
   margin-bottom: 20px;
@@ -476,6 +488,9 @@
   padding-left: 22px;
   padding-right: 22px;
   margin-bottom: 38px;
+}
+.personal-info__achievements, .personal-info__journey-application {
+  border-color: transparent;
 }
 .personal-info__journey-application {
   margin-bottom: 21px;
@@ -511,6 +526,9 @@
   background: #fff;
   border-radius: 50%;
 }
+.personal-info__custom-radio-element:first-of-type {
+  margin-top: 50px;
+}
 .personal-info__textarea {
   width: calc(100% - 19px);
   height: 201px;
@@ -528,17 +546,89 @@
   border-style: solid;
   margin-bottom: 47px;
 }
+.personal-info__contacts-tablet {
+  display: none;
+}
+@media (min-width: 700px) {
+  .personal-info__description {
+    font-size: 18px;
+    width: 72%;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+  .personal-info__name-element-label {
+    display: flex;
+    align-items: center;
+  }
+  .personal-info__element-text {
+    margin-left: 22px;
+  }
+  .personal-info__form {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .personal-info__description-fill {
+    margin-top: 0;
+    margin-bottom: 76px;
+  }
+  .personal-info__journey-application {
+    background-color: transparent;
+    margin-right: 0;
+    margin-left: 18px;
+    margin-top: 44px;
+    border-color: #e5e5e5;
+  }
+  .personal-info__name-section, .personal-info__journey-application {
+    order: -1;
+  }
+  .personal-info__title-application {
+    position: static;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .personal-info__custom-radio-element:first-of-type {
+    margin-top: 29px;
+  }
+  .personal-info__contacts {
+    display: none;
+  }
+  .personal-info__contacts-tablet {
+    display: block;
+  }
+}
 .photo-editor {
   text-align: center;
   background-image: url("../../img/grey-back.jpg");
+  display: flex;
+  flex-direction: column;
 }
 .photo-editor__image {
   display: block;
   margin-left: 18px;
   margin-right: 20px;
   padding-top: 20px;
-  width: 87%;
+  width: 280px;
+  height: 374px;
   margin-bottom: 42px;
+  background-image: url("../../img/photo-7-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position-y: 20px;
+}
+.photo-editor__crop-image {
+  background-image: url("../../img/crop.svg");
+  width: 44px;
+  height: 44px;
+}
+.photo-editor__fill-image {
+  background-image: url("../../img/fill.svg");
+  width: 48px;
+  height: 43px;
+}
+.photo-editor__contrast-image {
+  background-image: url("../../img/contrast.svg");
+  width: 32px;
+  height: 32px;
 }
 .photo-editor__image-modification-button {
   padding: 0;
@@ -548,8 +638,15 @@
 .photo-editor__functions {
   margin-bottom: 33px;
 }
-.photo-editor__range {
+.photo-editor__range:nth-child(-n+5) {
+  display: none;
   margin-bottom: 28px;
+}
+.photo-editor__range:nth-child(8) {
+  display: block;
+  margin: auto;
+  width: 240px;
+  margin-top: 33px;
 }
 .photo-editor__button {
   font-family: 'Open Sans','open_sansbold',sans-serif;
@@ -570,8 +667,79 @@
 .photo-editor__function-tuning {
   padding-bottom: 41px;
 }
-hr {
+hr:not(:last-of-type) {
   margin-bottom: 38px;
+  display: none;
+}
+hr:last-of-type {
+  margin-top: 34px;
+  margin-bottom: 38px;
+}
+@media (min-width: 700px) {
+  .photo-editor {
+    flex-direction: row;
+  }
+  .photo-editor__image {
+    width: 300px;
+    height: 400px;
+    background-image: url("../../img/photo-7-tablet.jpg");
+    margin-left: 40px;
+    margin-bottom: 54px;
+    margin-right: 45px;
+    padding-top: 57px;
+    background-position-y: 57px;
+  }
+  .photo-editor__function-container {
+    flex-grow: 1;
+    margin-right: 40px;
+    margin-top: 66px;
+  }
+  .photo-editor__crop-image {
+    width: 22px;
+    height: 22px;
+    background-image: url("../../img/crop_50.svg");
+  }
+  .photo-editor__fill-image {
+    background-image: url("../../img/fill_50.svg");
+    width: 24px;
+    height: 22px;
+  }
+  .photo-editor__contrast-image {
+    background-image: url("../../img/contrast_50.svg");
+    width: 16px;
+    height: 16px;
+  }
+  .photo-editor__range {
+    margin-bottom: 24px;
+    margin-right: 18px;
+    width: 69%;
+  }
+  .photo-editor__range:not(:first-of-type) {
+    display: inline-block;
+  }
+  .photo-editor__range:nth-child(-n+5) {
+    display: inline-block;
+  }
+  .photo-editor__range:nth-child(8) {
+    width: 69%;
+    margin-top: 0;
+    margin-right: 18px;
+  }
+  .photo-editor__image-modification-button {
+    margin-right: 30px;
+  }
+  .photo-editor__button {
+    margin-bottom: 24px;
+  }
+  hr {
+    margin-bottom: 27px;
+  }
+  hr:last-of-type {
+    margin-bottom: 67px;
+  }
+  hr:not(:last-of-type) {
+    display: block;
+  }
 }
 .photos__description {
   font-family: 'Open Sans','open_sansregular',sans-serif;
@@ -692,8 +860,8 @@ hr {
     font-size: 18px;
     margin-left: 57px;
     margin-right: 57px;
-    margin-bottom: 80px;
-    margin-top: 74px;
+    margin-bottom: 72px;
+    margin-top: 54px;
   }
   .photos__element-comment-container {
     padding-top: 25px;
@@ -716,6 +884,7 @@ hr {
   .photos__element--panorama-image-block {
     background-image: url("../../img/panorama-tablet.jpg");
     min-height: 509px;
+    background-repeat: no-repeat;
   }
   .photos__element--panorama-image {
     display: none;
@@ -734,6 +903,7 @@ hr {
   }
   .photos__element-comment {
     width: auto;
+    padding-left: 28px;
   }
   .photos__container .photos__element-comment {
     min-height: 155px;
