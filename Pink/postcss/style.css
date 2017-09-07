@@ -22,6 +22,7 @@
 @import "../postcss/blocks/socials.css";
 @import "../postcss/blocks/logotype.css";
 @import "../postcss/blocks/site-logo.css";
+@import "../postcss/blocks/pop-up.css";
 body {
   margin: 0;
 }

@@ -1442,6 +1442,42 @@ hr:last-of-type {
     margin-bottom: 51px;
   }
 }
+.pop-up {
+  max-width: 320px;
+  margin: auto;
+}
+.pop-up__button {
+  background-color: #2aab6d;
+  margin-top: 50px;
+  font-family: 'Open Sans','open_sansregular',sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  height: 63px;
+  border-radius: 3px;
+}
+.pop-up__button-container {
+  height: 163px;
+  background-color: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.pop-up__header {
+  font-family: 'Open Sans','open_sansbold',sans-serif;
+  font-size: 18px;
+  color: #000;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: ;
+  margin-top: 46px;
+}
 body {
   margin: 0;
 }

@@ -1,0 +1,30 @@
+.pop-up {
+  max-width: 320px;
+  margin: auto;
+&__button {
+  background-color: #2aab6d;
+  margin-top: 50px;
+  font-family: 'Open Sans','open_sansregular',sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  width: $full-width;
+  height: 63px;
+  border-radius: 3px;
+  }
+  &__button-container {
+    height: 163px;
+    background-color: #f2f2f2;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__header {
+    @mixin font_options $OpenSans_bold, $medium, $black, $big, $bold, $center;
+    margin-top: 46px;
+  }
+}
