@@ -14,8 +14,7 @@
   }
   &__element:first-child {
     text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
+    @mixin mobile_padding;
     display: flex;
     justify-content: space-between;
   }

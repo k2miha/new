@@ -1,0 +1,13 @@
+.pop-up_failure .pop-up__button-container {
+  background-color: $transparent;
+}
+.pop-up_failure .pop-up__message {
+  margin-bottom: 43px;
+}
+.pop-up_failure .pop-up__button {
+  margin-top: $zero;
+  }
+.pop-up_failure .pop-up__button-container {
+  padding-bottom: 52px;
+  height: $auto;
+}

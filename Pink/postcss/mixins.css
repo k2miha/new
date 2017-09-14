@@ -34,7 +34,20 @@
   padding-right: 40px;
   padding-left: 40px;
 }
+@define-mixin mobile_padding {
+  padding-right: 20px;
+  padding-left: 20px;
+}
 @define-mixin margin_reset {
   margin-left: $zero;
   margin-right: $zero;
+}
+@define-mixin button {
+  background-color: #2aab6d;
+  @mixin font_options $OpenSans_regular, $medium, $white, $biggest, $bold, $center, $uppercase;
+  cursor: pointer;
+  border: $none;
+  width: $full-width;
+  height: 63px;
+  border-radius: 3px;
 }

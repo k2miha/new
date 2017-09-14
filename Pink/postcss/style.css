@@ -23,6 +23,7 @@
 @import "../postcss/blocks/logotype.css";
 @import "../postcss/blocks/site-logo.css";
 @import "../postcss/blocks/pop-up.css";
+@import "../postcss/blocks/pop-up_failure.css";
 body {
   margin: 0;
 }
