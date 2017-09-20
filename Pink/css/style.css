@@ -149,7 +149,7 @@
 }
 @media (min-width: 700px) {
   .main-content {
-    max-width: 100%;
+    max-width: 700px;
   }
 }
 .main-footer {
@@ -215,7 +215,7 @@
 }
 @media (min-width: 700px) {
   .main-footer {
-    max-width: 100%;
+    max-width: 700px;
   }
   .main-footer > .main-footer__block-content {
     padding-left: 195px;
@@ -243,12 +243,6 @@
     max-width: 100%;
     min-height: 123px;
     background-image: url("../img/triangle-white-footer.svg");
-  }
-  .main-footer > .competition-footer {
-    display: flex;
-    padding-right: 40px;
-    padding-left: 40px;
-    align-items: center;
   }
   .main-footer .site-logo--footer {
     flex-basis: 150px;
@@ -296,7 +290,7 @@
 }
 @media (min-width: 700px) {
   .main-header {
-    max-width: 100%;
+    max-width: 700px;
     min-height: 729px;
     background-image: url("../../img/back-tablet@1x.jpg");
   }
@@ -328,6 +322,11 @@
     margin-top: 73px;
   }
 }
+@media (min-width: 1200px) {
+  .main-header {
+    max-width: 1200px;
+  }
+}
 .menu {
   background-color: #283645;
   display: none;
@@ -345,7 +344,7 @@
   border-bottom: 1px solid;
   text-align: center;
 }
-.menu__element:first-child {
+.menu__element_logo {
   text-align: left;
   padding-right: 20px;
   padding-left: 20px;
@@ -355,7 +354,7 @@
 .menu__element:first-child .menu__link {
   display: inline-block;
 }
-.menu__element:first-child .menu__link::before {
+.menu__element_logo .menu__link::before {
   content: "";
   display: none;
   width: 147px;
@@ -388,12 +387,44 @@
   .menu__element:first-child .menu__link::before {
     display: inline-block;
   }
-  .menu__element:first-child {
+  .menu__element_logo {
     padding-right: 40px;
     padding-left: 40px;
   }
-  .menu__element:first-child .menu__link {
+  .menu__element_logo .menu__link {
     padding-bottom: 42px;
+  }
+}
+@media (min-width: 1200px) {
+  .menu {
+    display: block;
+  }
+  .menu__element_logo .menu__link::before {
+    background-image: url("../../img/logotype-white-desktop.svg");
+  }
+  .menu__button {
+    display: none;
+  }
+  .menu__elements {
+    display: flex;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+  .menu__element_logo {
+    flex-basis: 150px;
+    padding-left: 0;
+    padding-right: 0;
+    flex-grow: 0;
+  }
+  .menu__elements-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-left: 170px;
+  }
+  .menu__elements-container .menu__link {
+    text-transform: none;
+    padding-top: 48px;
   }
 }
 .personal-info__description {
@@ -452,12 +483,17 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 42px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
-.personal-info__title-application {
+.personal-info__title-application, .personal-info__achievements .personal-info__title {
   position: relative;
   top: 46px;
 }
-.personal-info__title:last-of-type {
+.personal-info__achievements .personal-info__title {
+  margin-bottom: 88px;
+}
+.personal-info__emotions .personal-info__title {
   margin-bottom: 20px;
 }
 .personal-info__element-text {
@@ -489,11 +525,16 @@
   padding-right: 22px;
   margin-bottom: 38px;
 }
-.personal-info__achievements, .personal-info__journey-application {
+.personal-info__achievements, .personal-info__journey-application, .personal-info__emotions {
   border-color: transparent;
 }
 .personal-info__journey-application {
   margin-bottom: 21px;
+}
+.personal-info__emotions {
+  margin-left: -22px;
+  margin-right: -22px;
+  margin-top: 39px;
 }
 .personal-info__achievements-element-label, .personal-info__element-label {
   font-family: 'Open Sans','open_sansregular',sans-serif;
@@ -595,6 +636,71 @@
   }
   .personal-info__contacts-tablet {
     display: block;
+    margin-right: 0;
+    margin-left: 18px;
+    margin-top: 44px;
+    border-color: #e5e5e5;
+    order: -1;
+  }
+  .personal-info__contacts-tablet .personal-info__element-text {
+    margin-left: 0;
+    width: calc(100% - 22px);
+  }
+  .personal-info__contacts-tablet .personal-info__name-element-label {
+    margin-left: 67px;
+    margin-bottom: 26px;
+  }
+  .personal-info__contacts-tablet .personal-info__name-element-label:last-of-type {
+    margin-bottom: 21px;
+  }
+  .personal-info__contacts-tablet-image-container {
+    width: 60px;
+    height: 60px;
+    background-color: #e5e5e5;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .personal-info__contacts-tablet-input-container {
+    position: relative;
+    margin-left: 48px;
+    margin-right: 48px;
+    width: calc(100% - 96px);
+  }
+  .personal-info__achievements {
+    border-color: #e5e5e5;
+    background-color: transparent;
+    margin-left: 18px;
+    margin-right: 0;
+    margin-top: 61px;
+  }
+  .personal-info__emotions {
+    border-color: #e5e5e5;
+    margin-left: 18px;
+    margin-right: 0;
+    margin-bottom: 71px;
+  }
+  .personal-info__textarea {
+    margin-left: 48px;
+    margin-right: 60px;
+    width: calc(100% - 117px);
+  }
+  .personal-info__achievements .personal-info__title {
+    top: 0;
+  }
+  .personal-info__emotions .personal-info__title {
+    margin-bottom: 37px;
+  }
+  .personal-info__form-submit-container {
+    margin-left: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+  }
+  .personal-info__form [type=submit], .competition-footer__form-field-requirements {
+    flex-basis: 300px;
   }
 }
 .photo-editor {
@@ -1415,6 +1521,11 @@ hr:last-of-type {
     padding-right: 40px;
     padding-top: 27px;
     padding-bottom: 39px;
+  }
+}
+@media (min-width: 1200px) {
+  .logotype {
+    display: none;
   }
 }
 .site-logo {

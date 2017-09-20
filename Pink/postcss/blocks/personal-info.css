@@ -30,12 +30,16 @@
 .personal-info__title {
   @mixin font_options $OpenSans_regular, $small, $magenta, $medium, $regular, $center, $uppercase;
   margin-bottom: 42px;
+  @mixin mobile_padding;
 }
-.personal-info__title-application {
+.personal-info__title-application, .personal-info__achievements .personal-info__title {
   position: relative;
   top: 46px;
 }
-.personal-info__title:last-of-type {
+.personal-info__achievements .personal-info__title {
+  margin-bottom: 88px;
+}
+.personal-info__emotions .personal-info__title {
   margin-bottom: 20px;
 }
 .personal-info__element-text {
@@ -52,18 +56,23 @@
   color: $blue;
 }
 .personal-info__achievements, .personal-info__journey-application {
-  background-color: #f2f2f2;
+  background-color: $grey;
   margin-left: -$margin;
   margin-right: -$margin;
   padding-left: $margin;
   padding-right: $margin;
   margin-bottom: 38px;
 }
-.personal-info__achievements, .personal-info__journey-application  {
-  border-color: $transparent;;
+.personal-info__achievements, .personal-info__journey-application, .personal-info__emotions  {
+  border-color: $transparent;
 }
 .personal-info__journey-application {
   margin-bottom: 21px;
+}
+.personal-info__emotions {
+  margin-left: -22px;
+  margin-right: -22px;
+  margin-top: 39px;
 }
 .personal-info__achievements-element-label, .personal-info__element-label {
   @mixin font_options $OpenSans_regular, $medium, $blue, $biggest, $regular, $left, $none;
@@ -133,7 +142,7 @@
     margin-right: $zero;
     margin-left: 18px;
     margin-top: 44px;
-    border-color: #e5e5e5;
+    border-color: $dark-grey;
   }
   .personal-info__name-section, .personal-info__journey-application {
     order: -1;
@@ -151,5 +160,70 @@
   }
   .personal-info__contacts-tablet {
     display: $block;
+    margin-right: $zero;
+    margin-left: 18px;
+    margin-top: 44px;
+    border-color: $dark-grey;
+    order: -1;
+  }
+  .personal-info__contacts-tablet .personal-info__element-text {
+    margin-left: $zero;
+    width: calc(100% - 22px);
+  }
+  .personal-info__contacts-tablet .personal-info__name-element-label {
+    margin-left: 67px;
+    margin-bottom: 26px;
+  }
+  .personal-info__contacts-tablet .personal-info__name-element-label:last-of-type {
+    margin-bottom: 21px;
+  }
+  .personal-info__contacts-tablet-image-container {
+    width: 60px;
+    height: 60px;
+    background-color: $dark-grey;
+    text-align: center;
+    line-height: 60px;
+    position: absolute;
+    top: $zero;
+    right: $zero;
+  }
+  .personal-info__contacts-tablet-input-container {
+    position: relative;
+    margin-left: 48px;
+    margin-right: 48px;
+    width: calc(100% - 96px);
+  }
+  .personal-info__achievements {
+    border-color: $dark-grey;
+    background-color: $transparent;
+    margin-left: 18px;
+    margin-right: $zero;
+    margin-top: 61px;
+  }
+  .personal-info__emotions {
+    border-color: $dark-grey;
+    margin-left: 18px;
+    margin-right: $zero;
+    margin-bottom: 71px;
+  }
+  .personal-info__textarea {
+    margin-left: 48px;
+    margin-right: 60px;
+    width: calc(100% - 117px);
+  }
+  .personal-info__achievements .personal-info__title  {
+    top: $zero;
+  }
+  .personal-info__emotions .personal-info__title {
+    margin-bottom: 37px;
+  }
+  .personal-info__form-submit-container {
+    margin-left: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 52px;
+  }
+  .personal-info__form [type=submit], .competition-footer__form-field-requirements{
+    flex-basis: 300px;
   }
 }

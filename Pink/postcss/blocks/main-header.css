@@ -27,7 +27,7 @@
 }
 @media (min-width: 700px) {
     .main-header {
-      max-width: $full-width;
+      max-width: 700px;
       min-height: 729px;
       background-image: url("../../img/back-tablet@1x.jpg");
     &--short {
@@ -57,5 +57,10 @@
       padding-right: 13px;
       margin-top: 73px;
     }
+  }
+}
+@media (min-width: 1200px) {
+  .main-header {
+    max-width: 1200px;
   }
 }

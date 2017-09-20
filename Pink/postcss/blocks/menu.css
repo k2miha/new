@@ -12,7 +12,7 @@
     border-bottom: 1px solid;
     text-align: $center;
   }
-  &__element:first-child {
+  &__element_logo {
     text-align: left;
     @mixin mobile_padding;
     display: flex;
@@ -21,7 +21,7 @@
   &__element:first-child &__link {
       display: $inline-block;
   }
-  &__element:first-child &__link::before {
+  &__element_logo &__link::before {
     content: "";
     display: $none;
     width: 147px;
@@ -47,10 +47,42 @@
   .menu__element:first-child .menu__link::before {
     display: $inline-block;
   }
-  .menu__element:first-child {
+  .menu__element_logo {
     @mixin tablet_padding;
   }
-  .menu__element:first-child .menu__link {
+  .menu__element_logo .menu__link {
     padding-bottom: 42px;
   }
+}
+@media (min-width: 1200px) {
+  .menu {
+    display: $block;
+  &__element_logo &__link::before {
+    background-image: url("../../img/logotype-white-desktop.svg");
+  }
+  &__button {
+    display: $none;
+  }
+  &__elements  {
+    display: flex;
+    padding-right: 130px;
+    padding-left: 130px;
+  }
+  &__element_logo {
+    flex-basis: 150px;
+    padding-left: $zero;
+    padding-right: $zero;
+    flex-grow: $zero;
+  }
+  &__elements-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-left: 170px;
+  }
+  &__elements-container &__link {
+    text-transform: $none;
+    padding-top: 48px;
+  }
+ }
 }
