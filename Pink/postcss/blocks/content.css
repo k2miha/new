@@ -27,3 +27,14 @@
   }
  }
 }
+@media (min-width: 1200px) {
+  .content {
+    margin-top: 78px;
+  &__slogan {
+    font-size: 50px;
+  }
+  &__slogan:last-child {
+    width: 417px;
+  }
+ }
+}

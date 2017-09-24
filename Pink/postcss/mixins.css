@@ -23,12 +23,16 @@
 }
 @define-mixin input_border {
   border-radius: 3px;
-  border-color: #e5e5e5;
+  border-color: $dark-grey;
   border-style: solid;
 }
 @define-mixin mobile {
   max-width: 320px;
-  margin: auto;
+  margin: $auto;
+}
+@define-mixin desktop_padding {
+  padding-right: 130px;
+  padding-left: 130px;
 }
 @define-mixin tablet_padding {
   padding-right: 40px;
@@ -50,4 +54,16 @@
   width: $full-width;
   height: 63px;
   border-radius: 3px;
+}
+@define-mixin background_center {
+  background-repeat: $no-repeat;
+  background-position-x: $half-width;
+}
+@define-mixin slider_toggle {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 41px;
+  position: absolute;
+  top: 213px;
 }

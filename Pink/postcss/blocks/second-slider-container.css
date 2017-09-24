@@ -8,3 +8,9 @@
         padding-bottom: 70px;
       }
 }
+@media (min-width: 1200px) {
+  .second-slider-container {
+    background-image: url("../../img/Shape 2 copy.svg");
+    padding-top: 158px;
+  }
+}

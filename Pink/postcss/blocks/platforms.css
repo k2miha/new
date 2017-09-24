@@ -56,3 +56,11 @@
     }
   }
 }
+@media (min-width: 1200px) {
+  .platforms {
+    margin-left: 130px;
+    &__download-link {
+      font-size: 21px;
+    }
+  }
+}

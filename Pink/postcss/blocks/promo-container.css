@@ -31,3 +31,14 @@
   }
  }
 }
+@media (min-width: 1200px) {
+.promo-container {
+  @mixin desktop_padding;
+  background-image: url("../../img/Shape 2-desktop.png");
+  background-position-y: 97px;
+  min-height: 715px;
+&__content-image {
+  display: $none;
+  }
+ }
+}

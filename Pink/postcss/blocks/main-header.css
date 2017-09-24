@@ -62,5 +62,20 @@
 @media (min-width: 1200px) {
   .main-header {
     max-width: 1200px;
+    background-image: url("../../img/back-desktop.jpg");
+    min-height: 859px;
+    position: relative;
+  &__title {
+    font-size: 50px;
+    margin-left: 130px;
   }
+  &__right-side {
+    min-width: 1050px;
+    height: 645px;
+    position: absolute;
+    top: 214px;
+    right: $zero;
+    background-image: url("../../img/iphone-6.png");
+  }
+ }
 }

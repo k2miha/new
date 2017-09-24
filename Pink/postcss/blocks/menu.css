@@ -57,6 +57,7 @@
 @media (min-width: 1200px) {
   .menu {
     display: $block;
+    background-color: rgba(0, 0, 0, 0.3);
   &__element_logo &__link::before {
     background-image: url("../../img/logotype-white-desktop.svg");
   }
@@ -67,6 +68,7 @@
     display: flex;
     padding-right: 130px;
     padding-left: 130px;
+    background-color: $transparent;
   }
   &__element_logo {
     flex-basis: 150px;
@@ -83,6 +85,11 @@
   &__elements-container &__link {
     text-transform: $none;
     padding-top: 48px;
+    font-family: $OpenSans;
+    font-weight: $normal;
+  }
+  &__element {
+    border-bottom: $none;
   }
  }
 }
