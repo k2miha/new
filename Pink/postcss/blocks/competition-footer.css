@@ -4,13 +4,35 @@
 .competition-footer__form-field-marker {
   color: $magenta;
 }
+.competition-footer__form-field-requirements.competition-footer__form-field-requirements--desktop {
+  display: $none;
+}
 @media (min-width: 700px) {
   .competition-footer {
     display: flex;
+    max-width: calc(700px - 80px);
     @mixin tablet_padding;
+    @mixin margin_auto;
     align-items: $center;
- & .site-logo::before {
-  display: $none;
+  & .site-logo::before {
+    display: $none;
+    }
+  &__form-field-requirements {
+    text-align: right;
+  }
+ }
+}
+@media (min-width: 1200px) {
+  .competition-footer {
+    max-width: calc(1200px - 260px);
+    margin-bottom: 75px;
+    @mixin desktop_padding;
+    &__form-field-requirements {
+      display: $none;
+    }
+    &__form-field-requirements&__form-field-requirements--desktop {
+      flex-basis: 320px;
+      display: $block;
     }
   }
 }

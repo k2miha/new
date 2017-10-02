@@ -77,5 +77,8 @@
     right: $zero;
     background-image: url("../../img/iphone-6.png");
   }
+  &--short {
+    min-height: 394px;
+  }
  }
 }

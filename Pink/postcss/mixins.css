@@ -46,6 +46,14 @@
   margin-left: $zero;
   margin-right: $zero;
 }
+@define-mixin padding_reset {
+  padding-left: $zero;
+  padding-right: $zero;
+}
+@define-mixin margin_auto {
+  margin-left: $auto;
+  margin-right: $auto;
+}
 @define-mixin button {
   background-color: #2aab6d;
   @mixin font_options $OpenSans_regular, $medium, $white, $biggest, $bold, $center, $uppercase;

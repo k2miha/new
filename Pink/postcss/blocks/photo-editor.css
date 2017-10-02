@@ -134,3 +134,46 @@ hr:last-of-type {
     display: $block;
   }
 }
+@media (min-width: 1200px) {
+  .photo-editor {
+    margin-left: 130px;
+    margin-right: 130px;
+    &__image {
+      margin-left: 80px;
+      margin-right: 90px;
+    }
+    &__function-container {
+      margin-right: 60px;
+    }
+    &__crop-image {
+      background-image: url("../../img/crop.svg");
+      width: 44px;
+      height: 44px;
+    }
+    &__fill-image {
+      background-image: url("../../img/fill-desktop.svg");
+      width: 48px;
+      height: 43px;
+    }
+    &__contrast-image {
+      background-image: url("../../img/contrast-desktop.svg");
+      width: 32px;
+      height: 32px;
+    }
+    &__button {
+      display: $inline-block;
+    }
+    &__function-tuning {
+      padding-bottom: 23px;
+    }
+    &__image-modification-button {
+      margin-right: 44px;
+    }
+    &__button--cancel {
+      margin-left: 44px;
+    }
+  }
+  hr:not(:last-of-type) {
+    margin-top: 4px;
+  }
+}

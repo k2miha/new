@@ -119,7 +119,7 @@
     margin-bottom: 50px;
   }
   .photos__element--panorama .photos__element-comment {
-    width: calc(100% - 103px);
+    width: calc(100% - 114px);
     margin-left: 40px;
     margin-right: 40px;
     margin-top: $zero;
@@ -183,5 +183,59 @@
   }
   .photos__element--plane .photos__element-image {
     background-image: url("../../img/photo-6-tablet.jpg");
+  }
+}
+@media (min-width: 1200px) {
+  .photos__description {
+    width: 632px;
+    @mixin margin_auto;
+    margin-top: 101px;
+    margin-bottom: 92px;
+  }
+  .photos__element--panorama-image-block {
+    background-image: url("../../img/panorama-desktop.jpg");
+  }
+  .photos__element--panorama .photos__element-comment {
+    margin-top: -3px;
+    margin-left: 130px;
+    margin-right: 130px;
+    width: calc($full-width - 294px);
+  }
+  .photos__element--panorama .photos__element-message {
+    padding-bottom: $zero;
+  }
+  .photos__container {
+    @mixin desktop_padding;
+  }
+  .photos__container .photos__element {
+    width: 300px;
+  }
+  .photos__container .photos__element-image {
+    height: 400px;
+  }
+  .photos__container .photos__element {
+    margin-bottom: 54px;
+  }
+  .photos__element--auto .photos__element-image {
+    background-image: url("../../img/photo-1-desktop.jpg");
+  }
+  .photos__element--drums .photos__element-image {
+    background-image: url("../../img/photo-2-desktop.jpg");
+  }
+  .photos__element--roof .photos__element-image {
+    background-image: url("../../img/photo-3-desktop.jpg");
+  }
+  .photos__element--bakhcha .photos__element-image {
+    background-image: url("../../img/photo-4-desktop.jpg");
+  }
+  .photos__element--legs .photos__element-image {
+    background-image: url("../../img/photo-5-desktop.jpg");
+  }
+  .photos__element--plane .photos__element-image {
+    background-image: url("../../img/photo-6-desktop.jpg");
+  }
+  .photos__description:last-child {
+    margin-top: 14px;
+    margin-bottom: 69px;
   }
 }

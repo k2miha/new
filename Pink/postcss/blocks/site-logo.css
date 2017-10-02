@@ -23,3 +23,16 @@
     margin-bottom: 51px;
   }
 }
+@media (min-width: 1200px) {
+ .site-logo__image {
+   display: $none;
+ }
+ .site-logo--footer {
+   width: 147px;
+   height: 40px;
+   background: url("../../img/logotype-blue-desktop.svg");
+   background-repeat: $no-repeat;
+   margin-top: $zero;
+   margin-bottom: $zero;
+ }
+}

@@ -12,3 +12,8 @@
   flex-basis: 150px;
   }
 }
+@media (min-width: 1200px) {
+.copyright__maked {
+  font-size: $medium;
+  }
+}

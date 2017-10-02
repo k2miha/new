@@ -20,7 +20,7 @@
     </div>
     <nav class="menu">
       <ul class="menu__elements">
-        <li class="menu__element">
+        <li class="menu__element menu__element_logo">
           <a class="menu__link" title="Pink">
             <img class="site-logo__image" src="img/logotype-white-mobile.svg" alt="Logo" />
           </a>
@@ -28,10 +28,12 @@
             <img class="menu__button-image" src="img/menu-cross.svg" alt="Cross" />
           </button>
         </li>
-        <li class="menu__element"><a class="menu__link" href="index.html">Главная</a></li>
-        <li class="menu__element"><a class="menu__link" href="photos.html">Фотографии</a></li>
-        <li class="menu__element"><a class="menu__link">Конкурс</a></li>
-        <li class="menu__element"><a class="menu__link" href="http://htmlacademy.ru">HMTL Academy</a></li>
+        <div class="menu__elements-container">
+          <li class="menu__element"><a class="menu__link" href="index.html">Главная</a></li>
+          <li class="menu__element"><a class="menu__link" href="photos.html">Фотографии</a></li>
+          <li class="menu__element"><a class="menu__link">Конкурс</a></li>
+          <li class="menu__element"><a class="menu__link" href="http://htmlacademy.ru">HMTL Academy</a></li>
+        </div>
       </ul>
     </nav>
     <p class="main-header__slogan">
@@ -42,7 +44,7 @@
     <div class="personal-info">
       <p class="personal-info__description">
         Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
-        <p class="personal-info__description personal-info__description-fill">Пожалуйста, заполните форму ниже:</p>
+        <span class="personal-info__description personal-info__description-fill">Пожалуйста, заполните форму ниже:</span>
       </p>
       <form class="personal-info__form" action="https://echo.htmlacademy.ru" method="post" >
         <fieldset class="personal-info__name-section">
@@ -58,24 +60,44 @@
         </fieldset>
         <fieldset class="personal-info__achievements">
           <legend class="personal-info__title">Ваши безбашенные достижения в путешествии</legend>
-          <input class="personal-info__element personal-info__element--checked" id="shark" type="checkbox" name="name" value="">
-          <span class="personal-info__custom-element"></span>
-          <label class="personal-info__achievements-element-label" for="shark">Сделал селфи с акулой</label><br>
-          <input class="personal-info__element personal-info__element--checked" id="beach" type="checkbox" name="name" value="">
-          <span class="personal-info__custom-element"></span>
-          <label class="personal-info__achievements-element-label" for="beach">Обгорел на пляже</label><br>
-          <input class="personal-info__element" id="chuck" type="checkbox" name="name" value="">
-          <span class="personal-info__custom-element"></span>
-          <label class="personal-info__achievements-element-label" for="chuck">Видел Чака Норриса</label><br>
-          <input class="personal-info__element" id="souvenir" type="checkbox" name="name" value="">
-          <span class="personal-info__custom-element"></span>
-          <label class="personal-info__achievements-element-label" for="souvenir">Накупил сувениров</label><br>
-          <input class="personal-info__element personal-info__element--checked" id="tower" type="checkbox" name="name" value="">
-          <span class="personal-info__custom-element"></span>
-          <label class="personal-info__achievements-element-label" for="tower">Удержал башню</label><br>
-          <input class="personal-info__element" id="hotel" type="checkbox" name="name" value="">
-          <span class="personal-info__custom-element"></span>
-          <label class="personal-info__achievements-element-label" for="hotel">Разгромил отель</label><br>
+          <div class="personal-info__achievements-element-container">
+            <div class="personal-info__achievements-element-column">
+              <label class="personal-info__achievements-element-label" for="shark">
+                <input class="personal-info__element personal-info__element--checked" id="shark" type="checkbox" name="name" value="" checked="">
+                <span class="personal-info__custom-element"></span>
+                Сделал селфи с акулой
+              </label>
+              <label class="personal-info__achievements-element-label" for="beach">
+                <input class="personal-info__element personal-info__element--checked" id="beach" type="checkbox" name="name" value="" checked="">
+                <span class="personal-info__custom-element"></span>
+                Обгорел на пляже
+              </label>
+            </div>
+            <div class="personal-info__achievements-element-column">
+              <label class="personal-info__achievements-element-label" for="chuck">
+                <input class="personal-info__element" id="chuck" type="checkbox" name="name" value="">
+                <span class="personal-info__custom-element"></span>
+                Видел Чака Норриса
+              </label>
+              <label class="personal-info__achievements-element-label" for="souvenir">
+                <input class="personal-info__element" id="souvenir" type="checkbox" name="name" value="">
+                <span class="personal-info__custom-element"></span>
+                Накупил сувениров
+              </label>
+            </div>
+            <div class="personal-info__achievements-element-column">
+              <label class="personal-info__achievements-element-label" for="tower">
+                <input class="personal-info__element personal-info__element--checked" id="tower" type="checkbox" name="name" value="" checked="">
+                <span class="personal-info__custom-element"></span>
+                Удержал башню
+              </label>
+              <label class="personal-info__achievements-element-label" for="hotel">
+                <input class="personal-info__element" id="hotel" type="checkbox" name="name" value="">
+                <span class="personal-info__custom-element"></span>
+                Разгромил отель
+              </label>
+            </div>
+          </div>
         </fieldset>
         <div class="personal-info__contacts">
           <label class="personal-info__name-element-label" for="tel">Номерок телефончика
@@ -88,32 +110,40 @@
         <fieldset class="personal-info__journey-application">
           <legend class="personal-info__title personal-info__title-application">С каким приложением
             путешествовали?</legend>
-          <input class="personal-info__element  personal-info__element--checked" id="ios" type="radio" name="name" value="">
-          <span class="personal-info__custom-radio-element"></span>
-          <label class="personal-info__element-label" for="ios">Pink для iOS</label><br>
-          <input class="personal-info__element" id="android" type="radio" name="name" value="">
-          <span class="personal-info__custom-radio-element"></span>
-          <label class="personal-info__element-label" for="android">Pink на Android</label><br>
-          <input class="personal-info__element" id="windows" type="radio" name="name" value="">
-          <span class="personal-info__custom-radio-element"></span>
-          <label class="personal-info__element-label" for="windows">Windows Phone</label><br>
+            <label class="personal-info__element-label" for="ios">
+              <input class="personal-info__element  personal-info__element--checked" id="ios" type="radio" name="name" value="" checked="">
+              <span class="personal-info__custom-radio-element"></span>
+              Pink для iOS
+            </label>
+            <label class="personal-info__element-label" for="android">
+              <input class="personal-info__element" id="android" type="radio" name="name" value="">
+              <span class="personal-info__custom-radio-element"></span>
+              Pink на Android
+            </label>
+            <label class="personal-info__element-label" for="windows">
+              <input class="personal-info__element" id="windows" type="radio" name="name" value="">
+              <span class="personal-info__custom-radio-element"></span>
+              Windows Phone
+            </label>
         </fieldset>
         <fieldset class="personal-info__contacts-tablet">
           <legend class="personal-info__title">Контактная информация</legend>
-          <div class="personal-info__contacts-tablet-input-container">
-            <input class="personal-info__element-text" id="tel" type="text" pattern="[7] [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" name="name" value="" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
-            <div class="personal-info__contacts-tablet-image-container">
-              <img src="img/phone.svg" alt="phone" />
+          <div class="personal-info__contacts-tablet-container">
+            <div class="personal-info__contacts-tablet-input-container">
+              <input class="personal-info__element-text" id="tel" type="text" pattern="[7] [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" name="name" value="" placeholder="+7 ХХХ ХХХ-ХХ-ХХ">
+              <div class="personal-info__contacts-tablet-image-container">
+                <img src="img/phone.svg" alt="phone" />
+              </div>
+              <label class="personal-info__name-element-label" for="tel">Номер телефона</label>
+            </div>
+            <div class="personal-info__contacts-tablet-input-container">
+              <input class="personal-info__element-text" id="email" type="text" name="name" value="" placeholder="Введите почту">
+              <div class="personal-info__contacts-tablet-image-container">
+                <img src="img/mail.svg" alt="mail" />
+              </div>
+              <label class="personal-info__name-element-label" for="email">адрес почты</label>
             </div>
           </div>
-          <label class="personal-info__name-element-label" for="tel">Номер телефона</label>
-          <div class="personal-info__contacts-tablet-input-container">
-            <input class="personal-info__element-text" id="email" type="text" name="name" value="" placeholder="Введите почту">
-            <div class="personal-info__contacts-tablet-image-container">
-              <img src="img/mail.svg" alt="mail" />
-            </div>
-          </div>
-          <label class="personal-info__name-element-label" for="email">адрес почты</label>
         </fieldset>
         <fieldset class="personal-info__emotions">
         	<legend class="personal-info__title">Опишите свои эмоции</legend>
@@ -123,6 +153,9 @@
           <input type="submit" name="name" value="Отправить форму">
           <p class="competition-footer__form-field-requirements">
             <span class="competition-footer__form-field-marker">*</span> — обязательные поля
+          </p>
+          <p class="competition-footer__form-field-requirements competition-footer__form-field-requirements--desktop">
+            <span class="competition-footer__form-field-marker">*</span> — обязательные для заполнения поля
           </p>
         </div>
       </form>

@@ -40,6 +40,11 @@
 @media (min-width: 700px) {
 .main-footer {
   max-width: 700px;
+  & > .competition-footer {
+    display: flex;
+    @mixin tablet_padding;
+    align-items: $center;
+  }
   &__description {
       font-size: 40px;
       padding-left: 54px;
@@ -49,6 +54,7 @@
     display: flex;
     justify-content: space-around;
     @mixin tablet_padding;
+    flex-wrap: wrap;
   }
   .main-footer > &__block-content {
     padding-left: 195px;
@@ -69,11 +75,45 @@
   & .site-logo--footer {
       flex-basis: 150px;
     }
+  &__tel, &__email {
+    flex-basis: $half-width;
+  }
+  &__address {
+    flex-basis: $full-width;
+  }
  }
 }
 @media (min-width: 1200px) {
-  .main-footer__description {
+  .main-footer {
+    max-width: 1200px;
+  & > .competition-footer {
+    @mixin desktop_padding;
+  }
+  &__description {
     padding-top: 75px;
     font-size: 50px;
+    width: 700px;
+    margin: $auto;
   }
+  &__contacts {
+    @mixin desktop_padding;
+    flex-wrap: nowrap;
+  }
+  &__tel, &__address {
+    order: -1;
+  }
+  &__tel, &__email {
+    flex-basis: $auto;
+  }
+  &__address {
+    flex-basis: 233px;
+  }
+  &__map {
+    background-image: url("../img/map.jpg");
+    min-height: 502px;
+  }
+  &__map-triangle {
+    background-image: url("../img/triangle-white-footer-desktop.svg");
+  }
+ }
 }
