@@ -445,6 +445,12 @@
   position: relative;
   z-index: 1;
 }
+.menu--show {
+  display: block;
+  position: absolute;
+  width: 320px;
+  top: 0;
+}
 .menu__elements {
   background-color: #283645;
   list-style: none;
@@ -505,6 +511,10 @@
   }
   .menu__element_logo .menu__link {
     padding-bottom: 42px;
+  }
+  .menu--show {
+    width: 100%;
+    max-width: 700px;
   }
 }
 @media (min-width: 1200px) {
@@ -2143,6 +2153,15 @@ hr:last-of-type {
   margin-bottom: 37px;
   margin-top: 0;
 }
+.pop-up--show {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 726px;
+  background-color: #fff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
 .pop-up_failure .pop-up__button-container {
   background-color: transparent;
 }
@@ -2158,4 +2177,5 @@ hr:last-of-type {
 }
 body {
   margin: 0;
+  position: relative;
 }

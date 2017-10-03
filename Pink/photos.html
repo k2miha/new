@@ -1,118 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=320, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Фотографии</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
-</head>
-<body>
-  <header class="main-header main-header--short">
-    <div class="logotype">
-      <a class="site-logo" href="index.html" title="Pink">
-          <img class="site-logo__text" src="img/logotype-white-mobile.svg" alt="Logo" />
-      </a>
-      <button class="logotype__menu-button" type="button" name="open" title="Меню">
-        <img class="logotype__menu-button-img" src="img/menu-burger.svg" alt="Menu-button" />
-      </button>
-    </div>
-    <nav class="menu">
-      <ul class="menu__elements">
-        <li class="menu__element menu__element_logo">
-          <a class="menu__link" title="Pink">
-            <img class="site-logo" src="img/logotype-white-mobile.svg" alt="Logo" />
-          </a>
-          <button class="menu__button" type="button" name="close" title="Меню">
-            <img class="menu__button-image" src="img/menu-cross.svg" alt="Cross" />
-          </button>
-        </li>
-        <div class="menu__elements-container">
-          <li class="menu__element"><a class="menu__link" href="index.html">Главная</a></li>
-          <li class="menu__element"><a class="menu__link">Фотографии</a></li>
-          <li class="menu__element"><a class="menu__link" href="competition.html">Конкурс</a></li>
-          <li class="menu__element"><a class="menu__link" href="http://htmlacademy.ru">HMTL Academy</a></li>
-        </div>
-      </ul>
-    </nav>
-    <p class="main-header__slogan">Фотографии <br> пользователей</p>
-  </header>
-  <main class="main-content">
-    <div class="photos">
-      <p class="photos__description">
-        Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?
-      </p>
-      <div class="photos__element photos__element--panorama">
-        <div class="photos__element photos__element--panorama-image-block">
-          <img class="photos__element photos__element--panorama-image" src="img/panorama-mobile.jpg" alt="panorama" />
-          <span class="photos__element photos__element--panorama-label">ПАНОРАМА ДНЯ</span>
-        </div>
-        <div class="photos__element-comment">
-          <b class="photos__element-author">Анна</b>
-          <span class="photos__element-time"> (5 минут назад)</span>
-          <p class="photos__element-message">
-            Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
-          </p>
-          <div class="like">
-            <button class="like__button" title="like">
-              <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
-            </button>
-            <span class="like__description">Нравится:</span>
-            <span class="like__count">215</span>
-          </div>
-        </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Фотографии</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+  </head>
+  <body>
+    <header class="main-header main-header--short">
+      <div class="logotype">
+        <a class="site-logo" href="index.html" title="Pink">
+            <img class="site-logo__text" src="img/logotype-white-mobile.svg" alt="Logo" />
+        </a>
+        <button class="logotype__menu-button" type="button" name="open" title="Меню">
+          <img class="logotype__menu-button-img" src="img/menu-burger.svg" alt="Menu-button" />
+        </button>
       </div>
-      <div class="photos__container">
-        <div class="photos__element photos__element--auto">
-          <div class="photos__element-image"></div>
-          <div class="photos__element-comment">
-            <div class="photos__element-comment-container">
-              <b class="photos__element-author">Левон</b>
-              <span class="photos__element-time"> (5 часов назад)</span>
-              <p class="photos__element-message">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
-            </div>
-            <div class="like">
-              <button class="like__button" title="like">
-                <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
-              </button>
-              <span class="like__description">Нравится:</span>
-              <span class="like__count">356</span>
-            </div>
+      <nav class="menu">
+        <ul class="menu__elements">
+          <li class="menu__element menu__element_logo">
+            <a class="menu__link" title="Pink">
+              <img class="site-logo" src="img/logotype-white-mobile.svg" alt="Logo" />
+            </a>
+            <button class="menu__button" type="button" name="close" title="Меню">
+              <img class="menu__button-image" src="img/menu-cross.svg" alt="Cross" />
+            </button>
+          </li>
+          <div class="menu__elements-container">
+            <li class="menu__element"><a class="menu__link" href="index.html">Главная</a></li>
+            <li class="menu__element"><a class="menu__link">Фотографии</a></li>
+            <li class="menu__element"><a class="menu__link" href="competition.html">Конкурс</a></li>
+            <li class="menu__element"><a class="menu__link" href="http://htmlacademy.ru">HMTL Academy</a></li>
           </div>
-        </div>
-        <div class="photos__element photos__element--drums">
-          <div class="photos__element-image"></div>
-          <div class="photos__element-comment">
-            <div class="photos__element-comment-container">
-              <b class="photos__element-author">Антон</b>
-              <span class="photos__element-time"> (12 часов  назад)</span>
-              <p class="photos__element-message">
-                Соседи будут рады!
-              </p>
-            </div>
-            <div class="like">
-              <button class="like__button" title="like">
-                <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
-              </button>
-              <span class="like__description">Нравится:</span>
-              <span class="like__count">666</span>
-            </div>
+        </ul>
+      </nav>
+      <p class="main-header__slogan">Фотографии <br> пользователей</p>
+    </header>
+    <main class="main-content">
+      <div class="photos">
+        <p class="photos__description">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </p>
+        <div class="photos__element photos__element--panorama">
+          <div class="photos__element photos__element--panorama-image-block">
+            <img class="photos__element photos__element--panorama-image" src="img/panorama-mobile.jpg" alt="panorama" />
+            <span class="photos__element photos__element--panorama-label">ПАНОРАМА ДНЯ</span>
           </div>
-        </div>
-        <div class="photos__element photos__element--roof">
-          <div class="photos__element-image"></div>
           <div class="photos__element-comment">
-            <div class="photos__element-comment-container">
-              <b class="photos__element-author">Борис</b>
-              <span class="photos__element-time"> (20 часов  назад)</span>
-              <p class="photos__element-message">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
-            </div>
+            <b class="photos__element-author">Анна</b>
+            <span class="photos__element-time"> (5 минут назад)</span>
+            <p class="photos__element-message">
+              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!
+            </p>
             <div class="like">
               <button class="like__button" title="like">
                 <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
@@ -122,108 +64,168 @@
             </div>
           </div>
         </div>
-        <div class="photos__element photos__element--bakhcha">
-          <div class="photos__element-image"></div>
-          <div class="photos__element-comment">
-            <div class="photos__element-comment-container">
-              <b class="photos__element-author">Сергей</b>
-              <span class="photos__element-time"> (25 часов  назад)</span>
-              <p class="photos__element-message">Самая кубанская в мире!</p>
+        <div class="photos__container">
+          <div class="photos__element photos__element--auto">
+            <div class="photos__element-image"></div>
+            <div class="photos__element-comment">
+              <div class="photos__element-comment-container">
+                <b class="photos__element-author">Левон</b>
+                <span class="photos__element-time"> (5 часов назад)</span>
+                <p class="photos__element-message">
+                  Вчера он на луну летал, сегодня в руки к нам попал.
+                </p>
+              </div>
+              <div class="like">
+                <button class="like__button" title="like">
+                  <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+                </button>
+                <span class="like__description">Нравится:</span>
+                <span class="like__count">356</span>
+              </div>
             </div>
-            <div class="like">
-              <button class="like__button" title="like">
-                <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
-              </button>
-              <span class="like__description">Нравится:</span>
-              <span class="like__count">4</span>
+          </div>
+          <div class="photos__element photos__element--drums">
+            <div class="photos__element-image"></div>
+            <div class="photos__element-comment">
+              <div class="photos__element-comment-container">
+                <b class="photos__element-author">Антон</b>
+                <span class="photos__element-time"> (12 часов  назад)</span>
+                <p class="photos__element-message">
+                  Соседи будут рады!
+                </p>
+              </div>
+              <div class="like">
+                <button class="like__button" title="like">
+                  <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+                </button>
+                <span class="like__description">Нравится:</span>
+                <span class="like__count">666</span>
+              </div>
+            </div>
+          </div>
+          <div class="photos__element photos__element--roof">
+            <div class="photos__element-image"></div>
+            <div class="photos__element-comment">
+              <div class="photos__element-comment-container">
+                <b class="photos__element-author">Борис</b>
+                <span class="photos__element-time"> (20 часов  назад)</span>
+                <p class="photos__element-message">
+                  Здесь могла быть ваша цитата о высоком и вечном.
+                </p>
+              </div>
+              <div class="like">
+                <button class="like__button" title="like">
+                  <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+                </button>
+                <span class="like__description">Нравится:</span>
+                <span class="like__count">215</span>
+              </div>
+            </div>
+          </div>
+          <div class="photos__element photos__element--bakhcha">
+            <div class="photos__element-image"></div>
+            <div class="photos__element-comment">
+              <div class="photos__element-comment-container">
+                <b class="photos__element-author">Сергей</b>
+                <span class="photos__element-time"> (25 часов  назад)</span>
+                <p class="photos__element-message">Самая кубанская в мире!</p>
+              </div>
+              <div class="like">
+                <button class="like__button" title="like">
+                  <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+                </button>
+                <span class="like__description">Нравится:</span>
+                <span class="like__count">4</span>
+              </div>
+            </div>
+          </div>
+          <div class="photos__element photos__element--legs">
+            <div class="photos__element-image"></div>
+            <div class="photos__element-comment">
+              <div class="photos__element-comment-container">
+                <b class="photos__element-author">Максим</b>
+                <span class="photos__element-time"> (40 часов  назад)</span>
+                <p class="photos__element-message">Где снег-то?</p>
+              </div>
+              <div class="like">
+                <button class="like__button" title="like">
+                  <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+                </button>
+                <span class="like__description">Нравится:</span>
+                <span class="like__count">150</span>
+              </div>
+            </div>
+          </div>
+          <div class="photos__element photos__element--plane">
+            <div class="photos__element-image"></div>
+            <div class="photos__element-comment">
+              <div class="photos__element-comment-container">
+                <b class="photos__element-author">Надежда</b>
+                <span class="photos__element-time"> (45 часов  назад)</span>
+                <p class="photos__element-message">Всем GM и взаимные лайки!</p>
+              </div>
+              <div class="like">
+                <button class="like__button" title="like">
+                  <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
+                </button>
+                <span class="like__description">Нравится:</span>
+                <span class="like__count">2560</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="photos__element photos__element--legs">
-          <div class="photos__element-image"></div>
-          <div class="photos__element-comment">
-            <div class="photos__element-comment-container">
-              <b class="photos__element-author">Максим</b>
-              <span class="photos__element-time"> (40 часов  назад)</span>
-              <p class="photos__element-message">Где снег-то?</p>
-            </div>
-            <div class="like">
-              <button class="like__button" title="like">
-                <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
-              </button>
-              <span class="like__description">Нравится:</span>
-              <span class="like__count">150</span>
-            </div>
-          </div>
-        </div>
-        <div class="photos__element photos__element--plane">
-          <div class="photos__element-image"></div>
-          <div class="photos__element-comment">
-            <div class="photos__element-comment-container">
-              <b class="photos__element-author">Надежда</b>
-              <span class="photos__element-time"> (45 часов  назад)</span>
-              <p class="photos__element-message">Всем GM и взаимные лайки!</p>
-            </div>
-            <div class="like">
-              <button class="like__button" title="like">
-                <img class="like__button-image" src="img/icon-heart.svg" alt="like-icon" />
-              </button>
-              <span class="like__description">Нравится:</span>
-              <span class="like__count">2560</span>
-            </div>
-          </div>
+      <p class="photos__description">
+        Затмите их всех!<br>
+        Выкладывайте все, что накопилось в телефоне!
+       </p>
+      </div>
+      <div class="photo-editor">
+        <div class="photo-editor__image"></div>
+        <div class="photo-editor__function-container">
+          <form class="photo-editor__function-tuning" action="https://echo.htmlacademy.ru" method="post">
+            <button class="photo-editor__image-modification-button" title="crop">
+              <div class="photo-editor__crop-image"></div>
+            </button>
+            <input class="photo-editor__range" type="range" name="name" value="5">
+            <hr>
+            <button class="photo-editor__image-modification-button" title="fill">
+              <div class="photo-editor__fill-image"></div>
+            </button>
+            <input class="photo-editor__range" type="range" name="name" value="5">
+            <hr>
+            <button class="photo-editor__image-modification-button" title="contrast">
+              <div class="photo-editor__contrast-image"></div>
+            </button>
+            <input class="photo-editor__range" type="range" name="name" value="5">
+            <hr>
+            <input class="photo-editor__button" type="submit" name="name" value="Запостить">
+            <button class="photo-editor__button photo-editor__button--cancel" type="button" name="button" value="">Отмена</button>
+          </form>
         </div>
       </div>
-    <p class="photos__description">
-      Затмите их всех!<br>
-      Выкладывайте все, что накопилось в телефоне!
-     </p>
-    </div>
-    <div class="photo-editor">
-      <div class="photo-editor__image"></div>
-      <div class="photo-editor__function-container">
-        <form class="photo-editor__function-tuning" action="https://echo.htmlacademy.ru" method="post">
-          <button class="photo-editor__image-modification-button" title="crop">
-            <div class="photo-editor__crop-image"></div>
-          </button>
-          <input class="photo-editor__range" type="range" name="name" value="5">
-          <hr>
-          <button class="photo-editor__image-modification-button" title="fill">
-            <div class="photo-editor__fill-image"></div>
-          </button>
-          <input class="photo-editor__range" type="range" name="name" value="5">
-          <hr>
-          <button class="photo-editor__image-modification-button" title="contrast">
-            <div class="photo-editor__contrast-image"></div>
-          </button>
-          <input class="photo-editor__range" type="range" name="name" value="5">
-          <hr>
-          <input class="photo-editor__button" type="submit" name="name" value="Запостить">
-          <button class="photo-editor__button photo-editor__button--cancel" type="button" name="button" value="">Отмена</button>
-        </form>
-      </div>
-    </div>
-  </main>
-  <footer class="competition-footer">
-    <a class="site-logo site-logo--footer" href="index.html" title="Pink">
-        <img class="site-logo__image" src="img/logotype-blue-tablet.svg" alt="Logo" />
-    </a>
-  	<div class="socials">
-        <a class="socials__element socials__element--twitter" href="http://twitter.com" title="twitter">
-          <img class="socials__element-image" src="img/twitter.svg" alt="twitter" />
-        </a>
-        <a class="socials__element socials__element--facebook" href="http://facebook.com" title="facebook">
-          <img class="socials__element-image" src="img/facebook.svg" alt="facebook" />
-        </a>
-        <a class="socials__element socials__element--youtube" href="http://youtube.com" title="youtube">
-          <img class="socials__element-image" src="img/youtube.svg" alt="youtube" />
-        </a>
-  	</div>
-  	<div class="copyright">
-  		<span class="copyright__maked">Разработано</span>
-  		<a class="copyright__link" href="http://htmlacademy.ru" title="html academy">
-        <img class="copyright__image" src="img/htmlacademy.svg" alt="htmlacademy" />
+     </main>
+    <footer class="competition-footer">
+      <a class="site-logo site-logo--footer" href="index.html" title="Pink">
+          <img class="site-logo__image" src="img/logotype-blue-tablet.svg" alt="Logo" />
       </a>
-  	</div>
-  </footer>
-</body>
+    	<div class="socials">
+          <a class="socials__element socials__element--twitter" href="http://twitter.com" title="twitter">
+            <img class="socials__element-image" src="img/twitter.svg" alt="twitter" />
+          </a>
+          <a class="socials__element socials__element--facebook" href="http://facebook.com" title="facebook">
+            <img class="socials__element-image" src="img/facebook.svg" alt="facebook" />
+          </a>
+          <a class="socials__element socials__element--youtube" href="http://youtube.com" title="youtube">
+            <img class="socials__element-image" src="img/youtube.svg" alt="youtube" />
+          </a>
+    	</div>
+    	<div class="copyright">
+    		<span class="copyright__maked">Разработано</span>
+    		<a class="copyright__link" href="http://htmlacademy.ru" title="html academy">
+          <img class="copyright__image" src="img/htmlacademy.svg" alt="htmlacademy" />
+        </a>
+    	</div>
+    </footer>
+    <script type="text/javascript" src="js/modal.js"></script>
+  </body>
+</html>

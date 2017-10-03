@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
     browserSync: {
       bsFiles: {
-        src : ['css/*.css', '*.html', 'img/*.*']
+        src : ['css/*.css', '*.html', 'img/*.*', 'js/*.js']
       },
       options: {
         watchTask: true,

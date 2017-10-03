@@ -26,4 +26,5 @@
 @import "../postcss/blocks/pop-up_failure.css";
 body {
   margin: 0;
+  position: relative;
 }

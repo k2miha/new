@@ -3,6 +3,12 @@
   display: $none;
   position: relative;
   z-index: 1;
+  &--show {
+    display: $block;
+    position: absolute;
+    width: 320px;
+    top: $zero;
+  }
   &__elements {
     background-color: $blue;
     @mixin list_reset;
@@ -52,6 +58,10 @@
   }
   .menu__element_logo .menu__link {
     padding-bottom: 42px;
+  }
+  .menu--show {
+    width: $full-width;
+    max-width: 700px;
   }
 }
 @media (min-width: 1200px) {
