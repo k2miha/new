@@ -1,8 +1,5 @@
 .content {
   margin-top: 46px;
-  background-image: url("../../img/promo-background.png");
-  background-repeat: $no-repeat;
-  background-position-y: 174px;
   &__slogan {
     @mixin font_options $OpenSans_light, $big, $blue, $normal, $light, $center, $none;
     margin-top: 39px;

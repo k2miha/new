@@ -1,7 +1,7 @@
 .second-slider-container {
       padding-top: 114px;
       padding-bottom: 48px;
-      background-image: url("../../img/Shape 2 copy.png");
+      background-image: url("../../img/Shape 2 copy.svg");
 }
 @media (min-width: 700px) {
   .second-slider-container {
@@ -10,7 +10,6 @@
 }
 @media (min-width: 1200px) {
   .second-slider-container {
-    background-image: url("../../img/Shape 2 copy.svg");
     padding-top: 158px;
   }
 }

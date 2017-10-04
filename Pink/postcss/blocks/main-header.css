@@ -2,8 +2,8 @@
   background-color: $blue;
   background-image: url("../../img/back-mobile@1x.jpg");
   background-repeat: $no-repeat;
+  background-size: cover;
   min-height: 462px;
-  @mixin mobile;
   &--short {
     min-height: 243px;
   }
@@ -27,7 +27,6 @@
 }
 @media (min-width: 700px) {
     .main-header {
-      max-width: 700px;
       min-height: 729px;
       background-image: url("../../img/back-tablet@1x.jpg");
     &--short {
@@ -62,6 +61,7 @@
 @media (min-width: 1200px) {
   .main-header {
     max-width: 1200px;
+    @mixin margin_auto;
     background-image: url("../../img/back-desktop.jpg");
     min-height: 859px;
     position: relative;

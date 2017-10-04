@@ -1,6 +1,4 @@
 .main-footer {
-  min-height: 645px;
-  @mixin mobile;
   & > .competition-footer {
     display: $none;
   }
@@ -29,17 +27,18 @@
   &__map {
     background-image: url("../img/Layer 153.jpg");
     background-repeat: $no-repeat;
+    background-size: cover;
     min-height: 253px;
     margin-top: -57px;
     }
   &__map-triangle {
     min-height: 123px;
     background-image: url("../img/triangle-white-footer-mobile.svg");
+    background-position: $center $zero;
   }
 }
 @media (min-width: 700px) {
 .main-footer {
-  max-width: 700px;
   & > .competition-footer {
     display: flex;
     @mixin tablet_padding;
@@ -70,16 +69,12 @@
   &__map-triangle {
     max-width: $full-width;
     min-height: 123px;
-    background-image: url("../img/triangle-white-footer.svg");
   }
   & .site-logo--footer {
       flex-basis: 150px;
     }
   &__tel, &__email {
     flex-basis: $half-width;
-  }
-  &__address {
-    flex-basis: $full-width;
   }
  }
 }

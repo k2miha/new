@@ -20,7 +20,8 @@
 @media (min-width: 700px) {
   .slider {
     @mixin tablet_padding;
-    margin-top: 58px;
+    padding-top: 58px;
+    background-color: $white;
     display: flex;
     flex-direction: column;
   &__title {

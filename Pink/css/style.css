@@ -75,9 +75,6 @@
 }
 .content {
   margin-top: 46px;
-  background-image: url("../../img/promo-background.png");
-  background-repeat: no-repeat;
-  background-position-y: 174px;
 }
 .content__slogan {
   font-family: 'Open Sans','open_sanslight',sans-serif;
@@ -184,12 +181,23 @@
   }
 }
 .main-content {
-  max-width: 320px;
-  margin: auto;
+  background-image: url("../../img/Shape 2.svg");
+  background-repeat: no-repeat;
+  background-position-y: 128px;
+}
+@media (min-width: 367px) {
+  .main-content {
+    background-position-y: 103px;
+  }
+}
+@media (min-width: 369px) {
+  .main-content {
+    background-position-y: 68px;
+  }
 }
 @media (min-width: 700px) {
   .main-content {
-    max-width: 700px;
+    background-position-y: 160px;
   }
 }
 @media (min-width: 1200px) {
@@ -197,11 +205,7 @@
     max-width: 1200px;
   }
 }
-.main-footer {
-  min-height: 645px;
-  max-width: 320px;
-  margin: auto;
-}
+.main-footer {}
 .main-footer > .competition-footer {
   display: none;
 }
@@ -251,17 +255,16 @@
 .main-footer__map {
   background-image: url("../img/Layer 153.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 253px;
   margin-top: -57px;
 }
 .main-footer__map-triangle {
   min-height: 123px;
   background-image: url("../img/triangle-white-footer-mobile.svg");
+  background-position: center 0;
 }
 @media (min-width: 700px) {
-  .main-footer {
-    max-width: 700px;
-  }
   .main-footer > .main-footer__block-content {
     padding-left: 195px;
     padding-right: 195px;
@@ -294,16 +297,12 @@
   .main-footer__map-triangle {
     max-width: 100%;
     min-height: 123px;
-    background-image: url("../img/triangle-white-footer.svg");
   }
   .main-footer .site-logo--footer {
     flex-basis: 150px;
   }
   .main-footer__tel, .main-footer__email {
     flex-basis: 50%;
-  }
-  .main-footer__address {
-    flex-basis: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -346,9 +345,8 @@
   background-color: #283645;
   background-image: url("../../img/back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 462px;
-  max-width: 320px;
-  margin: auto;
 }
 .main-header--short {
   min-height: 243px;
@@ -384,7 +382,6 @@
 }
 @media (min-width: 700px) {
   .main-header {
-    max-width: 700px;
     min-height: 729px;
     background-image: url("../../img/back-tablet@1x.jpg");
   }
@@ -419,6 +416,8 @@
 @media (min-width: 1200px) {
   .main-header {
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: url("../../img/back-desktop.jpg");
     min-height: 859px;
     position: relative;
@@ -1599,8 +1598,8 @@ hr:last-of-type {
     padding-right: 40px;
     padding-left: 40px;
     background-color: transparent;
-    background-image: url("../../img/Shape 2.png");
-    background-position-y: 49px;
+    background-image: url("../../img/Shape 2-tablet.svg");
+    background-position-y: 22px;
     background-repeat: no-repeat;
     min-height: 558px;
   }
@@ -1766,7 +1765,7 @@ hr:last-of-type {
 .second-slider-container {
   padding-top: 114px;
   padding-bottom: 48px;
-  background-image: url("../../img/Shape 2 copy.png");
+  background-image: url("../../img/Shape 2 copy.svg");
 }
 @media (min-width: 700px) {
   .second-slider-container {
@@ -1775,7 +1774,6 @@ hr:last-of-type {
 }
 @media (min-width: 1200px) {
   .second-slider-container {
-    background-image: url("../../img/Shape 2 copy.svg");
     padding-top: 158px;
   }
 }
@@ -1852,7 +1850,8 @@ hr:last-of-type {
   .slider {
     padding-right: 40px;
     padding-left: 40px;
-    margin-top: 58px;
+    padding-top: 58px;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
   }

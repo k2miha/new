@@ -18,8 +18,8 @@
   flex-direction: row-reverse;
   @mixin tablet_padding;
   background-color: transparent;;
-  background-image: url("../../img/Shape 2.png");
-  background-position-y: 49px;
+  background-image: url("../../img/Shape 2-tablet.svg");
+  background-position-y: 22px;
   background-repeat: no-repeat;
   min-height: 558px;
   &__content-image {

@@ -1,9 +1,21 @@
 .main-content {
-    @mixin mobile;
+    background-image: url("../../img/Shape 2.svg");
+    background-repeat: $no-repeat;
+    background-position-y: 128px;
+}
+@media (min-width: 367px) {
+  .main-content {
+  background-position-y: 103px;
+  }
+}
+@media (min-width: 369px) {
+  .main-content {
+  background-position-y: 68px;
+  }
 }
 @media (min-width: 700px) {
 .main-content {
-  max-width: 700px;
+  background-position-y: 160px;
   }
 }
 @media (min-width: 1200px) {
