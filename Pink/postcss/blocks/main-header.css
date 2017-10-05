@@ -6,6 +6,8 @@
   min-height: 462px;
   &--short {
     min-height: 243px;
+    max-width: 320px;
+    @mixin margin_auto;
   }
   &__slogan {
     @mixin font_options $OpenSans_light, $big, $white, $normal, $light, $center, $none;
@@ -29,6 +31,9 @@
     .main-header {
       min-height: 729px;
       background-image: url("../../img/back-tablet@1x.jpg");
+    &--short {
+      max-width: 700px;
+    }
     &--short {
         min-height: 440px;
     }

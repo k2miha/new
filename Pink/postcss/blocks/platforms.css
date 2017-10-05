@@ -8,6 +8,7 @@
   &__download-link {
     @mixin font_options $OpenSans_bold, $medium, $white, $medium, $bold, $center, $none;
     vertical-align: top;
+    border-radius: 28px;
     padding-top: 17px;
     padding-bottom: 14px;
     border: 3px solid $white;
@@ -53,6 +54,9 @@
     &__description {
       font-size: $medium;
       padding: $zero;
+    }
+    &__android {
+      opacity: 0.4;
     }
   }
 }

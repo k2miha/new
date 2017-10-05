@@ -11,9 +11,6 @@
 .slider__subtitle {
   display: $none;
 }
-.slider__tumbler {
-  text-align: $center;
-}
 .slider__top-content {
   display: $none;
 }
@@ -28,9 +25,6 @@
     font-size: 20px;
     order: 2;
      }
-  &__tumbler {
-    order: 2;
-  }
   &__subtitle {
     @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
     display: $block;
@@ -75,6 +69,7 @@
 @media (min-width: 1200px) {
 .slider {
   margin-top: 44px;
+  padding-top: $zero;
   @mixin desktop_padding;
   &__top-content-image {
     display: $none;
@@ -130,9 +125,6 @@
   }
   &__subtitle {
     font-size: $medium;
-  }
-  &__tumbler {
-    display: $none;
   }
   &__description::before {
     background-image: url("../../img/left-arrow.svg");

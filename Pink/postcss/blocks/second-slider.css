@@ -1,10 +1,15 @@
 .second-slider {
-  background-image: url("../../img/Shape_2_copy.png");
-  background-repeat: $no-repeat;
-  &__header {
+  &__header-group {
     background-color: $blue;
+  }
+  &__header {
     text-align: $center;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+    margin: $zero 20px;
+    border-left: 2px solid $dark-grey;
+    border-right: 2px solid $dark-grey;
   }
   &__header:first-child, &__header:last-child {
     display: $none;
@@ -21,22 +26,51 @@
   &__hit {
     @mixin font_options $OpenSans, $small, $white, $biggest, 600, $center, $none;
     background-color: $magenta;
+    transform: rotate(-45deg);
+    display: $block;
+    position: absolute;
+    left: -41%;
+    top: 9%;
+    width: $full-width;
   }
   &__option {
     @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $left, $uppercase;
-    border-bottom: 2px solid #e5e5e5;
+    border-bottom: 2px solid $dark-grey;
+    margin: 0px 19px;
+    border-left: 2px solid $dark-grey;
+    border-right: 2px solid $dark-grey;
     padding-left: 44px;
     padding-top: 14px;
     padding-bottom: 15px;
+    position: relative;
     }
+  &__option::before {
+    @mixin table_side_columns;
+    left: -$margin;
+  }
+  &__option::after {
+    @mixin table_side_columns;
+    right: -21px;
+  }
+  &__option-check {
+    background-image: url("../../img/yes.svg");
+    background-repeat: $no-repeat;
+    background-position: 92% $center;
+  }
+  &__option--not-selected &__option-check {
+    background-image: $none;
+  }
+  &__option--not-selected {
+    background-image: url("../../img/no.svg");
+    background-repeat: $no-repeat;
+    background-position: 92% $center;
+  }
   &__options {
     background-color: $white;
     @mixin list_reset;
   }
-  &__tumbler {
-    padding-top: 40px;
-    background-color: $grey;
-    text-align: $center;
+  & .slider-tumbler {
+    margin-top: 40px;
   }
 }
 @media (min-width: 700px) {
@@ -46,10 +80,10 @@
     margin-right: 40px;
     width: calc(100% - 80px);
     border-collapse: collapse;
-    background-image: none;
+    background-image: $none;
   &__header, &__header:first-child, &__header:last-child {
     display: table-cell;
-    border-right: 2px solid #e5e5e5;
+    border-right: 2px solid $dark-grey;
     width: 25%;
     padding-bottom: 15px;
   }
@@ -60,7 +94,7 @@
     content: "";
     display: table-cell;
   }
-  &__tumbler {
+  & .slider-tumbler {
   display: $none;
   }
   &__header-group {
@@ -74,6 +108,9 @@
   }
   &__option:first-child &__option-check:not(:first-child) {
     border-top: $none;
+  }
+  &__option::after {
+    display: $none;
   }
   &__option-check {
     display: table-cell;

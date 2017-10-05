@@ -75,3 +75,12 @@
   position: absolute;
   top: 213px;
 }
+@define-mixin table_side_columns {
+  content: "";
+  display: $block;
+  width: 20px;
+  height: 59px;
+  position: absolute;
+  top: $zero;
+  border-bottom: 2px solid $dark-grey;
+}

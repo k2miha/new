@@ -1,12 +1,14 @@
 .menu {
   background-color: $blue;
   display: $none;
+  max-width: 320px;
   position: relative;
   z-index: 1;
   &--show {
     display: $block;
     position: absolute;
-    width: 320px;
+    width: $full-width;
+    max-width: $full-width;
     top: $zero;
   }
   &__elements {
@@ -24,8 +26,8 @@
     display: flex;
     justify-content: space-between;
   }
-  &__element:first-child &__link {
-      display: $inline-block;
+  &__element_logo:first-child &__link {
+      padding-top: $margin;
   }
   &__element_logo &__link::before {
     content: "";
@@ -47,27 +49,33 @@
   }
 }
 @media (min-width: 700px) {
-  .menu__element:first-child .site-logo {
+  .menu {
+    max-width: 700px;
+  &--show {
+    max-width: $full-width;
+  }
+  &__element:first-child .site-logo {
       display: $none;
   }
-  .menu__element:first-child .menu__link::before {
+  &__element:first-child &__link::before {
     display: $inline-block;
   }
-  .menu__element_logo {
+  &__element_logo {
     @mixin tablet_padding;
   }
-  .menu__element_logo .menu__link {
+  &__element_logo .menu__link {
     padding-bottom: 42px;
   }
-  .menu--show {
-    width: $full-width;
-    max-width: 700px;
-  }
+ }
 }
 @media (min-width: 1200px) {
   .menu {
     display: $block;
+    max-width: 1200px;
     background-color: rgba(0, 0, 0, 0.3);
+  &--show {
+    position: static;
+  }
   &__element_logo &__link::before {
     background-image: url("../../img/logotype-white-desktop.svg");
   }
