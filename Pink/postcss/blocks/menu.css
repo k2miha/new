@@ -60,11 +60,14 @@
   &__element:first-child &__link::before {
     display: $inline-block;
   }
+  &__element_logo:first-child &__link {
+      padding-top: 27px;
+  }
   &__element_logo {
     @mixin tablet_padding;
   }
   &__element_logo .menu__link {
-    padding-bottom: 42px;
+    padding-bottom: 38px;
   }
  }
 }

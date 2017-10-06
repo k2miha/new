@@ -62,7 +62,7 @@
       padding-right: 45px;
   }
   &__item:last-child &__content-description {
-    padding-left: 21px;
+    padding-left: 20px;
     padding-right: 21px;
   }
   &__item:nth-child(2) {

@@ -85,14 +85,23 @@
     display: table-cell;
     border-right: 2px solid $dark-grey;
     width: 25%;
-    padding-bottom: 15px;
+    padding-bottom: 9px;
+  }
+  &__header:first-child {
+    border-radius: 5px $zero $zero 5px;
   }
   &__header:last-child {
     border-right: $none;
+    border-radius: $zero 3px 3px $zero;
   }
   &__header-group::before {
     content: "";
     display: table-cell;
+    background-color: $grey;
+  }
+  &__hit {
+    left: -38%;
+    top: 5%;
   }
   & .slider-tumbler {
   display: $none;
@@ -109,7 +118,7 @@
   &__option:first-child &__option-check:not(:first-child) {
     border-top: $none;
   }
-  &__option::after {
+  &__option::after, &__option::before {
     display: $none;
   }
   &__option-check {
@@ -119,10 +128,21 @@
     padding-left: 15px;
     padding-top: 8px;
     padding-bottom: 6px;
+    background-position: $center $center;
+  }
+  &__option-check:first-child, &__option--not-selected, &__option--not-selected &__option-check:first-child {
+    background-image: $none;
+  }
+  &__option--not-selected &__option-check:last-child {
+    background-image: url("../../img/yes.svg");
+  }
+  &__option--not-selected &__option-check, &__option &__option--not-selected {
+    background-image: url("../../img/no.svg");
   }
   &__package {
     font-size: 16px;
     padding-top: 12px;
+    margin-bottom: $zero;
   }
   &__price {
     font-size: $medium;
@@ -136,6 +156,7 @@
     width: calc(100% - 260px);
     &__package {
       font-size: $medium;
+      padding-top: 15px;
     }
     &__price {
       font-size: $big;
@@ -145,6 +166,9 @@
       padding-top: 16px;
       padding-bottom: $smallest;
       padding-left: $big;
+    }
+    &__header {
+      padding-bottom: 23px;
     }
   }
 }

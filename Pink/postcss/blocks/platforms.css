@@ -66,5 +66,8 @@
     &__download-link {
       font-size: 21px;
     }
+    &__android {
+      opacity: 1;
+    }
   }
 }

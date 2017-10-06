@@ -66,10 +66,11 @@
   }
   &__map {
     background-image: url("../img/Layer_153.jpg");
-    min-height: 350px;
+    min-height: 448px;
     margin-top: -33px;
     z-index: -1;
     position: relative;
+    background-position: 0px 74%;
   }
   &__map-triangle {
     max-width: $full-width;
@@ -80,6 +81,12 @@
     }
   &__tel, &__email {
     flex-basis: $half-width;
+  }
+  &__address {
+    width: 320px;
+  }
+  &__map-marker {
+    margin-top: 123px;
   }
  }
 }
