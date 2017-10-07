@@ -118,10 +118,14 @@
   }
   &__map {
     background-image: url("../img/map.jpg");
-    min-height: 502px;
+    min-height: 529px;
+    background-position: 0px 58%;
   }
   &__map-triangle {
     background-image: url("../img/triangle-white-footer-desktop.svg");
+  }
+  &__map-marker {
+    margin-top: 158px;
   }
  }
 }

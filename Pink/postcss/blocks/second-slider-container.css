@@ -13,5 +13,6 @@
   .second-slider-container {
     padding-top: 158px;
     background-position: $zero $zero;
+    padding-bottom: 97px;
   }
 }

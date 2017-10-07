@@ -13,15 +13,15 @@
   padding-top: 25px;
   padding-left: 17px;
   padding-right: 6px;
-  padding-bottom: 13px;
+  padding-bottom: $zero;
 }
 .photos__element--panorama .photos__element-comment {
-  padding-bottom: $zero;
   margin-bottom: 20px;
 }
 .photos__element-comment .like {
   padding-left: $zero;
   margin-bottom: $zero;
+  @mixin margin_reset;
 }
 .photos__element--panorama-label {
   @mixin font_options $OpenSans_bold, $smallest, $white, $big, $bold, $center, $none;
@@ -32,9 +32,10 @@
   padding-left: 20px;
   position: absolute;
   top: $zero;
+  right: 20px;
 }
 .photos__element--panorama-image {
-  width: 100%;
+  width: $full-width;
 }
 .photos__element--panorama-image-block {
   position: relative;
@@ -45,12 +46,10 @@
 .photos__element-time {
   @mixin font_options $OpenSans_light, $smallest, $blue, $big, $light, $center, $uppercase;
 }
-.photos__element--panorama .photos__element-message {
-  padding-bottom: 13px;
-}
 .photos__element-message {
   margin: $zero;
   @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $left, $none;
+  padding-bottom: 13px;
 }
 .photos__element-image {
   display: $block;

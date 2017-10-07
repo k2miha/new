@@ -8,6 +8,7 @@
   margin-right: 20px;
   &__button {
     @mixin button_reset;
+    padding-right: 15px;
   }
   &__description {
     @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center, $uppercase;

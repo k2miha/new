@@ -19,16 +19,20 @@
     background-image: url("../../img/crop.svg");
     width: 44px;
     height: 44px;
+    margin-right: 34px;
   }
   &__fill-image {
     background-image: url("../../img/fill.svg");
     width: 48px;
     height: 43px;
+    margin-right: 40px;
   }
   &__contrast-image {
     background-image: url("../../img/contrast.svg");
     width: 32px;
     height: 32px;
+    position: relative;
+    top: -5px;
   }
   &__image-modification-button {
     @mixin button_reset;
@@ -51,6 +55,13 @@
     display: $block;
     margin: $auto;
     margin-bottom: $smallest;
+    border-radius: 28px;
+    border-color: $magenta;
+    border-width: 3px;
+    border-style: solid;
+    padding-top: 17px;
+    padding-bottom: 14px;
+    width: 280px;
   }
   &__button--cancel {
     color: $blue;

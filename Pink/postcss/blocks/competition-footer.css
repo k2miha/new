@@ -26,7 +26,7 @@
   .competition-footer {
     max-width: calc(1200px - 260px);
     margin-top: 70px;
-    margin-bottom: 75px;
+    margin-bottom: 72px;
     @mixin desktop_padding;
     &__form-field-requirements {
       display: $none;

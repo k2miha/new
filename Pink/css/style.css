@@ -62,7 +62,7 @@
   .competition-footer {
     max-width: calc(1200px - 260px);
     margin-top: 70px;
-    margin-bottom: 75px;
+    margin-bottom: 72px;
     padding-right: 130px;
     padding-left: 130px;
   }
@@ -155,6 +155,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  padding-right: 15px;
 }
 .like__description {
   font-family: 'Open Sans','open_sansregular',sans-serif;
@@ -362,10 +363,14 @@
   }
   .main-footer__map {
     background-image: url("../img/map.jpg");
-    min-height: 502px;
+    min-height: 529px;
+    background-position: 0px 58%;
   }
   .main-footer__map-triangle {
     background-image: url("../img/triangle-white-footer-desktop.svg");
+  }
+  .main-footer__map-marker {
+    margin-top: 158px;
   }
 }
 .main-header {
@@ -1012,16 +1017,20 @@
   background-image: url("../../img/crop.svg");
   width: 44px;
   height: 44px;
+  margin-right: 34px;
 }
 .photo-editor__fill-image {
   background-image: url("../../img/fill.svg");
   width: 48px;
   height: 43px;
+  margin-right: 40px;
 }
 .photo-editor__contrast-image {
   background-image: url("../../img/contrast.svg");
   width: 32px;
   height: 32px;
+  position: relative;
+  top: -5px;
 }
 .photo-editor__image-modification-button {
   padding: 0;
@@ -1052,6 +1061,13 @@
   display: block;
   margin: auto;
   margin-bottom: 12px;
+  border-radius: 28px;
+  border-color: #d22856;
+  border-width: 3px;
+  border-style: solid;
+  padding-top: 17px;
+  padding-bottom: 14px;
+  width: 280px;
 }
 .photo-editor__button--cancel {
   color: #283645;
@@ -1198,15 +1214,16 @@ hr:last-of-type {
   padding-top: 25px;
   padding-left: 17px;
   padding-right: 6px;
-  padding-bottom: 13px;
+  padding-bottom: 0;
 }
 .photos__element--panorama .photos__element-comment {
-  padding-bottom: 0;
   margin-bottom: 20px;
 }
 .photos__element-comment .like {
   padding-left: 0;
   margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 .photos__element--panorama-label {
   font-family: 'Open Sans','open_sansbold',sans-serif;
@@ -1223,6 +1240,7 @@ hr:last-of-type {
   padding-left: 20px;
   position: absolute;
   top: 0;
+  right: 20px;
 }
 .photos__element--panorama-image {
   width: 100%;
@@ -1248,9 +1266,6 @@ hr:last-of-type {
   text-align: center;
   text-transform: uppercase;
 }
-.photos__element--panorama .photos__element-message {
-  padding-bottom: 13px;
-}
 .photos__element-message {
   margin: 0;
   font-family: 'Open Sans','open_sansregular',sans-serif;
@@ -1260,6 +1275,7 @@ hr:last-of-type {
   font-weight: 400;
   text-align: left;
   text-transform: none;
+  padding-bottom: 13px;
 }
 .photos__element-image {
   display: block;
@@ -1900,6 +1916,7 @@ hr:last-of-type {
   .second-slider-container {
     padding-top: 158px;
     background-position: 0 0;
+    padding-bottom: 97px;
   }
 }
 .site-logo {
@@ -2185,14 +2202,14 @@ hr:last-of-type {
     margin-bottom: 0;
   }
   .socials__element {
-    width: 52px;
-    height: 51px;
+    width: 46px;
+    height: 45px;
     display: inline-block;
     border-style: solid;
     border-width: 3px;
     border-color: rgba(40, 54, 69, 0.1);
     border-radius: 50%;
-    line-height: 51px;
+    line-height: 46px;
     margin-right: 12px;
   }
 }
