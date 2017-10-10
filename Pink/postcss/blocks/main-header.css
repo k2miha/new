@@ -9,6 +9,9 @@
     max-width: 320px;
     @mixin margin_auto;
   }
+  &--short .menu--show {
+    max-width: 320px;
+  }
   &__slogan {
     @mixin font_options $OpenSans_light, $big, $white, $normal, $light, $center, $none;
     padding-left: 2px;
@@ -32,6 +35,9 @@
       min-height: 729px;
       background-image: url("../../img/back-tablet@1x.jpg");
     &--short {
+      max-width: 700px;
+    }
+    &--short .menu--show {
       max-width: 700px;
     }
     &--short {
@@ -73,6 +79,9 @@
   &__title {
     font-size: 50px;
     margin-left: 130px;
+  }
+  &--short .menu--show {
+    max-width: 1200px;
   }
   &__right-side {
     min-width: 1050px;

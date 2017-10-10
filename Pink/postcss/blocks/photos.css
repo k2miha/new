@@ -93,6 +93,10 @@
     padding-top: 25px;
     flex-grow: 1;
   }
+  .photos__element--panorama-label {
+    right: 40px;
+    top: 57px;
+  }
   .photos__container {
     display: flex;
     flex-wrap: wrap;
@@ -100,7 +104,7 @@
     justify-content: space-between;
   }
   .photos__container .like {
-    margin-bottom: 30px;
+    margin-bottom: 24px;
   }
   .photos__container .photos__element {
     width: calc($half-width - 10px);
@@ -151,7 +155,14 @@
   }
   .photos__element-comment .like__button {
     order: 1;
+    margin-right: 25px;
+    padding-right: $zero;
+    margin-left: $auto;
+  }
+  .photos__element--panorama .like__button {
     margin-right: 28px;
+    padding-right: $zero;
+    margin-left: 17px;
   }
   .photos__element-image {
     width: $full-width;
@@ -160,6 +171,9 @@
   .photos__element-comment {
     @mixin margin_reset;
     margin-top: $zero;
+  }
+  .photos__element--panorama .photos__element-message {
+    padding-bottom: $zero;
   }
   .photos__container .photos__element-image {
     width: 300px;
@@ -200,8 +214,9 @@
     margin-right: 130px;
     width: calc($full-width - 294px);
   }
-  .photos__element--panorama .photos__element-message {
-    padding-bottom: $zero;
+  .photos__element--panorama-label {
+    right: 130px;
+    top: 54px;
   }
   .photos__container {
     @mixin desktop_padding;

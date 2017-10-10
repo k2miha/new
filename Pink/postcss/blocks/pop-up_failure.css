@@ -9,5 +9,22 @@
   }
 .pop-up_failure .pop-up__button-container {
   padding-bottom: 52px;
-  height: $auto;
+  height: 63px;
+  }
+.pop-up_failure.pop-up--show {
+  bottom: 1291px;
+}
+@media (min-width: 700px) {
+  .pop-up__header  {
+    width: 53%;
+  }
+  .pop-up_failure.pop-up--show {
+    bottom: 1741px;
+  }
+}
+@media (min-width: 1200px) {
+  .pop-up_failure.pop-up--show {
+    bottom: 866px;
+    max-width: 484px;
+  }
 }

@@ -1,0 +1,13 @@
+.overlay {
+  position: fixed;
+  top: $zero;
+  left: $zero;
+  z-index: 10;
+  width: $full-width;
+  height: $full-width;
+  background: rgba(0, 0, 0, 0.5);
+  display: $none;
+  &--show {
+    display: $block;
+  }
+}

@@ -39,8 +39,8 @@
   display: $none;
 }
 .personal-info__form {
-  margin-left: $margin;
-  margin-right: $margin;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .personal-info__form [type=submit] {
   background-color: #2aab6d;
@@ -49,7 +49,7 @@
   border: $none;
   width: $full-width;
   height: 63px;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 .personal-info__name-section {
   border: $none;
@@ -73,17 +73,20 @@
   margin-bottom: 88px;
 }
 .personal-info__emotions .personal-info__title {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .personal-info__element-text {
   @mixin font_options $OpenSans_regular, $medium, $blue, 62px, $regular, $left, $none;
   display: $block;
-  width: calc($full-width - 20px);
+  width: calc($full-width - 24px);
   padding-left: 20px;
-  height: 56px;
+  height: 57px;
   margin-bottom: 18px;
   margin-top: 6px;
   @mixin input_border;
+}
+.personal-info__name-section .personal-info__name-element-label:last-child .personal-info__element-text {
+  margin-bottom: -5px;
 }
 .personal-info__element-text::-webkit-input-placeholder, .personal-info__textarea::-webkit-input-placeholder {
   color: $blue;
@@ -91,9 +94,8 @@
 .personal-info__achievements, .personal-info__journey-application {
   background-color: $grey;
   margin-left: -$margin;
-  margin-right: -$margin;
-  padding-left: $margin;
-  padding-right: $margin;
+  margin-right: -20px;
+  @mixin mobile_padding;
   margin-bottom: 38px;
 }
 .personal-info__achievements, .personal-info__journey-application, .personal-info__emotions  {
@@ -101,39 +103,38 @@
 }
 .personal-info__journey-application {
   margin-bottom: 21px;
+  margin-top: -$small;
 }
 .personal-info__emotions {
-  margin-left: -22px;
-  margin-right: -22px;
-  margin-top: 39px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 60px;
 }
 .personal-info__achievements-element-label, .personal-info__element-label {
   @mixin font_options $OpenSans_regular, $medium, $blue, $biggest, $regular, $left, $none;
-  margin-bottom: 52px;
-  margin-left: 5px;
+  margin-bottom: 47px;
   display: $block;
 }
 .personal-info__element-label {
-  margin-bottom: 46px;
+  margin-bottom: 40px;
 }
-.personal-info__achievements-element-label:last-of-type {
-  margin-bottom: 45px;
+.personal-info__achievements-element-column:last-of-type .personal-info__achievements-element-label:last-of-type {
+  margin-bottom: 41px;
 }
 .personal-info__custom-element {
-  width: 39px;
-  height: 39px;
+  width: 37px;
+  height: 37px;
   display: $inline-block;
   background: $white;
-  border-style: solid;
-  border-width: 2px;
-  border-color: $dark-grey;
-  line-height: 39px;
+  @mixin fielsdset_border;
+  border-radius: 3px;
+  line-height: 37px;
   text-align: $center;
-  margin-right: 30px;
+  margin-right: 14px;
 }
 .personal-info__custom-radio-element {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   display: $inline-block;
   background-color: $white;
   border-radius: $half-width;
@@ -141,11 +142,11 @@
   border-width: 2px;
   border-color: $dark-grey;
   text-align: $center;
-  line-height: 43px;
+  line-height: 36px;
   margin-right: 32px;
 }
 .personal-info__element-label:first-of-type .personal-info__custom-radio-element {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .personal-info__textarea {
   width: calc($full-width - 19px) ;
@@ -154,10 +155,15 @@
   @mixin font_options $OpenSans_regular, $medium, $blue, $biggest, $regular, $left, $none;
   padding-left: 19px;
   @mixin input_border;
-  margin-bottom: 47px;
+  margin-bottom: 39px;
+  border-width: 2px;
 }
 .personal-info__contacts-tablet {
   display: $none;
+}
+.personal-info__name-container label {
+  display: $inline-block;
+  margin-top: -6px;
 }
 @media (min-width: 700px) {
   .personal-info__description {
@@ -167,7 +173,7 @@
     margin-bottom: 76px;
   }
   .personal-info__custom-radio-element, .personal-info__custom-element {
-    margin-right: $margin;
+    margin-right: 15px;
   }
   .personal-info__description-fill {
     display: inline;
@@ -175,9 +181,14 @@
   .personal-info__name-element-label {
     display: flex;
     align-items: $center;
+    margin-left: 20px;
   }
   .personal-info__element-text {
-    margin-left: 22px;
+    margin-left: $margin;
+    flex-grow: 1;
+    margin-bottom: $zero;
+    margin-top: $zero;
+    width: $auto;
   }
   .personal-info__element-label {
     margin-bottom: 40px;
@@ -192,8 +203,10 @@
     background-color: $transparent;
     margin-right: $zero;
     margin-left: 18px;
-    margin-top: 44px;
-    border-color: $dark-grey;
+    margin-top: 62px;
+    @mixin fielsdset_border;
+    border-radius: 3px;
+    padding-left: 60px;
   }
   .personal-info__name-section, .personal-info__journey-application {
     order: -1;
@@ -214,19 +227,24 @@
     margin-right: $zero;
     margin-left: 18px;
     margin-top: 44px;
-    border-color: $dark-grey;
     order: -1;
+    @mixin fielsdset_border;
+    border-radius: 3px;
   }
   .personal-info__contacts-tablet .personal-info__element-text {
     margin-left: $zero;
     width: calc(100% - 22px);
+    margin-bottom: 11px;
+  }
+  .personal-info__contacts-tablet .personal-info__title {
+    margin-bottom: 36px;
   }
   .personal-info__contacts-tablet .personal-info__name-element-label {
     margin-left: 20px;
-    margin-bottom: 26px;
+    margin-bottom: 32px;
   }
-  .personal-info__contacts-tablet .personal-info__name-element-label:last-of-type {
-    margin-bottom: 21px;
+  .personal-info__contacts-tablet-input-container:last-of-type .personal-info__name-element-label {
+    margin-bottom: 15px;
   }
   .personal-info__contacts-tablet-image-container {
     width: 60px;
@@ -235,7 +253,7 @@
     text-align: center;
     line-height: 60px;
     position: absolute;
-    top: $zero;
+    top: 1px;
     right: $zero;
   }
   .personal-info__contacts-tablet-input-container {
@@ -245,17 +263,21 @@
     width: calc(100% - 96px);
   }
   .personal-info__achievements {
-    border-color: $dark-grey;
     background-color: $transparent;
     margin-left: 18px;
     margin-right: $zero;
     margin-top: 61px;
+    @mixin fielsdset_border;
+    border-radius: 3px;
+    padding-left: 60px;
+    margin-bottom: $zero;
   }
   .personal-info__emotions {
-    border-color: $dark-grey;
     margin-left: 18px;
     margin-right: $zero;
     margin-bottom: 71px;
+    @mixin fielsdset_border;
+    border-radius: 3px;
   }
   .personal-info__textarea {
     margin-left: 48px;
@@ -280,6 +302,17 @@
   .personal-info__achievements .personal-info__title {
     margin-bottom: 42px;
   }
+  .personal-info__label-container {
+    display: flex;
+    margin-bottom: 57px;
+  }
+  .personal-info__label-container:last-child {
+    margin-bottom: $zero;
+  }
+  .personal-info__title {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 @media (min-width: 1200px) {
 .personal-info__form {
@@ -296,11 +329,14 @@
     margin-left: $zero;
  }
  .personal-info__journey-application {
-   margin-top: -6px;
+   margin-top: -12px;
    @mixin padding_reset;
  }
  .personal-info__contacts-tablet, .personal-info__achievements, .personal-info__emotions, .personal-info__form-submit-container {
    flex-basis: $full-width;
+ }
+ .personal-info__form-submit-container {
+   margin-bottom: $zero;
  }
  .personal-info__contacts-tablet-container {
    display: flex;
@@ -314,14 +350,10 @@
  .personal-info__contacts-tablet-input-container:last-of-type {
    margin-left: 35px;
  }
- .personal-info__element-text {
-   margin-top: $zero;
- }
  .personal-info__achievements-element-container {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   margin-left: 38px;
    margin-right: 38px;
  }
  .personal-info__contacts-tablet {
@@ -339,5 +371,12 @@
  }
  .personal-info__element-label {
    margin-left: 76px;
+   margin-bottom: 39px;
+ }
+ .personal-info__label-container {
+   margin-bottom: 58px;
+ }
+ .personal-info__contacts-tablet .personal-info__name-element-label {
+   margin-bottom: 13px;
  }
 }

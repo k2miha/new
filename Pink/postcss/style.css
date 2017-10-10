@@ -25,7 +25,8 @@
 @import "../postcss/blocks/site-logo.css";
 @import "../postcss/blocks/pop-up.css";
 @import "../postcss/blocks/pop-up_failure.css";
+@import "../postcss/blocks/overlay.css";
 body {
-  margin: 0;
+  margin: $zero;
   position: relative;
 }

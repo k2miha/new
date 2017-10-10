@@ -15,6 +15,7 @@
   }
   &__count {
     @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center, $none;
+    margin-left: 3px;
   }
 }
 @media (min-width: 700px) {

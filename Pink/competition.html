@@ -48,15 +48,18 @@
         </p>
         <form class="personal-info__form" action="https://echo.htmlacademy.ru" method="post" >
           <fieldset class="personal-info__name-section">
-            <label class="personal-info__name-element-label">Фамилия:
+            <div class="personal-info__label-container">
+              <label class="personal-info__name-element-label">Фамилия:</label>
               <input class="personal-info__element-text" type="text" name="name" value="" placeholder="Укажите фамилию">
-            </label>
-            <label class="personal-info__name-element-label">Имя:
+            </div>
+            <div class="personal-info__label-container">
+              <label class="personal-info__name-element-label">Имя:</label>
               <input class="personal-info__element-text" type="text" name="name" value="" placeholder="Введите ваше имя">
-            </label>
-            <label class="personal-info__name-element-label">Отчество:
+            </div>
+            <div class="personal-info__label-container">
+              <label class="personal-info__name-element-label">Отчество:</label>
               <input class="personal-info__element-text" type="text" name="name" value="" placeholder="Ну и отчество тоже">
-            </label>
+            </div>
           </fieldset>
           <fieldset class="personal-info__achievements">
             <legend class="personal-info__title">Ваши безбашенные достижения в путешествии</legend>
@@ -100,9 +103,10 @@
             </div>
           </fieldset>
           <div class="personal-info__contacts">
-            <label class="personal-info__name-element-label" for="tel">Номерок телефончика
+            <div class="personal-info__name-container">
+              <label class="personal-info__name-element-label" for="tel">Номерок телефончика</label>
               <input class="personal-info__element-text" id="tel" type="text" name="name" value="" placeholder="Номер, пожалуйста">
-            </label>
+            </div>
             <label class="personal-info__name-element-label">адресок почты
               <input class="personal-info__element-text" type="text" name="name" value="" placeholder="E-mail, пожалуйста">
             </label>
@@ -199,6 +203,7 @@
         <button class="pop-up__button"type="button" name="button">OK</button>
       </div>
     </div>
+    <div class="overlay"></div>
     <script type="text/javascript" src="js/modal.js"></script>
     <script type="text/javascript" src="js/hamburger.js"></script>
   </body>

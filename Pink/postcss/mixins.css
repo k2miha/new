@@ -26,6 +26,11 @@
   border-color: $dark-grey;
   border-style: solid;
 }
+@define-mixin fielsdset_border {
+  border-color: $dark-grey;
+  border-width: 2px;
+  border-style: solid;
+}
 @define-mixin mobile {
   max-width: 320px;
   margin: $auto;

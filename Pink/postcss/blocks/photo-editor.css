@@ -40,9 +40,30 @@
   &__functions {
     margin-bottom: 33px;
   }
+  &__range {
+    height: 2px;
+    background-color: $blue;
+    position: relative;
+  }
+  &__range::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: $magenta;
+    border-radius: $half-width;
+    position: absolute;
+    top: -6px;
+    background-color: $grey;
+  }
+  &__range:nth-child(8)::after {
+      right: 33px;
+  }
   &__range:nth-child(-n+5) {
     display: $none;
-    margin-bottom: 28px;
+    margin-bottom: 11px;
   }
   &__range:nth-child(8) {
     display: $block;
@@ -66,10 +87,15 @@
   &__button--cancel {
     color: $blue;
     opacity: .1;
+    border-color: rgba(40, 54, 69, 1.0);
   }
   &__function-tuning {
     padding-bottom: 41px;
   }
+}
+hr {
+  border-bottom: $none;
+  border-top-color: rgba(40, 54, 69, 0.1);
 }
 hr:not(:last-of-type) {
   margin-bottom: 38px;
@@ -101,16 +127,19 @@ hr:last-of-type {
     width: 22px;
     height: 22px;
     background-image: url("../../img/crop_50.svg");
+    margin-right: $zero;
   }
   &__fill-image {
     background-image: url("../../img/fill_50.svg");
     width: 24px;
     height: 22px;
+    margin-right: $zero;
   }
   &__contrast-image {
     background-image: url("../../img/contrast_50.svg");
     width: 16px;
     height: 16px;
+    top: 6px;
   }
   &__range {
       margin-bottom: 24px;
@@ -122,6 +151,15 @@ hr:last-of-type {
   }
   &__range:nth-child(-n+5) {
     display: $inline-block;
+  }
+  &__range:nth-child(2)::after {
+      right: 42px;
+  }
+  &__range:nth-child(5)::after {
+      left: 25px;
+  }
+  &__range:nth-child(8)::after {
+      left: 92px;
   }
   &__range:nth-child(8) {
     width: 69%;
@@ -140,15 +178,18 @@ hr:last-of-type {
   }
   hr:last-of-type {
     margin-bottom: 67px;
+    margin-top: 27px;
   }
   hr:not(:last-of-type) {
     display: $block;
+    margin-top: 23px;
   }
 }
 @media (min-width: 1200px) {
   .photo-editor {
     margin-left: 130px;
     margin-right: 130px;
+    margin-bottom: 98px;
     &__image {
       margin-left: 80px;
       margin-right: 90px;
@@ -173,6 +214,7 @@ hr:last-of-type {
     }
     &__button {
       display: $inline-block;
+      width: 183px;
     }
     &__function-tuning {
       padding-bottom: 23px;
@@ -181,10 +223,13 @@ hr:last-of-type {
       margin-right: 44px;
     }
     &__button--cancel {
-      margin-left: 44px;
+      margin-left: 35px;
     }
   }
   hr:not(:last-of-type) {
-    margin-top: 4px;
+    margin-top: 13px;
+  }
+  hr:last-of-type {
+    margin-top: 19px;
   }
 }

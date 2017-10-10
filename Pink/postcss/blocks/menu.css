@@ -82,6 +82,13 @@
   &__element_logo &__link::before {
     background-image: url("../../img/logotype-white-desktop.svg");
   }
+  &__element_logo &__link:hover::before {
+    background-image: url("../../img/logotype-white-desktop-hover.svg");
+  }
+  &__element_logo &__link:active::before {
+    background-image: url("../../img/logotype-white-desktop.svg");
+    opacity: .3;
+  }
   &__button {
     display: $none;
   }
@@ -108,6 +115,15 @@
     padding-top: 48px;
     font-family: $OpenSans;
     font-weight: $normal;
+    padding-bottom: 9px;
+  }
+  &__elements-container &__link:hover {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+  }
+  &__elements-container &__link:active {
+    opacity: .3;
+    border-bottom-style: $none;
   }
   &__element {
     border-bottom: $none;
