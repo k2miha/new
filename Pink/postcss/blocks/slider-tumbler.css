@@ -12,6 +12,12 @@
   border: $none;
   background-color: rgba(40, 54, 69, 0.3);
 }
+&__element:hover {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+&__element:active {
+  background-color: rgba(40, 54, 69, 0.1);
+}
 &__element--active {
   width: 12px;
   height: 12px;
@@ -19,6 +25,9 @@
   border-style: solid;
   border-color: rgb(40, 54, 69);
   background-color: $transparent;
+  }
+  &__element--active:hover {
+    background-color: $transparent;
   }
 }
 @media (min-width: 700px) {

@@ -21,6 +21,9 @@
     padding-left: 11px;
     padding-right: 11px;
   }
+  &__email &__block-content:hover {
+    color: $blue;
+  }
   &__block-content:first-of-type {
     text-decoration: $none;
   }

@@ -11,6 +11,12 @@
     max-width: $full-width;
     top: $zero;
   }
+  &--active:hover {
+    color: $magenta;
+  }
+  &--active:active {
+    color: $white;
+  }
   &__elements {
     background-color: $blue;
     @mixin list_reset;

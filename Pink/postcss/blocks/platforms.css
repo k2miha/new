@@ -18,6 +18,13 @@
     display: $block;
     width: 258px;
   }
+  &__download-link:hover {
+    background: $white;
+    color: $magenta;
+  }
+  &__download-link:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
   &__description {
     @mixin font_options $OpenSans_light, $small, $white, $big, $light, $center, $none;
     padding-left: 33px;
