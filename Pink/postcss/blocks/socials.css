@@ -1,7 +1,6 @@
 .socials {
   text-align: $center;
   margin-bottom: 42px;
-
   &__element {
     text-decoration: $none;
     width: 46px;
@@ -13,6 +12,15 @@
     border-radius: $half-width;
     line-height: 46px;
     margin-right: $smallest;
+  }
+  &__element:hover {
+    border-color: rgba(40, 54, 69, 1);
+  }
+  &__element:active img{
+    opacity: .3;
+  }
+  &__element:active {
+    border-color: rgba(40, 54, 69, 0.1);
   }
 }
 @media (min-width: 700px) {

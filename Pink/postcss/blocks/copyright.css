@@ -9,6 +9,12 @@
   &__link {
     display: flex;
   }
+  &__link:hover &__image {
+    display: $none;
+  }
+  &__link:hover {
+    
+  }
 }
 @media (min-width: 700px) {
 .copyright {

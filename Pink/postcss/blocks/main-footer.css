@@ -23,6 +23,11 @@
   }
   &__email &__block-content:hover {
     color: $blue;
+    text-decoration: underline;
+  }
+  &__email &__block-content:active {
+    opacity: .3;
+    text-decoration: $none;
   }
   &__block-content:first-of-type {
     text-decoration: $none;
