@@ -142,7 +142,14 @@
 .copyright__link:hover .copyright__image {
   display: none;
 }
-.copyright__link:hover {}
+.copyright__link:hover {
+  height: 34px;
+  width: 27px;
+  background-image: url("../../img/Vector Smart Object copy 7.svg");
+}
+.copyright__link:active {
+  opacity: .3;
+}
 @media (min-width: 700px) {
   .copyright {
     flex-basis: 150px;
@@ -567,10 +574,21 @@
   padding-top: 26px;
   padding-bottom: 23px;
 }
+.menu__link:hover {
+  color: #d22856;
+}
+.menu__link:active {
+  opacity: .3;
+}
 .menu__button {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+.menu__elements-container {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 @media (min-width: 700px) {
   .menu {
@@ -623,6 +641,9 @@
     padding-right: 130px;
     padding-left: 130px;
     background-color: transparent;
+  }
+  .menu__elements > .menu__element:last-child {
+    flex-grow: 1;
   }
   .menu__element_logo {
     flex-basis: 150px;
@@ -1137,6 +1158,9 @@
   padding: 0;
   border: none;
   background-color: transparent;
+}
+.photo-editor__image-modification-button span {
+  display: block;
 }
 .photo-editor__functions {
   margin-bottom: 33px;
@@ -2489,6 +2513,37 @@ hr:last-of-type {
 .logotype__menu-button {
   background-color: transparent;
   border: none;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  top: -3px;
+  position: relative;
+}
+.logotype__menu-button::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  top: -10px;
+  position: relative;
+  left: -6px;
+}
+.logotype__menu-button::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #fff;
+  top: -23px;
+  position: relative;
+  left: -6px;
+}
+.logotype__menu-button:hover .logotype__menu-button-img {
+  display: none;
+}
+.logotype__menu-button:hover, .logotype__menu-button:hover::after, .logotype__menu-button:hover::before {
+  background-color: #d22856;
 }
 @media (min-width: 700px) {
   .logotype {

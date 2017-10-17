@@ -37,6 +37,9 @@
   &__image-modification-button {
     @mixin button_reset;
   }
+  &__image-modification-button span {
+    display: $block;
+  }
   &__functions {
     margin-bottom: 33px;
   }

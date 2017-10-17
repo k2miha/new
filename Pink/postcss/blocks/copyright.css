@@ -13,7 +13,12 @@
     display: $none;
   }
   &__link:hover {
-    
+    height: 34px;
+    width: 27px;
+    background-image: url("../../img/Vector Smart Object copy 7.svg");
+  }
+  &__link:active {
+    opacity: .3;
   }
 }
 @media (min-width: 700px) {

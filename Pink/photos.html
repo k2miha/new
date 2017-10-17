@@ -14,9 +14,7 @@
         <a class="site-logo" href="index.html" title="Pink">
             <img class="site-logo__text" src="img/logotype-white-mobile.svg" alt="Logo" />
         </a>
-        <button class="logotype__menu-button" type="button" name="open" title="Меню">
-          <img class="logotype__menu-button-img" src="img/menu-burger.svg" alt="Menu-button" />
-        </button>
+        <button class="logotype__menu-button" type="button" name="open" title="Меню"></button>
       </div>
       <nav class="menu">
         <ul class="menu__elements">
@@ -28,12 +26,14 @@
               <img class="menu__button-image" src="img/menu-cross.svg" alt="Cross" />
             </button>
           </li>
-          <div class="menu__elements-container">
-            <li class="menu__element"><a class="menu__link" href="index.html">Главная</a></li>
-            <li class="menu__element"><a class="menu__link menu--active">Фотографии</a></li>
-            <li class="menu__element"><a class="menu__link" href="competition.html">Конкурс</a></li>
-            <li class="menu__element"><a class="menu__link" href="http://htmlacademy.ru">HMTL Academy</a></li>
-          </div>
+          <li class="menu__element">
+            <ul class="menu__elements-container">
+              <li class="menu__element"><a class="menu__link" href="index.html">Главная</a></li>
+              <li class="menu__element"><a class="menu__link menu--active">Фотографии</a></li>
+              <li class="menu__element"><a class="menu__link" href="competition.html">Конкурс</a></li>
+              <li class="menu__element"><a class="menu__link" href="http://htmlacademy.ru">HMTL Academy</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <p class="main-header__slogan">Фотографии <br> пользователей</p>
@@ -184,17 +184,17 @@
         <div class="photo-editor__function-container">
           <form class="photo-editor__function-tuning" action="https://echo.htmlacademy.ru" method="post">
             <button class="photo-editor__image-modification-button" title="crop">
-              <div class="photo-editor__crop-image"></div>
+              <span class="photo-editor__crop-image"></span>
             </button>
             <div class="photo-editor__range"></div>
             <hr>
             <button class="photo-editor__image-modification-button" title="fill">
-              <div class="photo-editor__fill-image"></div>
+              <span class="photo-editor__fill-image"></span>
             </button>
             <div class="photo-editor__range"></div>
             <hr>
             <button class="photo-editor__image-modification-button" title="contrast">
-              <div class="photo-editor__contrast-image"></div>
+              <span class="photo-editor__contrast-image"></span>
             </button>
             <div class="photo-editor__range"></div>
             <hr>

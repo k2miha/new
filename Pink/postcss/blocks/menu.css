@@ -50,8 +50,17 @@
     padding-top: 26px;
     padding-bottom: 23px;
   }
+  &__link:hover {
+    color: $magenta;
+  }
+  &__link:active {
+    opacity: .3;
+  }
   &__button {
     @mixin button_reset;
+  }
+  &__elements-container {
+    @mixin list_reset;
   }
 }
 @media (min-width: 700px) {
@@ -103,6 +112,9 @@
     padding-right: 130px;
     padding-left: 130px;
     background-color: $transparent;
+  }
+  &__elements > &__element:last-child {
+    flex-grow: 1;
   }
   &__element_logo {
     flex-basis: 150px;
