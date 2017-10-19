@@ -51,6 +51,15 @@
   height: 63px;
   border-radius: 2px;
 }
+.personal-info__form [disabled] {
+  background-color: $dark-grey; 
+}
+.personal-info__form [type=submit]:hover {
+  background-color: #1c9b5e;
+}
+.personal-info__form [type=submit]:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 .personal-info__name-section {
   border: $none;
   padding: $zero;
@@ -84,6 +93,13 @@
   margin-bottom: 18px;
   margin-top: 6px;
   @mixin input_border;
+}
+.personal-info__element-text:hover {
+  border-color: $blue;
+}
+.personal-info__element-text:focus {
+  border-color: $magenta;
+  outline: $none;
 }
 .personal-info__name-section .personal-info__name-element-label:last-child .personal-info__element-text {
   margin-bottom: -5px;
@@ -132,6 +148,12 @@
   text-align: $center;
   margin-right: 14px;
 }
+.personal-info__custom-element:hover {
+  border-color: $blue;
+}
+.personal-info__custom-element:active {
+  border-color: $magenta;
+}
 .personal-info__custom-radio-element {
   width: 36px;
   height: 36px;
@@ -144,6 +166,12 @@
   text-align: $center;
   line-height: 36px;
   margin-right: 32px;
+}
+.personal-info__custom-radio-element:hover {
+  border-color: $blue;
+}
+.personal-info__custom-radio-element:active {
+  border-color: $magenta;
 }
 .personal-info__element-label:first-of-type .personal-info__custom-radio-element {
   margin-top: 40px;

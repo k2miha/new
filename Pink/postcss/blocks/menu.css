@@ -59,6 +59,19 @@
   &__button {
     @mixin button_reset;
   }
+  &__button:hover &__button-image {
+    display: $none;
+  }
+  &__button:hover {
+    background: url("../../img/close menu BTN copy.svg");
+    width: 24px;
+    height: 70px;
+    background-repeat: $no-repeat;
+    background-position: $center;
+  }
+  &__button:active {
+    opacity: .3;
+  }
   &__elements-container {
     @mixin list_reset;
   }
@@ -68,6 +81,9 @@
     max-width: 700px;
   &--show {
     max-width: $full-width;
+  }
+  &__button:hover {
+    height: 108px;
   }
   &__element:first-child .site-logo {
       display: $none;

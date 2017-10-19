@@ -73,7 +73,6 @@
   background-position-x: $half-width;
 }
 @define-mixin slider_toggle {
-  content: "";
   display: block;
   width: 22px;
   height: 41px;

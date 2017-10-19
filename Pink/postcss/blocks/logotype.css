@@ -43,6 +43,10 @@
   &__menu-button:hover, &__menu-button:hover::after, &__menu-button:hover::before {
     background-color: $magenta;
   }
+  &__menu-button:active, &__menu-button:active::after, &__menu-button:active::before {
+    background-color: $magenta;
+    opacity: .3;
+  }
 }
 @media (min-width: 700px) {
 .logotype {

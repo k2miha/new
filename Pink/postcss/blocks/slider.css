@@ -14,6 +14,9 @@
 .slider__top-content {
   display: $none;
 }
+.slider__arrow {
+  display: $none;
+}
 @media (min-width: 700px) {
   .slider {
     @mixin tablet_padding;
@@ -126,18 +129,22 @@
   &__subtitle {
     font-size: $medium;
   }
-  &__description::before {
-    background-image: url("../../img/left-arrow.svg");
-    left: 130px;
+  &__arrow {
+    background-image: url("../../img/left arrow copy.svg");
     left: -66.5px;
     @mixin slider_toggle;
+    opacity: .3;
   }
-  &__description::after {
-    background-image: url("../../img/left-arrow.svg");
-    right: 130px;
+  &__arrow:last-child {
+    background-image: url("../../img/left arrow copy.svg");
     right: -66.5px;
+    left: inherit;
     transform: rotate(180deg);
     @mixin slider_toggle;
+    opacity: .3;
+  }
+  &__arrow:hover   {
+    opacity: 1;
   }
  }
 }
