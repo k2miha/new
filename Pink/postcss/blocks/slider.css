@@ -146,5 +146,8 @@
   &__arrow:hover   {
     opacity: 1;
   }
+  &__arrow:active {
+    opacity: .1;
+  }
  }
 }
