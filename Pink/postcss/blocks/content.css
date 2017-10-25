@@ -1,8 +1,8 @@
 .content {
-  margin-top: 46px;
+  margin-top: 40px;
   &__slogan {
-    @mixin font_options $OpenSans_light, $big, $blue, $normal, $light, $center, $none;
-    margin-top: 39px;
+    @mixin font_options $OpenSans_light, $big, $blue, 29px, $light, $center, $none;
+    margin-top: 29px;
     margin-bottom: $zero;
   }
   &__slogan:last-child {

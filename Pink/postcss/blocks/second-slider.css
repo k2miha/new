@@ -16,12 +16,14 @@
   }
   &__package {
     @mixin font_options $OpenSans_bold, $medium, $white, $biggest, $bold, $center, $uppercase;
-    padding-top: 19px;
+    padding-top: 16px;
     margin: $zero;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
   &__price {
     @mixin font_options $OpenSans_light, $big, $white, $biggest, $light, $center, $none;
+    padding-bottom: 4px;
+    display: $block;
   }
   &__hit {
     @mixin font_options $OpenSans, $small, $white, $biggest, 600, $center, $none;
@@ -29,8 +31,8 @@
     transform: rotate(-45deg);
     display: $block;
     position: absolute;
-    left: -41%;
-    top: 9%;
+    left: -40%;
+    top: 8%;
     width: $full-width;
   }
   &__option {
@@ -39,7 +41,7 @@
     margin: 0px 19px;
     border-left: 2px solid $dark-grey;
     border-right: 2px solid $dark-grey;
-    padding-left: 44px;
+    padding-left: 22px;
     padding-top: 14px;
     padding-bottom: 15px;
     position: relative;

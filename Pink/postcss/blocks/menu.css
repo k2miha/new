@@ -35,6 +35,15 @@
   &__element_logo:first-child &__link {
       padding-top: $margin;
   }
+  &__element_logo:first-child &__link:hover .site-logo {
+    display: $none;
+  }
+  &__element_logo:first-child &__link:hover {
+    background: url("../../img/PINK.svg");
+    background-repeat: $no-repeat;
+    width: 75px;
+    margin-top: 26px;
+  }
   &__element_logo &__link::before {
     content: "";
     display: $none;

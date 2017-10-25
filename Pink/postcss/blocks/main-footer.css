@@ -3,22 +3,21 @@
     display: $none;
   }
   &__block-title {
-    @mixin font_options $OpenSans_bold, $medium, $blue, $normal, $bold, $center, $none;
+    @mixin font_options $OpenSans, $medium, $blue, $normal, $bold, $center, $none;
     @mixin white_background;
-    padding-top: 28px;
-    padding-bottom: 11px;
+    padding-top: 17px;
   }
   &__description {
-    @mixin font_options $OpenSans_light, $big, $blue, $normal, $light, $center, $none;
+    @mixin font_options $OpenSans_light, $big, $blue, 31px, $light, $center, $none;
     @mixin white_background;
-    padding-top: 48px;
+    padding-top: 39px;
     padding-bottom: 17px;
   }
   &__block-content {
-    @mixin font_options $OpenSans_light, $big, $magenta, $normal, $light, $center, $none;
+    @mixin font_options $OpenSans_light, $big, $magenta, 32px, $light, $center, $none;
     @mixin white_background;
     display: $block;
-    padding-left: 11px;
+    padding-left: 12px;
     padding-right: 11px;
   }
   &__email &__block-content:hover {
@@ -37,7 +36,7 @@
     background-repeat: $no-repeat;
     background-size: cover;
     background-position: $zero $full-width;
-    min-height: 278px;
+    min-height: 292px;
     margin-top: -57px;
     text-align: $center;
     }
@@ -47,7 +46,13 @@
     background-position: $center $zero;
   }
   &__map-marker {
-    margin-top: 55px;
+    margin-top: 64px;
+  }
+  &__tel {
+    margin-bottom: 6px;
+  }
+  &__email {
+    margin-bottom: 7px;
   }
 }
 @media (min-width: 700px) {

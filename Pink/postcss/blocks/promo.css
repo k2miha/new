@@ -1,13 +1,13 @@
 .promo {
   @mixin list_reset;
   &__content-title {
-    @mixin font_options $OpenSans_bold, $medium, $black, $big, $bold, $center;
+    @mixin font_options $OpenSans, $medium, $black, 13px, $bold, $center;
     margin: $zero;
   }
   &__content-description {
     @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $center;
-    margin-bottom: 40px;
-    margin-top: 19px;
+    margin-bottom: 37px;
+    margin-top: 17px;
   }
   &__item {
     padding: $zero 24px;
