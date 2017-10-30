@@ -33,16 +33,10 @@
     justify-content: space-between;
   }
   &__element_logo:first-child &__link {
-      padding-top: $margin;
+      padding-top: 20px;
   }
   &__element_logo:first-child &__link:hover .site-logo {
     display: $none;
-  }
-  &__element_logo:first-child &__link:hover {
-    background: url("../../img/PINK.svg");
-    background-repeat: $no-repeat;
-    width: 75px;
-    margin-top: 26px;
   }
   &__element_logo &__link::before {
     content: "";
@@ -56,17 +50,21 @@
     text-decoration: $none;
     display: $block;
     vertical-align: middle;
-    padding-top: 26px;
+    padding-top: 21px;
     padding-bottom: 23px;
   }
-  &__link:hover {
-    color: $magenta;
+  &__link svg {
+    fill: $white;
+  }
+  &__link svg:hover {
+    fill: $magenta;
   }
   &__link:active {
     opacity: .3;
   }
   &__button {
     @mixin button_reset;
+    height: 70px;
   }
   &__button:hover &__button-image {
     display: $none;
@@ -91,8 +89,27 @@
   &--show {
     max-width: $full-width;
   }
+  &__button {
+    height: $auto;
+  }
   &__button:hover {
     height: 108px;
+  }
+  &__link svg {
+    display: $none;
+  }
+  &__element_logo:first-child &__link:hover {
+    background: $none;
+    width: 75px;
+    margin-top: $zero;
+  }
+  &__element_logo &__link:hover::before {
+    content: "";
+    display: $none;
+    width: 147px;
+    height: 40px;
+    background: url("../../img/PINK copy.svg");
+    background-repeat: $no-repeat;
   }
   &__element:first-child .site-logo {
       display: $none;
@@ -155,7 +172,7 @@
   }
   &__elements-container &__link {
     text-transform: $none;
-    padding-top: 48px;
+    padding-top: 43px;
     font-family: $OpenSans;
     font-weight: $normal;
     padding-bottom: 9px;

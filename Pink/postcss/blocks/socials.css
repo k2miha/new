@@ -11,7 +11,10 @@
     border-color: rgba(40, 54, 69, 0.1);
     border-radius: $half-width;
     line-height: 46px;
-    margin-right: $smallest;
+    margin-right: 5px;
+  }
+  &__element:last-child {
+    margin-right: $zero;
   }
   &__element:hover {
     border-color: rgba(40, 54, 69, 1);

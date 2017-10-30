@@ -46,7 +46,8 @@
     &__title {
       width: 300px;
       margin-left: 40px;
-      margin-top: 103px;
+      margin-top: 92px;
+      line-height: 48px;
       display: $block;
     }
     &__right-side {
@@ -74,11 +75,13 @@
     max-width: 1200px;
     @mixin margin_auto;
     background-image: url("../../img/back-desktop.jpg");
-    min-height: 859px;
+    min-height: 853px;
     position: relative;
   &__title {
     font-size: 50px;
     margin-left: 130px;
+    margin-top: 111px;
+    line-height: 60px;
   }
   &--short .menu--show {
     max-width: 1200px;
@@ -87,8 +90,8 @@
     min-width: 1050px;
     height: 645px;
     position: absolute;
-    top: 214px;
-    right: $zero;
+    top: 208px;
+    right: 4px;
     background-image: url("../../img/iphone-6.png");
   }
   &--short {

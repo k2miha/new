@@ -9,12 +9,6 @@
   &:hover &__text {
     display: $none;
   }
-  &:hover {
-    background: url("../../img/PINK.svg");
-    background-repeat: $no-repeat;
-    width: 75px;
-    height: 26px;
-  }
   &--footer:hover {
     background: url("../../img/PINK copy.svg");
     background-repeat: no-repeat;
@@ -27,17 +21,22 @@
   &--footer:hover &__image {
     display: $none;
   }
-  &:hover:active &__text  {
-    opacity: .3;
-    display: $block;
-  }
-  &:hover:active {
-    background-image: $none;
-  }
   &--footer:hover:active {
     background: url("../../img/logotype-blue-tablet.svg");
     background-repeat: no-repeat;
     opacity: .3;
+  }
+  & svg {
+    fill: $white;
+    position: relative;
+    z-index: 10;
+  }
+  & svg:hover {
+    fill: $magenta;
+  }
+  & svg:active {
+    opacity: .3;
+    fill: $white;
   }
 }
 @media (min-width: 700px) {
@@ -70,6 +69,9 @@
   width: 147px;
   height: 40px;
   background: url("../../img/logotype-white-tablet.svg");
+}
+.site-logo svg {
+  display: $none;
 }
 .site-logo:hover::before {
   background: url("../../img/PINK copy.svg");

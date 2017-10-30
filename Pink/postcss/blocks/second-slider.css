@@ -87,7 +87,7 @@
     display: table-cell;
     border-right: 2px solid $dark-grey;
     width: 25%;
-    padding-bottom: 9px;
+    padding-bottom: 3px;
   }
   &__header:first-child {
     border-radius: 5px $zero $zero 5px;

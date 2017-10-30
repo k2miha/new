@@ -21,7 +21,7 @@
       flex-basis: $half-width;
       min-width: 310px;
       position: relative;
-      top: 117px;
+      top: 153px;
   }
   .promo__content-title, .promo__content-description {
     text-align: left;
@@ -30,12 +30,16 @@
     padding-right: $zero;
     padding-left: $zero;
   }
+  .promo__content-description {
+    margin-bottom: 40px;
+  }
 }
 @media (min-width: 1200px) {
   .promo {
       flex-basis: $full-width;
       display: flex;
-      top: 101px;
+      top: 104px;
+      left: -21px;
   &__item:first-child {
     background-image: url("../../img/Iphone_screen_1_copy.png");
   }
@@ -67,9 +71,11 @@
   }
   &__item:nth-child(2) {
     background-image: url("../../img/Iphone screen 2.png");
+    background-position-x: 45%;
   }
   &__item:last-child {
     background-image: url("../../img/Iphone screen 3.png");
+    background-position-x: 62%;
   }
  }
 }

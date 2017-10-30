@@ -55,7 +55,7 @@
     position: relative;
     z-index: 1;
     background-color: transparent;
-    padding-top: 39px;
+    padding-top: 32px;
     &__download-link {
       width:$auto;
       margin-bottom: 46px;
@@ -63,7 +63,7 @@
     &__images {
       margin-left: 47px;
       margin-right: 47px;
-      margin-bottom: 41px;
+      margin-bottom: 38px;
     }
     &__description {
       font-size: $medium;
@@ -77,11 +77,17 @@
 @media (min-width: 1200px) {
   .platforms {
     margin-left: 130px;
+    margin-top: 20px;
     &__download-link {
       font-size: 21px;
+      font-weight: $normal;
+      margin-bottom: 67px;
     }
     &__android {
       opacity: 1;
+    }
+    &__images {
+      margin-bottom: 55px;
     }
   }
 }

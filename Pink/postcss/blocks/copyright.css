@@ -23,7 +23,8 @@
 }
 @media (min-width: 700px) {
 .copyright {
-  flex-basis: 150px;
+  flex-basis: 130px;
+  margin-left: 20px;
   }
 }
 @media (min-width: 1200px) {
