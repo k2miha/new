@@ -10,6 +10,14 @@
   margin-bottom: 33px;
   margin-top: $zero;
 }
+.slider__description::before {
+  content: "«";
+  margin-right: -5px;
+}
+.slider__description::after {
+  content: "»";
+  margin-left: -5px;
+}
 .slider__subtitle {
   display: $none;
 }
@@ -17,6 +25,9 @@
   display: $none;
 }
 .slider__arrow {
+  display: $none;
+}
+.slider__desktop-br {
   display: $none;
 }
 @media (min-width: 700px) {
@@ -79,14 +90,23 @@
 }
 @media (min-width: 1200px) {
 .slider {
-  margin-top: 44px;
+  margin-top: 15px;
   padding-top: $zero;
   @mixin desktop_padding;
   &__top-content-image {
     display: $none;
   }
+  &__description::before {
+    content: "";
+  }
+  &__description::after {
+    content: "";
+  }
   &__tablet-br {
     display: $none;
+  }
+  &__desktop-br {
+    display: $block;
   }
   &__top-content-image-container {
     background-image: url("../../img/diagram-fill-desktop.svg");
@@ -94,22 +114,24 @@
     width: 298px;
   }
   &__top-conten-right-side {
-    flex-basis: 570px;
+    flex-basis: 574px;
   }
   &__top-conten-right-side-title {
     width: $auto;
-    margin-top: 97px;
+    margin-top: 91px;
   }
   &__top-conten-right-side-title br {
     display: $none;
   }
   &__top-content-number {
     font-size: 120px;
+    top: 51%;
   }
   &__top-conten-right-side-content  {
     font-size: $medium;
     line-height: $biggest;
-    padding-right: 50px;
+    margin-top: 25px;
+    margin-bottom: 33px;
   }
   &__top-conten-right-link {
     font-size: $medium;
@@ -125,7 +147,7 @@
     padding-bottom: 67px;
   }
   &__description {
-    padding-top: 193px;
+    padding-top: 185px;
     margin-top: $zero;
     background-image: url("../../img/quotes.svg");
     @mixin background_center;
@@ -136,7 +158,7 @@
     position: relative;
   }
   &__title {
-    margin-top: 45px;
+    margin-top: 37px;
     font-size: $big;
     margin-bottom: 36px;
   }
@@ -145,13 +167,13 @@
   }
   &__arrow {
     background-image: url("../../img/left arrow copy.svg");
-    left: -66.5px;
+    left: -74.5px;
     @mixin slider_toggle;
     opacity: .3;
   }
   &__arrow:last-child {
     background-image: url("../../img/left arrow copy.svg");
-    right: -66.5px;
+    right: -74.5px;
     left: inherit;
     transform: rotate(180deg);
     @mixin slider_toggle;

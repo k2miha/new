@@ -1947,6 +1947,9 @@ hr:last-of-type {
 .promo__item:last-child {
   padding: 0 20px;
 }
+.promo__desktop-br {
+  display: none;
+}
 @media (min-width: 700px) {
   .promo {
     flex-basis: 50%;
@@ -1975,21 +1978,34 @@ hr:last-of-type {
   .promo__item:first-child {
     background-image: url("../../img/Iphone_screen_1_copy.png");
   }
+  .promo__tablet-br {
+    display: none;
+  }
+  .promo__desktop-br {
+    display: block;
+  }
+  .promo__item:first-child .promo__content-description {
+    padding-left: 49px;
+  }
+  .promo__item:nth-child(2) .promo__content-description {
+    padding-left: 34px;
+    padding-right: 44px;
+  }
   .promo__item {
     background-repeat: no-repeat;
     background-position-x: 50%;
   }
   .promo__content-title {
-    margin-top: 328px;
-    padding-top: 60px;
+    margin-top: 292px;
+    padding-top: 64px;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
     background-image: url("../../img/Layer 157.png");
   }
   .promo__item:nth-child(2) .promo__content-title {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 13px;
+    padding-right: 27px;
   }
   .promo__content-description {
     font-size: 18px;
@@ -1997,10 +2013,14 @@ hr:last-of-type {
     text-align: center;
     padding-left: 44px;
     padding-right: 45px;
+    margin-top: 24px;
   }
   .promo__item:last-child .promo__content-description {
-    padding-left: 20px;
-    padding-right: 21px;
+    padding-left: 22px;
+  }
+  .promo__item:last-child .promo__content-description {
+    padding-left: 36px;
+    padding-right: 12px;
   }
   .promo__item:nth-child(2) {
     background-image: url("../../img/Iphone screen 2.png");
@@ -2267,7 +2287,7 @@ hr:last-of-type {
     padding-left: 24px;
   }
   .second-slider__header {
-    padding-bottom: 23px;
+    padding-bottom: 19px;
   }
 }
 .second-slider-container {
@@ -2284,9 +2304,9 @@ hr:last-of-type {
 }
 @media (min-width: 1200px) {
   .second-slider-container {
-    padding-top: 158px;
-    background-position: 0 0;
-    padding-bottom: 97px;
+    padding-top: 152px;
+    background-position: 0 -4px;
+    padding-bottom: 94px;
   }
 }
 .site-logo {
@@ -2431,6 +2451,14 @@ hr:last-of-type {
   margin-bottom: 33px;
   margin-top: 0;
 }
+.slider__description::before {
+  content: "«";
+  margin-right: -5px;
+}
+.slider__description::after {
+  content: "»";
+  margin-left: -5px;
+}
 .slider__subtitle {
   display: none;
 }
@@ -2438,6 +2466,9 @@ hr:last-of-type {
   display: none;
 }
 .slider__arrow {
+  display: none;
+}
+.slider__desktop-br {
   display: none;
 }
 @media (min-width: 700px) {
@@ -2531,7 +2562,7 @@ hr:last-of-type {
 }
 @media (min-width: 1200px) {
   .slider {
-    margin-top: 44px;
+    margin-top: 15px;
     padding-top: 0;
     padding-right: 130px;
     padding-left: 130px;
@@ -2539,8 +2570,17 @@ hr:last-of-type {
   .slider__top-content-image {
     display: none;
   }
+  .slider__description::before {
+    content: "";
+  }
+  .slider__description::after {
+    content: "";
+  }
   .slider__tablet-br {
     display: none;
+  }
+  .slider__desktop-br {
+    display: block;
   }
   .slider__top-content-image-container {
     background-image: url("../../img/diagram-fill-desktop.svg");
@@ -2548,22 +2588,24 @@ hr:last-of-type {
     width: 298px;
   }
   .slider__top-conten-right-side {
-    flex-basis: 570px;
+    flex-basis: 574px;
   }
   .slider__top-conten-right-side-title {
     width: auto;
-    margin-top: 97px;
+    margin-top: 91px;
   }
   .slider__top-conten-right-side-title br {
     display: none;
   }
   .slider__top-content-number {
     font-size: 120px;
+    top: 51%;
   }
   .slider__top-conten-right-side-content {
     font-size: 18px;
     line-height: 30px;
-    padding-right: 50px;
+    margin-top: 25px;
+    margin-bottom: 33px;
   }
   .slider__top-conten-right-link {
     font-size: 18px;
@@ -2579,7 +2621,7 @@ hr:last-of-type {
     padding-bottom: 67px;
   }
   .slider__description {
-    padding-top: 193px;
+    padding-top: 185px;
     margin-top: 0;
     background-image: url("../../img/quotes.svg");
     background-repeat: no-repeat;
@@ -2591,7 +2633,7 @@ hr:last-of-type {
     position: relative;
   }
   .slider__title {
-    margin-top: 45px;
+    margin-top: 37px;
     font-size: 24px;
     margin-bottom: 36px;
   }
@@ -2600,7 +2642,7 @@ hr:last-of-type {
   }
   .slider__arrow {
     background-image: url("../../img/left arrow copy.svg");
-    left: -66.5px;
+    left: -74.5px;
     display: block;
     width: 22px;
     height: 41px;
@@ -2610,7 +2652,7 @@ hr:last-of-type {
   }
   .slider__arrow:last-child {
     background-image: url("../../img/left arrow copy.svg");
-    right: -66.5px;
+    right: -74.5px;
     left: inherit;
     transform: rotate(180deg);
     display: block;

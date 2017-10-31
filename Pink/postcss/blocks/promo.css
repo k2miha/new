@@ -15,6 +15,9 @@
   &__item:last-child {
     padding: $zero 20px;
   }
+  &__desktop-br {
+    display: $none;
+  }
 }
 @media (min-width: 700px) {
   .promo {
@@ -43,31 +46,48 @@
   &__item:first-child {
     background-image: url("../../img/Iphone_screen_1_copy.png");
   }
+  &__tablet-br {
+    display: $none;
+  }
+  &__desktop-br {
+    display: $block;
+  }
+  &__item:first-child &__content-description {
+    padding-left: 49px;
+  }
+  &__item:nth-child(2) &__content-description {
+    padding-left: 34px;
+    padding-right: 44px;
+  }
   &__item {
     @mixin background_center;
   }
   &__content-title {
-    margin-top: 328px;
-    padding-top: 60px;
+    margin-top: 292px;
+    padding-top: 64px;
     font-size: $biggest;
     line-height: $biggest;
     text-align: $center;
     background-image: url("../../img/Layer 157.png");
   }
   &__item:nth-child(2) &__content-title {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 13px;
+    padding-right: 27px;
   }
-    &__content-description {
-      font-size: $medium;
-      line-height: $biggest;
-      text-align: $center;
-      padding-left: 44px;
-      padding-right: 45px;
+  &__content-description {
+    font-size: $medium;
+    line-height: $biggest;
+    text-align: $center;
+    padding-left: 44px;
+    padding-right: 45px;
+    margin-top: 24px;
   }
   &__item:last-child &__content-description {
-    padding-left: 20px;
-    padding-right: 21px;
+    padding-left: 22px;
+  }
+  &__item:last-child &__content-description {
+    padding-left: 36px;
+    padding-right: 12px;
   }
   &__item:nth-child(2) {
     background-image: url("../../img/Iphone screen 2.png");

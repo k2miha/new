@@ -12,8 +12,8 @@
 }
 @media (min-width: 1200px) {
   .second-slider-container {
-    padding-top: 158px;
-    background-position: $zero $zero;
-    padding-bottom: 97px;
+    padding-top: 152px;
+    background-position: $zero -4px;
+    padding-bottom: 94px;
   }
 }
