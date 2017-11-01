@@ -29,7 +29,7 @@
 @media (min-width: 1200px) {
   .competition-footer {
     max-width: calc(1200px - 260px);
-    margin-top: 70px;
+    margin-top: 74px;
     margin-bottom: 72px;
     @mixin desktop_padding;
     &__form-field-requirements {

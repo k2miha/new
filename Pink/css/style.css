@@ -65,7 +65,7 @@
 @media (min-width: 1200px) {
   .competition-footer {
     max-width: calc(1200px - 260px);
-    margin-top: 70px;
+    margin-top: 74px;
     margin-bottom: 72px;
     padding-right: 130px;
     padding-left: 130px;
@@ -161,6 +161,9 @@
   }
 }
 @media (min-width: 1200px) {
+  .copyright {
+    margin-left: -5px;
+  }
   .copyright__maked {
     font-size: 18px;
   }
@@ -321,10 +324,7 @@
   margin-bottom: 7px;
 }
 @media (min-width: 700px) {
-  .main-footer > .main-footer__block-content {
-    padding-left: 195px;
-    padding-right: 195px;
-  }
+  .main-footer {}
   .main-footer > .competition-footer {
     display: flex;
     padding-right: 40px;
@@ -354,6 +354,10 @@
     padding-right: 40px;
     padding-left: 40px;
     flex-wrap: wrap;
+  }
+  .main-footer > .main-footer__block-content {
+    padding-left: 195px;
+    padding-right: 195px;
   }
   .main-footer__map {
     background-image: url("../img/Layer_153.jpg");
@@ -392,10 +396,18 @@
     padding-left: 130px;
   }
   .main-footer__description {
-    padding-top: 75px;
+    padding-top: 66px;
+    padding-bottom: 40px;
     font-size: 50px;
     width: 700px;
     margin: auto;
+    line-height: 60px;
+  }
+  .main-footer__email .main-footer__block-title {
+    padding-bottom: 24px;
+  }
+  .main-footer__block-title {
+    padding-bottom: 22px;
   }
   .main-footer__contacts {
     padding-right: 130px;
@@ -405,22 +417,37 @@
   .main-footer__tel, .main-footer__address {
     order: -1;
   }
+  .main-footer__address {
+    margin-top: 0;
+    flex-basis: auto;
+  }
   .main-footer__tel, .main-footer__email {
     flex-basis: auto;
   }
-  .main-footer__address {
-    flex-basis: 233px;
+  .main-footer__tel .main-footer__block-content {
+    padding-left: 30px;
+  }
+  .main-footer__address .main-footer__block-content {
+    padding-left: 27px;
+    line-height: 30px;
+  }
+  .main-footer__email .main-footer__block-content {
+    padding-left: 13px;
   }
   .main-footer__map {
     background-image: url("../img/map.jpg");
-    min-height: 529px;
-    background-position: 0px 58%;
+    min-height: 522px;
+    background-position: 0px 56.5%;
+    margin-top: 1px;
   }
   .main-footer__map-triangle {
     background-image: url("../img/triangle-white-footer-desktop.svg");
   }
   .main-footer__map-marker {
-    margin-top: 158px;
+    margin-top: 161px;
+  }
+  .main-footer .site-logo--footer {
+    margin-top: -19px;
   }
 }
 .main-header {
@@ -723,7 +750,7 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    padding-left: 170px;
+    padding-left: 169px;
   }
   .menu__elements-container .menu__link {
     text-transform: none;
@@ -2275,19 +2302,32 @@ hr:last-of-type {
   }
   .second-slider__package {
     font-size: 18px;
-    padding-top: 15px;
+    padding-top: 16px;
+    padding-bottom: 1px;
   }
   .second-slider__price {
     font-size: 24px;
+    padding-bottom: 2px;
+  }
+  .second-slider__hit {
+    left: -37%;
+    top: 6%;
   }
   .second-slider__option-check {
     font-size: 18px;
-    padding-top: 16px;
-    padding-bottom: 12px;
-    padding-left: 24px;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+    background-position: center 57%;
+  }
+  .second-slider__option:first-child .second-slider__option-check:first-child {
+    padding-top: 13px;
   }
   .second-slider__header {
     padding-bottom: 19px;
+  }
+  .second-slider__header:first-child {
+    border-left: none;
   }
 }
 .second-slider-container {
@@ -2418,7 +2458,7 @@ hr:last-of-type {
   }
   .site-logo--footer:hover {
     height: 40px;
-    margin-top: 0;
+    margin-top: -19px;
     margin-bottom: 0;
   }
   .site-logo:hover:active {
@@ -2746,6 +2786,11 @@ hr:last-of-type {
     margin-bottom: 0;
   }
 }
+@media (min-width: 1200px) {
+  .socials__element {
+    margin-right: 8px;
+  }
+}
 .logotype {
   padding-left: 20px;
   padding-right: 20px;
@@ -2902,7 +2947,7 @@ hr:last-of-type {
   }
   .site-logo--footer:hover {
     height: 40px;
-    margin-top: 0;
+    margin-top: -19px;
     margin-bottom: 0;
   }
   .site-logo:hover:active {

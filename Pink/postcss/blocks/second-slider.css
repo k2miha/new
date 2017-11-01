@@ -158,19 +158,32 @@
     width: calc(100% - 260px);
     &__package {
       font-size: $medium;
-      padding-top: 15px;
+      padding-top: 16px;
+      padding-bottom: 1px;
     }
     &__price {
       font-size: $big;
+      padding-bottom: 2px;
+    }
+    &__hit {
+      left: -37%;
+      top: 6%;
     }
     &__option-check {
       font-size: $medium;
-      padding-top: 16px;
-      padding-bottom: $smallest;
-      padding-left: $big;
+      padding-top: 15px;
+      padding-bottom: $small;
+      padding-left: 21px;
+      background-position: center 57%;
+    }
+    &__option:first-child &__option-check:first-child {
+      padding-top: 13px;
     }
     &__header {
       padding-bottom: 19px;
+    }
+    &__header:first-child {
+      border-left: none;
     }
   }
 }

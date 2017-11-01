@@ -32,3 +32,8 @@
   margin-bottom: $zero;
   }
 }
+@media (min-width: 1200px) {
+  .socials__element {
+    margin-right: 8px;
+  }
+}

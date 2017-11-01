@@ -106,7 +106,7 @@
  }
  .site-logo--footer:hover {
    height: 40px;
-   margin-top: $zero;
+   margin-top: -19px;
    margin-bottom: $zero;
  }
  .site-logo:hover:active {

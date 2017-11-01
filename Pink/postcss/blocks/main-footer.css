@@ -85,7 +85,7 @@
     @mixin tablet_padding;
     flex-wrap: wrap;
   }
-  .main-footer > &__block-content {
+  & > &__block-content {
     padding-left: 195px;
     padding-right: 195px;
   }
@@ -124,10 +124,18 @@
     @mixin desktop_padding;
   }
   &__description {
-    padding-top: 75px;
+    padding-top: 66px;
+    padding-bottom: 40px;
     font-size: 50px;
     width: 700px;
     margin: $auto;
+    line-height: 60px;
+  }
+  &__email &__block-title {
+    padding-bottom: 24px;
+  }
+  &__block-title {
+    padding-bottom: 22px;
   }
   &__contacts {
     @mixin desktop_padding;
@@ -136,22 +144,37 @@
   &__tel, &__address {
     order: -1;
   }
+  &__address {
+    margin-top: $zero;
+    flex-basis: $auto;
+  }
   &__tel, &__email {
     flex-basis: $auto;
   }
-  &__address {
-    flex-basis: 233px;
+  &__tel &__block-content {
+    padding-left: 30px;
+  }
+  &__address &__block-content {
+    padding-left: 27px;
+    line-height: 30px;
+  }
+  &__email &__block-content {
+    padding-left: 13px;
   }
   &__map {
     background-image: url("../img/map.jpg");
-    min-height: 529px;
-    background-position: 0px 58%;
+    min-height: 522px;
+    background-position: 0px 56.5%;
+    margin-top: 1px;
   }
   &__map-triangle {
     background-image: url("../img/triangle-white-footer-desktop.svg");
   }
   &__map-marker {
-    margin-top: 158px;
+    margin-top: 161px;
+  }
+  & .site-logo--footer {
+    margin-top: -19px;
   }
  }
 }

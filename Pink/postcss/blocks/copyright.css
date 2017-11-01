@@ -28,7 +28,10 @@
   }
 }
 @media (min-width: 1200px) {
-.copyright__maked {
-  font-size: $medium;
+.copyright {
+  margin-left: -5px;
+  &__maked {
+    font-size: $medium;
+    }
   }
 }
