@@ -18,6 +18,9 @@
   &__desktop-br {
     display: $none;
   }
+  &__tablet-br {
+    display: $none;
+  }
 }
 @media (min-width: 700px) {
   .promo {

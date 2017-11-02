@@ -1,6 +1,6 @@
 .photos__description {
   @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center;
-  margin-top: 46px;
+  margin-top: 45px;
   margin-left: 29px;
   margin-right: 29px;
   margin-bottom: 48px;
@@ -10,7 +10,7 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-top: -4px;
-  padding-top: 25px;
+  padding-top: 17px;
   padding-left: 17px;
   padding-right: 6px;
   padding-bottom: $zero;
@@ -24,10 +24,10 @@
   @mixin margin_reset;
 }
 .photos__element--panorama-label {
-  @mixin font_options $OpenSans_bold, $smallest, $white, $big, $bold, $center, $none;
+  @mixin font_options $OpenSans_bold, $smallest, $white, $big, $regular, $center, $none;
   background-color: $magenta;
   padding-top: 7px;
-  padding-right: 21px;
+  padding-right: 20px;
   padding-bottom: 5px;
   padding-left: 20px;
   position: absolute;
@@ -41,7 +41,7 @@
   position: relative;
 }
 .photos__element-author {
-  @mixin font_options $OpenSans_bold, $small, $blue, $big, $bold, $center, $none;
+  @mixin font_options $OpenSans_regular, $small, $blue, $big, $bold, $center, $none;
 }
 .photos__element-time {
   @mixin font_options $OpenSans_light, $smallest, $blue, $big, $light, $center, $uppercase;
@@ -49,7 +49,7 @@
 .photos__element-message {
   margin: $zero;
   @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $left, $none;
-  padding-bottom: 13px;
+  padding-bottom: 10px;
 }
 .photos__element-image {
   display: $block;

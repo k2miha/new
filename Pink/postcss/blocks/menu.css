@@ -46,12 +46,15 @@
     background: url("../../img/logotype-white-tablet.svg");
   }
   &__link {
-    @mixin font_options $OpenSans_bold, $medium, $white, $medium, $bold, $center, $uppercase;
+    @mixin font_options $OpenSans_bold, $medium, $white, $medium, $regular, $center, $uppercase;
     text-decoration: $none;
     display: $block;
     vertical-align: middle;
     padding-top: 21px;
     padding-bottom: 23px;
+  }
+  &__link:hover {
+    color: $magenta;
   }
   &__link svg {
     fill: $white;
@@ -64,7 +67,7 @@
   }
   &__button {
     @mixin button_reset;
-    height: 70px;
+    height: 68px;
   }
   &__button:hover &__button-image {
     display: $none;
@@ -72,7 +75,7 @@
   &__button:hover {
     background: url("../../img/close menu BTN copy.svg");
     width: 24px;
-    height: 70px;
+    height: 68px;
     background-repeat: $no-repeat;
     background-position: $center;
   }
@@ -187,6 +190,15 @@
   }
   &__element {
     border-bottom: $none;
+  }
+  &__link:hover {
+    color: $white;
+  }
+  &--active:hover {
+    color: $magenta;
+  }
+  &--active:active {
+    color: $white;
   }
  }
 }

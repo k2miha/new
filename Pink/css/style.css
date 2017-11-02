@@ -172,7 +172,7 @@
   background-color: #f2f2f2;
   margin: 0 auto;
   margin-bottom: 20px;
-  padding-bottom: 26px;
+  padding-bottom: 20px;
   padding-left: 17px;
   margin-left: 20px;
   margin-right: 20px;
@@ -200,7 +200,6 @@
   font-weight: 400;
   text-align: center;
   text-transform: none;
-  margin-left: 3px;
 }
 @media (min-width: 700px) {
   .like {
@@ -458,7 +457,7 @@
   min-height: 462px;
 }
 .main-header--short {
-  min-height: 243px;
+  min-height: 238px;
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -470,12 +469,13 @@
   font-family: 'Open Sans','open_sanslight',sans-serif;
   font-size: 24px;
   color: #fff;
-  line-height: normal;
+  line-height: 29px;
   font-weight: 300;
   text-align: center;
   text-transform: none;
   padding-left: 2px;
   padding-right: 2px;
+  margin-top: 30px;
 }
 .main-header__title {
   font-family: 'Open Sans','open_sanslight',sans-serif;
@@ -621,7 +621,7 @@
   font-size: 18px;
   color: #fff;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -629,6 +629,9 @@
   vertical-align: middle;
   padding-top: 21px;
   padding-bottom: 23px;
+}
+.menu__link:hover {
+  color: #d22856;
 }
 .menu__link svg {
   fill: #fff;
@@ -643,7 +646,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  height: 70px;
+  height: 68px;
 }
 .menu__button:hover .menu__button-image {
   display: none;
@@ -651,7 +654,7 @@
 .menu__button:hover {
   background: url("../../img/close menu BTN copy.svg");
   width: 24px;
-  height: 70px;
+  height: 68px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -769,6 +772,15 @@
   }
   .menu__element {
     border-bottom: none;
+  }
+  .menu__link:hover {
+    color: #fff;
+  }
+  .menu--active:hover {
+    color: #d22856;
+  }
+  .menu--active:active {
+    color: #fff;
   }
 }
 .personal-info__description {
@@ -1554,7 +1566,7 @@ hr:last-of-type {
   font-weight: 400;
   text-align: center;
   text-transform: ;
-  margin-top: 46px;
+  margin-top: 45px;
   margin-left: 29px;
   margin-right: 29px;
   margin-bottom: 48px;
@@ -1564,7 +1576,7 @@ hr:last-of-type {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: -4px;
-  padding-top: 25px;
+  padding-top: 17px;
   padding-left: 17px;
   padding-right: 6px;
   padding-bottom: 0;
@@ -1583,12 +1595,12 @@ hr:last-of-type {
   font-size: 12px;
   color: #fff;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 400;
   text-align: center;
   text-transform: none;
   background-color: #d22856;
   padding-top: 7px;
-  padding-right: 21px;
+  padding-right: 20px;
   padding-bottom: 5px;
   padding-left: 20px;
   position: absolute;
@@ -1602,7 +1614,7 @@ hr:last-of-type {
   position: relative;
 }
 .photos__element-author {
-  font-family: 'Open Sans','open_sansbold',sans-serif;
+  font-family: 'Open Sans','open_sansregular',sans-serif;
   font-size: 14px;
   color: #283645;
   line-height: 24px;
@@ -1628,7 +1640,7 @@ hr:last-of-type {
   font-weight: 400;
   text-align: left;
   text-transform: none;
-  padding-bottom: 13px;
+  padding-bottom: 10px;
 }
 .photos__element-image {
   display: block;
@@ -1841,7 +1853,7 @@ hr:last-of-type {
   background-color: #1d2631;
   padding-top: 28px;
   padding-bottom: 30px;
-  margin-top: 389px;
+  margin-top: 392px;
   position: relative;
   z-index: 1;
 }
@@ -1850,7 +1862,7 @@ hr:last-of-type {
   font-size: 18px;
   color: #fff;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 400;
   text-align: center;
   text-transform: none;
   vertical-align: top;
@@ -1975,6 +1987,9 @@ hr:last-of-type {
   padding: 0 20px;
 }
 .promo__desktop-br {
+  display: none;
+}
+.promo__tablet-br {
   display: none;
 }
 @media (min-width: 700px) {
@@ -2796,7 +2811,7 @@ hr:last-of-type {
   padding-right: 20px;
   padding-top: 22px;
   margin-right: auto;
-  padding-bottom: 22px;
+  padding-bottom: 17px;
   background-color: rgba(0,0,0,.3);
   display: flex;
   justify-content: space-between;
@@ -2806,7 +2821,7 @@ hr:last-of-type {
   background-color: transparent;
   border: none;
   width: 50px;
-  top: -3px;
+  left: -8px;
   position: relative;
 }
 .logotype__menu-button svg {

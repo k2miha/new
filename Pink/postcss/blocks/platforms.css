@@ -2,11 +2,11 @@
   background-color: #1d2631;
   padding-top: 28px;
   padding-bottom: 30px;
-  margin-top: 389px;
+  margin-top: 392px;
   position: relative;
   z-index: 1;
   &__download-link {
-    @mixin font_options $OpenSans_bold, $medium, $white, $medium, $bold, $center, $none;
+    @mixin font_options $OpenSans_bold, $medium, $white, $medium, $regular, $center, $none;
     vertical-align: top;
     border-radius: 28px;
     padding-top: 13px;

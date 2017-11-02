@@ -5,7 +5,7 @@
   background-size: cover;
   min-height: 462px;
   &--short {
-    min-height: 243px;
+    min-height: 238px;
     max-width: 320px;
     @mixin margin_auto;
   }
@@ -13,9 +13,10 @@
     max-width: 320px;
   }
   &__slogan {
-    @mixin font_options $OpenSans_light, $big, $white, $normal, $light, $center, $none;
+    @mixin font_options $OpenSans_light, $big, $white, 29px, $light, $center, $none;
     padding-left: 2px;
     padding-right: 2px;
+    margin-top: 30px;
   }
   &__title {
     @mixin font_options $OpenSans_light, 40px, $white, $normal, $light, $center, $none;

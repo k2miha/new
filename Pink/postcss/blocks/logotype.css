@@ -3,7 +3,7 @@
   padding-right: 20px;
   padding-top: 22px;
   margin-right: $auto;
-  padding-bottom: 22px;
+  padding-bottom: 17px;
   background-color: rgba(0,0,0,.3);
   display: flex;
   justify-content: space-between;
@@ -12,7 +12,7 @@
     background-color: $transparent;
     border: $none;
     width: 50px;
-    top: -3px;
+    left: -8px;
     position: relative;
   }
   &__menu-button svg {
