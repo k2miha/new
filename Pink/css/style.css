@@ -1571,18 +1571,29 @@ hr:last-of-type {
   margin-right: 29px;
   margin-bottom: 48px;
 }
+.photos__element--panorama .photos__element-comment {
+  margin-top: -4px;
+}
 .photos__element-comment {
   background-color: #f2f2f2;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: -4px;
-  padding-top: 17px;
+  padding-top: 18px;
   padding-left: 17px;
   padding-right: 6px;
   padding-bottom: 0;
 }
 .photos__element--panorama .photos__element-comment {
   margin-bottom: 20px;
+}
+.photos__element--auto .photos__element-comment {
+  padding-top: 12px;
+}
+.photos__element--drums .photos__element-comment, .photos__element--bakhcha .photos__element-comment, .photos__element--legs .photos__element-comment {
+  padding-top: 14px;
+}
+.photos__element--roof .photos__element-comment {
+  padding-top: 13px;
 }
 .photos__element-comment .like {
   padding-left: 0;
@@ -1643,31 +1654,7 @@ hr:last-of-type {
   padding-bottom: 10px;
 }
 .photos__element-image {
-  display: block;
   margin: 0 20px;
-  width: 87%;
-}
-.photos__container .photos__element-image {
-  width: 280px;
-  height: 180px;
-}
-.photos__element--auto .photos__element-image {
-  background-image: url("../../img/photo-1-mobile.jpg");
-}
-.photos__element--drums .photos__element-image {
-  background-image: url("../../img/photo-2-mobile.jpg");
-}
-.photos__element--roof .photos__element-image {
-  background-image: url("../../img/photo-3-mobile.jpg");
-}
-.photos__element--bakhcha .photos__element-image {
-  background-image: url("../../img/photo-4-mobile.jpg");
-}
-.photos__element--legs .photos__element-image {
-  background-image: url("../../img/photo-5-mobile.jpg");
-}
-.photos__element--plane .photos__element-image {
-  background-image: url("../../img/photo-6-mobile.jpg");
 }
 .photos__container .photos__element {
   margin-bottom: 20px;
@@ -1701,14 +1688,6 @@ hr:last-of-type {
   .photos__container .photos__element {
     width: calc(50% - 10px);
     background-color: #f2f2f2;
-  }
-  .photos__element--panorama-image-block {
-    background-image: url("../../img/panorama-tablet.jpg");
-    min-height: 509px;
-    background-repeat: no-repeat;
-  }
-  .photos__element--panorama-image {
-    display: none;
   }
   .photos__element--panorama {
     margin-bottom: 50px;

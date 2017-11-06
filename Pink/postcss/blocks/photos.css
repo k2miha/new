@@ -5,18 +5,29 @@
   margin-right: 29px;
   margin-bottom: 48px;
 }
+.photos__element--panorama .photos__element-comment {
+  margin-top: -4px;
+}
 .photos__element-comment {
   background-color: $grey;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: -4px;
-  padding-top: 17px;
+  padding-top: 18px;
   padding-left: 17px;
   padding-right: 6px;
   padding-bottom: $zero;
 }
 .photos__element--panorama .photos__element-comment {
   margin-bottom: 20px;
+}
+.photos__element--auto .photos__element-comment {
+  padding-top: 12px;
+}
+.photos__element--drums .photos__element-comment, .photos__element--bakhcha .photos__element-comment, .photos__element--legs .photos__element-comment {
+  padding-top: 14px;
+}
+.photos__element--roof .photos__element-comment {
+  padding-top: 13px;
 }
 .photos__element-comment .like {
   padding-left: $zero;
@@ -52,31 +63,7 @@
   padding-bottom: 10px;
 }
 .photos__element-image {
-  display: $block;
   margin: $zero 20px;
-  width: 87%;
-}
-.photos__container .photos__element-image {
-  width: 280px;
-  height: 180px;
-}
-.photos__element--auto .photos__element-image {
-  background-image: url("../../img/photo-1-mobile.jpg");
-}
-.photos__element--drums .photos__element-image {
-  background-image: url("../../img/photo-2-mobile.jpg");
-}
-.photos__element--roof .photos__element-image {
-  background-image: url("../../img/photo-3-mobile.jpg");
-}
-.photos__element--bakhcha .photos__element-image {
-  background-image: url("../../img/photo-4-mobile.jpg");
-}
-.photos__element--legs .photos__element-image {
-  background-image: url("../../img/photo-5-mobile.jpg");
-}
-.photos__element--plane .photos__element-image {
-  background-image: url("../../img/photo-6-mobile.jpg");
 }
 .photos__container .photos__element {
   margin-bottom: 20px;
@@ -109,14 +96,6 @@
   .photos__container .photos__element {
     width: calc($half-width - 10px);
     background-color: $grey;
-  }
-  .photos__element--panorama-image-block {
-    background-image: url("../../img/panorama-tablet.jpg");
-    min-height: 509px;
-    background-repeat: $no-repeat;
-  }
-  .photos__element--panorama-image {
-    display: $none;
   }
   .photos__element--panorama {
     margin-bottom: 50px;
