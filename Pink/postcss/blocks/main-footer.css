@@ -175,6 +175,7 @@
   }
   & .site-logo--footer {
     margin-top: -19px;
+    margin-right: $zero;
   }
  }
 }

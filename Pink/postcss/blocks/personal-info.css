@@ -1,8 +1,8 @@
 .personal-info__description {
   @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
   margin: $auto;
-  margin-top: 47px;
-  margin-bottom: 41px;
+  margin-top: 45px;
+  margin-bottom: 34px;
   width: 90%;
 }
 .personal-info__element:not(:checked) + .personal-info__custom-radio-element::before {
@@ -52,7 +52,7 @@
   border-radius: 2px;
 }
 .personal-info__form [disabled] {
-  background-color: $dark-grey; 
+  background-color: $dark-grey;
 }
 .personal-info__form [type=submit]:hover {
   background-color: #1c9b5e;

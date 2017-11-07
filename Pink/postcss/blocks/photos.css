@@ -5,26 +5,27 @@
   margin-right: 29px;
   margin-bottom: 48px;
 }
+.photos__description:last-child {
+  margin-top: 40px;
+  margin-left: 25px;
+  margin-bottom: 42px;
+}
 .photos__element--panorama .photos__element-comment {
   margin-top: -4px;
+  margin-bottom: 20px;
+  padding-top: 18px;
 }
 .photos__element-comment {
   background-color: $grey;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 18px;
+  padding-top: 14px;
   padding-left: 17px;
   padding-right: 6px;
   padding-bottom: $zero;
 }
-.photos__element--panorama .photos__element-comment {
-  margin-bottom: 20px;
-}
 .photos__element--auto .photos__element-comment {
   padding-top: 12px;
-}
-.photos__element--drums .photos__element-comment, .photos__element--bakhcha .photos__element-comment, .photos__element--legs .photos__element-comment {
-  padding-top: 14px;
 }
 .photos__element--roof .photos__element-comment {
   padding-top: 13px;
@@ -73,16 +74,24 @@
     font-size: $medium;
     margin-left: 57px;
     margin-right: 57px;
-    margin-bottom: 72px;
-    margin-top: 54px;
+    margin-bottom: 76px;
+    margin-top: 92px;
+  }
+  .photos__description:last-child {
+    margin-top: 47px;
+    margin-left: 55px;
+    margin-bottom: 68px;
+  }
+  .photos__br-mobile {
+    display: $none;
   }
   .photos__element-comment-container {
-    padding-top: 25px;
+    padding-top: 19px;
     flex-grow: 1;
   }
   .photos__element--panorama-label {
     right: 40px;
-    top: 57px;
+    top: 56px;
   }
   .photos__container {
     display: flex;
@@ -91,7 +100,7 @@
     justify-content: space-between;
   }
   .photos__container .like {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
   .photos__container .photos__element {
     width: calc($half-width - 10px);
@@ -106,15 +115,15 @@
     margin-right: 40px;
     margin-top: $zero;
     position: relative;
-    padding-bottom: 28px;
-    padding-top: 31px;
+    padding-bottom: 25px;
+    padding-top: 19px;
   }
   .photos__element-comment {
     width: $auto;
     padding-left: 28px;
   }
   .photos__container .photos__element-comment {
-    min-height: 155px;
+    min-height: 150px;
     padding-bottom: $zero;
     padding-top: $zero;
     display: flex;
@@ -122,8 +131,8 @@
   }
   .photos__element--panorama .like {
     position: absolute;
-    top: 30px;
-    right: $zero;
+    top: 20px;
+    right: 1px;
     margin-bottom: $zero;
     padding-bottom: $zero;
     padding-left: $zero;
@@ -154,48 +163,30 @@
   .photos__element--panorama .photos__element-message {
     padding-bottom: $zero;
   }
-  .photos__container .photos__element-image {
-    width: 300px;
-    height: 300px;
-  }
-  .photos__element--auto .photos__element-image {
-    background-image: url("../../img/photo-1-tablet.jpg");
-  }
-  .photos__element--drums .photos__element-image {
-    background-image: url("../../img/photo-2-tablet.jpg");
-  }
-  .photos__element--roof .photos__element-image {
-    background-image: url("../../img/photo-3-tablet.jpg");
-  }
-  .photos__element--bakhcha .photos__element-image {
-    background-image: url("../../img/photo-4-tablet.jpg");
-  }
-  .photos__element--legs .photos__element-image {
-    background-image: url("../../img/photo-5-tablet.jpg");
-  }
-  .photos__element--plane .photos__element-image {
-    background-image: url("../../img/photo-6-tablet.jpg");
-  }
 }
 @media (min-width: 1200px) {
   .photos__description {
     width: 632px;
     @mixin margin_auto;
-    margin-top: 101px;
-    margin-bottom: 92px;
+    margin-bottom: 88px;
   }
-  .photos__element--panorama-image-block {
-    background-image: url("../../img/panorama-desktop.jpg");
+  .photos__br-tablet {
+    display: $none;
   }
   .photos__element--panorama .photos__element-comment {
-    margin-top: -3px;
+    margin-top: -5px;
     margin-left: 130px;
     margin-right: 130px;
     width: calc($full-width - 294px);
+    padding-top: 24px;
+  }
+  .photos__element--panorama .like {
+    top: 25px;
+    right: 4px;
   }
   .photos__element--panorama-label {
     right: 130px;
-    top: 54px;
+    top: 53px;
   }
   .photos__container {
     @mixin desktop_padding;
@@ -203,32 +194,12 @@
   .photos__container .photos__element {
     width: 300px;
   }
-  .photos__container .photos__element-image {
-    height: 400px;
-  }
   .photos__container .photos__element {
     margin-bottom: 54px;
   }
-  .photos__element--auto .photos__element-image {
-    background-image: url("../../img/photo-1-desktop.jpg");
-  }
-  .photos__element--drums .photos__element-image {
-    background-image: url("../../img/photo-2-desktop.jpg");
-  }
-  .photos__element--roof .photos__element-image {
-    background-image: url("../../img/photo-3-desktop.jpg");
-  }
-  .photos__element--bakhcha .photos__element-image {
-    background-image: url("../../img/photo-4-desktop.jpg");
-  }
-  .photos__element--legs .photos__element-image {
-    background-image: url("../../img/photo-5-desktop.jpg");
-  }
-  .photos__element--plane .photos__element-image {
-    background-image: url("../../img/photo-6-desktop.jpg");
-  }
   .photos__description:last-child {
-    margin-top: 14px;
-    margin-bottom: 69px;
+    margin-top: 5px;
+    margin-bottom: 66px;
+    margin-left: $auto;
   }
 }

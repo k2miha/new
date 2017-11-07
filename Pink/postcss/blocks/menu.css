@@ -161,6 +161,9 @@
   &__elements > &__element:last-child {
     flex-grow: 1;
   }
+  &__element_logo .menu__link {
+    padding-bottom: 40px;
+  }
   &__element_logo {
     flex-basis: 150px;
     padding-left: $zero;

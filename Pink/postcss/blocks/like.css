@@ -21,5 +21,8 @@
 .like {
   @mixin margin_reset;
   margin-bottom: $zero;
+  &__count {
+    margin-left: 4px;
   }
+ }
 }
