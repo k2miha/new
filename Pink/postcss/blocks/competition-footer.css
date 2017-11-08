@@ -1,7 +1,7 @@
 .competition-footer__form-field-requirements {
   @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $uppercase;
-  margin-top: 38px;
-  margin-bottom: $big;
+  margin-top: 35px;
+  margin-bottom: 55px;
 }
 .competition-footer__form-field-marker {
   color: $magenta;
