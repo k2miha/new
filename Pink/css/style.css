@@ -58,7 +58,7 @@
   }
   .competition-footer__form-field-requirements {
     text-align: right;
-    margin-top: 14px;
+    margin-top: calc(14px + 4px);
     margin-bottom: 14px;
   }
 }
@@ -76,6 +76,8 @@
   .competition-footer__form-field-requirements.competition-footer__form-field-requirements--desktop {
     flex-basis: 320px;
     display: block;
+    position: relative;
+    left: -1px;
   }
 }
 .content {
@@ -143,13 +145,8 @@
 .copyright__link {
   display: flex;
 }
-.copyright__link:hover .copyright__image {
-  display: none;
-}
-.copyright__link:hover {
-  height: 34px;
-  width: 27px;
-  background-image: url("../../img/Vector Smart Object copy 7.svg");
+.copyright__link:hover svg {
+  fill: #283645;
 }
 .copyright__link:active {
   opacity: .3;
@@ -158,6 +155,9 @@
   .copyright {
     flex-basis: 130px;
     margin-left: 20px;
+  }
+  .copyright__link svg {
+    fill: #d22856;
   }
 }
 @media (min-width: 1200px) {
@@ -493,11 +493,8 @@
   display: none;
 }
 .main-header__right-side {
-  min-width: 283px;
-  height: 314px;
   position: absolute;
   top: 174px;
-  background-image: url("../../img/iphone-5-in-hand-png.png");
 }
 @media (min-width: 700px) {
   .main-header {
@@ -521,11 +518,7 @@
     display: block;
   }
   .main-header__right-side {
-    min-width: 683px;
-    height: 545px;
-    position: absolute;
     top: 184px;
-    background-image: url("../../img/iphone-6 copy.png");
   }
   .main-header__image {
     position: absolute;
@@ -562,12 +555,8 @@
     max-width: 1200px;
   }
   .main-header__right-side {
-    min-width: 1050px;
-    height: 645px;
-    position: absolute;
     top: 208px;
     right: 4px;
-    background-image: url("../../img/iphone-6.png");
   }
   .main-header--short {
     min-height: 394px;
@@ -656,15 +645,11 @@
   background-color: transparent;
   height: 68px;
 }
-.menu__button:hover .menu__button-image {
-  display: none;
+.menu__button svg {
+  fill: #fff;
 }
-.menu__button:hover {
-  background: url("../../img/close menu BTN copy.svg");
-  width: 24px;
-  height: 68px;
-  background-repeat: no-repeat;
-  background-position: center;
+.menu__button:hover svg {
+  fill: #d22856;
 }
 .menu__button:active {
   opacity: .3;
@@ -683,9 +668,6 @@
   }
   .menu__button {
     height: auto;
-  }
-  .menu__button:hover {
-    height: 108px;
   }
   .menu__link svg {
     display: none;
@@ -1136,7 +1118,9 @@
     margin-bottom: 11px;
   }
   .personal-info__contacts-tablet .personal-info__title {
-    margin-left: 177px;
+    margin-left: 170px;
+    padding-left: 31px;
+    padding-right: 33px;
   }
   .personal-info__contacts-tablet .personal-info__name-element-label {
     margin-left: 20px;
@@ -1179,34 +1163,47 @@
   .personal-info__emotions {
     margin-left: 18px;
     margin-right: 0;
-    margin-bottom: 71px;
+    margin-bottom: 67px;
+    margin-top: 39px;
     border-color: #e5e5e5;
     border-width: 2px;
     border-style: solid;
     border-radius: 3px;
   }
   .personal-info__textarea {
-    margin-left: 48px;
+    margin-left: 49px;
     margin-right: 60px;
-    width: calc(100% - 117px);
+    margin-top: 14px;
+    margin-bottom: 38px;
+    width: calc(100% - 121px);
+    height: 174px;
   }
   .personal-info__achievements .personal-info__title {
     top: 0;
   }
   .personal-info__emotions .personal-info__title {
     margin-bottom: 37px;
+    margin-left: 169px;
+    position: relative;
+    top: 18px;
+    background: #fff;
+    padding-left: 39px;
+    padding-right: 39px;
   }
   .personal-info__form-submit-container {
     margin-left: 18px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
   .personal-info__form [type=submit], .competition-footer__form-field-requirements {
     flex-basis: 300px;
   }
   .personal-info__achievements .personal-info__title {
-    margin-bottom: 42px;
+    margin-bottom: 0;
+    margin-left: 32px;
+    padding-left: 31px;
+    padding-right: 33px;
   }
   .personal-info__label-container {
     display: flex;
@@ -1224,6 +1221,9 @@
   .personal-info__contacts-tablet-container {
     margin-top: 31px;
   }
+  .personal-info__achievements-element-container {
+    margin-top: 38px;
+  }
 }
 @media (min-width: 1200px) {
   .personal-info__form {
@@ -1233,8 +1233,24 @@
     margin-left: 130px;
     margin-right: 130px;
   }
-  .personal-info__name-section, .personal-info__journey-application {
+  .personal-info__contacts-tablet-image-container {
+    line-height: 67px;
+  }
+  .personal-info__contacts-tablet .personal-info__element-text {
+    margin-bottom: 9px;
+  }
+  .personal-info__contacts-tablet-image {
+    vertical-align: 3px;
+  }
+  .personal-info__description {
+    width: 67%;
+    margin-bottom: 83px;
+  }
+  .personal-info__name-section {
     flex-basis: 435px;
+  }
+  .personal-info__title-application {
+    margin-left: 30px;
   }
   .personal-info__name-element-label {
     margin-left: 0;
@@ -1243,18 +1259,26 @@
     margin-top: -12px;
     padding-left: 0;
     padding-right: 0;
+    flex-basis: 431px;
+    margin-bottom: 1px;
   }
   .personal-info__contacts-tablet, .personal-info__achievements, .personal-info__emotions, .personal-info__form-submit-container {
     flex-basis: 100%;
   }
   .personal-info__form-submit-container {
     margin-bottom: 0;
+    margin-left: 0;
+  }
+  .competition-footer__form-field-marker {
+    margin-right: 2px;
   }
   .personal-info__contacts-tablet-container {
     display: flex;
+    margin-top: 28px;
   }
   .personal-info__contacts-tablet-input-container {
     width: calc(50% - 83px);
+    margin-left: 48px;
   }
   .personal-info__contacts-tablet-input-container:first-of-type {
     margin-right: 35px;
@@ -1266,27 +1290,49 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: 38px;
+    margin-right: 30px;
+    margin-bottom: 6px;
   }
   .personal-info__contacts-tablet {
     padding-bottom: 1px;
+    margin-top: 56px;
+    margin-left: 0;
+    height: 159px;
   }
   .personal-info__contacts-tablet .personal-info__title {
-    margin-bottom: 36px;
+    margin-left: 328px;
   }
   .personal-info__textarea {
-    height: 122px;
+    height: 108px;
     margin-bottom: 45px;
   }
   .personal-info__emotions {
     padding-bottom: 0;
+    margin-left: 0;
+    margin-top: 40px;
+    margin-bottom: 64px;
+  }
+  .personal-info__emotions .personal-info__title {
+    margin-left: 327px;
+    margin-bottom: 32px;
+  }
+  .personal-info__achievements {
+    margin-left: 0;
+    padding-left: 58px;
+  }
+  .personal-info__achievements .personal-info__title {
+    margin-left: 192px;
+  }
+  .personal-info__achievements-element-column:nth-child(2) {
+    margin-left: -8px;
   }
   .personal-info__element-label {
-    margin-left: 76px;
-    margin-bottom: 39px;
+    margin-left: 74px;
+    margin-bottom: 36px;
+    margin-top: 36px;
   }
   .personal-info__label-container {
-    margin-bottom: 58px;
+    margin-bottom: 54px;
   }
   .personal-info__contacts-tablet .personal-info__name-element-label {
     margin-bottom: 13px;
@@ -2045,6 +2091,10 @@ hr:last-of-type {
     min-width: 310px;
     position: relative;
     top: 153px;
+    left: 43px;
+  }
+  .promo__tablet-br {
+    display: block;
   }
   .promo__content-title, .promo__content-description {
     text-align: left;
@@ -2064,9 +2114,6 @@ hr:last-of-type {
     top: 104px;
     left: -21px;
   }
-  .promo__item:first-child {
-    background-image: url("../../img/Iphone_screen_1_copy.png");
-  }
   .promo__tablet-br {
     display: none;
   }
@@ -2080,12 +2127,15 @@ hr:last-of-type {
     padding-left: 34px;
     padding-right: 44px;
   }
-  .promo__item {
-    background-repeat: no-repeat;
-    background-position-x: 50%;
+  .promo__item:nth-child(2) .promo__item-image {
+    margin-left: -9px;
+  }
+  .promo__item:nth-child(3) .promo__item-image {
+    margin-left: 29px;
   }
   .promo__content-title {
-    margin-top: 292px;
+    margin-top: -95px;
+    position: relative;
     padding-top: 64px;
     font-size: 30px;
     line-height: 30px;
@@ -2111,10 +2161,6 @@ hr:last-of-type {
     padding-left: 36px;
     padding-right: 12px;
   }
-  .promo__item:nth-child(2) {
-    background-image: url("../../img/Iphone screen 2.png");
-    background-position-x: 45%;
-  }
   .promo__item:last-child {
     background-image: url("../../img/Iphone screen 3.png");
     background-position-x: 62%;
@@ -2126,10 +2172,7 @@ hr:last-of-type {
   overflow: hidden;
 }
 .promo-container__content-image {
-  margin-bottom: -49px;
-  background-image: url("../../img/iphone_screen_3.png");
-  width: 157px;
-  height: 326px;
+  margin-bottom: -45px;
   margin-top: 41px;
   margin-left: auto;
   margin-right: auto;
@@ -2139,19 +2182,18 @@ hr:last-of-type {
     display: flex;
     flex-direction: row-reverse;
     padding-right: 40px;
-    padding-left: 40px;
     background-color: transparent;
     background-image: url("../../img/Shape 2-tablet.svg");
     background-position-y: 26px;
     background-repeat: no-repeat;
     min-height: 558px;
+    margin-left: -45px;
   }
   .promo-container__content-image {
-    background-image: url("../../img/Iphone.png");
-    background-repeat: no-repeat;
     flex-basis: 50%;
     margin-top: 76px;
     height: auto;
+    margin-bottom: -73px;
   }
 }
 @media (min-width: 1200px) {
@@ -2161,6 +2203,7 @@ hr:last-of-type {
     background-image: url("../../img/Shape 2-desktop.png");
     background-position-y: 97px;
     min-height: 715px;
+    margin-left: 0;
   }
   .promo-container__content-image {
     display: none;

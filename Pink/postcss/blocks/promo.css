@@ -28,17 +28,21 @@
       min-width: 310px;
       position: relative;
       top: 153px;
+      left: 43px;
+  &__tablet-br {
+    display: $block;
   }
-  .promo__content-title, .promo__content-description {
+  &__content-title, &__content-description {
     text-align: left;
   }
-  .promo__item, .promo__item:last-child {
+  &__item, &__item:last-child {
     padding-right: $zero;
     padding-left: $zero;
   }
-  .promo__content-description {
+  &__content-description {
     margin-bottom: 40px;
   }
+ }
 }
 @media (min-width: 1200px) {
   .promo {
@@ -46,9 +50,6 @@
       display: flex;
       top: 104px;
       left: -21px;
-  &__item:first-child {
-    background-image: url("../../img/Iphone_screen_1_copy.png");
-  }
   &__tablet-br {
     display: $none;
   }
@@ -62,11 +63,15 @@
     padding-left: 34px;
     padding-right: 44px;
   }
-  &__item {
-    @mixin background_center;
+  &__item:nth-child(2) &__item-image {
+    margin-left: -9px;
+  }
+  &__item:nth-child(3) &__item-image {
+    margin-left: 29px;
   }
   &__content-title {
-    margin-top: 292px;
+    margin-top: -95px;
+    position: relative;
     padding-top: 64px;
     font-size: $biggest;
     line-height: $biggest;
@@ -91,10 +96,6 @@
   &__item:last-child &__content-description {
     padding-left: 36px;
     padding-right: 12px;
-  }
-  &__item:nth-child(2) {
-    background-image: url("../../img/Iphone screen 2.png");
-    background-position-x: 45%;
   }
   &__item:last-child {
     background-image: url("../../img/Iphone screen 3.png");

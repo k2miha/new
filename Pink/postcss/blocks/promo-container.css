@@ -3,31 +3,27 @@
   text-align: $center;
   overflow: hidden;
   &__content-image {
-    margin-bottom: -49px;
-    background-image: url("../../img/iphone_screen_3.png");
-    width: 157px;
-    height: 326px;
+    margin-bottom: -45px;
     margin-top: 41px;
-    margin-left: $auto;
-    margin-right: $auto;
+    @mixin margin_auto;
   }
 }
 @media (min-width: 700px) {
 .promo-container {
   display: flex;
   flex-direction: row-reverse;
-  @mixin tablet_padding;
+  padding-right: 40px;
   background-color: transparent;;
   background-image: url("../../img/Shape 2-tablet.svg");
   background-position-y: 26px;
   background-repeat: no-repeat;
   min-height: 558px;
+  margin-left: -45px;
   &__content-image {
-    background-image: url("../../img/Iphone.png");
-    background-repeat: $no-repeat;
     flex-basis: 50%;
     margin-top: 76px;
     height: $auto;
+    margin-bottom: -73px;
   }
  }
 }
@@ -37,6 +33,7 @@
   background-image: url("../../img/Shape 2-desktop.png");
   background-position-y: 97px;
   min-height: 715px;
+  margin-left: $zero;
 &__content-image {
   display: $none;
   }

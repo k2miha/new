@@ -21,7 +21,7 @@
     }
   &__form-field-requirements {
     text-align: right;
-    margin-top: $small;
+    margin-top: calc($small + 4px);
     margin-bottom: $small;
   }
  }
@@ -38,6 +38,8 @@
     &__form-field-requirements&__form-field-requirements--desktop {
       flex-basis: 320px;
       display: $block;
+      position: relative;
+      left: -1px;
     }
   }
 }

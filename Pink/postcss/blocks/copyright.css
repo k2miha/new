@@ -9,13 +9,8 @@
   &__link {
     display: flex;
   }
-  &__link:hover &__image {
-    display: $none;
-  }
-  &__link:hover {
-    height: 34px;
-    width: 27px;
-    background-image: url("../../img/Vector Smart Object copy 7.svg");
+  &__link:hover svg {
+    fill: $blue;
   }
   &__link:active {
     opacity: .3;
@@ -25,7 +20,10 @@
 .copyright {
   flex-basis: 130px;
   margin-left: 20px;
+  &__link svg {
+    fill: $magenta;
   }
+ }
 }
 @media (min-width: 1200px) {
 .copyright {

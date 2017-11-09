@@ -69,15 +69,11 @@
     @mixin button_reset;
     height: 68px;
   }
-  &__button:hover &__button-image {
-    display: $none;
+  &__button svg {
+    fill: $white;
   }
-  &__button:hover {
-    background: url("../../img/close menu BTN copy.svg");
-    width: 24px;
-    height: 68px;
-    background-repeat: $no-repeat;
-    background-position: $center;
+  &__button:hover svg  {
+    fill: $magenta;
   }
   &__button:active {
     opacity: .3;
@@ -94,9 +90,6 @@
   }
   &__button {
     height: $auto;
-  }
-  &__button:hover {
-    height: 108px;
   }
   &__link svg {
     display: $none;

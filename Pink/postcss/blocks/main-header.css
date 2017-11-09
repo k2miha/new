@@ -24,11 +24,8 @@
     display: $none;
   }
   &__right-side {
-    min-width: 283px;
-    height: 314px;
     position: absolute;
     top: 174px;
-    background-image: url("../../img/iphone-5-in-hand-png.png");
   }
 }
 @media (min-width: 700px) {
@@ -52,11 +49,7 @@
       display: $block;
     }
     &__right-side {
-      min-width: 683px;
-      height: 545px;
-      position: absolute;
       top: 184px;
-      background-image: url("../../img/iphone-6 copy.png");
     }
     &__image {
       position: absolute;
@@ -92,12 +85,8 @@
     max-width: 1200px;
   }
   &__right-side {
-    min-width: 1050px;
-    height: 645px;
-    position: absolute;
     top: 208px;
     right: 4px;
-    background-image: url("../../img/iphone-6.png");
   }
   &--short {
     min-height: 394px;
