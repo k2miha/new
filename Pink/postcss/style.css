@@ -8,6 +8,7 @@
 @import "../postcss/blocks/main-content.css";
 @import "../postcss/blocks/main-footer.css";
 @import "../postcss/blocks/main-header.css";
+@import "../postcss/blocks/main-header-container.css";
 @import "../postcss/blocks/menu.css";
 @import "../postcss/blocks/personal-info.css";
 @import "../postcss/blocks/photo-editor.css";

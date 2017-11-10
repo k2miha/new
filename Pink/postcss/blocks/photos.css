@@ -11,24 +11,21 @@
   margin-bottom: 42px;
 }
 .photos__element--panorama .photos__element-comment {
-  margin-top: -4px;
   margin-bottom: 20px;
-  padding-top: 18px;
+  padding-top: 19px;
 }
 .photos__element-comment {
   background-color: $grey;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 14px;
+  padding-top: 19px;
   padding-left: 17px;
   padding-right: 6px;
   padding-bottom: $zero;
+  margin-top: -5px;
 }
 .photos__element--auto .photos__element-comment {
-  padding-top: 12px;
-}
-.photos__element--roof .photos__element-comment {
-  padding-top: 13px;
+  padding-top: 18px;
 }
 .photos__element-comment .like {
   padding-left: $zero;
@@ -68,6 +65,12 @@
 }
 .photos__container .photos__element {
   margin-bottom: 20px;
+}
+.photos__container .photos__element:first-child {
+  margin-bottom: 19px;
+}
+.photos__br-tablet {
+  display: $none;
 }
 @media (min-width: 700px) {
   .photos__description {
@@ -113,10 +116,10 @@
     width: calc(100% - 114px);
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: $zero;
+    margin-top: -4px;
     position: relative;
     padding-bottom: 25px;
-    padding-top: 19px;
+    padding-top: 24px;
   }
   .photos__element-comment {
     width: $auto;
@@ -131,7 +134,7 @@
   }
   .photos__element--panorama .like {
     position: absolute;
-    top: 20px;
+    top: 25px;
     right: 1px;
     margin-bottom: $zero;
     padding-bottom: $zero;
@@ -162,6 +165,9 @@
   }
   .photos__element--panorama .photos__element-message {
     padding-bottom: $zero;
+  }
+  .photos__br-tablet {
+    display: $block;
   }
 }
 @media (min-width: 1200px) {

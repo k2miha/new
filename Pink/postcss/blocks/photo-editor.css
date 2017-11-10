@@ -4,16 +4,10 @@
   display: flex;
   flex-direction: column;
   &__image {
-    display: $block;
     margin-left: 18px;
     margin-right: 20px;
     padding-top: 20px;
-    width: 280px;
-    height: 374px;
     margin-bottom: 42px;
-    background-image: url("../../img/photo-7-mobile.jpg");
-    background-repeat: $no-repeat;
-    background-position-y: 20px;
   }
   &__crop-image {
     background-image: url("../../img/crop-not-active.svg");
@@ -152,14 +146,10 @@ hr:last-of-type {
   .photo-editor {
     flex-direction: row;
   &__image {
-    width: 300px;
-    height: 400px;
-    background-image: url("../../img/photo-7-tablet.jpg");
     margin-left: 40px;
-    margin-bottom: 54px;
+    margin-bottom: 49px;
     margin-right: 27px;
     padding-top: 57px;
-    background-position-y: 57px;
   }
   &__function-container {
     flex-grow: 1;

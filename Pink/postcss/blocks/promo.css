@@ -21,6 +21,9 @@
   &__tablet-br {
     display: $none;
   }
+  &__item-image {
+    display: $none;
+  }
 }
 @media (min-width: 700px) {
   .promo {
@@ -52,6 +55,9 @@
       left: -21px;
   &__tablet-br {
     display: $none;
+  }
+  &__item-image {
+    display: inline;
   }
   &__desktop-br {
     display: $block;
@@ -96,10 +102,6 @@
   &__item:last-child &__content-description {
     padding-left: 36px;
     padding-right: 12px;
-  }
-  &__item:last-child {
-    background-image: url("../../img/Iphone screen 3.png");
-    background-position-x: 62%;
   }
  }
 }

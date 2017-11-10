@@ -93,9 +93,6 @@
   margin-top: 15px;
   padding-top: $zero;
   @mixin desktop_padding;
-  &__top-content-image {
-    display: $none;
-  }
   &__description::before {
     content: "";
   }
@@ -107,11 +104,6 @@
   }
   &__desktop-br {
     display: $block;
-  }
-  &__top-content-image-container {
-    background-image: url("../../img/diagram-fill-desktop.svg");
-    height: 345px;
-    width: 298px;
   }
   &__top-conten-right-side {
     flex-basis: 574px;
@@ -125,7 +117,7 @@
   }
   &__top-content-number {
     font-size: 120px;
-    top: 51%;
+    top: $half-width;
   }
   &__top-conten-right-side-content  {
     font-size: $medium;
