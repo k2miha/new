@@ -30,12 +30,16 @@
 @media (min-width: 1200px) {
 .promo-container {
   @mixin desktop_padding;
-  background-image: url("../../img/Shape 2-desktop.png");
-  background-position-y: 97px;
+  background-position-y: 99px;
   min-height: 715px;
   margin-left: $zero;
 &__content-image {
   display: $none;
   }
  }
+}
+@media (min-width: 1201px) {
+.promo-container {
+  background-image: $none;
+  }
 }

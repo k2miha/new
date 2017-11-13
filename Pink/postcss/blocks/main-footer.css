@@ -162,13 +162,14 @@
     padding-left: 13px;
   }
   &__map {
-    background-image: url("../img/map.jpg");
+    background-image: url("../img/map-desktop.jpg");
     min-height: 522px;
     background-position: 0px 56.5%;
     margin-top: 1px;
   }
   &__map-triangle {
-    background-image: url("../img/triangle-white-footer-desktop.svg");
+    background-image: url("../img/triangle-white-footer-desktop.png");
+    background-repeat: $no-repeat;
   }
   &__map-marker {
     margin-top: 161px;
@@ -177,5 +178,16 @@
     margin-top: -19px;
     margin-right: $zero;
   }
+  & .site-logo--footer:hover {
+    margin-right: $zero;
+  }
  }
+}
+@media (min-width: 1201px) {
+  .main-footer__map {
+    background-image: url("../img/map.jpg");
+    min-height: 522px;
+    background-position: 0px 56.5%;
+    margin-top: 1px;
+  }
 }

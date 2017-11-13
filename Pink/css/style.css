@@ -248,6 +248,14 @@
     background-image: none;
   }
 }
+@media (min-width: 1201px) {
+  .main-content-container {
+    background-image: url("../../img/Shape 2-tablet.svg"), url("../../img/Shape 2 copy.svg");
+    background-position-y: 246px, 119%;
+    background-size: 100% 47%, 100% 40%;
+    background-repeat: no-repeat;
+  }
+}
 .main-footer {}
 .main-footer > .competition-footer {
   display: none;
@@ -437,13 +445,14 @@
     padding-left: 13px;
   }
   .main-footer__map {
-    background-image: url("../img/map.jpg");
+    background-image: url("../img/map-desktop.jpg");
     min-height: 522px;
     background-position: 0px 56.5%;
     margin-top: 1px;
   }
   .main-footer__map-triangle {
-    background-image: url("../img/triangle-white-footer-desktop.svg");
+    background-image: url("../img/triangle-white-footer-desktop.png");
+    background-repeat: no-repeat;
   }
   .main-footer__map-marker {
     margin-top: 161px;
@@ -452,6 +461,20 @@
     margin-top: -19px;
     margin-right: 0;
   }
+  .main-footer .site-logo--footer:hover {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1201px) {
+  .main-footer__map {
+    background-image: url("../img/map.jpg");
+    min-height: 522px;
+    background-position: 0px 56.5%;
+    margin-top: 1px;
+  }
+}
+@media (min-width: 1201px) {
+  .main-footer-container {}
 }
 .main-header {
   background-color: #283645;
@@ -532,7 +555,8 @@
     display: block;
   }
   .main-header__right-side {
-    top: 184px;
+    top: 200px;
+    width: 97vw;
   }
   .main-header__image {
     position: absolute;
@@ -562,12 +586,17 @@
     background-image: url("../../img/back-desktop.jpg");
   }
 }
+@media (min-width: 717px) {
+  .main-header__right-side {
+    top: 184px;
+    width: auto;
+  }
+}
 @media (min-width: 1200px) {
   .main-header {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 853px;
     position: relative;
   }
   .main-header__title {
@@ -583,7 +612,7 @@
     max-width: 1200px;
   }
   .main-header__right-side {
-    top: 208px;
+    top: -13px;
     right: 4px;
   }
   .main-header--short {
@@ -604,6 +633,8 @@
 @media (min-width: 1201px) {
   .main-header-container {
     background-image: url("../../img/background-fullsize.jpg");
+    background-size: cover;
+    max-height: 853px;
   }
 }
 .menu {
@@ -749,7 +780,7 @@
 @media (min-width: 1200px) {
   .menu {
     display: block;
-    max-width: 1200px;
+    max-width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
   }
   .menu--show {
@@ -773,6 +804,9 @@
     padding-right: 130px;
     padding-left: 130px;
     background-color: transparent;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .menu__elements > .menu__element:last-child {
     flex-grow: 1;
@@ -809,6 +843,7 @@
   }
   .menu__element {
     border-bottom: none;
+    border-top: none;
   }
   .menu__link:hover {
     color: #fff;
@@ -1314,7 +1349,7 @@
     margin-left: 0;
   }
   .competition-footer__form-field-marker {
-    margin-right: 2px;
+    margin-right: 1px;
   }
   .personal-info__contacts-tablet-container {
     display: flex;
@@ -1384,7 +1419,7 @@
 }
 .photo-editor {
   text-align: center;
-  background-image: url("../../img/grey-back.jpg");
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
 }
@@ -2179,6 +2214,10 @@ hr:last-of-type {
   .promo__item:nth-child(3) .promo__item-image {
     margin-left: 29px;
   }
+  .promo__item picture {
+    background-image: url("../../img/iphone-case-1@1x.png");
+    display: block;
+  }
   .promo__content-title {
     margin-top: -95px;
     position: relative;
@@ -2242,13 +2281,17 @@ hr:last-of-type {
   .promo-container {
     padding-right: 130px;
     padding-left: 130px;
-    background-image: url("../../img/Shape 2-desktop.png");
-    background-position-y: 97px;
+    background-position-y: 99px;
     min-height: 715px;
     margin-left: 0;
   }
   .promo-container__content-image {
     display: none;
+  }
+}
+@media (min-width: 1201px) {
+  .promo-container {
+    background-image: none;
   }
 }
 .second-slider {}
@@ -2494,6 +2537,12 @@ hr:last-of-type {
     padding-top: 152px;
     background-position: 0 -4px;
     padding-bottom: 94px;
+  }
+}
+@media (min-width: 1201px) {
+  .second-slider-container {
+    background-image: none;
+    margin-top: 36px;
   }
 }
 .site-logo {
@@ -2847,6 +2896,13 @@ hr:last-of-type {
   }
   .slider__arrow:active {
     opacity: .1;
+  }
+}
+@media (min-width: 1201px) {
+  .slider__title {
+    margin-top: 37px;
+    font-size: 24px;
+    margin-bottom: 36px;
   }
 }
 .slider-tumbler {

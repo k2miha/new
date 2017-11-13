@@ -1,6 +1,6 @@
 .photo-editor {
   text-align: $center;
-  background-image: url("../../img/grey-back.jpg");
+  background-color: $grey;
   display: flex;
   flex-direction: column;
   &__image {

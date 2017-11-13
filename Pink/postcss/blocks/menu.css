@@ -127,7 +127,7 @@
 @media (min-width: 1200px) {
   .menu {
     display: $block;
-    max-width: 1200px;
+    max-width: $full-width;
     background-color: rgba(0, 0, 0, 0.3);
   &--show {
     position: static;
@@ -150,6 +150,8 @@
     padding-right: 130px;
     padding-left: 130px;
     background-color: $transparent;
+    max-width: 940px;
+    @mixin margin_auto;
   }
   &__elements > &__element:last-child {
     flex-grow: 1;
@@ -186,6 +188,7 @@
   }
   &__element {
     border-bottom: $none;
+    border-top: $none;
   }
   &__link:hover {
     color: $white;

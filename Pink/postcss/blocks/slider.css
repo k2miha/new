@@ -179,3 +179,10 @@
   }
  }
 }
+@media (min-width: 1201px) {
+  .slider__title {
+    margin-top: 37px;
+    font-size: $big;
+    margin-bottom: 36px;
+  }
+}

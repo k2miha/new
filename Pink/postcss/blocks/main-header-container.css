@@ -1,5 +1,7 @@
 @media (min-width: 1201px) {
   .main-header-container {
     background-image: url("../../img/background-fullsize.jpg");
+    background-size: cover;
+    max-height: 853px;
   }
 }

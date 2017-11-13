@@ -17,3 +17,9 @@
     padding-bottom: 94px;
   }
 }
+@media (min-width: 1201px) {
+.second-slider-container {
+  background-image: $none;
+  margin-top: 36px;
+  }
+}

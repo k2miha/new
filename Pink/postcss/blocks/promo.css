@@ -75,6 +75,10 @@
   &__item:nth-child(3) &__item-image {
     margin-left: 29px;
   }
+  &__item picture {
+    background-image: url("../../img/iphone-case-1@1x.png");
+    display: $block;
+  }
   &__content-title {
     margin-top: -95px;
     position: relative;

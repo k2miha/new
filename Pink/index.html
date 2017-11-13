@@ -10,6 +10,31 @@
   </head>
   <body>
     <header class="main-header-container">
+      <nav class="menu">
+        <ul class="menu__elements">
+          <li class="menu__element menu__element_logo">
+            <a class="menu__link" title="Pink"></a>
+            <button class="menu__button" type="button" name="close" title="Меню">
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 width="23.866px" height="23.866px" viewBox="0 0 23.866 23.866" enable-background="new 0 0 23.866 23.866" xml:space="preserve">
+              <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.413,0.079,21.223,0,21.023,0
+                s-0.39,0.079-0.53,0.22l-8.56,8.56L3.373,0.22c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313c-0.293,0.293-0.293,0.768,0,1.061
+                l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.061l2.093,2.094c0.141,0.141,0.331,0.22,0.53,0.22
+                c0.199,0,0.39-0.079,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.141,0.331,0.22,0.53,0.22s0.39-0.079,0.53-0.22l2.093-2.094
+                c0.293-0.293,0.293-0.768,0-1.061L15.087,11.933z"/>
+              </svg>
+            </button>
+          </li>
+          <li class="menu__element">
+            <ul class="menu__elements-container">
+              <li class="menu__element"><a class="menu__link menu--active">Главная</a></li>
+              <li class="menu__element"><a class="menu__link" href="photos.html">Фотографии</a></li>
+              <li class="menu__element"><a class="menu__link" href="competition.html">Конкурс</a></li>
+              <li class="menu__element"><a class="menu__link" href="http://htmlacademy.ru">HMTL Academy</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
       <div class="main-header">
         <div class="logotype">
           <a class="site-logo" title="Pink">
@@ -56,192 +81,174 @@
             </svg>
           </button>
         </div>
-        <nav class="menu">
-          <ul class="menu__elements">
-            <li class="menu__element menu__element_logo">
-              <a class="menu__link" title="Pink"></a>
-              <button class="menu__button" type="button" name="close" title="Меню">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                	 width="23.866px" height="23.866px" viewBox="0 0 23.866 23.866" enable-background="new 0 0 23.866 23.866" xml:space="preserve">
-                <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.413,0.079,21.223,0,21.023,0
-                	s-0.39,0.079-0.53,0.22l-8.56,8.56L3.373,0.22c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313c-0.293,0.293-0.293,0.768,0,1.061
-                	l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.061l2.093,2.094c0.141,0.141,0.331,0.22,0.53,0.22
-                	c0.199,0,0.39-0.079,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.141,0.331,0.22,0.53,0.22s0.39-0.079,0.53-0.22l2.093-2.094
-                	c0.293-0.293,0.293-0.768,0-1.061L15.087,11.933z"/>
-                </svg>
-              </button>
-            </li>
-            <li class="menu__element">
-              <ul class="menu__elements-container">
-                <li class="menu__element"><a class="menu__link menu--active">Главная</a></li>
-                <li class="menu__element"><a class="menu__link" href="photos.html">Фотографии</a></li>
-                <li class="menu__element"><a class="menu__link" href="competition.html">Конкурс</a></li>
-                <li class="menu__element"><a class="menu__link" href="http://htmlacademy.ru">HMTL Academy</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
         <h1 class="main-header__title">Взгляните<br> на жизнь иначе!</h1>
         <div class="platforms">
           <a class="platforms__download-link" href="#">Скачать приложение</a>
           <div class="platforms__images">
-            <img class="platforms__apple" src="img/apple-logo.svg" alt="Apple" />
-            <img class="platforms__android" src="img/android-logo.svg" alt="Android" />
-            <img class="platforms__windows" src="img/microsoft-logo.svg" alt="Windows" />
+            <a href="#"><img class="platforms__apple" src="img/apple-logo.svg" alt="Apple" /></a>
+            <a href="#"><img class="platforms__android" src="img/android-logo.svg" alt="Android" /></a>
+            <a href="#"><img class="platforms__windows" src="img/microsoft-logo.svg" alt="Windows" /></a>
           </div>
           <p class="platforms__description">
             Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
           </p>
         </div>
         <picture>
-            <source media="(min-width: 1200px)" srcset="img/iphone-6.png">
-            <source media="(min-width: 700px)" srcset="img/iphone-6-copy.png">
-            <img src="img/iphone-5-in-hand-png.png" srcset="img/microsoft-logo.svg 2x" alt="iphone" class="main-header__right-side"/>
+            <source media="(min-width: 1200px)" srcset="img/iphone-6.png, img/iphone-hand-3@2x.png 2x">
+            <source media="(min-width: 700px)" srcset="img/iphone-6-copy.png, img/iphone-hand-2@2x.png 2x">
+            <img src="img/iphone-5-in-hand-png.png" srcset="img/iphone-hand-1@2x.png 2x, img/iphone-hand-1@3x.png 3x" alt="iphone" class="main-header__right-side"/>
           </picture>
       </div>
     </header>
-    <main class="main-content">
-      <div class="content">
-        <p class="content__slogan">
-          Устали от серости мегаполиса?
-        </p>
-        <p class="content__slogan">
-          Нам есть, что вам
-          предложить!
-        </p>
-      </div>
-      <div class="promo-container">
-        <ul class="promo">
-          <li class="promo__item">
-            <img class="promo__item-image" src="img/Iphone_screen_1_copy.png" alt="iphone"/>
-            <h2 class="promo__content-title">Поднимает настроение</h2>
-            <p class="promo__content-description">
-              Приложение позволит вам победить <br class="promo__tablet-br"> осеннюю хандру и депрессию буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="promo__item">
-            <img class="promo__item-image" src="img/Iphone screen 2.png" alt="iphone"/>
-            <h2 class="promo__content-title">Меняет мир вокруг</h2>
-            <p class="promo__content-description">
-              Сделайте снимок и украсьте его смайликом <br class="promo__tablet-br"> или текстовой подписью, чтобы <br class="promo__tablet-br"> усилить эффект
-            </p>
-          </li>
-          <li class="promo__item">
-            <img class="promo__item-image" src="img/Iphone screen 3.png" alt="iphone"/>
-            <h2 class="promo__content-title">Заводит <br class="promo__desktop-br"> новых друзей</h2>
-            <p class="promo__content-description">
-              Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-            </p>
-          </li>
-        </ul>
-        <picture>
-          <source media="(min-width: 700px)" srcset="img/Iphone.png">
-          <img class="promo-container__content-image" src="img/iphone_screen_3.png" alt="iphone"/>
-        </picture>
-      </div>
-      <div class="slider">
-        <div class="slider__top-content">
-          <div class="slider__top-content-image-container">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/diagram-fill-desktop.svg">
-              <img class="slider__top-content-image" src="img/diagram-fill.svg" alt="diagram" />
-            </picture>
-            <span class="slider__top-content-number">24</span>
-          </div>
-          <div class="slider__top-conten-right-side">
-            <h2 class="slider__top-conten-right-side-title">Эффект <br> на 24 часа!</h2>
-            <p class="slider__top-conten-right-side-content">
-              Британские ученые провели исследования
-              и доказали, <br class="slider__desktop-br"> что положительный эффект <br class="slider__tablet-br">
-              от использования приложения длится <br class="slider__tablet-br">
-              целые сутки!
-            </p>
-            <a class="slider__top-conten-right-link" href="#">Узнать больше об исследовании</a>
-          </div>
+    <main class="main-content-container">
+      <div class="main-content">
+        <div class="content">
+          <p class="content__slogan">
+            Устали от серости мегаполиса?
+          </p>
+          <p class="content__slogan">
+            Нам есть, что вам
+            предложить!
+          </p>
         </div>
-        <h2 class="slider__title">Николай Петров <span class="slider__subtitle">25 лет, водитель трамвая</span></h2>
-        <blockquote class="slider__description">
-          <img class="slider__arrow" src="img/arrow.svg" alt="left arrow">
-          Это приложение перевернуло мой мир и позволило по-новому взглянуть на <br class="slider__desktop-br"> привычные серые вещи! А еще я познакомился со своей будущей женой в <br class="slider__desktop-br"> комментариях к выложенной фотографии!
-          <img class="slider__arrow" src="img/arrow.svg" alt="right arrow">
-        </blockquote>
-        <div class="slider-tumbler">
-          <button class="slider-tumbler__element  slider-tumbler__element--active" type="button" name="active"></button>
-          <button class="slider-tumbler__element" type="button" name="button"></button>
-          <button class="slider-tumbler__element" type="button" name="button"></button>
-        </div>
-      </div>
-      <div class="second-slider-container">
-        <div class="second-slider">
-          <div class="second-slider__header-group">
-            <div class="second-slider__header">
-              <p class="second-slider__package">
-                <b class="second-slider__package-item">База</b>
+        <div class="promo-container">
+          <ul class="promo">
+            <li class="promo__item">
+              <!-- <img class="promo__item-image" src="img/Iphone_screen_1_copy.png" alt="iphone"/> -->
+              <picture>
+                <img class="promo__item-image" src="img/iphone-screen-1-1@1x.png" alt="iphone"/>
+              </picture>
+              <h2 class="promo__content-title">Поднимает настроение</h2>
+              <p class="promo__content-description">
+                Приложение позволит вам победить <br class="promo__tablet-br"> осеннюю хандру и депрессию буквально в несколько кликов!
               </p>
-              <span class="second-slider__price">1,99 USD</span>
-            </div>
-            <div class="second-slider__header">
-              <p class="second-slider__package">
-                <b class="second-slider__package-item">Стандарт</b>
-              </p>
-              <span class="second-slider__price">3,99 USD</span>
-              <span class="second-slider__hit">ХИТ</span>
-            </div>
-            <div class="second-slider__header">
-              <p class="second-slider__package">
-                <b class="second-slider__package-item">АНЛИМ</b>
-              </p>
-              <span class="second-slider__price">9,99 USD</span>
-            </div>
-          </div>
-          <ul class="second-slider__options">
-            <li class="second-slider__option">
-              <div class="second-slider__option-check">Розовый фильтр</div>
-              <div class="second-slider__option-check"></div>
-              <div class="second-slider__option-check"></div>
-              <div class="second-slider__option-check"></div>
             </li>
-            <li class="second-slider__option">
-              <div class="second-slider__option-check">Смайлики</div>
-              <div class="second-slider__option-check second-slider__option--not-selected"></div>
-              <div class="second-slider__option-check"></div>
-              <div class="second-slider__option-check"></div>
+            <li class="promo__item">
+              <img class="promo__item-image" src="img/Iphone screen 2.png" alt="iphone"/>
+              <h2 class="promo__content-title">Меняет мир вокруг</h2>
+              <p class="promo__content-description">
+                Сделайте снимок и украсьте его смайликом <br class="promo__tablet-br"> или текстовой подписью, чтобы <br class="promo__tablet-br"> усилить эффект
+              </p>
             </li>
-            <li class="second-slider__option second-slider__option--not-selected">
-              <div class="second-slider__option-check">Комментарии</div>
-              <div class="second-slider__option-check second-slider__option--not-selected"></div>
-              <div class="second-slider__option-check second-slider__option--not-selected"></div>
-              <div class="second-slider__option-check"></div>
+            <li class="promo__item">
+              <img class="promo__item-image" src="img/Iphone screen 3.png" alt="iphone"/>
+              <h2 class="promo__content-title">Заводит <br class="promo__desktop-br"> новых друзей</h2>
+              <p class="promo__content-description">
+                Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
+              </p>
             </li>
           </ul>
+          <picture>
+            <source media="(min-width: 700px)" srcset="img/Iphone.png">
+            <img class="promo-container__content-image" src="img/iphone_screen_3.png" alt="iphone"/>
+          </picture>
+        </div>
+        <div class="slider">
+          <div class="slider__top-content">
+            <div class="slider__top-content-image-container">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/diagram-fill-desktop.svg">
+                <img class="slider__top-content-image" src="img/diagram-fill.svg" alt="diagram" />
+              </picture>
+              <span class="slider__top-content-number">24</span>
+            </div>
+            <div class="slider__top-conten-right-side">
+              <h2 class="slider__top-conten-right-side-title">Эффект <br> на 24 часа!</h2>
+              <p class="slider__top-conten-right-side-content">
+                Британские ученые провели исследования
+                и доказали, <br class="slider__desktop-br"> что положительный эффект <br class="slider__tablet-br">
+                от использования приложения длится <br class="slider__tablet-br">
+                целые сутки!
+              </p>
+              <a class="slider__top-conten-right-link" href="#">Узнать больше об исследовании</a>
+            </div>
+          </div>
+          <h2 class="slider__title">Николай Петров <span class="slider__subtitle">25 лет, водитель трамвая</span></h2>
+          <blockquote class="slider__description">
+            <img class="slider__arrow" src="img/arrow.svg" alt="left arrow">
+            Это приложение перевернуло мой мир и позволило по-новому взглянуть на <br class="slider__desktop-br"> привычные серые вещи! А еще я познакомился со своей будущей женой в <br class="slider__desktop-br"> комментариях к выложенной фотографии!
+            <img class="slider__arrow" src="img/arrow.svg" alt="right arrow">
+          </blockquote>
           <div class="slider-tumbler">
-            <button class="slider-tumbler__element" type="button" name="button"></button>
             <button class="slider-tumbler__element  slider-tumbler__element--active" type="button" name="active"></button>
             <button class="slider-tumbler__element" type="button" name="button"></button>
+            <button class="slider-tumbler__element" type="button" name="button"></button>
+          </div>
+        </div>
+        <div class="second-slider-container">
+          <div class="second-slider">
+            <div class="second-slider__header-group">
+              <div class="second-slider__header">
+                <p class="second-slider__package">
+                  <b class="second-slider__package-item">База</b>
+                </p>
+                <span class="second-slider__price">1,99 USD</span>
+              </div>
+              <div class="second-slider__header">
+                <p class="second-slider__package">
+                  <b class="second-slider__package-item">Стандарт</b>
+                </p>
+                <span class="second-slider__price">3,99 USD</span>
+                <span class="second-slider__hit">ХИТ</span>
+              </div>
+              <div class="second-slider__header">
+                <p class="second-slider__package">
+                  <b class="second-slider__package-item">АНЛИМ</b>
+                </p>
+                <span class="second-slider__price">9,99 USD</span>
+              </div>
+            </div>
+            <ul class="second-slider__options">
+              <li class="second-slider__option">
+                <div class="second-slider__option-check">Розовый фильтр</div>
+                <div class="second-slider__option-check"></div>
+                <div class="second-slider__option-check"></div>
+                <div class="second-slider__option-check"></div>
+              </li>
+              <li class="second-slider__option">
+                <div class="second-slider__option-check">Смайлики</div>
+                <div class="second-slider__option-check second-slider__option--not-selected"></div>
+                <div class="second-slider__option-check"></div>
+                <div class="second-slider__option-check"></div>
+              </li>
+              <li class="second-slider__option second-slider__option--not-selected">
+                <div class="second-slider__option-check">Комментарии</div>
+                <div class="second-slider__option-check second-slider__option--not-selected"></div>
+                <div class="second-slider__option-check second-slider__option--not-selected"></div>
+                <div class="second-slider__option-check"></div>
+              </li>
+            </ul>
+            <div class="slider-tumbler">
+              <button class="slider-tumbler__element" type="button" name="button"></button>
+              <button class="slider-tumbler__element  slider-tumbler__element--active" type="button" name="active"></button>
+              <button class="slider-tumbler__element" type="button" name="button"></button>
+            </div>
           </div>
         </div>
       </div>
      </main>
-    <footer class="main-footer">
-      <p class="main-footer__description">
-        Остались вопросы?
-        Свяжитесь с нами!
-      </p>
-      <div class="main-footer__contacts">
-        <div class="main-footer__tel">
-          <h2 class="main-footer__block-title">Звоните:</h2>
-          <a href="tel:+7(812)555-66-66" class="main-footer__block-content">+7 (812) 555-66-66</a>
-        </div>
-        <div class="main-footer__email">
-          <h2 class="main-footer__block-title">Пишите:</h2>
-          <span class="main-footer__block-content">mail@htmlacademy.ru</span>
-        </div>
-        <div class="main-footer__address">
-          <h2 class="main-footer__block-title">Приезжайте в гости:</h2>
-          <p class="main-footer__block-content">
-                ул. Большая
-            Конюшенная, 19/8
-          </p>
+    <footer class="main-footer-container">
+      <div class="main-footer">
+        <p class="main-footer__description">
+          Остались вопросы?
+          Свяжитесь с нами!
+         </p>
+        <div class="main-footer__contacts">
+          <div class="main-footer__tel">
+            <h2 class="main-footer__block-title">Звоните:</h2>
+            <a href="tel:+7(812)555-66-66" class="main-footer__block-content">+7 (812) 555-66-66</a>
+          </div>
+          <div class="main-footer__email">
+            <h2 class="main-footer__block-title">Пишите:</h2>
+            <span class="main-footer__block-content">mail@htmlacademy.ru</span>
+          </div>
+          <div class="main-footer__address">
+            <h2 class="main-footer__block-title">Приезжайте в гости:</h2>
+            <p class="main-footer__block-content">
+                  ул. Большая
+              Конюшенная, 19/8
+            </p>
+          </div>
         </div>
       </div>
       <div class="main-footer__map">
@@ -267,14 +274,14 @@
           <span class="copyright__maked">Разработано</span>
           <a class="copyright__link" href="http://htmlacademy.ru" title="html academy">
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            	 width="26.096px" height="33.803px" viewBox="0 0 26.096 33.803" enable-background="new 0 0 26.096 33.803" xml:space="preserve">
+               width="26.096px" height="33.803px" viewBox="0 0 26.096 33.803" enable-background="new 0 0 26.096 33.803" xml:space="preserve">
             <g>
-            	<path d="M13.047,0L0,1.456v24.475l13.047,7.835v0.037l13.049-7.872V1.557L13.047,0z M24.037,24.745l-10.989,6.622v-7.385
-            		l-6.369-2.858v-0.021l6.373-2.816v-0.02h0.001v0.011l6.366,2.814v-0.006l0.01,0.006v-1.234l-6.366-2.813l-0.003,0.003l-0.007-0.003
-            		v0.011h-0.001v-0.003L6.679,19.87v-1.235l0,0l5.848-2.584l-1.385-0.622l-4.463,1.973v-1.234l3.077-1.36l-1.385-0.622l-1.692,0.748
-            		v-1.234l0.306-0.135l-3.73-1.674l9.793-4.248V2.084l10.989,1.321V24.745z"/>
-            	<polygon points="19.428,17.389 14.958,15.414 13.57,16.035 19.428,18.624 	"/>
-            	<polygon points="19.428,14.921 17.734,14.172 16.346,14.793 19.428,16.155 	"/>
+              <path d="M13.047,0L0,1.456v24.475l13.047,7.835v0.037l13.049-7.872V1.557L13.047,0z M24.037,24.745l-10.989,6.622v-7.385
+                l-6.369-2.858v-0.021l6.373-2.816v-0.02h0.001v0.011l6.366,2.814v-0.006l0.01,0.006v-1.234l-6.366-2.813l-0.003,0.003l-0.007-0.003
+                v0.011h-0.001v-0.003L6.679,19.87v-1.235l0,0l5.848-2.584l-1.385-0.622l-4.463,1.973v-1.234l3.077-1.36l-1.385-0.622l-1.692,0.748
+                v-1.234l0.306-0.135l-3.73-1.674l9.793-4.248V2.084l10.989,1.321V24.745z"/>
+              <polygon points="19.428,17.389 14.958,15.414 13.57,16.035 19.428,18.624 	"/>
+              <polygon points="19.428,14.921 17.734,14.172 16.346,14.793 19.428,16.155 	"/>
             </g>
             </svg>
           </a>
