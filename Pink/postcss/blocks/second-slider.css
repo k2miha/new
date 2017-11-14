@@ -187,3 +187,9 @@
     }
   }
 }
+@media (min-width: 1201px) {
+.second-slider {
+  width: 940px;
+  @mixin margin_auto;
+  }
+}

@@ -1,8 +1,8 @@
 @media (min-width: 1201px) {
 .main-content-container {
-  background-image: url("../../img/Shape 2-tablet.svg"), url("../../img/Shape 2 copy.svg");
-  background-position-y: 246px, 119%;
-  background-size: $full-width 47%, $full-width 40%;
+  background-image: url("../../img/Shape 2-tablet.svg");
+  background-position-y: 246px;
+  background-size: $full-width 47%;
   background-repeat: $no-repeat;
   }
 }

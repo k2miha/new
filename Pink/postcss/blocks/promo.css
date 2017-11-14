@@ -63,34 +63,34 @@
     display: $block;
   }
   &__item:first-child &__content-description {
-    padding-left: 49px;
+    padding-left: 48px;
+    padding-right: 25px;
   }
   &__item:nth-child(2) &__content-description {
-    padding-left: 34px;
-    padding-right: 44px;
+    padding-left: 56px;
+    padding-right: 31px;
+  }
+  &__item:nth-child(1) &__item-image {
+    margin-left: 25px;
   }
   &__item:nth-child(2) &__item-image {
-    margin-left: -9px;
+    margin-left: 31px;
   }
   &__item:nth-child(3) &__item-image {
     margin-left: 29px;
   }
-  &__item picture {
-    background-image: url("../../img/iphone-case-1@1x.png");
-    display: $block;
-  }
   &__content-title {
-    margin-top: -95px;
-    position: relative;
-    padding-top: 64px;
+    padding-top: 50px;
     font-size: $biggest;
     line-height: $biggest;
     text-align: $center;
-    background-image: url("../../img/Layer 157.png");
   }
   &__item:nth-child(2) &__content-title {
-    padding-left: 13px;
+    padding-left: 44px;
     padding-right: 27px;
+  }
+  &__item:nth-child(3) &__content-title {
+    padding-left: 10px;
   }
   &__content-description {
     font-size: $medium;
@@ -101,11 +101,8 @@
     margin-top: 24px;
   }
   &__item:last-child &__content-description {
-    padding-left: 22px;
-  }
-  &__item:last-child &__content-description {
-    padding-left: 36px;
-    padding-right: 12px;
+    padding-left: 45px;
+    padding-right: 28px;
   }
  }
 }

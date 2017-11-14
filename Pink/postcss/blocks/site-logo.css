@@ -88,6 +88,22 @@
     margin-right: 3px;
   }
 }
+@media (min-resolution: 2dppx) {
+  .site-logo::before {
+    background-image: url("../../img/Pink-logo-2@2x.png");
+    background-size: cover;
+  }
+  .site-logo__image {
+    display: $none;
+  }
+  .site-logo--footer {
+    width: 147px;
+    height: 44px;
+    background: url("../../img/Pink-logo-footer-2@2x.png");
+    background-size: contain;
+    background-repeat: $no-repeat;
+  }
+}
 @media (min-width: 1200px) {
   .site-logo:hover {
     background-image: url("../../img/logotype-white-desktop-hover.svg");
@@ -115,4 +131,10 @@
    background-repeat: $no-repeat;
    opacity: .3;
  }
+}
+@media (min-resolution: 2dppx) {
+.site-logo--footer {
+  background: url("../../img/Pink-logo-footer-3@2x.png");
+  background-size: cover;
+  }
 }

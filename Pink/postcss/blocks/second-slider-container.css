@@ -10,6 +10,11 @@
         padding-top: 109px;
       }
 }
+@media (min-width: 983px) {
+  .second-slider-container {
+    background-position: initial;
+  }
+}
 @media (min-width: 1200px) {
   .second-slider-container {
     padding-top: 152px;
@@ -19,7 +24,8 @@
 }
 @media (min-width: 1201px) {
 .second-slider-container {
-  background-image: $none;
+  background-repeat: $no-repeat;
+  background-size: cover;
   margin-top: 36px;
   }
 }

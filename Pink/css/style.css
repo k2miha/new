@@ -250,9 +250,9 @@
 }
 @media (min-width: 1201px) {
   .main-content-container {
-    background-image: url("../../img/Shape 2-tablet.svg"), url("../../img/Shape 2 copy.svg");
-    background-position-y: 246px, 119%;
-    background-size: 100% 47%, 100% 40%;
+    background-image: url("../../img/Shape 2-tablet.svg");
+    background-position-y: 246px;
+    background-size: 100% 47%;
     background-repeat: no-repeat;
   }
 }
@@ -473,9 +473,6 @@
     margin-top: 1px;
   }
 }
-@media (min-width: 1201px) {
-  .main-footer-container {}
-}
 .main-header {
   background-color: #283645;
   background-image: url("../../img/back-mobile@1x.jpg");
@@ -571,6 +568,11 @@
     line-height: 59px;
   }
 }
+@media (min-width: 701px) {
+  .main-header {
+    background-image: url("../../img/back-desktop.jpg");
+  }
+}
 @media (min-resolution: 2dppx) {
   .main-header {
     background-image: url("../../img/background-1@2x.jpg");
@@ -579,11 +581,6 @@
 @media (min-resolution: 3dppx) {
   .main-header {
     background-image: url("../../img/background-1@3x.jpg");
-  }
-}
-@media (min-width: 701px) {
-  .main-header {
-    background-image: url("../../img/back-desktop.jpg");
   }
 }
 @media (min-width: 717px) {
@@ -598,6 +595,8 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    background-image: none;
+    background-color: transparent;
   }
   .main-header__title {
     font-size: 50px;
@@ -619,22 +618,16 @@
     min-height: 394px;
   }
 }
-@media (min-resolution: 2dppx) {
-  .main-header {
-    background-image: url("../../img/background-2@2x.jpg");
-  }
-}
-@media (min-width: 1201px) {
-  .main-header {
-    background-image: none;
-    background-color: transparent;
+@media (min-width: 1200px) {
+  .main-header-container {
+    max-height: 853px;
+    background-image: url(../../img/back-desktop.jpg);
   }
 }
 @media (min-width: 1201px) {
   .main-header-container {
     background-image: url("../../img/background-fullsize.jpg");
     background-size: cover;
-    max-height: 853px;
   }
 }
 .menu {
@@ -853,6 +846,12 @@
   }
   .menu--active:active {
     color: #fff;
+  }
+}
+@media (min-resolution: 2dppx) {
+  .menu__element_logo .menu__link::before {
+    background-image: url("../../img/Pink-logo-3@2x.png");
+    background-size: cover;
   }
 }
 .personal-info__description {
@@ -2202,34 +2201,34 @@ hr:last-of-type {
     display: block;
   }
   .promo__item:first-child .promo__content-description {
-    padding-left: 49px;
+    padding-left: 48px;
+    padding-right: 25px;
   }
   .promo__item:nth-child(2) .promo__content-description {
-    padding-left: 34px;
-    padding-right: 44px;
+    padding-left: 56px;
+    padding-right: 31px;
+  }
+  .promo__item:nth-child(1) .promo__item-image {
+    margin-left: 25px;
   }
   .promo__item:nth-child(2) .promo__item-image {
-    margin-left: -9px;
+    margin-left: 31px;
   }
   .promo__item:nth-child(3) .promo__item-image {
     margin-left: 29px;
   }
-  .promo__item picture {
-    background-image: url("../../img/iphone-case-1@1x.png");
-    display: block;
-  }
   .promo__content-title {
-    margin-top: -95px;
-    position: relative;
-    padding-top: 64px;
+    padding-top: 50px;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-    background-image: url("../../img/Layer 157.png");
   }
   .promo__item:nth-child(2) .promo__content-title {
-    padding-left: 13px;
+    padding-left: 44px;
     padding-right: 27px;
+  }
+  .promo__item:nth-child(3) .promo__content-title {
+    padding-left: 10px;
   }
   .promo__content-description {
     font-size: 18px;
@@ -2240,11 +2239,8 @@ hr:last-of-type {
     margin-top: 24px;
   }
   .promo__item:last-child .promo__content-description {
-    padding-left: 22px;
-  }
-  .promo__item:last-child .promo__content-description {
-    padding-left: 36px;
-    padding-right: 12px;
+    padding-left: 45px;
+    padding-right: 28px;
   }
 }
 .promo-container {
@@ -2520,6 +2516,13 @@ hr:last-of-type {
     border-left: none;
   }
 }
+@media (min-width: 1201px) {
+  .second-slider {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 .second-slider-container {
   padding-top: 133px;
   padding-bottom: 48px;
@@ -2532,6 +2535,11 @@ hr:last-of-type {
     padding-top: 109px;
   }
 }
+@media (min-width: 983px) {
+  .second-slider-container {
+    background-position: initial;
+  }
+}
 @media (min-width: 1200px) {
   .second-slider-container {
     padding-top: 152px;
@@ -2541,7 +2549,8 @@ hr:last-of-type {
 }
 @media (min-width: 1201px) {
   .second-slider-container {
-    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 36px;
   }
 }
@@ -2636,6 +2645,22 @@ hr:last-of-type {
     margin-right: 3px;
   }
 }
+@media (min-resolution: 2dppx) {
+  .site-logo::before {
+    background-image: url("../../img/Pink-logo-2@2x.png");
+    background-size: cover;
+  }
+  .site-logo__image {
+    display: none;
+  }
+  .site-logo--footer {
+    width: 147px;
+    height: 44px;
+    background: url("../../img/Pink-logo-footer-2@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
 @media (min-width: 1200px) {
   .site-logo:hover {
     background-image: url("../../img/logotype-white-desktop-hover.svg");
@@ -2662,6 +2687,12 @@ hr:last-of-type {
     background: url("../../img/logotype-blue-desktop.svg");
     background-repeat: no-repeat;
     opacity: .3;
+  }
+}
+@media (min-resolution: 2dppx) {
+  .site-logo--footer {
+    background: url("../../img/Pink-logo-footer-3@2x.png");
+    background-size: cover;
   }
 }
 .slider__title {
@@ -2902,7 +2933,7 @@ hr:last-of-type {
   .slider__title {
     margin-top: 37px;
     font-size: 24px;
-    margin-bottom: 36px;
+    margin-bottom: 0;
   }
 }
 .slider-tumbler {
@@ -3131,6 +3162,22 @@ hr:last-of-type {
     margin-right: 3px;
   }
 }
+@media (min-resolution: 2dppx) {
+  .site-logo::before {
+    background-image: url("../../img/Pink-logo-2@2x.png");
+    background-size: cover;
+  }
+  .site-logo__image {
+    display: none;
+  }
+  .site-logo--footer {
+    width: 147px;
+    height: 44px;
+    background: url("../../img/Pink-logo-footer-2@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
 @media (min-width: 1200px) {
   .site-logo:hover {
     background-image: url("../../img/logotype-white-desktop-hover.svg");
@@ -3157,6 +3204,12 @@ hr:last-of-type {
     background: url("../../img/logotype-blue-desktop.svg");
     background-repeat: no-repeat;
     opacity: .3;
+  }
+}
+@media (min-resolution: 2dppx) {
+  .site-logo--footer {
+    background: url("../../img/Pink-logo-footer-3@2x.png");
+    background-size: cover;
   }
 }
 .pop-up {

@@ -201,3 +201,9 @@
   }
  }
 }
+@media (min-resolution: 2dppx) {
+  .menu__element_logo .menu__link::before {
+    background-image: url("../../img/Pink-logo-3@2x.png");
+    background-size: cover;
+  }
+}
