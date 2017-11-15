@@ -2,6 +2,9 @@
   .main-header-container {
     max-height: 853px;
     background-image: url(../../img/back-desktop.jpg);
+    &--short {
+      max-height: 394px;
+    }
   }
 }
 @media (min-width: 1201px) {

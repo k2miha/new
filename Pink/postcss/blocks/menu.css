@@ -81,6 +81,12 @@
   &__elements-container {
     @mixin list_reset;
   }
+  &--fixed {
+    max-width: 320px;
+    left: $zero;
+    right: $zero;
+    @mixin margin_auto;
+  }
 }
 @media (min-width: 700px) {
   .menu {
@@ -121,6 +127,9 @@
   }
   &__element_logo .menu__link {
     padding-bottom: 38px;
+  }
+  &--fixed {
+    max-width: 700px;
   }
  }
 }

@@ -158,13 +158,11 @@
     font-size: $medium;
   }
   &__arrow {
-    background-image: url("../../img/left arrow copy.svg");
     left: -74.5px;
     @mixin slider_toggle;
     opacity: .3;
   }
   &__arrow:last-child {
-    background-image: url("../../img/left arrow copy.svg");
     right: -74.5px;
     left: inherit;
     transform: rotate(180deg);
