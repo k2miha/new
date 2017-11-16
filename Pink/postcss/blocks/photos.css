@@ -169,6 +169,9 @@
   .photos__br-tablet {
     display: $block;
   }
+  .photos__container .photos__element:first-child {
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 1200px) {
   .photos__description {
@@ -185,6 +188,9 @@
     margin-right: 130px;
     width: calc($full-width - 294px);
     padding-top: 24px;
+  }
+  .photos__container .photos__element:first-child {
+    margin-bottom: 54px;
   }
   .photos__element--panorama .like {
     top: 25px;

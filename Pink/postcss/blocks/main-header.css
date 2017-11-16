@@ -1,3 +1,8 @@
+@media (max-width: 336px) {
+  .main-header__right-side {
+    width: 94vw;
+  }
+}
 .main-header {
   background-color: $blue;
   background-image: url("../../img/back-mobile@1x.jpg");

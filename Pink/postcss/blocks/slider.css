@@ -44,6 +44,10 @@
     margin-top: 34px;
     margin-bottom: 34px;
      }
+  &__top-content-image {
+    width: 240px;
+    height: 277px;
+  }
   &__subtitle {
     @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
     display: $block;
@@ -98,6 +102,10 @@
   }
   &__description::after {
     content: "";
+  }
+  &__top-content-image {
+    width: 298px;
+    height: 345px;
   }
   &__tablet-br {
     display: $none;

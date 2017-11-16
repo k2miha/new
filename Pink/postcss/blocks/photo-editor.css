@@ -10,32 +10,34 @@
     margin-bottom: 42px;
   }
   &__crop-image {
-    background-image: url("../../img/crop-not-active.svg");
     width: 44px;
     height: 44px;
     margin-right: 36px;
-    opacity: 0.8;
+    fill: $blue;
+    opacity: 0.3;
     margin-left: -10px;
   }
   &__crop-image:hover {
-    opacity: 1;
+    opacity: 0.5;
   }
   &__image-modification-button--active &__crop-image {
-    background-image: url("../../img/crop.svg");
+    fill: $magenta;
+    opacity: 1;
   }
   &__fill-image {
-    background-image: url("../../img/fill.svg");
     width: 48px;
     height: 43px;
     margin-right: 36px;
-    opacity: 0.8;
+    fill: $blue;
+    opacity: 0.3;
     margin-left: -7px;
   }
   &__fill-image:hover {
-    opacity: 1;
+    opacity: 0.5;
   }
   &__image-modification-button--active &__fill-image {
-    background-image: url("../../img/fill-desktop.svg");
+    fill: $magenta;
+    opacity: 1;
   }
   &__contrast-image {
     width: 32px;
@@ -160,22 +162,22 @@ hr:last-of-type {
   &__crop-image {
     width: 22px;
     height: 22px;
-    background-image: url("../../img/crop_50.svg");
     margin-right: $zero;
     opacity: 1;
+    fill: $magenta;
   }
-  &__image-modification-button--active &__crop-image {
-    background-image: url("../../img/crop_50.svg");
+  &__crop-image:hover {
+    opacity: 1;
   }
   &__fill-image {
-    background-image: url("../../img/fill_50.svg");
     width: 24px;
     height: 22px;
     margin-right: $zero;
     opacity: 1;
+    fill: $magenta;
   }
-  &__image-modification-button--active &__fill-image {
-    background-image: url("../../img/fill_50.svg");
+  &__fill-image:hover {
+    opacity: 1;
   }
   &__contrast-image {
     width: 16px;
@@ -260,22 +262,14 @@ hr:last-of-type {
       margin-right: 60px;
       margin-top: 55px;
     }
-    &__image-modification-button--active &__crop-image {
-      background-image: url("../../img/crop.svg");
-    }
     &__crop-image {
-      background-image: url("../../img/crop.svg");
       width: 44px;
       height: 44px;
       margin-right: $zero;
     }
     &__fill-image {
-      background-image: url("../../img/fill-desktop.svg");
       width: 48px;
       height: 43px;
-    }
-    &__image-modification-button--active &__fill-image {
-      background-image: url("../../img/fill-desktop.svg");
     }
     &__contrast-image {
       width: 32px;
