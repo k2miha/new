@@ -53,3 +53,22 @@ slider2Tumbler2.addEventListener("click", function(event) {
     slider2Tumbler2.classList.toggle("slider-tumbler__element--active")
   }
 });
+var sliderArrow = document.querySelector(".slider__arrow");
+var sliderArrow2 = document.querySelector(".slider__arrow:nth-of-type(2)");
+var sliderDescription1 = document.querySelector(".slider__description:nth-of-type(1)");
+var sliderDescription2 = document.querySelector(".slider__description:nth-of-type(2)");
+sliderArrow.addEventListener("click", function(event) {
+  event.preventDefault();
+  if (sliderDescription1.classList.contains ("slider__description--show") {
+    sliderDescription2.classList.toggle("slider__description--show");
+    sliderDescription1.classList.toggle("slider__description--show");
+  }
+  else {
+
+  }
+});
+  sliderArrow2.addEventListener("click", function(event) {
+    event.preventDefault();
+    sliderDescription2.classList.add("slider__description--show");
+    sliderDescription1.classList.remove("slider__description--show");
+});

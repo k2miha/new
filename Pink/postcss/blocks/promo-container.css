@@ -4,7 +4,6 @@
   overflow: hidden;
   &__content-image {
     margin-bottom: -45px;
-    margin-top: 41px;
     @mixin margin_auto;
   }
 }

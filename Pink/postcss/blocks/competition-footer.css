@@ -1,13 +1,16 @@
-.competition-footer__form-field-requirements {
-  @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $uppercase;
-  margin-top: 35px;
-  margin-bottom: 55px;
-}
-.competition-footer__form-field-marker {
-  color: $magenta;
-}
-.competition-footer__form-field-requirements.competition-footer__form-field-requirements--desktop {
+.competition-footer {
   display: $none;
+  &__form-field-requirements {
+    @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $uppercase;
+    margin-top: 35px;
+    margin-bottom: 55px;
+  }
+  &__form-field-marker {
+    color: $magenta;
+  }
+  &__form-field-requirements.competition-footer__form-field-requirements--desktop {
+    display: $none;
+  }
 }
 @media (min-width: 700px) {
   .competition-footer {

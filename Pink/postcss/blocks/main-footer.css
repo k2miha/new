@@ -41,9 +41,8 @@
     text-align: $center;
     }
   &__map-triangle {
-    min-height: 123px;
-    background-image: url("../img/triangle-white-footer-mobile.svg");
-    background-position: $center $zero;
+    max-height: 123px;
+    width: $full-width;
   }
   &__map-marker {
     margin-top: 64px;
@@ -96,10 +95,6 @@
     z-index: -1;
     position: relative;
     background-position: 0px 69%;
-  }
-  &__map-triangle {
-    max-width: $full-width;
-    min-height: 123px;
   }
   & .site-logo--footer {
       flex-basis: 150px;
@@ -167,9 +162,17 @@
     background-position: 0px 56.5%;
     margin-top: 1px;
   }
-  &__map-triangle {
-    background-image: url("../img/triangle-white-footer-desktop.png");
+  &__map::before {
+    content: "";
+    min-height: 123px;
+    display: $block;
+    background-image: url("../img/triangle-white-footer.svg");
     background-repeat: $no-repeat;
+    background-position-y: -1px;
+    background-position-x: $center;
+  }
+  &__map-triangle {
+    display: $none;
   }
   &__map-marker {
     margin-top: 161px;

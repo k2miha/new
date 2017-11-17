@@ -26,6 +26,9 @@
   font-weight: normal;
   font-style: normal;
 }
+.competition-footer {
+  display: none;
+}
 .competition-footer__form-field-requirements {
   font-family: 'Open Sans','open_sansregular',sans-serif;
   font-size: 14px;
@@ -320,9 +323,8 @@
   text-align: center;
 }
 .main-footer__map-triangle {
-  min-height: 123px;
-  background-image: url("../img/triangle-white-footer-mobile.svg");
-  background-position: center 0;
+  max-height: 123px;
+  width: 100%;
 }
 .main-footer__map-marker {
   margin-top: 64px;
@@ -376,10 +378,6 @@
     z-index: -1;
     position: relative;
     background-position: 0px 69%;
-  }
-  .main-footer__map-triangle {
-    max-width: 100%;
-    min-height: 123px;
   }
   .main-footer .site-logo--footer {
     flex-basis: 150px;
@@ -450,9 +448,17 @@
     background-position: 0px 56.5%;
     margin-top: 1px;
   }
-  .main-footer__map-triangle {
-    background-image: url("../img/triangle-white-footer-desktop.png");
+  .main-footer__map::before {
+    content: "";
+    min-height: 123px;
+    display: block;
+    background-image: url("../img/triangle-white-footer.svg");
     background-repeat: no-repeat;
+    background-position-y: -1px;
+    background-position-x: center;
+  }
+  .main-footer__map-triangle {
+    display: none;
   }
   .main-footer__map-marker {
     margin-top: 161px;
@@ -906,7 +912,7 @@
   display: inline-block;
   width: 22px;
   height: 16px;
-  background-image: url("../../img/tick.svg");
+  background-image: url("../../img/tick-image.svg");
 }
 .personal-info__element:not(:checked) + .personal-info__custom-element::before {
   content: "";
@@ -2265,7 +2271,6 @@ hr:last-of-type {
 }
 .promo-container__content-image {
   margin-bottom: -45px;
-  margin-top: 41px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2733,6 +2738,13 @@ hr:last-of-type {
   margin-right: 19px;
   margin-bottom: 33px;
   margin-top: 0;
+  display: none;
+}
+.slider__description:nth-of-type(2) {
+  display: none;
+}
+.slider__description.slider__description--show {
+  display: block;
 }
 .slider__description::before {
   content: "«";

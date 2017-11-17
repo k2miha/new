@@ -9,6 +9,13 @@
   margin-right: 19px;
   margin-bottom: 33px;
   margin-top: $zero;
+  display: $none;
+}
+.slider__description:nth-of-type(2) {
+  display: $none;
+}
+.slider__description.slider__description--show {
+  display: $block;
 }
 .slider__description::before {
   content: "«";
