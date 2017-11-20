@@ -325,9 +325,13 @@
 .main-footer__map-triangle {
   max-height: 123px;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .main-footer__map-marker {
-  margin-top: 64px;
+  position: absolute;
+  top: 187px;
 }
 .main-footer__tel {
   margin-bottom: 6px;
@@ -390,7 +394,7 @@
     margin-top: 23px;
   }
   .main-footer__map-marker {
-    margin-top: 126px;
+    top: 249px;
   }
 }
 @media (min-width: 1200px) {
@@ -461,7 +465,8 @@
     display: none;
   }
   .main-footer__map-marker {
-    margin-top: 161px;
+    position: absolute;
+    top: 284px;
   }
   .main-footer .site-logo--footer {
     margin-top: -19px;

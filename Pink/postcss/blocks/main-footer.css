@@ -43,9 +43,13 @@
   &__map-triangle {
     max-height: 123px;
     width: $full-width;
+    position: absolute;
+    top: $zero;
+    left: $zero;
   }
   &__map-marker {
-    margin-top: 64px;
+    position: absolute;
+    top: 187px;
   }
   &__tel {
     margin-bottom: 6px;
@@ -107,7 +111,7 @@
     margin-top: 23px;
   }
   &__map-marker {
-    margin-top: 126px;
+    top: 249px;
   }
  }
 }
@@ -175,7 +179,8 @@
     display: $none;
   }
   &__map-marker {
-    margin-top: 161px;
+    position: absolute;
+    top: 284px;
   }
   & .site-logo--footer {
     margin-top: -19px;
