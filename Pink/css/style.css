@@ -26,9 +26,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.competition-footer {
-  display: none;
-}
+.competition-footer {}
 .competition-footer__form-field-requirements {
   font-family: 'Open Sans','open_sansregular',sans-serif;
   font-size: 14px;
@@ -260,9 +258,6 @@
   }
 }
 .main-footer {}
-.main-footer > .competition-footer {
-  display: none;
-}
 .main-footer__block-title {
   font-family: 'Open Sans',sans-serif;
   font-size: 18px;
@@ -321,6 +316,7 @@
   min-height: 292px;
   margin-top: -57px;
   text-align: center;
+  position: relative;
 }
 .main-footer__map-triangle {
   max-height: 123px;
@@ -380,7 +376,6 @@
     min-height: 429px;
     margin-top: -30px;
     z-index: -1;
-    position: relative;
     background-position: 0px 69%;
   }
   .main-footer .site-logo--footer {
@@ -483,6 +478,9 @@
     background-position: 0px 56.5%;
     margin-top: 1px;
   }
+}
+.main-footer-container > .competition-footer {
+  display: none;
 }
 @media (max-width: 336px) {
   .main-header__right-side {
@@ -2327,9 +2325,10 @@ hr:last-of-type {
   margin: 0 20px;
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
-}
-.second-slider__header:first-child, .second-slider__header:last-child {
   display: none;
+}
+.second-slider__header-group .second-slider__header--active {
+  display: block;
 }
 .second-slider__package {
   font-family: 'Open Sans','open_sansbold',sans-serif;
@@ -2438,7 +2437,7 @@ hr:last-of-type {
     border-collapse: collapse;
     background-image: none;
   }
-  .second-slider__header, .second-slider__header:first-child, .second-slider__header:last-child {
+  .second-slider__header, .second-slider__header:first-child, .second-slider__header:last-child, .second-slider__header-group .second-slider__header--active {
     display: table-cell;
     border-right: 2px solid #e5e5e5;
     width: 25%;
@@ -2487,7 +2486,7 @@ hr:last-of-type {
     padding-bottom: 6px;
     background-position: center center;
   }
-  .second-slider__option-check:first-child, .second-slider__option--not-selected, .second-slider__option--not-selected .second-slider__option-check:first-child {
+  .second-slider__option-check:first-child, .second-slider__option--not-selected, .second-slider__option--not-selected .second-slider__option-check:first-child, .second-slider__option:nth-child(2) .second-slider__option-check:first-child {
     background-image: none;
   }
   .second-slider__option--not-selected .second-slider__option-check:last-child {

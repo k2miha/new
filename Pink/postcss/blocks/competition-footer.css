@@ -1,5 +1,4 @@
 .competition-footer {
-  display: $none;
   &__form-field-requirements {
     @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $uppercase;
     margin-top: 35px;

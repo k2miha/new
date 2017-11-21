@@ -10,9 +10,10 @@
     margin: $zero 20px;
     border-left: 2px solid $dark-grey;
     border-right: 2px solid $dark-grey;
-  }
-  &__header:first-child, &__header:last-child {
     display: $none;
+  }
+  &__header-group &__header--active {
+    display: $block;
   }
   &__package {
     @mixin font_options $OpenSans_bold, $medium, $white, $biggest, $bold, $center, $uppercase;
@@ -83,7 +84,7 @@
     width: calc(100% - 80px);
     border-collapse: collapse;
     background-image: $none;
-  &__header, &__header:first-child, &__header:last-child {
+  &__header, &__header:first-child, &__header:last-child, &__header-group &__header--active {
     display: table-cell;
     border-right: 2px solid $dark-grey;
     width: 25%;
@@ -132,7 +133,7 @@
     padding-bottom: 6px;
     background-position: $center $center;
   }
-  &__option-check:first-child, &__option--not-selected, &__option--not-selected &__option-check:first-child {
+  &__option-check:first-child, &__option--not-selected, &__option--not-selected &__option-check:first-child, &__option:nth-child(2) &__option-check:first-child  {
     background-image: $none;
   }
   &__option--not-selected &__option-check:last-child {
