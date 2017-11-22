@@ -482,6 +482,11 @@
 .main-footer-container > .competition-footer {
   display: none;
 }
+@media (min-width: 700px) {
+  .main-footer-container > .competition-footer {
+    display: flex;
+  }
+}
 @media (max-width: 336px) {
   .main-header__right-side {
     width: 94vw;
@@ -1105,7 +1110,7 @@
   border-width: 2px;
   border-color: #e5e5e5;
   text-align: center;
-  line-height: 36px;
+  line-height: 35px;
   margin-right: 26px;
 }
 .personal-info__custom-radio-element:hover {
@@ -2007,7 +2012,7 @@ hr:last-of-type {
     display: none;
   }
   .photos__element--panorama .photos__element-comment {
-    margin-top: -5px;
+    margin-top: -4px;
     margin-left: 130px;
     margin-right: 130px;
     width: calc(100% - 294px);

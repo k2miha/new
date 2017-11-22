@@ -180,7 +180,7 @@
   border-width: 2px;
   border-color: $dark-grey;
   text-align: $center;
-  line-height: 36px;
+  line-height: 35px;
   margin-right: 26px;
 }
 .personal-info__custom-radio-element:hover {

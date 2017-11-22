@@ -183,7 +183,7 @@
     display: $none;
   }
   .photos__element--panorama .photos__element-comment {
-    margin-top: -5px;
+    margin-top: -4px;
     margin-left: 130px;
     margin-right: 130px;
     width: calc($full-width - 294px);
