@@ -13,14 +13,19 @@
   "description": "adaptive template",
   "main": "Gruntfile.js",
   "repository": "github.com/k2miha/new",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "css-mqpacker": "^6.0.1",
     "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-csso": "^2.2.1",
     "grunt-postcss": "^0.8.0",
+    "grunt-svgstore": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2",
     "precss": "^1.4.0"
   },
   "author": "Kolotovich Mike",
