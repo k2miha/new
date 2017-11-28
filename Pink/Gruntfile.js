@@ -2,10 +2,26 @@
 
 module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
+  require('time-grunt')(grunt);
   grunt.initConfig({
     clean: {
       build: ["build"],
-      img: ["build/img/icons"],
+      img: [
+       "build/img/icons",
+       "build/img/icons-competition",
+       "build/img/icons-photo",
+       "build/img/icons-universal",
+       "build/img/symbols.svg",
+       "build/img/symbols-photo.svg",
+       "build/img/symbols-competition.svg",
+       "build/img/symbols-universal.svg"
+     ],
+     js: [
+      "build/js/hamburger.js",
+      "build/js/modal.js",
+      "build/js/buttonTumbler.js",
+      "build/js/sliderTumbler.js"
+    ],
       css: ["build/css/style.css"]
     },
     copy: {
@@ -24,6 +40,7 @@ module.exports = function(grunt) {
         html: {
           files: [{
           expand: true,
+          flatten: true,
           src: ["build/*.html"],
           dest: "./"
           }]
@@ -76,7 +93,10 @@ module.exports = function(grunt) {
             },
              symbols: {
                files: {
-                  "build/img/symbols.svg": ["img/icons/*.svg"]
+                  "build/img/symbols.svg": ["img/icons/*.svg"],
+                  "build/img/symbols-competition.svg": ["img/icons-competition/*.svg"],
+                  "build/img/symbols-photo.svg": ["img/icons-photo/*.svg"],
+                  "build/img/symbols-universal.svg": ["img/icons-universal/*.svg"]
                 }
               }
         },
@@ -84,7 +104,7 @@ module.exports = function(grunt) {
           symbols: {
               files: [{
                 expand: true,
-                src: ["build/img/icons/*.svg"]
+                src: ["build/img/**/*.svg"]
               }]
           }
     },
@@ -99,10 +119,17 @@ module.exports = function(grunt) {
              }]
             }
     },
+    uglify: {
+      my_target: {
+        files: {
+          'build/js/output.min.js': ['js/*.*']
+        }
+      }
+    },
     browserSync: {
       server: {
         bsFiles: {
-          src : ['postcss/css/*.css', 'build/*.html', 'build/img/*.*', 'build/js/*.js']
+          src : ['build/css/*.css', 'build/*.html', 'build/img/*.*', 'build/js/*.js']
       },
       options: {
         server: ".",
@@ -117,7 +144,7 @@ module.exports = function(grunt) {
       },
       style: {
           files: ['postcss/**/*.css'],
-          tasks: ['postcss', 'csso'],
+          tasks: ['postcss', 'csso', "clean:css"]
       }
   }
   });
@@ -130,7 +157,9 @@ module.exports = function(grunt) {
     "csso",
     "symbols",
     "imagemin",
+    "uglify",
     "clean:img",
-    "clean:css"
+    "clean:css",
+    "clean:js"
   ]);
 };

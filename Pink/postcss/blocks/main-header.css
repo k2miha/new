@@ -51,6 +51,7 @@
     .main-header {
       min-height: 729px;
       background-image: url("../../img/back-tablet@1x.jpg");
+      position: relative;
     &--short {
       max-width: 700px;
     }
@@ -68,7 +69,8 @@
       display: $block;
     }
     &__right-side {
-      top: 200px;
+      bottom: $zero;
+      top: $auto;
       width: 97vw;
     }
     &__image {
