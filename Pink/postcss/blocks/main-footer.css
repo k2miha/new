@@ -16,6 +16,8 @@
     display: $block;
     padding-left: 12px;
     padding-right: 11px;
+    position: relative;
+    z-index: 1;
   }
   &__email &__block-content:hover {
     color: $blue;
@@ -29,7 +31,8 @@
     text-decoration: $none;
   }
   &__map {
-    background-image: url("../img/Layer 153.jpg");
+    /*background-image: url("../img/Layer 153.jpg");*/
+    background-image: $none;
     background-repeat: $no-repeat;
     background-size: cover;
     background-position: $zero $full-width;
@@ -91,10 +94,10 @@
     padding-right: 195px;
   }
   &__map {
-    background-image: url("../img/Layer_153.jpg");
+    /*background-image: url("../img/Layer_153.jpg");*/
+    background-image: $none;
     min-height: 429px;
     margin-top: -30px;
-    z-index: -1;
     background-position: 0px 69%;
   }
   & .site-logo--footer {
@@ -158,7 +161,8 @@
     padding-left: 13px;
   }
   &__map {
-    background-image: url("../img/map-desktop.jpg");
+    /*background-image: url("../img/map-desktop.jpg");*/
+    background-image: $none;
     min-height: 522px;
     background-position: 0px 56.5%;
     margin-top: 1px;
@@ -171,6 +175,10 @@
     background-repeat: $no-repeat;
     background-position-y: -1px;
     background-position-x: $center;
+    width: $full-width;
+    position: absolute;
+    top: $zero;
+    left: $zero;
   }
   &__map-triangle {
     display: $none;
@@ -190,7 +198,8 @@
 }
 @media (min-width: 1201px) {
   .main-footer__map {
-    background-image: url("../img/map.jpg");
+    /*background-image: url("../img/map.jpg");*/
+    background-image: $none;
     min-height: 522px;
     background-position: 0px 56.5%;
     margin-top: 1px;

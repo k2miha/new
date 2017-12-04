@@ -121,9 +121,13 @@ module.exports = function(grunt) {
     },
     uglify: {
       my_target: {
-        files: {
-          'build/js/output.min.js': ['js/*.*']
-        }
+        files: [{
+          expand: true,
+          cwd: 'js',
+          src: '**/*.js',
+          dest: 'build/js',
+          ext: '.min.js'
+      }]
       }
     },
     browserSync: {
