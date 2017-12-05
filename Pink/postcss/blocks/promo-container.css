@@ -2,6 +2,8 @@
   background-color: $grey;
   text-align: $center;
   overflow: hidden;
+  padding-top: 55px;
+  margin-top: -36px;
   &__content-image {
     margin-bottom: -45px;
     @mixin margin_auto;
@@ -12,9 +14,10 @@
   display: flex;
   flex-direction: row-reverse;
   padding-right: 40px;
+  padding-top: 11px;
   background-color: transparent;;
   background-image: url("../../img/Shape 2-tablet.svg");
-  background-position-y: 26px;
+  background-position-y: 40px;
   background-repeat: no-repeat;
   min-height: 558px;
   margin-left: -45px;

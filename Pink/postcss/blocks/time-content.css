@@ -1,0 +1,79 @@
+.time-content {
+  display: $none;
+}
+@media (min-width: 700px) {
+  .time-content {
+    display: flex;
+    justify-content: space-between;
+    @mixin tablet_padding;
+    padding-top: 58px;
+    &__image {
+    width: 240px;
+    height: 277px;
+    }
+    &__image-container {
+      position: relative;
+      text-align: $center;
+    }
+    &__number {
+      position: absolute;
+      top: 49%;
+      left: $zero;
+      right: $zero;
+      @mixin font_options $OpenSans_bold, 96px, $magenta, $biggest, $regular, $center, $none;
+    }
+    &__right-side {
+      flex-basis: $half-width;
+    }
+    &__right-side-title {
+      @mixin font_options $OpenSans_bold, $biggest, $black, 36px, $regular, $left, $none;
+      margin-top: 38px;
+      margin-bottom: -4px;
+      width: 170px;
+    }
+    &__right-side-content {
+      @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $left, $none;
+      padding-right: 14px;
+      margin-bottom: 10px;
+    }
+    &__right-link {
+      @mixin font_options $OpenSans_regular, $small, $magenta, $big, $regular, $left, $none;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .time-content {
+    padding-left: 130px;
+    padding-right: 130px;
+    margin-top: -33px;
+    padding-top: 46px;
+    padding-bottom: 63px;
+    &__image {
+      width: 298px;
+      height: 345px;
+    }
+    &__number {
+      font-size: 120px;
+      top: $half-width;
+    }
+    &__right-side {
+      flex-basis: 574px;
+    }
+    &__right-side-title {
+      width: $auto;
+      margin-top: 91px;
+    }
+    &__right-side-title br {
+      display: $none;
+    }
+    &__right-side-content  {
+      font-size: $medium;
+      line-height: $biggest;
+      margin-top: 25px;
+      margin-bottom: 34px;
+    }
+    &__right-link {
+      font-size: $medium;
+    }
+  }
+}

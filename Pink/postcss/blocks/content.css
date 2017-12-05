@@ -1,22 +1,37 @@
 .content {
-  margin-top: 40px;
+  margin-top: 12px;
+  position: relative;
+  overflow: hidden;
   &__slogan {
     @mixin font_options $OpenSans_light, $big, $blue, 29px, $light, $center, $none;
     margin-top: 29px;
     margin-bottom: $zero;
   }
   &__slogan:last-child {
-    padding-bottom: 119px;
+    padding-bottom: 99px;
+  }
+  &::after {
+    display: $block;
+    content: "";
+    position: absolute;
+    bottom: 36px;
+    border-bottom: solid $grey 34px;
+    border-left: solid $transparent;
+    border-left-width: 100vw;
   }
 }
 @media (min-width: 700px) {
 .content {
   background-image: $none;
   margin-bottom: -26px;
+  margin-top: $zero;
   &__slogan {
     font-size: 40px;
     margin-top: 49px;
     line-height: 48px;
+  }
+  &::after {
+    display: $none;
   }
   &__slogan:last-child {
     margin-top: $zero;
@@ -28,7 +43,7 @@
 }
 @media (min-width: 1200px) {
   .content {
-    margin-top: 73px;
+    margin-top: 25px;
   &__slogan {
     font-size: 50px;
   }

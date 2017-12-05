@@ -28,9 +28,6 @@
 .slider__subtitle {
   display: $none;
 }
-.slider__top-content {
-  display: $none;
-}
 .slider__arrow {
   display: $none;
 }
@@ -40,7 +37,6 @@
 @media (min-width: 700px) {
   .slider {
     @mixin tablet_padding;
-    padding-top: 58px;
     background-color: $white;
     display: flex;
     flex-direction: column;
@@ -51,10 +47,6 @@
     margin-top: 34px;
     margin-bottom: 34px;
      }
-  &__top-content-image {
-    width: 240px;
-    height: 277px;
-  }
   &__subtitle {
     @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
     display: $block;
@@ -65,43 +57,10 @@
     margin: 94px $zero $zero;
     order: 1;
   }
-  &__top-content {
-    display: flex;
-    justify-content: space-between;
-  }
-  &__top-conten-right-side {
-    flex-basis: $half-width;
-  }
-  &__top-conten-right-side-title {
-    @mixin font_options $OpenSans_bold, $biggest, $black, 36px, $regular, $left, $none;
-    margin-top: 38px;
-    margin-bottom: -4px;
-    width: 170px;
-  }
-  &__top-conten-right-side-content {
-    @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $left, $none;
-    padding-right: 14px;
-    margin-bottom: 10px;
-  }
-  &__top-conten-right-link {
-    @mixin font_options $OpenSans_regular, $small, $magenta, $big, $regular, $left, $none;
-  }
-  &__top-content-image-container {
-    position: relative;
-    text-align: $center;
-  }
-  &__top-content-number {
-    position: absolute;
-    top: 49%;
-    left: $zero;
-    right: $zero;
-    @mixin font_options $OpenSans_bold, 96px, $magenta, $biggest, $regular, $center, $none;
-  }
  }
 }
 @media (min-width: 1200px) {
 .slider {
-  margin-top: 15px;
   padding-top: $zero;
   @mixin desktop_padding;
   &__description::before {
@@ -110,48 +69,11 @@
   &__description::after {
     content: "";
   }
-  &__top-content-image {
-    width: 298px;
-    height: 345px;
-  }
   &__tablet-br {
     display: $none;
   }
   &__desktop-br {
     display: $block;
-  }
-  &__top-conten-right-side {
-    flex-basis: 574px;
-  }
-  &__top-conten-right-side-title {
-    width: $auto;
-    margin-top: 91px;
-  }
-  &__top-conten-right-side-title br {
-    display: $none;
-  }
-  &__top-content-number {
-    font-size: 120px;
-    top: $half-width;
-  }
-  &__top-conten-right-side-content  {
-    font-size: $medium;
-    line-height: $biggest;
-    margin-top: 25px;
-    margin-bottom: 33px;
-  }
-  &__top-conten-right-link {
-    font-size: $medium;
-  }
-  &__top-content {
-    background-color: $grey;
-    margin-left: -130px;
-    padding-left: 130px;
-    margin-right: -130px;
-    padding-right: 130px;
-    margin-top: -46px;
-    padding-top: 46px;
-    padding-bottom: 54px;
   }
   &__description {
     padding-top: 185px;

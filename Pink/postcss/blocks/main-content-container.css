@@ -1,8 +1,25 @@
 @media (min-width: 1201px) {
 .main-content-container {
-  background-image: url("../../img/Shape 2-tablet.svg");
-  background-position-y: 246px;
-  background-size: $full-width 47%;
-  background-repeat: $no-repeat;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    display: $block;
+    content: "";
+    position: absolute;
+    top: 324px;
+    border-bottom: solid $grey 94px;
+    border-left: solid $transparent;
+    border-left-width: 100vw;
   }
+  &::after {
+    display: $block;
+    content: "";
+    position: absolute;
+    top: 418px;
+    width: $full-width;
+    height: calc($full-width - 246px);
+    z-index: -1;
+    background-color: $grey;
+  }
+ }
 }

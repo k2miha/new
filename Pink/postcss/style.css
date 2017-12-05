@@ -29,6 +29,7 @@
 @import "../postcss/blocks/pop-up.css";
 @import "../postcss/blocks/pop-up_failure.css";
 @import "../postcss/blocks/overlay.css";
+@import "../postcss/blocks/time-content.css";
 body {
   margin: $zero;
   position: relative;

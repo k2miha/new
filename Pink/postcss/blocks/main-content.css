@@ -1,7 +1,4 @@
 .main-content {
-    background-image: url("../../img/Shape 2.svg");
-    background-repeat: $no-repeat;
-    background-position-y: 91px;
     &--fixed {
       max-width: 320px;
       @mixin margin_auto;
@@ -20,7 +17,6 @@
 }
 @media (min-width: 700px) {
 .main-content {
-  background-position-y: 160px;
   &--fixed {
     max-width: 700px;
     }

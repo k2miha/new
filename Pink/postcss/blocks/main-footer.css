@@ -111,8 +111,12 @@
     margin-top: 23px;
   }
   &__map-marker {
-    top: 249px;
+    top: 251px;
+    margin-left: -19px;
   }
+ }
+ iframe {
+   height: 429px;
  }
 }
 @media (min-width: 1200px) {
