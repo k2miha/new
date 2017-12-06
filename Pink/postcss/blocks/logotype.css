@@ -1,6 +1,6 @@
 .logotype {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
   padding-top: 22px;
   margin-right: $auto;
   padding-bottom: 17px;
@@ -30,8 +30,8 @@
 }
 @media (min-width: 700px) {
 .logotype {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 5.71%;
+  padding-right: 5.71%;
   padding-top: 27px;
   padding-bottom: 39px;
   &__menu-button {

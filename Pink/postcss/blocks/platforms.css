@@ -1,8 +1,8 @@
 .platforms {
   background-color: #1d2631;
   padding-top: 28px;
-  padding-bottom: 26px;
-  margin-top: 392px;
+  padding-bottom: 30px;
+  margin-top: -32px;
   position: relative;
   z-index: 1;
   &__download-link {
@@ -27,16 +27,16 @@
   }
   &__description {
     @mixin font_options $OpenSans_light, $small, $white, $big, $light, $center, $none;
-    padding-left: 33px;
-    padding-right: 33px;
+    padding-left: 10.31%;
+    padding-right: 10.31%;
     margin: $zero;
   }
   &__images {
     display: flex;
     justify-content: space-between;
-    margin-left: 57px;
-    margin-right: 57px;
-    margin-bottom: 22px;
+    margin-left: 17.81%;
+    margin-right: 18.5%;
+    margin-bottom: 18px;
   }
   &__android {
     margin-top: 7px;
@@ -63,7 +63,7 @@
     &__images {
       margin-left: 47px;
       margin-right: 47px;
-      margin-bottom: 38px;
+      margin-bottom: 32px;
     }
     &__description {
       font-size: $medium;

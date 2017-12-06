@@ -7,7 +7,8 @@
     padding-bottom: 16px;
     overflow: hidden;
     position: relative;
-    margin: $zero 20px;
+    margin-left: 6.25%;
+    margin-right: 6.7%;
     border-left: 2px solid $dark-grey;
     border-right: 2px solid $dark-grey;
     display: $none;
@@ -39,7 +40,8 @@
   &__option {
     @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $left, $uppercase;
     border-bottom: 2px solid $dark-grey;
-    margin: 0px 19px;
+    margin-left: 6.25%;
+    margin-right: 6.7%;
     border-left: 2px solid $dark-grey;
     border-right: 2px solid $dark-grey;
     padding-left: 22px;
@@ -49,11 +51,13 @@
     }
   &__option::before {
     @mixin table_side_columns;
-    left: -$margin;
+    left: -62px;
+    width: 100vw;
   }
   &__option::after {
     @mixin table_side_columns;
-    right: -21px;
+    right: 0px;
+    width: 100vw;
   }
   &__option-check {
     background-image: url("../../img/yes.svg");

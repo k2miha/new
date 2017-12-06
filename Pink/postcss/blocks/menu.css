@@ -28,7 +28,8 @@
   }
   &__element_logo {
     text-align: left;
-    @mixin mobile_padding;
+    padding-left: 6.25%;
+    padding-right: 6.25%;
     display: flex;
     justify-content: space-between;
   }
@@ -123,7 +124,8 @@
       padding-top: 27px;
   }
   &__element_logo {
-    @mixin tablet_padding;
+    padding-left: 5.71%;
+    padding-right: 5.71%;
   }
   &__element_logo .menu__link {
     padding-bottom: 38px;

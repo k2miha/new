@@ -4,10 +4,8 @@
   }
 }
 .main-header {
-  background-color: $blue;
-  background-image: url("../../img/back-mobile@1x.jpg");
-  background-repeat: $no-repeat;
   min-height: 462px;
+  text-align: $center;
   &--short {
     min-height: 238px;
     max-width: 320px;
@@ -28,29 +26,13 @@
     display: $none;
   }
   &__right-side {
-    position: absolute;
-    top: 174px;
-  }
-}
-@media (min-resolution: 2dppx) {
-  .main-header {
-    background-image: url("../../img/background-1@2x.jpg");
-  }
-}
-@media (min-resolution: 3dppx) {
-  .main-header {
-    background-image: url("../../img/background-1@3x.jpg");
-  }
-}
-@media (min-width: 321px) {
-  .main-header {
-    background-size: cover;
+    margin-top: 106px;
   }
 }
 @media (min-width: 700px) {
     .main-header {
-      min-height: 729px;
-      background-image: url("../../img/back-tablet@1x.jpg");
+      max-width: 700px;
+      @mixin margin_auto;
       position: relative;
     &--short {
       max-width: 700px;
@@ -63,14 +45,15 @@
     }
     &__title {
       width: 300px;
-      margin-left: 40px;
+      margin-left: 5.71%;
       margin-top: 92px;
       line-height: 48px;
       display: $block;
     }
     &__right-side {
-      bottom: $zero;
-      top: $auto;
+      bottom: -65px;
+      position: absolute;
+      right: $zero;
       width: 97vw;
     }
     &__image {
@@ -87,24 +70,8 @@
     }
   }
 }
-@media (min-width: 701px) {
-  .main-header {
-    background-image: url("../../img/back-desktop.jpg");
-  }
-}
-@media (min-resolution: 2dppx) {
-  .main-header {
-    background-image: url("../../img/background-1@2x.jpg");
-  }
-}
-@media (min-resolution: 3dppx) {
-  .main-header {
-    background-image: url("../../img/background-1@3x.jpg");
-  }
-}
 @media (min-width: 717px) {
   .main-header__right-side {
-    top: 184px;
     width: $auto;
   }
 }
@@ -113,8 +80,6 @@
     max-width: 1200px;
     @mixin margin_auto;
     position: relative;
-    background-image: $none;
-    background-color: $transparent;
   &__title {
     font-size: 50px;
     margin-left: 130px;
@@ -128,7 +93,7 @@
     max-width: 1200px;
   }
   &__right-side {
-    top: -13px;
+    top: -119px;
     right: 4px;
   }
   &--short {

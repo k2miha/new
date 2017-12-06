@@ -5,8 +5,8 @@
 }
 .slider__description {
   @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
-  margin-left: 19px;
-  margin-right: 19px;
+  margin-left: 5.93%;
+  margin-right: 5.93%;
   margin-bottom: 33px;
   margin-top: $zero;
   display: $none;
