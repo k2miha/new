@@ -13,14 +13,13 @@
 .promo-container {
   display: flex;
   flex-direction: row-reverse;
-  padding-right: 5.71%;
   padding-top: 11px;
   background-color: transparent;;
   background-image: url("../../img/Shape 2-tablet.svg");
   background-position-y: 40px;
   background-repeat: no-repeat;
   min-height: 558px;
-  margin-left: -45px;
+  justify-content: center;
   &__content-image {
     flex-basis: 50%;
     margin-top: 76px;

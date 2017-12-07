@@ -66,6 +66,8 @@ iframe {
 }
 @media (min-width: 700px) {
 .main-footer {
+  max-width: 700px;
+  @mixin margin_auto;
   & > .competition-footer {
     display: flex;
     @mixin tablet_padding;
@@ -203,6 +205,9 @@ iframe {
   & .site-logo--footer:hover {
     margin-right: $zero;
   }
+ }
+ iframe {
+   height: 522px;
  }
 }
 @media (min-width: 1201px) {

@@ -2,6 +2,11 @@
   background-color: $blue;
   background-image: url("../../img/back-mobile@1x.jpg");
   background-repeat: $no-repeat;
+  &--short {
+    max-height: 239px;
+    max-width: 320px;
+    @mixin margin_auto;
+  }
 }
 @media (min-width: 321px) {
   .main-header-container {
@@ -12,6 +17,10 @@
   .main-header-container {
     min-height: 729px;
     background-image: url("../../img/back-tablet@1x.jpg");
+    &--short {
+      max-width: 700px;
+      @mixin margin_auto;
+    }
   }
 }
 @media (min-width: 701px) {
@@ -35,10 +44,11 @@
     background-image: url("../../img/back-desktop.jpg");
     &--short {
       max-height: 394px;
+      max-width: $full-width;
     }
   }
 }
-@media (min-width: 1201px) {
+@media (min-width: 1218px) {
   .main-header-container {
     background-image: url("../../img/background-fullsize.jpg");
     background-size: cover;

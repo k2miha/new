@@ -64,10 +64,7 @@
   margin: $zero 20px;
 }
 .photos__container .photos__element {
-  margin-bottom: 20px;
-}
-.photos__container .photos__element:first-child {
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 .photos__br-tablet {
   display: $none;

@@ -28,7 +28,7 @@
 }
 @media (min-width: 700px) {
   .promo {
-      flex-basis: $half-width;
+      flex-basis: 353px;
       min-width: 310px;
       position: relative;
       top: 153px;

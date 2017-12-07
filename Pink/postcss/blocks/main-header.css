@@ -6,19 +6,14 @@
 .main-header {
   min-height: 462px;
   text-align: $center;
-  &--short {
-    min-height: 238px;
-    max-width: 320px;
-    @mixin margin_auto;
-  }
   &--short .menu--show {
     max-width: 320px;
   }
   &__slogan {
     @mixin font_options $OpenSans_light, $big, $white, 29px, $light, $center, $none;
-    padding-left: 2px;
+    padding-left: 5px;
     padding-right: 2px;
-    margin-top: 30px;
+    margin-top: 31px;
   }
   &__title {
     @mixin font_options $OpenSans_light, 40px, $white, $normal, $light, $center, $none;
@@ -83,7 +78,7 @@
   &__title {
     font-size: 50px;
     margin-left: 130px;
-    margin-top: 111px;
+    margin-top: 109px;
     line-height: 60px;
   }
   &__slogan {
@@ -93,7 +88,7 @@
     max-width: 1200px;
   }
   &__right-side {
-    top: -119px;
+    top: -117px;
     right: 4px;
   }
   &--short {
