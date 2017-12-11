@@ -253,7 +253,7 @@ hr:last-of-type {
   .photo-editor {
     margin-left: 130px;
     margin-right: 130px;
-    margin-bottom: 105px;
+    margin-bottom: 103px;
     &__image {
       margin-left: 80px;
       margin-right: 68px;
@@ -278,11 +278,11 @@ hr:last-of-type {
     &__button {
       display: $inline-block;
       width: 183px;
-      margin-left: 21px;
+      margin-left: 20px;
       font-weight: $regular;
     }
     &__function-tuning {
-      padding-bottom: 23px;
+      padding-bottom: 35px;
     }
     &__image-modification-button {
       margin-right: 45px;

@@ -78,9 +78,9 @@
     margin-top: 92px;
   }
   .photos__description:last-child {
-    margin-top: 47px;
+    margin-top: 45px;
     margin-left: 55px;
-    margin-bottom: 68px;
+    margin-bottom: 69px;
   }
   .photos__br-mobile {
     display: $none;

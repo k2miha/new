@@ -20,6 +20,7 @@
     &--short {
       max-width: 700px;
       @mixin margin_auto;
+      min-height: 440px;
     }
   }
 }
@@ -43,7 +44,7 @@
     min-height: 853px;
     background-image: url("../../img/back-desktop.jpg");
     &--short {
-      max-height: 394px;
+      min-height: 394px;
       max-width: $full-width;
     }
   }
