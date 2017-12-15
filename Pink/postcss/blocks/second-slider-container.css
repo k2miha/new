@@ -12,7 +12,7 @@
 }
 @media (min-width: 983px) {
   .second-slider-container {
-    background-position: initial;
+    background-position: inherit;
   }
 }
 @media (min-width: 1200px) {

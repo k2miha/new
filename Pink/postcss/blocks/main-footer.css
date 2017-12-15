@@ -40,6 +40,7 @@
     margin-top: -52px;
     text-align: $center;
     position: relative;
+    overflow: hidden;
     }
   &__map-triangle {
     max-height: 123px;

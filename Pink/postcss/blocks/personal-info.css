@@ -120,6 +120,8 @@
   margin-right: -20px;
   @mixin mobile_padding;
   margin-bottom: 38px;
+  display: flex;
+  flex-direction: column;
 }
 .personal-info__achievements {
   margin-top: -6px;
