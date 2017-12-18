@@ -1,4 +1,6 @@
 .second-slider {
+  max-width: 320px;
+  @mixin margin_auto;
   &__header-group {
     background-color: $blue;
   }
@@ -51,13 +53,11 @@
     }
   &__option::before {
     @mixin table_side_columns;
-    left: -62px;
-    width: 100vw;
+    left: -22px;
   }
   &__option::after {
     @mixin table_side_columns;
-    right: 0px;
-    width: 100vw;
+    right: -22px;
   }
   &__option-check {
     background-image: url("../../img/yes.svg");

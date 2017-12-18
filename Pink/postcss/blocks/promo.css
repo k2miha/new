@@ -1,5 +1,9 @@
 .promo {
   @mixin list_reset;
+  max-width: 320px;
+  @mixin margin_auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
   &__content-title {
     @mixin font_options $OpenSans, $medium, $black, 13px, $bold, $center;
     margin: $zero;
@@ -33,6 +37,8 @@
       position: relative;
       top: 153px;
       left: 43px;
+      max-width: $none;
+      @mixin margin_reset;
   &__tablet-br {
     display: $block;
   }

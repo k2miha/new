@@ -30,13 +30,15 @@
     padding-left: 10.31%;
     padding-right: 10.31%;
     margin: $zero;
+    max-width: 320px;
+    @mixin margin_auto;
   }
   &__images {
     display: flex;
     justify-content: space-between;
-    margin-left: 17.81%;
-    margin-right: 18.5%;
     margin-bottom: 18px;
+    max-width: 320px;
+    @mixin margin_auto;
   }
   &__android {
     margin-top: 7px;

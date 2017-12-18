@@ -6,6 +6,8 @@
     @mixin font_options $OpenSans_light, $big, $blue, 29px, $light, $center, $none;
     margin-top: 29px;
     margin-bottom: $zero;
+    max-width: 320px;
+    @mixin margin_auto;
   }
   &__slogan:last-child {
     padding-bottom: 99px;
@@ -29,6 +31,7 @@
     font-size: 40px;
     margin-top: 49px;
     line-height: 48px;
+    max-width: $none;
   }
   &::after {
     display: $none;

@@ -226,6 +226,7 @@ hr:last-of-type {
   &__image-modification-button:nth-of-type(3) {
     margin-left: 21px;
     margin-right: 27px;
+    top: 5px;
   }
   &__button {
     margin-bottom: 24px;
