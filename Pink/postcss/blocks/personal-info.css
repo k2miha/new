@@ -78,11 +78,13 @@
   position: relative;
   top: 96px;
   margin-bottom: 86px;
+  max-width: 258px;
 }
 .personal-info__achievements .personal-info__title {
   margin-bottom: 32px;
   position: relative;
   top: 69px;
+  max-width: 258px;
 }
 .personal-info__achievements-element-container {
   margin-top: 69px;
@@ -265,6 +267,7 @@
     position: static;
     padding-left: 25px;
     padding-right: 25px;
+    max-width: $none;
   }
   .personal-info__element-label:first-of-type .personal-info__custom-radio-element {
     margin-top: 5px;
@@ -346,6 +349,7 @@
   }
   .personal-info__achievements .personal-info__title  {
     top: $zero;
+    max-width: $none;
   }
   .personal-info__emotions .personal-info__title {
     margin-bottom: 37px;
