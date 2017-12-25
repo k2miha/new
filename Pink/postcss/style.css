@@ -30,6 +30,7 @@
 @import "../postcss/blocks/pop-up_failure.css";
 @import "../postcss/blocks/overlay.css";
 @import "../postcss/blocks/time-content.css";
+@import "../postcss/blocks/logotype-container.css";
 body {
   margin: $zero;
   position: relative;

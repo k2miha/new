@@ -4,7 +4,8 @@
   padding-top: 22px;
   margin-right: $auto;
   padding-bottom: 17px;
-  background-color: rgba(0,0,0,.3);
+  max-width: 320px;
+  @mixin margin_auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -34,6 +35,8 @@
   padding-right: 5.71%;
   padding-top: 27px;
   padding-bottom: 39px;
+  max-width: 700px;
+  box-sizing: border-box;
   &__menu-button {
     top: -1px;
     left: -8px;
