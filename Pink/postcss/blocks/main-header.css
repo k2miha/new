@@ -4,7 +4,6 @@
   }
 }
 .main-header {
-  min-height: 462px;
   text-align: $center;
   &--short .menu--show {
     max-width: 320px;
@@ -14,6 +13,7 @@
     padding-left: 5px;
     padding-right: 2px;
     margin-top: 31px;
+    margin-bottom: $zero;
   }
   &__title {
     @mixin font_options $OpenSans_light, 40px, $white, $normal, $light, $center, $none;
@@ -29,6 +29,7 @@
       max-width: 700px;
       @mixin margin_auto;
       position: relative;
+      min-height: 527px;
     &--short {
       max-width: 700px;
     }
@@ -43,7 +44,7 @@
       display: $block;
     }
     &__right-side {
-      bottom: -65px;
+      bottom: $zero;
       position: absolute;
       right: $zero;
       width: 97vw;

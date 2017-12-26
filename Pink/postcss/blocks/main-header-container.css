@@ -3,9 +3,12 @@
   background-image: url("../../img/back-mobile@1x.jpg");
   background-repeat: $no-repeat;
   &--short {
-    max-height: 239px;
+    min-height: 239px;
     max-width: 320px;
     @mixin margin_auto;
+  }
+  &--short .main-header {
+    padding-bottom: 82px;
   }
 }
 @media (min-width: 321px) {
@@ -21,6 +24,13 @@
       max-width: 700px;
       @mixin margin_auto;
       min-height: 440px;
+    }
+    &--short .main-header {
+      min-height:$auto;
+      padding-bottom: 141px;
+    }
+    &--short .menu__container {
+      max-width: $full-width;
     }
   }
 }

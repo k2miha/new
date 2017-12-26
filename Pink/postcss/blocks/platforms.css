@@ -27,8 +27,9 @@
   }
   &__description {
     @mixin font_options $OpenSans_light, $small, $white, $big, $light, $center, $none;
-    padding-left: 10.31%;
-    padding-right: 10.31%;
+    padding-left: 33px;
+    padding-right: 33px;
+    box-sizing: border-box;
     margin: $zero;
     max-width: 320px;
     @mixin margin_auto;

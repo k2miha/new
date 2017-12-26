@@ -6,10 +6,10 @@
   z-index: 1;
   &--show {
     display: $block;
-    position: absolute;
-    width: $full-width;
     max-width: $full-width;
-    top: $zero;
+  }
+  &--hide {
+    display: $none;
   }
   &--active:hover {
     color: $magenta;
@@ -21,6 +21,12 @@
     background-color: $blue;
     @mixin list_reset;
   }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 320px;
+    @mixin margin_auto;
+  }
   &__element {
     border-top: 1px solid #485461;
     border-bottom: 1px solid;
@@ -30,8 +36,6 @@
     text-align: left;
     padding-left: 6.25%;
     padding-right: 6.25%;
-    display: flex;
-    justify-content: space-between;
   }
   &__element_logo:first-child &__link {
       padding-top: 20px;
@@ -97,6 +101,9 @@
   }
   &__button {
     height: $auto;
+  }
+  &__container {
+    max-width: 565px;
   }
   &__link svg {
     display: $none;
