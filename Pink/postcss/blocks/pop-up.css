@@ -18,7 +18,7 @@
     margin: $zero;
   }
   &__message {
-    @mixin font_options $OpenSans, $small, $blue, $big, $regular, $center;
+    @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $center;
     padding-left: 22px;
     padding-right: 22px;
     margin-bottom: 37px;

@@ -192,7 +192,7 @@
   &__elements-container &__link {
     text-transform: $none;
     padding-top: 46px;
-    font-family: $OpenSans;
+    font-family: $OpenSans_regular;
     font-weight: $normal;
     padding-bottom: 9px;
   }

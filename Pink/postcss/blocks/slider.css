@@ -50,7 +50,7 @@
   &__title {
     font-size: 20px;
     order: 2;
-    font-family: $OpenSans;
+    font-family: $OpenSans_regular;
     margin-top: 34px;
     margin-bottom: 34px;
      }

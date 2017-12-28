@@ -30,7 +30,7 @@
     display: $block;
   }
   &__hit {
-    @mixin font_options $OpenSans, $small, $white, $biggest, 600, $center, $none;
+    @mixin font_options $OpenSans_regular, $small, $white, $biggest, 600, $center, $none;
     background-color: $magenta;
     transform: rotate(-45deg);
     display: $block;

@@ -2,7 +2,7 @@
   max-width: 320px;
   @mixin margin_auto;
   &__block-title {
-    @mixin font_options $OpenSans, $medium, $blue, $normal, $bold, $center, $none;
+    @mixin font_options $OpenSans_regular, $medium, $blue, $normal, $bold, $center, $none;
     @mixin white_background;
     padding-top: 17px;
   }

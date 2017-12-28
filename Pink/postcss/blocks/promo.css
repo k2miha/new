@@ -5,7 +5,7 @@
   margin-top: 16px;
   margin-bottom: 16px;
   &__content-title {
-    @mixin font_options $OpenSans, $medium, $black, 13px, $bold, $center;
+    @mixin font_options $OpenSans_regular, $medium, $black, 13px, $bold, $center;
     margin: $zero;
   }
   &__content-description {

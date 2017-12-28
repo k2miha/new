@@ -10,19 +10,14 @@ module.exports = function(grunt) {
        "build/img/icons",
        "build/img/icons-competition",
        "build/img/icons-photo",
-       "build/img/icons-universal",
-       "build/img/symbols.svg",
-       "build/img/symbols-photo.svg",
-       "build/img/symbols-competition.svg",
-       "build/img/symbols-universal.svg"
+       "build/img/icons-universal"
      ],
      js: [
       "build/js/hamburger.js",
       "build/js/modal.js",
       "build/js/buttonTumbler.js",
       "build/js/sliderTumbler.js"
-    ],
-      css: ["build/css/style.css"]
+    ]
     },
     copy: {
         build: {
@@ -163,7 +158,6 @@ module.exports = function(grunt) {
     "imagemin",
     "uglify",
     "clean:img",
-    "clean:css",
     "clean:js"
   ]);
 };
