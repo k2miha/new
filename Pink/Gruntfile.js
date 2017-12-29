@@ -143,7 +143,7 @@ module.exports = function(grunt) {
       },
       style: {
           files: ['postcss/**/*.css'],
-          tasks: ['postcss', 'csso', "clean:css"]
+          tasks: ['postcss', 'csso']
       }
   }
   });
