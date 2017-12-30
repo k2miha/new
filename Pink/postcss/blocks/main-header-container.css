@@ -10,6 +10,9 @@
   &--short .main-header {
     padding-bottom: 82px;
   }
+  &--short .main-header--short {
+    padding-bottom: 53px;
+  }
 }
 @media (min-width: 321px) {
   .main-header-container {
