@@ -21,19 +21,8 @@
   background-color: $magenta;
   border-radius: $half-width;
 }
-.personal-info__element--checked + .personal-info__custom-element::before, .personal-info__element:checked + .personal-info__custom-element::before {
-  content: "";
-  display: $inline-block;
-  width: 22px;
-  height: 16px;
-  background-image: url("../../img/tick-image.svg");
-}
-.personal-info__element:not(:checked) + .personal-info__custom-element::before {
-  content: "";
-  display: $inline-block;
-  width: 22px;
-  height: 16px;
-  background-image: $none;
+.personal-info__element:not(:checked) + .personal-info__custom-element svg {
+  display: $none;
 }
 .personal-info__description-fill, .personal-info__element {
   display: $none;
@@ -150,6 +139,8 @@
 }
 .personal-info__achievements-element-label {
   margin-bottom: 43px;
+  line-height: 37px;
+  display: flex;
 }
 .personal-info__element-label {
   margin-bottom: 37px;
