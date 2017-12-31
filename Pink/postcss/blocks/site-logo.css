@@ -97,7 +97,8 @@
     display: $none;
   }
   .site-logo--footer {
-    width: 147px;
+    width: 159px;
+    @mixin margin_auto;
     height: 44px;
     background: url("../../img/Pink-logo-footer-2@2x.png");
     background-size: contain;
@@ -132,7 +133,7 @@
    opacity: .3;
  }
 }
-@media (min-resolution: 2dppx) {
+@media (min-width: 1200px and min-resolution: 2dppx) {
 .site-logo--footer {
   background: url("../../img/Pink-logo-footer-3@2x.png");
   background-size: cover;
