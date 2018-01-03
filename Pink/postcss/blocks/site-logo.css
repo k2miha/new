@@ -133,7 +133,7 @@
    opacity: .3;
  }
 }
-@media (min-width: 1200px and min-resolution: 2dppx) {
+@media (min-width: 1200px) and (min-resolution: 2dppx) {
 .site-logo--footer {
   background: url("../../img/Pink-logo-footer-3@2x.png");
   background-size: cover;
