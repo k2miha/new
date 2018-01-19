@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
 module.exports = function(grunt) {
   require("load-grunt-tasks")(grunt);
-  require('time-grunt')(grunt);
+  require("time-grunt")(grunt);
   grunt.initConfig({
     clean: {
       build: ["build"],
@@ -44,12 +44,12 @@ module.exports = function(grunt) {
     postcss: {
       options: {
         processors: [
-          require('precss')()
+          require("precss")()
         ]
       },
       dist: {
-        src: 'postcss/style.css',
-        dest: 'build/css/style.css'
+        src: "postcss/style.css",
+        dest: "build/css/style.css"
       },
      style: {
        options: {
@@ -118,17 +118,17 @@ module.exports = function(grunt) {
       my_target: {
         files: [{
           expand: true,
-          cwd: 'js',
-          src: '**/*.js',
-          dest: 'build/js',
-          ext: '.min.js'
+          cwd: "js",
+          src: "**/*.js",
+          dest: "build/js",
+          ext: ".min.js"
       }]
       }
     },
     browserSync: {
       server: {
         bsFiles: {
-          src : ['build/css/*.css', 'build/*.html', 'build/img/*.*', 'build/js/*.js']
+          src : ["build/css/*.css", "build/*.html", "build/img/*.*", "build/js/*.js"]
       },
       options: {
         server: ".",
@@ -142,8 +142,8 @@ module.exports = function(grunt) {
         tasks: ["copy:html"]
       },
       style: {
-          files: ['postcss/**/*.css'],
-          tasks: ['postcss', 'csso']
+          files: ["postcss/**/*.css"],
+          tasks: ["postcss", "csso"]
       }
   }
   });
