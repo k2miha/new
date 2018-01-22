@@ -282,6 +282,7 @@ hr:last-of-type {
       width: 183px;
       margin-left: 20px;
       font-weight: $regular;
+      vertical-align: top;
     }
     &__function-tuning {
       padding-bottom: 35px;

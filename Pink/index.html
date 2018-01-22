@@ -7,7 +7,7 @@
     <title>Главная</title>
     <link rel="stylesheet" href="build/css/style.min.css" media="screen" title="no title">
   </head>
-  <body>
+  <body class="main">
     <svg style="display: none"><symbol viewBox="0 0 42.084 47.041" id="android-logo"><title>android-logo</title> <path fill="#A4C639" d="M34.144,14.009H7.945c-0.009,0.11-0.018,0.22-0.018,0.333v18.754c0,1.926,1.457,3.491,3.316,3.628v7.433
     	c0,1.594,1.291,2.885,2.885,2.885c1.593,0,2.885-1.291,2.885-2.885v-7.419h8.058v7.419c0,1.594,1.292,2.885,2.885,2.885
     	c1.595,0,2.886-1.291,2.886-2.885v-7.433c1.858-0.137,3.315-1.702,3.315-3.628V14.342C34.157,14.229,34.153,14.119,34.144,14.009z"/> <path id="android-logo-c-4-9-2-9-2-9" fill="#A4C639" d="M2.886,15.679L2.886,15.679c1.593,0,2.886,1.292,2.886,2.885v12.378
@@ -59,20 +59,45 @@
       	c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/> </symbol>
         </svg>
     <header class="main-header-container">
-      <nav class="menu">
+      <nav class="menu menu--no-js">
+        <!--
+           menu--no-js - убираем для скрытия открытого меню без javascript
+           menu--show - показываем меню с включенным javascript
+        -->
         <ul class="menu__elements">
           <li class="menu__element menu__element_logo">
             <div class= "menu__container">
-              <a class="menu__link" title="Pink"><svg width="74.318px" height="23.041px"><use xlink:href="#logotype"></use></svg></a>
+              <a class="menu__link" title="Pink"><svg width="74.318" height="23.041"><use xlink:href="#logotype"></use></svg></a>
               <button class="menu__button" type="button" name="close" title="Меню">
                 <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                   width="23.866px" height="23.866px" viewBox="0 0 23.866 23.866" enable-background="new 0 0 23.866 23.866" xml:space="preserve">
-                <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.413,0.079,21.223,0,21.023,0
+                   width="23.866" height="23.866" viewBox="0 0 23.866 23.866" enable-background="new 0 0 23.866 23.866" xml:space="preserve">
+                   <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.413,0.079,21.223,0,21.023,0
                   s-0.39,0.079-0.53,0.22l-8.56,8.56L3.373,0.22c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313c-0.293,0.293-0.293,0.768,0,1.061
                   l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.061l2.093,2.094c0.141,0.141,0.331,0.22,0.53,0.22
                   c0.199,0,0.39-0.079,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.141,0.331,0.22,0.53,0.22s0.39-0.079,0.53-0.22l2.093-2.094
                   c0.293-0.293,0.293-0.768,0-1.061L15.087,11.933z"/>
-                </svg>
+                 </svg>
+                <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="49.945" height="24.007" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+                  <g id="miu">
+                    <g id="editor_list_view_hambuger_menu_glyph">
+                      <g>
+                        <path id="path-1" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.138,1.01h47.671
+                          c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98
+                          c0,0.557,0.494,1.01,1.138,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z
+                           M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.138,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01
+                          v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                      </g>
+                      <g>
+                        <path id="path-1_1_" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.138,1.01h47.671
+                          c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98
+                          c0,0.557,0.494,1.01,1.138,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z
+                           M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.138,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01
+                          v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+                      </g>
+                    </g>
+                  </g>
+                 </svg>
               </button>
             </div>
           </li>
@@ -87,11 +112,15 @@
         </ul>
       </nav>
       <div class="logotype-container">
+        <!--
+          добавляем logotype-container--show когда убираем класс menu--no-js или menu--show
+          убираем logotype-container--show при добавлении класса menu--show
+        -->
         <div class="logotype">
-          <a class="site-logo" title="Pink"><svg width="74.318px" height="23.041px"><use xlink:href="#logotype"></use></svg></a>
+          <a class="site-logo" title="Pink"><svg width="74.318" height="23.041"><use xlink:href="#logotype"></use></svg></a>
           <button class="logotype__menu-button" type="button" name="open" title="Меню">
             <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+               width="49.945" height="24.007" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
               <g id="miu">
                 <g id="editor_list_view_hambuger_menu_glyph">
                   <g>
@@ -182,7 +211,7 @@
         </div>
         <div class="time-content">
           <div class="time-content__image-container">
-            <svg class="time-content__image"> <use xlink:href="#timer-3"></use></svg>
+            <svg class="time-content__image" width="240" height="277"> <use xlink:href="#timer-3"></use></svg>
             <span class="time-content__number">24</span>
           </div>
           <div class="time-content__right-side">
@@ -201,19 +230,19 @@
     <div class="slider">
        <h2 class="slider__title">Николай Петров <span class="slider__subtitle">25 лет, водитель трамвая</span></h2>
        <blockquote class="slider__description slider__description--show">
-         <svg class="slider__arrow"> <use xlink:href="#left-arrow"></use></svg>
+         <svg class="slider__arrow" width="22" height="41"> <use xlink:href="#left-arrow"></use></svg>
          Это приложение перевернуло мой мир и позволило по-новому взглянуть на <br class="slider__desktop-br"> привычные серые вещи! А еще я познакомился со своей будущей женой в <br class="slider__desktop-br"> комментариях к выложенной фотографии!
-         <svg class="slider__arrow"> <use xlink:href="#left-arrow"></use></svg>
+         <svg class="slider__arrow" width="22" height="41"> <use xlink:href="#left-arrow"></use></svg>
        </blockquote>
        <blockquote class="slider__description">
-         <svg class="slider__arrow"> <use xlink:href="#left-arrow"></use></svg>
+         <svg class="slider__arrow" width="22" height="41"> <use xlink:href="#left-arrow"></use></svg>
          Это приложение перевернуло мой мир и позволило по-новому взглянуть на <br class="slider__desktop-br"> привычные серые вещи! А еще я познакомилась со своим будущем мужем в <br class="slider__desktop-br"> комментариях к выложенной фотографии!
-         <svg class="slider__arrow"> <use xlink:href="#left-arrow"></use></svg>
+         <svg class="slider__arrow" width="22" height="41"> <use xlink:href="#left-arrow"></use></svg>
        </blockquote>
        <blockquote class="slider__description">
-         <svg class="slider__arrow"> <use xlink:href="#left-arrow"></use></svg>
+         <svg class="slider__arrow" width="22" height="41"> <use xlink:href="#left-arrow"></use></svg>
          Это приложение перевернуло мой мир и позволило по-новому взглянуть на <br class="slider__desktop-br"> привычные серые вещи!
-         <svg class="slider__arrow"> <use xlink:href="#left-arrow"></use></svg>
+         <svg class="slider__arrow" width="22" height="41"> <use xlink:href="#left-arrow"></use></svg>
        </blockquote>
        <div class="slider-tumbler">
          <button class="slider-tumbler__element  slider-tumbler__element--active" type="button" name="active"></button>
@@ -271,72 +300,70 @@
          </div>
        </div>
      </div>
-    <footer class="main-footer-container">
-      <div class="main-footer">
-        <p class="main-footer__description">
-          Остались вопросы?
-          Свяжитесь с нами!
-         </p>
-        <div class="main-footer__contacts">
-          <div class="main-footer__tel">
-            <h2 class="main-footer__block-title">Звоните:</h2>
-            <a href="tel:+7(812)555-66-66" class="main-footer__block-content">+7 (812) 555-66-66</a>
-          </div>
-          <div class="main-footer__email">
-            <h2 class="main-footer__block-title">Пишите:</h2>
-            <span class="main-footer__block-content">mail@htmlacademy.ru</span>
-          </div>
-          <div class="main-footer__address">
-            <h2 class="main-footer__block-title">Приезжайте в гости:</h2>
-            <p class="main-footer__block-content">
-                  ул. Большая
-              Конюшенная, 19/8
-            </p>
-          </div>
+    <div class="main-footer">
+      <p class="main-footer__description">
+        Остались вопросы?
+        Свяжитесь с нами!
+       </p>
+      <div class="main-footer__contacts">
+        <div class="main-footer__tel">
+          <h2 class="main-footer__block-title">Звоните:</h2>
+          <a href="tel:+7(812)555-66-66" class="main-footer__block-content">+7 (812) 555-66-66</a>
+        </div>
+        <div class="main-footer__email">
+          <h2 class="main-footer__block-title">Пишите:</h2>
+          <span class="main-footer__block-content">mail@htmlacademy.ru</span>
+        </div>
+        <div class="main-footer__address">
+          <h2 class="main-footer__block-title">Приезжайте в гости:</h2>
+          <p class="main-footer__block-content">
+                ул. Большая
+            Конюшенная, 19/8
+          </p>
         </div>
       </div>
-      <div class="main-footer__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3361.271280570855!2d30.319529623612482!3d59.938383408501416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1511119616821" height="522" style="border:0;width:100%;" allowfullscreen></iframe>
-        <svg version="1.1" id="Слой_1" class="main-footer__map-triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        	 viewBox="190 1 320 123" style="enable-background:new 0 0 700 125;" xml:space="preserve">
-          <style type="text/css">
-          	.st0{fill:#FFFFFF;}
-          </style>
-          <polygon class="st0" points="350,123 -250,0 950,0 "/>
-        </svg>
-        <svg class="main-footer__map-marker" width="36" height="35"> <use xlink:href="#map-marker-image"></use></svg>
-      </div>
-      <div class="competition-footer">
-        <a class="site-logo site-logo--footer" title="Pink">
-            <img class="site-logo__image" src="img/logotype-blue-tablet.svg" alt="Logo" />
-        </a>
-        <div class="socials">
-            <a class="socials__element socials__element--twitter" href="http://twitter.com" title="twitter">
-              <svg class="socials__element-image" width="17.5" height="14.663"> <use xlink:href="#twitter"></use></svg>
-            </a>
-            <a class="socials__element socials__element--facebook" href="http://facebook.com" title="facebook">
-              <svg class="socials__element-image" width="8.673" height="18.944"> <use xlink:href="#facebook"></use></svg>
-            </a>
-            <a class="socials__element socials__element--youtube" href="http://youtube.com" title="youtube">
-              <svg class="socials__element-image" width="14.64" height="13.96"> <use xlink:href="#youtube"></use></svg>
-            </a>
-        </div>
-        <div class="copyright">
-          <span class="copyright__maked">Разработано</span>
-          <a class="copyright__link" href="http://htmlacademy.ru" title="html academy">
-            <svg id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               width="26.096px" height="33.803px" viewBox="0 0 26.096 33.803" enable-background="new 0 0 26.096 33.803" xml:space="preserve">
-            <g>
-              <path d="M13.047,0L0,1.456v24.475l13.047,7.835v0.037l13.049-7.872V1.557L13.047,0z M24.037,24.745l-10.989,6.622v-7.385
-                l-6.369-2.858v-0.021l6.373-2.816v-0.02h0.001v0.011l6.366,2.814v-0.006l0.01,0.006v-1.234l-6.366-2.813l-0.003,0.003l-0.007-0.003
-                v0.011h-0.001v-0.003L6.679,19.87v-1.235l0,0l5.848-2.584l-1.385-0.622l-4.463,1.973v-1.234l3.077-1.36l-1.385-0.622l-1.692,0.748
-                v-1.234l0.306-0.135l-3.73-1.674l9.793-4.248V2.084l10.989,1.321V24.745z"/>
-              <polygon points="19.428,17.389 14.958,15.414 13.57,16.035 19.428,18.624 	"/>
-              <polygon points="19.428,14.921 17.734,14.172 16.346,14.793 19.428,16.155 	"/>
-            </g>
-            </svg>
+    </div>
+    <div class="main-footer__map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3361.271280570855!2d30.319529623612482!3d59.938383408501416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1511119616821" height="522" style="border:0;width:100%;" allowfullscreen></iframe>
+      <svg version="1.1" width="100%" height="123" id="Слой_1" class="main-footer__map-triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      	 viewBox="190 1 320 123" style="enable-background:new 0 0 700 125;" xml:space="preserve">
+        <style type="text/css">
+        	.st0{fill:#FFFFFF;}
+        </style>
+        <polygon class="st0" points="350,123 -250,0 950,0 "/>
+       </svg>
+      <svg class="main-footer__map-marker" width="36" height="35"> <use xlink:href="#map-marker-image"></use></svg>
+    </div>
+    <footer class="competition-footer">
+      <a class="site-logo site-logo--footer" title="Pink">
+          <img class="site-logo__image" src="img/Pink-logo-footer-2@1x.png" alt="Logo" />
+      </a>
+      <div class="socials">
+          <a class="socials__element socials__element--twitter" href="http://twitter.com" title="twitter">
+            <svg class="socials__element-image" width="17.5" height="14.663"> <use xlink:href="#twitter"></use></svg>
           </a>
-        </div>
+          <a class="socials__element socials__element--facebook" href="http://facebook.com" title="facebook">
+            <svg class="socials__element-image" width="8.673" height="18.944"> <use xlink:href="#facebook"></use></svg>
+          </a>
+          <a class="socials__element socials__element--youtube" href="http://youtube.com" title="youtube">
+            <svg class="socials__element-image" width="14.64" height="13.96"> <use xlink:href="#youtube"></use></svg>
+          </a>
+      </div>
+      <div class="copyright">
+        <span class="copyright__maked">Разработано</span>
+        <a class="copyright__link" href="http://htmlacademy.ru" title="html academy">
+          <svg id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="26.096" height="33.803" viewBox="0 0 26.096 33.803" enable-background="new 0 0 26.096 33.803" xml:space="preserve">
+          <g>
+            <path d="M13.047,0L0,1.456v24.475l13.047,7.835v0.037l13.049-7.872V1.557L13.047,0z M24.037,24.745l-10.989,6.622v-7.385
+              l-6.369-2.858v-0.021l6.373-2.816v-0.02h0.001v0.011l6.366,2.814v-0.006l0.01,0.006v-1.234l-6.366-2.813l-0.003,0.003l-0.007-0.003
+              v0.011h-0.001v-0.003L6.679,19.87v-1.235l0,0l5.848-2.584l-1.385-0.622l-4.463,1.973v-1.234l3.077-1.36l-1.385-0.622l-1.692,0.748
+              v-1.234l0.306-0.135l-3.73-1.674l9.793-4.248V2.084l10.989,1.321V24.745z"/>
+            <polygon points="19.428,17.389 14.958,15.414 13.57,16.035 19.428,18.624 	"/>
+            <polygon points="19.428,14.921 17.734,14.172 16.346,14.793 19.428,16.155 	"/>
+          </g>
+          </svg>
+        </a>
       </div>
     </footer>
     <script src="build/js/picturefill.min.js"></script>

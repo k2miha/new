@@ -4,9 +4,12 @@
   max-width: 320px;
   position: relative;
   z-index: 1;
-  &--show {
+  &--show, &--no-js {
     display: $block;
     max-width: $full-width;
+  }
+  &--show &__button svg:last-child {
+    display: $none;
   }
   &--hide {
     display: $none;
@@ -77,6 +80,12 @@
   &__button svg {
     fill: $white;
   }
+  &__button svg:first-child {
+    display: $none;
+  }
+  &--show &__button svg:first-child {
+    display: inline;
+  }
   &__button:hover svg  {
     fill: $magenta;
   }
@@ -96,7 +105,7 @@
 @media (min-width: 700px) {
   .menu {
     max-width: 700px;
-  &--show {
+  &--show, &--no-js {
     max-width: $full-width;
   }
   &__button {

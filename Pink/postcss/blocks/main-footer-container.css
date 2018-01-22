@@ -1,8 +1,0 @@
-.main-footer-container > .competition-footer {
-  display: $none;
-}
-@media (min-width: 700px) {
-  .main-footer-container > .competition-footer {
-    display: flex;
-  }
-}

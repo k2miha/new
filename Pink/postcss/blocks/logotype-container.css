@@ -1,3 +1,7 @@
 .logotype-container {
     background-color: rgba(0,0,0,.3);
+    display: none;
+    &--show {
+      display: $block;
+    }
 }
