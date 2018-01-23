@@ -8,7 +8,7 @@
     display: $block;
     max-width: $full-width;
   }
-  &--show &__button svg:last-child {
+  &--show &__img-hamburger {
     display: $none;
   }
   &--hide {
@@ -43,14 +43,12 @@
   &__element_logo:first-child &__link {
       padding-top: 20px;
   }
-  &__element_logo:first-child &__link:hover .site-logo {
-    display: $none;
-  }
   &__element_logo &__link::before {
     content: "";
     display: $none;
     width: 147px;
     height: 40px;
+    background-color: $white;
     background: url("../../img/logotype-white-tablet.svg");
   }
   &__link {
@@ -80,10 +78,10 @@
   &__button svg {
     fill: $white;
   }
-  &__button svg:first-child {
+  &__img-cross {
     display: $none;
   }
-  &--show &__button svg:first-child {
+  &--show &__img-cross {
     display: inline;
   }
   &__button:hover svg  {
@@ -127,6 +125,7 @@
     display: $none;
     width: 147px;
     height: 40px;
+    background-color: $magenta;
     background: url("../../img/PINK copy.svg");
     background-repeat: $no-repeat;
   }

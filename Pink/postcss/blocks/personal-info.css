@@ -99,9 +99,6 @@
   border-color: $magenta;
   outline: $none;
 }
-.personal-info__name-section .personal-info__name-element-label:last-child .personal-info__element-text {
-  margin-bottom: -5px;
-}
 .personal-info__element-text::-webkit-input-placeholder, .personal-info__textarea::-webkit-input-placeholder {
   color: $blue;
 }

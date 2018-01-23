@@ -57,6 +57,7 @@
   display: $none;
 }
 .site-logo--footer:hover:active {
+  background-color: $blue;
   background: url("../../img/logotype-blue-tablet.svg");
   background-repeat: $no-repeat;
   opacity: .3;
@@ -66,6 +67,7 @@
   display: $inline-block;
   width: 147px;
   height: 40px;
+  background-color: $white;
   background: url("../../img/logotype-white-tablet.svg");
 }
 .site-logo svg {
@@ -88,7 +90,7 @@
     margin-right: 3px;
   }
 }
-@media (min-resolution: 2dppx) {
+@media (min-width: 700px) and (min-resolution: 2dppx) {
   .site-logo::before {
     background-image: url("../../img/Pink-logo-2@2x.png");
     background-size: cover;
@@ -106,15 +108,13 @@
   }
 }
 @media (min-width: 1200px) {
-  .site-logo:hover {
-    background-image: url("../../img/logotype-white-desktop-hover.svg");
-  }
  .site-logo__image {
    display: $none;
  }
  .site-logo--footer {
    width: 147px;
    height: 40px;
+   background-color: $blue;
    background: url("../../img/logotype-blue-desktop.svg");
    background-repeat: $no-repeat;
    margin-top: -19px;
