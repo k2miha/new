@@ -1,84 +1,84 @@
 .second-slider {
   max-width: 320px;
   @mixin margin_auto;
-  &__header-group {
-    background-color: $blue;
-  }
-  &__header {
-    text-align: $center;
-    padding-bottom: 16px;
-    overflow: hidden;
-    position: relative;
-    margin-left: 6.25%;
-    margin-right: 6.7%;
-    border-left: 2px solid $dark-grey;
-    border-right: 2px solid $dark-grey;
-    display: $none;
-  }
-  &__header-group &__header--active {
+  &--active {
     display: $block;
   }
-  &__package {
-    @mixin font_options $OpenSans_bold, $medium, $white, $biggest, $bold, $center, $uppercase;
-    padding-top: 16px;
-    margin: $zero;
-    margin-bottom: 2px;
-  }
-  &__price {
-    @mixin font_options $OpenSans_light, $big, $white, $biggest, $light, $center, $none;
-    padding-bottom: 4px;
-    display: $block;
-  }
-  &__hit {
-    @mixin font_options $OpenSans_regular, $small, $white, $biggest, 600, $center, $none;
-    background-color: $magenta;
-    transform: rotate(-45deg);
-    display: $block;
-    position: absolute;
-    left: -40%;
-    top: 8%;
-    width: $full-width;
-  }
-  &__option {
-    @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $left, $uppercase;
-    border-bottom: 2px solid $dark-grey;
-    margin-left: 6.25%;
-    margin-right: 6.7%;
-    border-left: 2px solid $dark-grey;
-    border-right: 2px solid $dark-grey;
-    padding-left: 22px;
-    padding-top: 14px;
-    padding-bottom: 15px;
-    position: relative;
-    }
-  &__option::before {
+}
+.second-slider__header-group {
+  background-color: $blue;
+}
+.second-slider__header {
+  text-align: $center;
+  padding-bottom: 16px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 6.25%;
+  margin-right: 6.7%;
+  border-left: 2px solid $dark-grey;
+  border-right: 2px solid $dark-grey;
+  display: $none;
+}
+.second-slider__package {
+  @mixin font_options $OpenSans_bold, $medium, $white, $biggest, $bold, $center, $uppercase;
+  padding-top: 16px;
+  margin: $zero;
+  margin-bottom: 2px;
+}
+.second-slider__price {
+  @mixin font_options $OpenSans_light, $big, $white, $biggest, $light, $center, $none;
+  padding-bottom: 4px;
+  display: $block;
+}
+.second-slider__hit {
+  @mixin font_options $OpenSans_regular, $small, $white, $biggest, 600, $center, $none;
+  background-color: $magenta;
+  transform: rotate(-45deg);
+  display: $block;
+  position: absolute;
+  left: -40%;
+  top: 8%;
+  width: $full-width;
+}
+.second-slider__option {
+  @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $left, $uppercase;
+  border-bottom: 2px solid $dark-grey;
+  margin-left: 6.25%;
+  margin-right: 6.7%;
+  border-left: 2px solid $dark-grey;
+  border-right: 2px solid $dark-grey;
+  padding-left: 22px;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  position: relative;
+  &::before {
     @mixin table_side_columns;
     left: -22px;
   }
-  &__option::after {
+  &::after {
     @mixin table_side_columns;
     right: -22px;
   }
-  &__option-check {
-    background-image: url("../../img/yes.svg");
-    background-repeat: $no-repeat;
-    background-position: 92% $center;
-  }
-  &__option--not-selected &__option-check {
-    background-image: $none;
-  }
-  &__option--not-selected {
+  &--not-selected {
     background-image: url("../../img/no.svg");
     background-repeat: $no-repeat;
     background-position: 92% $center;
   }
-  &__options {
-    background-color: $white;
-    @mixin list_reset;
-  }
-  & .slider-tumbler {
-    margin-top: 40px;
-  }
+}
+.second-slider__option-check {
+  background-image: url("../../img/yes.svg");
+  background-repeat: $no-repeat;
+  background-position: 92% $center;
+}
+.second-slider__option--not-selected .second-slider__option-check {
+  background-image: $none;
+}
+.second-slider__options {
+  background-color: $white;
+  @mixin list_reset;
+}
+.second-slider .slider-tumbler {
+  margin-top: 40px;
 }
 @media (min-width: 700px) {
   .second-slider {
@@ -88,47 +88,48 @@
     width: calc(100% - 80px);
     border-collapse: collapse;
     background-image: $none;
-  &__header, &__header:first-child, &__header:last-child, &__header-group &__header--active {
+  }
+  .second-slider__header, .second-slider__header:first-child, .second-slider__header:last-child, .second-slider__header-group .second-slider__header--active {
     display: table-cell;
     border-right: 2px solid $dark-grey;
     width: 25%;
     padding-bottom: 3px;
   }
-  &__header:first-child {
+  .second-slider__header:first-child {
     border-radius: 5px $zero $zero 5px;
   }
-  &__header:last-child {
+  .second-slider__header:last-child {
     border-right: $none;
     border-radius: $zero 3px 3px $zero;
   }
-  &__header-group::before {
-    content: "";
-    display: table-cell;
-    background-color: $grey;
-  }
-  &__hit {
+  .second-slider__hit {
     left: -38%;
     top: 5%;
   }
-  & .slider-tumbler {
+  .second-slider .slider-tumbler {
   display: $none;
   }
-  &__header-group {
+  .second-slider__header-group {
     display: table-header-group;
+    &::before {
+      content: "";
+      display: table-cell;
+      background-color: $grey;
+    }
   }
-  &__options {
+  .second-slider__options {
     display: table-row-group;
   }
-  &__option {
+  .second-slider__option {
     display: table-row;
+    &::after, &::before {
+      display: $none;
+    }
   }
-  &__option:first-child &__option-check:not(:first-child) {
+  .second-slider__option:first-child .second-slider__option-check:not(:first-child) {
     border-top: $none;
   }
-  &__option::after, &__option::before {
-    display: $none;
-  }
-  &__option-check {
+  .second-slider__option-check {
     display: table-cell;
     border: 2px solid $dark-grey;
     text-transform: $none;
@@ -137,24 +138,23 @@
     padding-bottom: 6px;
     background-position: $center $center;
   }
-  &__option-check:first-child, &__option--not-selected, &__option--not-selected &__option-check:first-child, &__option:nth-child(2) &__option-check:first-child  {
+  .second-slider__option-check:first-child, .second-slider__option--not-selected, .second-slider__option--not-selected .second-slider__option-check:first-child, .second-slider__option:nth-child(2) .second-slider__option-check:first-child  {
     background-image: $none;
   }
-  &__option--not-selected &__option-check:last-child {
+  .second-slider__option--not-selected .second-slider__option-check:last-child {
     background-image: url("../../img/yes.svg");
   }
-  &__option--not-selected &__option-check, &__option &__option--not-selected {
+  .second-slider__option--not-selected .second-slider__option-check, .second-slider__option .second-slider__option--not-selected {
     background-image: url("../../img/no.svg");
   }
-  &__package {
+  .second-slider__package {
     font-size: 16px;
     padding-top: 12px;
     margin-bottom: $zero;
   }
-  &__price {
+  .second-slider__price {
     font-size: $medium;
   }
- }
 }
 @media (min-width: 1200px) {
   .second-slider {
@@ -162,40 +162,40 @@
     margin-right: 130px;
     width: calc(100% - 260px);
     max-width: 1200px;
-    &__package {
-      font-size: $medium;
-      padding-top: 16px;
-      padding-bottom: 1px;
-    }
-    &__price {
-      font-size: $big;
-      padding-bottom: $medium;
-    }
-    &__hit {
-      left: -37%;
-      top: 6%;
-    }
-    &__option-check {
-      font-size: $medium;
-      padding-top: 15px;
-      padding-bottom: $small;
-      padding-left: 21px;
-      background-position: center 57%;
-    }
-    &__option:first-child &__option-check:first-child {
-      padding-top: 13px;
-    }
-    &__header {
-      padding-bottom: 19px;
-    }
-    &__header:first-child {
+  }
+  .second-slider__package {
+    font-size: $medium;
+    padding-top: 16px;
+    padding-bottom: 1px;
+  }
+  .second-slider__price {
+    font-size: $big;
+    padding-bottom: $medium;
+  }
+  .second-slider__hit {
+    left: -37%;
+    top: 6%;
+  }
+  .second-slider__option-check {
+    font-size: $medium;
+    padding-top: 15px;
+    padding-bottom: $small;
+    padding-left: 21px;
+    background-position: center 57%;
+  }
+  .second-slider__option:first-child .second-slider__option-check:first-child {
+    padding-top: 13px;
+  }
+  .second-slider__header {
+    padding-bottom: 19px;
+    &:first-child {
       border-left: none;
     }
   }
 }
 @media (min-width: 1201px) {
-.second-slider {
-  width: 940px;
-  @mixin margin_auto;
+  .second-slider {
+    width: 940px;
+    @mixin margin_auto;
   }
 }

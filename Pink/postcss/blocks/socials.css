@@ -3,39 +3,39 @@
   margin-bottom: 37px;
   width: 181px;
   @mixin margin_auto;
-  &__element {
-    text-decoration: $none;
-    width: 46px;
-    height: 45px;
-    display: $inline-block;
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgba(40, 54, 69, 0.1);
-    border-radius: $half-width;
-    line-height: 42px;
-    margin-right: 8px;
-  }
-  &__element:last-child {
+}
+.socials__element {
+  text-decoration: $none;
+  width: 46px;
+  height: 45px;
+  display: $inline-block;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgba(40, 54, 69, 0.1);
+  border-radius: $half-width;
+  line-height: 42px;
+  margin-right: 8px;
+  &:last-child {
     margin-right: $zero;
   }
-  &__element:hover {
+  &:hover {
     border-color: rgba(40, 54, 69, 1);
   }
-  &__element:active img{
-    opacity: .3;
-  }
-  &__element:active {
+  &:active {
     border-color: rgba(40, 54, 69, 0.1);
   }
 }
+.socials__element:active img{
+  opacity: .3;
+}
 @media (min-width: 700px) {
-.socials {
-  flex-grow: 1;
-  margin-bottom: $zero;
-  &__element {
+  .socials {
+    flex-grow: 1;
+    margin-bottom: $zero;
+  }
+  .socials__element {
     line-height: 46px;
   }
- }
 }
 @media (min-width: 1200px) {
   .socials__element {

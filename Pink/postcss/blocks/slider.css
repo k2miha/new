@@ -1,42 +1,42 @@
 .slider {
   max-width: 320px;
   @mixin margin_auto;
-  &__title {
-    @mixin font_options $OpenSans_bold, $medium, $black, $biggest, $bold, $center, $none;
-    margin-top: 42px;
-    margin-bottom: 13px;
-  }
-  &__description {
-    @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
-    margin-left: 5.93%;
-    margin-right: 5.93%;
-    margin-bottom: 33px;
-    margin-top: $zero;
+}
+.slider__title {
+  @mixin font_options $OpenSans_bold, $medium, $black, $biggest, $bold, $center, $none;
+  margin-top: 42px;
+  margin-bottom: 13px;
+}
+.slider__description {
+  @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
+  margin-left: 5.93%;
+  margin-right: 5.93%;
+  margin-bottom: 33px;
+  margin-top: $zero;
+  display: $none;
+  &:nth-of-type(2) {
     display: $none;
   }
-  &__description:nth-of-type(2) {
-    display: $none;
-  }
-  &__description&__description--show {
-    display: $block;
-  }
-  &__description::before {
+  &::before {
     content: "«";
     margin-right: -5px;
   }
-  &__description::after {
+  &::after {
     content: "»";
     margin-left: -5px;
   }
-  &__subtitle {
-    display: $none;
-  }
-  &__arrow {
-    display: $none;
-  }
-  &__desktop-br {
-    display: $none;
-  }
+}
+.slider__description .slider__description--show {
+  display: $block;
+}
+.slider__subtitle {
+  display: $none;
+}
+.slider__arrow {
+  display: $none;
+}
+.slider__desktop-br {
+  display: $none;
 }
 @media (min-width: 700px) {
   .slider {
@@ -47,43 +47,38 @@
     background-color: $white;
     display: flex;
     flex-direction: column;
-  &__title {
+  }
+  .slider__title {
     font-size: 20px;
     order: 2;
     font-family: $OpenSans_regular;
     margin-top: 34px;
     margin-bottom: 34px;
-     }
-  &__subtitle {
+  }
+  .slider__subtitle {
     @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $none;
     display: $block;
     margin-top: 2px;
   }
-  &__description {
+  .slider__description {
     font-size: $medium;
     margin: 94px $zero $zero;
     order: 1;
   }
- }
 }
 @media (min-width: 1200px) {
-.slider {
-  padding-top: $zero;
-  @mixin desktop_padding;
-  max-width: 1200px;
-  &__description::before {
-    content: "";
+  .slider {
+    padding-top: $zero;
+    @mixin desktop_padding;
+    max-width: 1200px;
   }
-  &__description::after {
-    content: "";
-  }
-  &__tablet-br {
+  .slider__tablet-br {
     display: $none;
   }
-  &__desktop-br {
+  .slider__desktop-br {
     display: $block;
   }
-  &__description {
+  .slider__description {
     padding-top: 185px;
     margin-top: $zero;
     background-image: url("../../img/quotes.svg");
@@ -93,34 +88,39 @@
     margin-left: $auto;
     margin-right: $auto;
     position: relative;
+    &::before {
+      content: "";
+    }
+    &::after {
+      content: "";
+    }
   }
-  &__title {
+  .slider__title {
     margin-top: 37px;
     font-size: $big;
     margin-bottom: 36px;
   }
-  &__subtitle {
+  .slider__subtitle {
     font-size: $medium;
   }
-  &__arrow {
+  .slider__arrow {
     left: -74.5px;
     @mixin slider_toggle;
     opacity: .3;
+    &:last-child {
+      right: -74.5px;
+      left: inherit;
+      transform: rotate(180deg);
+      @mixin slider_toggle;
+      opacity: .3;
+    }
+    &:hover   {
+      opacity: 1;
+    }
+    &:active {
+      opacity: .1;
+    }
   }
-  &__arrow:last-child {
-    right: -74.5px;
-    left: inherit;
-    transform: rotate(180deg);
-    @mixin slider_toggle;
-    opacity: .3;
-  }
-  &__arrow:hover   {
-    opacity: 1;
-  }
-  &__arrow:active {
-    opacity: .1;
-  }
- }
 }
 @media (min-width: 1201px) {
   .slider__title {

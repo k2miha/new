@@ -5,49 +5,49 @@
   margin-top: -32px;
   position: relative;
   z-index: 1;
-  &__download-link {
-    @mixin font_options $OpenSans_bold, $medium, $white, $medium, $regular, $center, $none;
-    vertical-align: top;
-    border-radius: 28px;
-    padding-top: 13px;
-    padding-bottom: 17px;
-    border: 3px solid $white;
-    text-decoration: $none;
-    margin: $auto;
-    margin-bottom: 32px;
-    display: $block;
-    width: 276px;
   }
-  &__download-link:hover {
+.platforms__download-link {
+  @mixin font_options $OpenSans_bold, $medium, $white, $medium, $regular, $center, $none;
+  vertical-align: top;
+  border-radius: 28px;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  border: 3px solid $white;
+  text-decoration: $none;
+  margin: $auto;
+  margin-bottom: 32px;
+  display: $block;
+  width: 276px;
+  &:hover {
     background: $white;
     color: $magenta;
   }
-  &__download-link:active {
+  &:active {
     color: rgba(210, 40, 86, 0.3);
   }
-  &__description {
-    @mixin font_options $OpenSans_light, $small, $white, $big, $light, $center, $none;
-    padding-left: 33px;
-    padding-right: 33px;
-    box-sizing: border-box;
-    margin: $zero;
-    max-width: 320px;
-    @mixin margin_auto;
-  }
-  &__images {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 18px;
-    width: 204px;
-    @mixin margin_auto;
-  }
-  &__android {
-    margin-top: 7px;
-    margin-left: -3px;
-  }
-  &__windows {
-    margin-top: 9px;
-  }
+}
+.platforms__description {
+  @mixin font_options $OpenSans_light, $small, $white, $big, $light, $center, $none;
+  padding-left: 33px;
+  padding-right: 33px;
+  box-sizing: border-box;
+  margin: $zero;
+  max-width: 320px;
+  @mixin margin_auto;
+}
+.platforms__images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  width: 204px;
+  @mixin margin_auto;
+}
+.platforms__android {
+  margin-top: 7px;
+  margin-left: -3px;
+}
+.platforms__windows {
+  margin-top: 9px;
 }
 @media (min-width: 700px) {
   .platforms {
@@ -59,39 +59,39 @@
     z-index: 1;
     background-color: transparent;
     padding-top: 32px;
-    &__download-link {
-      width:$auto;
-      margin-bottom: 46px;
-    }
-    &__images {
-      margin-left: 47px;
-      margin-right: 47px;
-      margin-bottom: 32px;
-      width: $auto;
-    }
-    &__description {
-      font-size: $medium;
-      padding: $zero;
-    }
-    &__android {
-      opacity: 0.4;
-    }
+  }
+  .platforms__download-link {
+    width:$auto;
+    margin-bottom: 46px;
+  }
+  .platforms__images {
+    margin-left: 47px;
+    margin-right: 47px;
+    margin-bottom: 32px;
+    width: $auto;
+  }
+  .platforms__description {
+    font-size: $medium;
+    padding: $zero;
+  }
+  .platforms__android {
+    opacity: 0.4;
   }
 }
 @media (min-width: 1200px) {
   .platforms {
     margin-left: 130px;
     margin-top: 20px;
-    &__download-link {
-      font-size: 21px;
-      font-weight: $normal;
-      margin-bottom: 67px;
-    }
-    &__android {
-      opacity: 1;
-    }
-    &__images {
-      margin-bottom: 50px;
-    }
+  }
+  .platforms__download-link {
+    font-size: 21px;
+    font-weight: $normal;
+    margin-bottom: 67px;
+  }
+  .platforms__android {
+    opacity: 1;
+  }
+  .platforms__images {
+    margin-bottom: 50px;
   }
 }

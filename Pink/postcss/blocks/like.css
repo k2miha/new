@@ -6,23 +6,23 @@
   padding-left: 17px;
   margin-left: 20px;
   margin-right: 20px;
-  &__button {
-    @mixin button_reset;
-    padding-right: 15px;
   }
-  &__description {
-    @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center, $uppercase;
-  }
-  &__count {
-    @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center, $none;
-  }
+.like__button {
+  @mixin button_reset;
+  padding-right: 15px;
+}
+.like__description {
+  @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center, $uppercase;
+}
+.like__count {
+  @mixin font_options $OpenSans_regular, $smallest, $magenta, $big, $regular, $center, $none;
 }
 @media (min-width: 700px) {
-.like {
-  @mixin margin_reset;
-  margin-bottom: $zero;
-  &__count {
+  .like {
+    @mixin margin_reset;
+    margin-bottom: $zero;
+  }
+  .like__count {
     margin-left: 4px;
   }
- }
 }

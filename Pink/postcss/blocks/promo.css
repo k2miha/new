@@ -4,102 +4,103 @@
   @mixin margin_auto;
   margin-top: 16px;
   margin-bottom: 16px;
-  &__content-title {
-    @mixin font_options $OpenSans_regular, $medium, $black, 13px, $bold, $center;
-    margin: $zero;
-  }
-  &__content-description {
-    @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $center;
-    margin-bottom: 37px;
-    margin-top: 17px;
-  }
-  &__item {
-    padding-left: 7.5%;
-    padding-right: 7.5%;
-  }
-  &__item:last-child {
+}
+.promo__content-title {
+  @mixin font_options $OpenSans_regular, $medium, $black, 13px, $bold, $center;
+  margin: $zero;
+}
+.promo__content-description {
+  @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $center;
+  margin-bottom: 37px;
+  margin-top: 17px;
+}
+.promo__item {
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+  &:last-child {
     padding: $zero 20px;
   }
-  &__desktop-br {
-    display: $none;
-  }
-  &__tablet-br {
-    display: $none;
-  }
-  &__item-image {
-    display: $none;
-  }
+}
+.promo__desktop-br {
+  display: $none;
+}
+.promo__tablet-br {
+  display: $none;
+}
+.promo__item-image {
+  display: $none;
 }
 @media (min-width: 700px) {
   .promo {
-      flex-basis: 353px;
-      min-width: 310px;
-      position: relative;
-      top: 153px;
-      left: 43px;
-      max-width: $none;
-      @mixin margin_reset;
-  &__tablet-br {
+    flex-basis: 353px;
+    min-width: 310px;
+    position: relative;
+    top: 153px;
+    left: 43px;
+    max-width: $none;
+    @mixin margin_reset;
+  }
+  .promo__tablet-br {
     display: $block;
   }
-  &__content-title, &__content-description {
+  .promo__content-title, .promo__content-description {
     text-align: left;
   }
-  &__item, &__item:last-child {
+  .promo__item, .promo__item:last-child {
     padding-right: $zero;
     padding-left: $zero;
   }
-  &__content-description {
+  .promo__content-description {
     margin-bottom: 40px;
   }
- }
 }
 @media (min-width: 1200px) {
   .promo {
-      flex-basis: $full-width;
-      display: flex;
-      top: 104px;
-      left: -21px;
-  &__tablet-br {
+    flex-basis: $full-width;
+    display: flex;
+    top: 104px;
+    left: -21px;
+  }
+  .promo__tablet-br {
     display: $none;
   }
-  &__item-image {
+  .promo__item-image {
     display: inline;
   }
-  &__desktop-br {
+  .promo__desktop-br {
     display: $block;
   }
-  &__item:first-child &__content-description {
+  .promo__item:first-child .promo__content-description {
     padding-left: 48px;
     padding-right: 25px;
   }
-  &__item:nth-child(2) &__content-description {
+  .promo__item:nth-child(2) .promo__content-description {
     padding-left: 56px;
     padding-right: 31px;
   }
-  &__item:nth-child(1) &__item-image {
+  .promo__item:nth-child(1) .promo__item-image {
     margin-left: 25px;
   }
-  &__item:nth-child(2) &__item-image {
+  .promo__item:nth-child(2) .promo__item-image {
     margin-left: 31px;
   }
-  &__item:nth-child(3) &__item-image {
+  .promo__item:nth-child(3) .promo__item-image {
     margin-left: 29px;
   }
-  &__content-title {
+  .promo__content-title {
     padding-top: 50px;
     font-size: $biggest;
     line-height: $biggest;
     text-align: $center;
   }
-  &__item:nth-child(2) &__content-title {
+  .promo__item:nth-child(2) .promo__content-title {
     padding-left: 44px;
     padding-right: 27px;
   }
-  &__item:nth-child(3) &__content-title {
+  .promo__item:nth-child(3) .promo__content-title {
     padding-left: 10px;
   }
-  &__content-description {
+  .promo__content-description {
     font-size: $medium;
     line-height: $biggest;
     text-align: $center;
@@ -107,9 +108,8 @@
     padding-right: 45px;
     margin-top: 24px;
   }
-  &__item:last-child &__content-description {
+  .promo__item:last-child .promo__content-description {
     padding-left: 45px;
     padding-right: 28px;
   }
- }
 }

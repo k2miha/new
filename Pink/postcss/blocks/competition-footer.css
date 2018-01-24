@@ -2,12 +2,12 @@
   @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $uppercase;
   margin-top: 35px;
   margin-bottom: 55px;
+  &--desktop {
+    display: $none;
+  }
 }
 .competition-footer__form-field-marker {
   color: $magenta;
-}
-.competition-footer__form-field-requirements.competition-footer__form-field-requirements--desktop {
-  display: $none;
 }
 @media (min-width: 700px) {
   .competition-footer {
@@ -16,30 +16,30 @@
     @mixin tablet_padding;
     @mixin margin_auto;
     align-items: $center;
-  & .site-logo::before {
+  }
+  .competition-footer .site-logo::before {
     display: $none;
     }
-  &__form-field-requirements {
+  .competition-footer__form-field-requirements {
     text-align: right;
     margin-top: calc($small + 4px);
     margin-bottom: $small;
   }
  }
-}
 @media (min-width: 1200px) {
   .competition-footer {
     max-width: calc(1200px - 260px);
     margin-top: 74px;
     margin-bottom: 72px;
     @mixin desktop_padding;
-    &__form-field-requirements {
-      display: $none;
-    }
-    &__form-field-requirements&__form-field-requirements--desktop {
+  }
+  .competition-footer__form-field-requirements {
+    display: $none;
+    &--desktop {
       flex-basis: 320px;
       display: $block;
       position: relative;
       left: -1px;
     }
+   }
   }
-}

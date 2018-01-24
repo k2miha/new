@@ -4,29 +4,29 @@
   display: flex;
   justify-content: space-between;
   align-items: $center;
-&__element {
+}
+.slider-tumbler__element {
   width: 6px;
   height: 6px;
   padding: $zero;
   border-radius: $half-width;
   border: $none;
   background-color: rgba(40, 54, 69, 0.3);
-}
-&__element:hover {
-  background-color: rgba(40, 54, 69, 0.6);
-}
-&__element:active {
-  background-color: rgba(40, 54, 69, 0.1);
-}
-&__element--active {
-  width: 12px;
-  height: 12px;
-  border-width: 3px;
-  border-style: solid;
-  border-color: rgb(40, 54, 69);
-  background-color: $transparent;
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
   }
-  &__element--active:hover {
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+  &--active {
+    width: 12px;
+    height: 12px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(40, 54, 69);
+    background-color: $transparent;
+    }
+  &--active:hover {
     background-color: $transparent;
   }
 }

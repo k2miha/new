@@ -2,19 +2,19 @@
   justify-content: $center;
   display: flex;
   align-items: center;
-  &__maked {
-    @mixin font_options $OpenSans_regular, $small, $blue, $medium, $regular, $center, $none;
-    margin-right: 15px;
-  }
-  &__link:hover svg {
-    fill: $blue;
-  }
-  &__link:active {
-    opacity: .3;
-  }
-  &__link svg {
-    fill: $magenta;
-  }
+}
+.copyright__maked {
+  @mixin font_options $OpenSans_regular, $small, $blue, $medium, $regular, $center, $none;
+  margin-right: 15px;
+}
+.copyright__link:hover svg {
+  fill: $blue;
+}
+.copyright__link:active {
+  opacity: .3;
+}
+.copyright__link svg {
+  fill: $magenta;
 }
 @media (min-width: 700px) {
 .copyright {
@@ -25,8 +25,8 @@
 @media (min-width: 1200px) {
 .copyright {
   margin-left: -5px;
-  &__maked {
-    font-size: $medium;
-    }
+}
+.copyright__maked {
+  font-size: $medium;
   }
 }

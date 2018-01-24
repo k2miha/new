@@ -2,16 +2,6 @@
   margin-top: 12px;
   position: relative;
   overflow: hidden;
-  &__slogan {
-    @mixin font_options $OpenSans_light, $big, $blue, 29px, $light, $center, $none;
-    margin-top: 29px;
-    margin-bottom: $zero;
-    max-width: 320px;
-    @mixin margin_auto;
-  }
-  &__slogan:last-child {
-    padding-bottom: 99px;
-  }
   &::after {
     display: $block;
     content: "";
@@ -22,38 +12,48 @@
     border-left-width: 100vw;
   }
 }
+  .content__slogan {
+    @mixin font_options $OpenSans_light, $big, $blue, 29px, $light, $center, $none;
+    margin-top: 29px;
+    margin-bottom: $zero;
+    max-width: 320px;
+    @mixin margin_auto;
+    &:last-child {
+      padding-bottom: 99px;
+    }
+  }
 @media (min-width: 700px) {
 .content {
   background-image: $none;
   margin-bottom: -26px;
   margin-top: $zero;
-  &__slogan {
+  &::after {
+    display: $none;
+  }
+}
+  .content__slogan {
     font-size: 40px;
     margin-top: 49px;
     line-height: 48px;
     max-width: $none;
+    &:last-child {
+      margin-top: $zero;
+      width: 334px;
+      margin: $auto;
+      padding-bottom: $zero;
+    }
   }
-  &::after {
-    display: $none;
-  }
-  &__slogan:last-child {
-    margin-top: $zero;
-    width: 334px;
-    margin: $auto;
-    padding-bottom: $zero;
-  }
- }
 }
 @media (min-width: 1200px) {
   .content {
     margin-top: 25px;
-  &__slogan {
+  }
+  .content__slogan {
     font-size: 50px;
+    &:last-child {
+      width: 417px;
+      margin-top: 7px;
+      line-height: 59px;
+    }
   }
-  &__slogan:last-child {
-    width: 417px;
-    margin-top: 7px;
-    line-height: 59px;
-  }
- }
 }

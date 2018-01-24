@@ -3,72 +3,72 @@
   background-color: $grey;
   display: flex;
   flex-direction: column;
-  &__image {
-    margin-left: 18px;
-    margin-right: 20px;
-    padding-top: 20px;
-    margin-bottom: 39px;
   }
-  &__crop-image {
-    width: 44px;
-    height: 44px;
-    margin-right: 36px;
-    fill: $blue;
-    opacity: 0.3;
-  }
-  &__crop-image:hover {
+.photo-editor__image {
+  margin-left: 18px;
+  margin-right: 20px;
+  padding-top: 20px;
+  margin-bottom: 39px;
+}
+.photo-editor__crop-image {
+  width: 44px;
+  height: 44px;
+  margin-right: 36px;
+  fill: $blue;
+  opacity: 0.3;
+  &:hover {
     opacity: 0.5;
   }
-  &__image-modification-button--active &__crop-image {
-    fill: $magenta;
-    opacity: 1;
-  }
-  &__fill-image {
-    width: 48px;
-    height: 43px;
-    margin-right: 36px;
-    fill: $blue;
-    opacity: 0.3;
-  }
-  &__fill-image:hover {
+}
+.photo-editor__image-modification-button--active .photo-editor__crop-image {
+  fill: $magenta;
+  opacity: 1;
+}
+.photo-editor__fill-image {
+  width: 48px;
+  height: 43px;
+  margin-right: 36px;
+  fill: $blue;
+  opacity: 0.3;
+  &:hover {
     opacity: 0.5;
   }
-  &__image-modification-button--active &__fill-image {
-    fill: $magenta;
-    opacity: 1;
-  }
-  &__contrast-image {
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
-    fill: $blue;
-  }
-  &__image-modification-button:nth-of-type(3) {
-    position: relative;
-    top: -5px;
-  }
-  &__contrast-image:hover {
+}
+.photo-editor__image-modification-button--active .photo-editor__fill-image {
+  fill: $magenta;
+  opacity: 1;
+}
+.photo-editor__contrast-image {
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  fill: $blue;
+  &:hover {
     opacity: 0.5;
   }
-  &__image-modification-button--active   &__contrast-image {
-    fill: $magenta;
-    opacity: 1;
-  }
-  &__image-modification-button {
-    @mixin button_reset;
-  }
-  &__image-modification-button span {
-    display: $block;
-  }
-  &__functions {
-    margin-bottom: 33px;
-  }
-  &__range {
-    height: 2px;
-    background-color: $blue;
-    position: relative;
-  }
-  &__range::after {
+}
+.photo-editor__image-modification-button:nth-of-type(3) {
+  position: relative;
+  top: -5px;
+}
+.photo-editor__image-modification-button--active .photo-editor__contrast-image {
+  fill: $magenta;
+  opacity: 1;
+}
+.photo-editor__image-modification-button {
+  @mixin button_reset;
+}
+.photo-editor__image-modification-button span {
+  display: $block;
+}
+.photo-editor__functions {
+  margin-bottom: 33px;
+}
+.photo-editor__range {
+  height: 2px;
+  background-color: $blue;
+  position: relative;
+  &::after {
     content: "";
     display: block;
     width: 10px;
@@ -81,174 +81,174 @@
     top: -6px;
     background-color: $grey;
   }
-  &__range:nth-child(8)::after {
+  &:nth-child(8)::after {
       right: 35px;
   }
-  &__range:nth-child(-n+5) {
+  &:nth-child(-n+5) {
     display: $none;
     margin-bottom: 11px;
   }
-  &__range:nth-child(8) {
+  &:nth-child(8) {
     display: $block;
     margin: $auto;
     width: 240px;
     margin-top: 34px;
   }
-  &__range:active::after {
+  &:active::after {
     background-color: $magenta;
   }
-  &__button {
-    @mixin font_options $OpenSans_bold, $medium, $magenta, $medium, $bold, $center, $none;
-    display: $block;
-    margin: $auto;
-    margin-bottom: $smallest;
-    border-radius: 28px;
-    border-color: $magenta;
-    border-width: 3px;
-    border-style: solid;
-    padding-top: 14px;
-    padding-bottom: 17px;
-    width: 280px;
-    background-color: $grey;
-  }
-  &__button:not(&__button--cancel):hover {
+}
+.photo-editor__button {
+  @mixin font_options $OpenSans_bold, $medium, $magenta, $medium, $bold, $center, $none;
+  display: $block;
+  margin: $auto;
+  margin-bottom: $smallest;
+  border-radius: 28px;
+  border-color: $magenta;
+  border-width: 3px;
+  border-style: solid;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  width: 280px;
+  background-color: $grey;
+  &:not(&--cancel):hover {
     color: $white;
     background-color: $magenta;
   }
-  &__button:not(&__button--cancel):active {
+  &:not(&--cancel):active {
     color: rgba(255, 255, 255, 0.3);
   }
-  &__button--cancel {
+  &--cancel {
     color: $blue;
     opacity: .1;
     border-color: $blue;
   }
-  &__button--cancel:hover {
+  &--cancel:hover {
     opacity: 0.3;
   }
-  &__button--cancel:active {
+  &--cancel:active {
     background-color: $blue;
     color: rgba(255, 255, 255, 0.3);
   }
-  &__function-tuning {
-    padding-bottom: 29px;
-  }
+}
+.photo-editor__function-tuning {
+  padding-bottom: 29px;
 }
 hr {
   border-bottom: $none;
   border-top-color: rgba(40, 54, 69, 0.1);
-}
-hr:not(:last-of-type) {
-  margin-bottom: 38px;
-  display: $none;
-}
-hr:last-of-type {
-  margin-top: 34px;
-  margin-bottom: 39px;
+  &:not(:last-of-type) {
+    margin-bottom: 38px;
+    display: $none;
+  }
+  &:last-of-type {
+    margin-top: 34px;
+    margin-bottom: 39px;
+  }
 }
 @media (min-width: 700px) {
   .photo-editor {
     flex-direction: row;
-  &__image {
+  }
+  .photo-editor__image {
     margin-left: 40px;
     margin-bottom: 49px;
     margin-right: 27px;
     padding-top: 57px;
   }
-  &__function-container {
+  .photo-editor__function-container {
     flex-grow: 1;
     margin-right: 40px;
     margin-top: 66px;
   }
-  &__crop-image {
+  .photo-editor__crop-image {
     width: 22px;
     height: 22px;
     margin-right: $zero;
     opacity: 1;
     fill: $magenta;
+    &:hover {
+      opacity: 1;
+    }
   }
-  &__crop-image:hover {
-    opacity: 1;
-  }
-  &__fill-image {
+  .photo-editor__fill-image {
     width: 24px;
     height: 22px;
     margin-right: $zero;
     opacity: 1;
     fill: $magenta;
+    &:hover {
+      opacity: 1;
+    }
   }
-  &__fill-image:hover {
-    opacity: 1;
-  }
-  &__contrast-image {
+  .photo-editor__contrast-image {
     width: 16px;
     height: 16px;
     top: 6px;
     opacity: 1;
     fill: $magenta;
+    &:hover {
+      opacity: 1;
+    }
   }
-  &__contrast-image:hover {
-    opacity: 1;
-  }
-  &__range {
-      margin-bottom: 24px;
-      margin-right: 18px;
-      width: 69%;
-  }
-  &__range:not(:first-of-type) {
-    display: $inline-block;
-  }
-  &__range:nth-child(-n+5) {
-    display: $inline-block;
-    margin-bottom: 10px;
-  }
-  &__range:nth-child(2)::after {
-      right: 42px;
-  }
-  &__range:nth-child(5)::after {
-      left: 25px;
-  }
-  &__range:nth-child(8)::after {
-      left: 96px;
-  }
-  &__range:nth-child(8) {
-    width: 69%;
-    margin-top: $zero;
+  .photo-editor__range {
+    margin-bottom: 24px;
     margin-right: 18px;
+    width: 69%;
+    &:not(:first-of-type) {
+      display: $inline-block;
+    }
+    &:nth-child(-n+5) {
+      display: $inline-block;
+      margin-bottom: 10px;
+    }
+    &:nth-child(2)::after {
+        right: 42px;
+    }
+    &:nth-child(5)::after {
+        left: 25px;
+    }
+    &:nth-child(8)::after {
+        left: 96px;
+    }
+    &:nth-child(8) {
+      width: 69%;
+      margin-top: $zero;
+      margin-right: 18px;
+    }
   }
-  &__image-modification-button  {
+  .photo-editor__image-modification-button {
     margin-right: 26px;
     margin-left: 16px;
+    &:nth-of-type(2) {
+      margin-left: 17px;
+      margin-right: 23px;
+    }
+    &:nth-of-type(3) {
+      margin-left: 21px;
+      margin-right: 27px;
+      top: 5px;
+    }
   }
-  &__image-modification-button:nth-of-type(2) {
-    margin-left: 17px;
-    margin-right: 23px;
-  }
-  &__image-modification-button:nth-of-type(3) {
-    margin-left: 21px;
-    margin-right: 27px;
-    top: 5px;
-  }
-  &__button {
+  .photo-editor__button {
     margin-bottom: 24px;
     margin-left: 20px;
     width: 260px;
     }
-  }
   hr {
     margin-bottom: 27px;
-  }
-  hr:last-of-type {
-    margin-bottom: 67px;
-    margin-top: 30px;
-  }
-  hr:not(:last-of-type) {
-    display: $block;
-    margin-top: 20px;
-    margin-bottom: 25px;
-  }
-  hr:nth-child(6) {
-      margin-bottom: 19px;
+    &:last-of-type {
+      margin-bottom: 67px;
+      margin-top: 30px;
+    }
+    &:not(:last-of-type) {
+      display: $block;
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
+    &:nth-child(6) {
+        margin-bottom: 19px;
+    }
   }
 }
 @media (min-width: 1200px) {
@@ -256,71 +256,71 @@ hr:last-of-type {
     margin-left: 130px;
     margin-right: 130px;
     margin-bottom: 103px;
-    &__image {
-      margin-left: 80px;
-      margin-right: 68px;
+  }
+  .photo-editor__image {
+    margin-left: 80px;
+    margin-right: 68px;
+  }
+  .photo-editor__function-container {
+    margin-right: 60px;
+    margin-top: 55px;
+  }
+  .photo-editor__crop-image {
+    width: 44px;
+    height: 44px;
+    margin-right: $zero;
+  }
+  .photo-editor__fill-image {
+    width: 48px;
+    height: 43px;
+  }
+  .photo-editor__contrast-image {
+    width: 32px;
+    height: 32px;
+  }
+  .photo-editor__button {
+    display: $inline-block;
+    width: 183px;
+    margin-left: 20px;
+    font-weight: $regular;
+    vertical-align: top;
+    &--cancel {
+      margin-left: 41px;
     }
-    &__function-container {
-      margin-right: 60px;
-      margin-top: 55px;
-    }
-    &__crop-image {
-      width: 44px;
-      height: 44px;
-      margin-right: $zero;
-    }
-    &__fill-image {
-      width: 48px;
-      height: 43px;
-    }
-    &__contrast-image {
-      width: 32px;
-      height: 32px;
-    }
-    &__button {
-      display: $inline-block;
-      width: 183px;
-      margin-left: 20px;
-      font-weight: $regular;
-      vertical-align: top;
-    }
-    &__function-tuning {
-      padding-bottom: 35px;
-    }
-    &__image-modification-button {
-      margin-right: 45px;
-      margin-left: 9px;
-    }
-    &__image-modification-button:nth-of-type(2) {
+  }
+  .photo-editor__function-tuning {
+    padding-bottom: 35px;
+  }
+  .photo-editor__image-modification-button {
+    margin-right: 45px;
+    margin-left: 9px;
+    &:nth-of-type(2) {
       margin-left: 17px;
       margin-right: 40px;
     }
-    &__image-modification-button:nth-of-type(3) {
+    &:nth-of-type(3) {
       margin-left: 17px;
       margin-right: 50px;
       top: 7px;
     }
-    &__button--cancel {
-      margin-left: 41px;
-    }
-    &__range:nth-child(-n+5) {
-      width: 66.5%;
-      margin-bottom: 22px;
-    }
-    &__range:nth-child(8) {
-      width: 66.5%;
-      position: relative;
-      top: -10px;
-    }
-    &__range:nth-child(2)::after {
-        right: 203px;
-    }
-    &__range:nth-child(5)::after {
-        left: 247px;
-    }
-    &__range:nth-child(8)::after {
-        left: 158px;
-    }
+  }
+  .photo-editor__range:nth-child(-n+5) {
+    width: 66.5%;
+    margin-bottom: 22px;
+  }
+  .photo-editor__range:nth-child(8) {
+    width: 66.5%;
+    position: relative;
+    top: -10px;
+  }
+  .photo-editor__range:nth-child(2)::after {
+      right: 203px;
+  }
+  .photo-editor__range:nth-child(5)::after {
+      left: 247px;
+  }
+  .photo-editor__range:nth-child(8)::after {
+      left: 158px;
   }
   hr:not(:last-of-type) {
     margin-top: 8px;

@@ -7,12 +7,12 @@
     max-width: 320px;
     @mixin margin_auto;
   }
-  &--short .main-header {
-    padding-bottom: 82px;
-  }
-  &--short .main-header--short {
-    padding-bottom: 53px;
-  }
+}
+.main-header-container--short .main-header {
+  padding-bottom: 82px;
+}
+.main-header-container--short .main-header--short {
+  padding-bottom: 53px;
 }
 @media (min-width: 321px) {
   .main-header-container {
@@ -28,13 +28,13 @@
       @mixin margin_auto;
       min-height: 440px;
     }
-    &--short .main-header {
-      min-height:$auto;
-      padding-bottom: 141px;
-    }
-    &--short .menu__container {
-      max-width: $full-width;
-    }
+  }
+  .main-header-container--short .main-header {
+    min-height:$auto;
+    padding-bottom: 141px;
+  }
+  .main-header-container--short .menu__container {
+    max-width: $full-width;
   }
 }
 @media (min-width: 718px) {

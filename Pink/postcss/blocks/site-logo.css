@@ -1,12 +1,12 @@
 .site-logo {
   text-decoration: $none;
-  &--footer {
-    display: $block;
-    text-align: $center;
-    margin-top: 40px;
-    margin-bottom: 37px;
-  }
-  &--footer:hover {
+}
+.site-logo--footer {
+  display: $block;
+  text-align: $center;
+  margin-top: 40px;
+  margin-bottom: 37px;
+  &:hover {
     background: url("../../img/PINK copy.svg");
     background-repeat: no-repeat;
     width: 147px;
@@ -15,26 +15,26 @@
     margin-bottom: 37px;
     @mixin margin_auto;
   }
-  &--footer:hover &__image {
-    display: $none;
-  }
-  &--footer:hover:active {
+  &:hover:active {
     background: url("../../img/logotype-blue-tablet.svg");
     background-repeat: no-repeat;
     opacity: .3;
   }
-  & svg {
-    fill: $white;
-    position: relative;
-    z-index: 10;
-  }
-  & svg:hover {
-    fill: $magenta;
-  }
-  & svg:active {
-    opacity: .3;
-    fill: $white;
-  }
+}
+.site-logo--footer:hover .site-logo__image {
+  display: $none;
+}
+.site-logo svg {
+  fill: $white;
+  position: relative;
+  z-index: 10;
+}
+.site-logo svg:hover {
+  fill: $magenta;
+}
+.site-logo svg:active {
+  opacity: .3;
+  fill: $white;
 }
 @media (min-width: 700px) {
 .site-logo:hover {

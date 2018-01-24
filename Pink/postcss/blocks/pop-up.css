@@ -2,28 +2,6 @@
   display: $none;
   max-width: 320px;
   margin: $auto;
-&__button {
-  margin-top: 50px;
-  @mixin button;
-  }
-  &__button-container {
-    height: 163px;
-    background-color: #f2f2f2;
-    @mixin mobile_padding;
-  }
-  &__header {
-    @mixin font_options $OpenSans_bold, $medium, $black, $big, $bold, $center;
-    padding-top: 46px;
-    padding-bottom: 32px;
-    margin: $zero;
-  }
-  &__message {
-    @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $center;
-    padding-left: 22px;
-    padding-right: 22px;
-    margin-bottom: 37px;
-    margin-top: $zero;
-  }
   &--show {
     display: $block;
     position: absolute;
@@ -35,29 +13,51 @@
     box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   }
 }
+.pop-up__button {
+  margin-top: 50px;
+  @mixin button;
+}
+.pop-up__button-container {
+  height: 163px;
+  background-color: #f2f2f2;
+  @mixin mobile_padding;
+}
+.pop-up__header {
+  @mixin font_options $OpenSans_bold, $medium, $black, $big, $bold, $center;
+  padding-top: 46px;
+  padding-bottom: 32px;
+  margin: $zero;
+}
+.pop-up__message {
+  @mixin font_options $OpenSans_regular, $small, $blue, $big, $regular, $center;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-bottom: 37px;
+  margin-top: $zero;
+}
 @media (min-width: 700px) {
   .pop-up {
     max-width: 484px;
-    &__header {
-      font-size: $biggest;
-      line-height: 40px;
-      @mixin margin_auto;
-    }
-    &__message {
-      font-size: $medium;
-      width: 63%;
-      @mixin margin_auto;
-    }
-    &__button {
-      width: 299px;
-      position: absolute;
-      left: $half-width;
-      margin-left: -150px;
-    }
     &--show {
       bottom: 1199px;
       border-radius: 3px;
     }
+  }
+  .pop-up__header {
+    font-size: $biggest;
+    line-height: 40px;
+    @mixin margin_auto;
+  }
+  .pop-up__message {
+    font-size: $medium;
+    width: 63%;
+    @mixin margin_auto;
+  }
+  .pop-up__button {
+    width: 299px;
+    position: absolute;
+    left: $half-width;
+    margin-left: -150px;
   }
 }
 @media (min-width: 1200px) {
@@ -66,8 +66,8 @@
     &--show {
       bottom: 401px;
     }
-    &__message {
-      width: 55%;
-    }
+  }
+  .pop-up__message {
+    width: 55%;
   }
 }
