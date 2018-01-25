@@ -1,9 +1,6 @@
 .second-slider {
   max-width: 320px;
   @mixin margin_auto;
-  &--active {
-    display: $block;
-  }
 }
 .second-slider__header-group {
   background-color: $blue;
@@ -18,6 +15,9 @@
   border-left: 2px solid $dark-grey;
   border-right: 2px solid $dark-grey;
   display: $none;
+  &--active {
+    display: $block;
+  }
 }
 .second-slider__package {
   @mixin font_options $OpenSans_bold, $medium, $white, $biggest, $bold, $center, $uppercase;

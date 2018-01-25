@@ -32,13 +32,13 @@
 }
 @media (min-width: 700px) {
   .promo {
-    flex-basis: 353px;
+    flex-basis: 329px;
     min-width: 310px;
-    position: relative;
-    top: 153px;
-    left: 43px;
+    margin-bottom: $zero;
+    margin-right: $zero;
+    margin-top: 153px;
+    margin-left: 43px;
     max-width: $none;
-    @mixin margin_reset;
   }
   .promo__tablet-br {
     display: $block;

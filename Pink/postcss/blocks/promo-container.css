@@ -1,12 +1,10 @@
 .promo-container {
   background-color: $grey;
   text-align: $center;
-  overflow: hidden;
   padding-top: 55px;
   margin-top: -36px;
 }
 .promo-container__content-image {
-  margin-bottom: -43px;
   @mixin margin_auto;
 }
 @media (min-width: 700px) {

@@ -3,6 +3,7 @@
       padding-bottom: 48px;
       background-image: url("../../img/Shape 2 copy.svg");
       background-position: -92px -18px;
+      background-repeat: $no-repeat;
 }
 @media (min-width: 700px) {
   .second-slider-container {

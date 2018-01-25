@@ -26,7 +26,7 @@
     margin-left: -5px;
   }
 }
-.slider__description .slider__description--show {
+.slider__description.slider__description--show {
   display: $block;
 }
 .slider__subtitle {
