@@ -1,3 +1,7 @@
+.competition-footer {
+  max-width: 320px;
+  @mixin margin_auto;
+}
 .competition-footer__form-field-requirements {
   @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $uppercase;
   margin-top: 35px;

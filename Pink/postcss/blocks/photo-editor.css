@@ -285,7 +285,7 @@ hr {
     font-weight: $regular;
     vertical-align: top;
     &--cancel {
-      margin-left: 41px;
+      margin-left: 29px;
     }
   }
   .photo-editor__function-tuning {
