@@ -119,11 +119,6 @@
   .menu__link svg {
     display: $none;
   }
-  .menu__element_logo:first-child .menu__link:hover {
-    background: $none;
-    width: 75px;
-    margin-top: $zero;
-  }
   .menu__element_logo .menu__link:hover::before {
     content: "";
     display: $none;

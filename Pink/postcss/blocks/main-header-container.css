@@ -54,12 +54,15 @@
 }
 @media (min-width: 1200px) {
   .main-header-container {
+    position: relative;
     min-height: 853px;
-    background-image: url("../../img/back-desktop.jpg");
     &--short {
       min-height: 394px;
       max-width: $full-width;
     }
+  }
+  .main-header-container--short .main-header {
+    padding-bottom: 53px;
   }
 }
 @media (min-width: 1218px) {

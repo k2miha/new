@@ -20,6 +20,7 @@
 }
 .main-header__right-side {
   margin-top: 106px;
+  max-width: $full-width;
 }
 @media (min-width: 700px) {
   .main-header {
@@ -69,7 +70,7 @@
   .main-header {
     max-width: 1200px;
     @mixin margin_auto;
-    position: relative;
+    position: static;
   }
   .main-header__title {
     font-size: 50px;
@@ -84,7 +85,6 @@
     max-width: 1200px;
   }
   .main-header__right-side {
-    top: -117px;
     right: 4px;
   }
 }

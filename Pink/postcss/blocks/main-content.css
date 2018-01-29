@@ -1,17 +1,17 @@
 .main-content--fixed {
-      max-width: 320px;
-      @mixin margin_auto;
-      background-image: $none;
-    }
+  max-width: 320px;
+  @mixin margin_auto;
+  background-image: $none;
+}
 @media (min-width: 700px) {
-.main-content--fixed {
+  .main-content--fixed {
     max-width: 700px;
-    }
   }
+ }
 @media (min-width: 1200px) {
   .main-content {
     max-width: 1200px;
     @mixin margin_auto;
     background-image: $none;
-    }
+  }
 }

@@ -4,26 +4,43 @@
   padding-top: 55px;
   margin-top: -36px;
 }
-.promo-container__content-image {
-  @mixin margin_auto;
-}
 @media (min-width: 700px) {
   .promo-container {
     display: flex;
+    position: relative;
+    overflow: hidden;
     flex-direction: row-reverse;
     padding-top: 11px;
     background-color: transparent;;
-    background-image: url("../../img/Shape 2-tablet.svg");
-    background-position-y: 40px;
-    background-repeat: no-repeat;
     min-height: 558px;
     justify-content: center;
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 80px;
+      border-bottom: solid #f2f2f2 59px;
+      border-left: solid transparent;
+      border-left-width: 100vw;
+      z-index: -1;
+    }
+    &::after {
+      display: $block;
+      content: "";
+      position: absolute;
+      top: 139px;
+      width: $full-width;
+      height: $full-width;
+      z-index: -1;
+      background-color: $grey;
+    }
   }
   .promo-container__content-image {
     flex-basis: 50%;
     margin-top: 76px;
     height: $auto;
-    margin-bottom: -73px;
+    margin-bottom: -3px;
+    max-width: $full-width;
   }
 }
 @media (min-width: 1200px) {
@@ -32,13 +49,11 @@
     background-position-y: 99px;
     min-height: 715px;
     margin-left: $zero;
+    &::before, &::after {
+      display: $none;
+    }
   }
   .promo-container__content-image {
     display: $none;
   }
-}
-@media (min-width: 1201px) {
-  .promo-container {
-    background-image: $none;
-    }
 }

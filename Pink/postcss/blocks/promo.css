@@ -58,14 +58,15 @@
   .promo {
     flex-basis: $full-width;
     display: flex;
-    top: 104px;
-    left: -21px;
+    margin-top: 100px;
+    margin-left: -44px;
   }
   .promo__tablet-br {
     display: $none;
   }
   .promo__item-image {
     display: inline;
+    max-width: 340px;
   }
   .promo__desktop-br {
     display: $block;

@@ -36,6 +36,9 @@
   opacity: .3;
   fill: $white;
 }
+.site-logo__image {
+  max-width: $full-width;
+}
 @media (min-width: 700px) {
 .site-logo:hover {
   background-image: $none;
@@ -88,6 +91,7 @@
     margin-top: 36px;
     margin-bottom: 51px;
     margin-right: 3px;
+    flex-basis: 145px;
   }
 }
 @media (min-width: 700px) and (min-resolution: 2dppx) {
@@ -112,7 +116,6 @@
    display: $none;
  }
  .site-logo--footer {
-   width: 147px;
    height: 40px;
    background-color: $blue;
    background: url("../../img/logotype-blue-desktop.svg");
@@ -120,6 +123,7 @@
    margin-top: -19px;
    margin-bottom: $zero;
    margin-right: 11px;
+   flex-basis: 147px;
  }
  .site-logo--footer:hover {
    height: 40px;

@@ -10,6 +10,7 @@
     border-bottom: solid $grey 94px;
     border-left: solid $transparent;
     border-left-width: 100vw;
+    z-index: -1;
   }
   &::after {
     display: $block;

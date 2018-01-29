@@ -37,7 +37,7 @@
   cursor: pointer;
   border: $none;
   width: $full-width;
-  height: 63px;
+  min-height: 63px;
   border-radius: 2px;
 }
 .personal-info__form [disabled] {
@@ -453,7 +453,7 @@
    padding-bottom: 1px;
    margin-top: 56px;
    margin-left: $zero;
-   height: 159px;
+   min-height: 159px;
  }
  .personal-info__contacts-tablet .personal-info__title {
    margin-left: 328px;
@@ -479,8 +479,11 @@
  .personal-info__achievements .personal-info__title {
    margin-left: 192px;
  }
- .personal-info__achievements-element-column:nth-child(2) {
-   margin-left: -8px;
+ .personal-info__achievements-element-column {
+   max-width: 32%;
+   &:nth-child(2) {
+     margin-left: -8px;
+   }
  }
  .personal-info__element-label {
    margin-left: 74px;
