@@ -21,9 +21,7 @@
   padding-right: 4%;
   position: relative;
   z-index: 1;
-  &:first-of-type {
-    text-decoration: $none;
-  }
+  text-decoration: $none;
 }
 .main-footer__email .main-footer__block-content:hover {
   color: $blue;

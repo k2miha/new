@@ -38,6 +38,7 @@
 .platforms__images {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 18px;
   width: 204px;
   @mixin margin_auto;

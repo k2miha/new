@@ -3,6 +3,7 @@
   @mixin margin_auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: $center;
 }
 .slider-tumbler__element {

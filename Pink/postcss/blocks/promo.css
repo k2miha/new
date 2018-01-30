@@ -57,12 +57,16 @@
 @media (min-width: 1200px) {
   .promo {
     flex-basis: $full-width;
+    flex-wrap: wrap;
     display: flex;
     margin-top: 100px;
     margin-left: -44px;
   }
   .promo__tablet-br {
     display: $none;
+  }
+  .promo__item {
+    max-width: 307px;
   }
   .promo__item-image {
     display: inline;

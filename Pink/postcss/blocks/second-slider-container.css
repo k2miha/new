@@ -1,15 +1,38 @@
 .second-slider-container {
-      padding-top: 133px;
-      padding-bottom: 48px;
-      background-image: url("../../img/Shape 2 copy.svg");
-      background-position: -92px -18px;
-      background-repeat: $no-repeat;
+  padding-top: 133px;
+  padding-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 43px;
+    border-bottom: solid #f2f2f2 27px;
+    border-left: solid transparent;
+    border-left-width: 100vw;
+    z-index: -1;
+  }
+  &::after {
+    display: $block;
+    content: "";
+    position: absolute;
+    top: 70px;
+    width: $full-width;
+    height: calc($full-width - 70px);
+    z-index: -1;
+    background-color: $grey;
+  }
 }
 @media (min-width: 700px) {
   .second-slider-container {
-        padding-bottom: 70px;
-        padding-top: 109px;
-      }
+    padding-bottom: 70px;
+    padding-top: 109px;
+    &::before {
+      top: 18px;
+      border-bottom: solid #f2f2f2 54px;
+    }
+  }
 }
 @media (min-width: 983px) {
   .second-slider-container {
@@ -19,14 +42,16 @@
 @media (min-width: 1200px) {
   .second-slider-container {
     padding-top: 152px;
+    background-image: url("../../img/Shape 2 copy.svg");
+    background-repeat: $no-repeat;
     background-position: $zero -4px;
     padding-bottom: 94px;
   }
 }
 @media (min-width: 1201px) {
-.second-slider-container {
-  background-repeat: $no-repeat;
-  background-size: cover;
-  margin-top: 36px;
+  .second-slider-container {
+    background-repeat: $no-repeat;
+    background-size: cover;
+    margin-top: 36px;
   }
 }

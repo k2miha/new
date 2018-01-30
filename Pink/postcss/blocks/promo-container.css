@@ -1,8 +1,11 @@
 .promo-container {
   background-color: $grey;
   text-align: $center;
-  padding-top: 55px;
+  padding-top: 40px;
   margin-top: -36px;
+}
+.promo-container__content-image {
+  margin-bottom: -4px;
 }
 @media (min-width: 700px) {
   .promo-container {
@@ -39,7 +42,6 @@
     flex-basis: 50%;
     margin-top: 76px;
     height: $auto;
-    margin-bottom: -3px;
     max-width: $full-width;
   }
 }
@@ -49,11 +51,20 @@
     background-position-y: 99px;
     min-height: 715px;
     margin-left: $zero;
-    &::before, &::after {
+    &::before {
+      top: 114px;
+      border-bottom: solid $grey 94px;
+    }
+    &::after {
       display: $none;
     }
   }
   .promo-container__content-image {
+    display: $none;
+  }
+}
+@media (min-width: 1200px) {
+  .promo-container::before {
     display: $none;
   }
 }

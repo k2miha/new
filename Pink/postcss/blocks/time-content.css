@@ -5,6 +5,7 @@
   .time-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     @mixin tablet_padding;
     padding-top: 58px;
     max-width: 700px;
@@ -20,7 +21,7 @@
   }
   .time-content__number {
     position: absolute;
-    top: 49%;
+    top: 137px;
     left: $zero;
     right: $zero;
     @mixin font_options $OpenSans_bold, 96px, $magenta, $biggest, $regular, $center, $none;
@@ -41,6 +42,7 @@
   }
   .time-content__right-link {
     @mixin font_options $OpenSans_regular, $small, $magenta, $big, $regular, $left, $none;
+    display: $block;
   }
 }
 @media (min-width: 1200px) {
