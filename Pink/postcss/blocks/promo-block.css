@@ -1,0 +1,13 @@
+.promo-block {
+  position: relative;
+  &::after {
+    display: $block;
+    content: "";
+    position: absolute;
+    top: 208px;
+    width: $full-width;
+    height: calc($full-width - 208px);
+    z-index: -1;
+    background-color: $grey;
+  }
+}

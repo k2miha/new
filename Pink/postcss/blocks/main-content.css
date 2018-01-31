@@ -9,7 +9,7 @@
   }
  }
 @media (min-width: 1200px) {
-  .main-content {
+  .main-content--fixed {
     max-width: 1200px;
     @mixin margin_auto;
     background-image: $none;

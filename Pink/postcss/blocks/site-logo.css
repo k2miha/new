@@ -45,8 +45,10 @@
   height: $auto;
 }
 .site-logo--footer:hover {
-  background: url("../../img/PINK copy.svg");
+  background-image: url("../../img/PINK copy.svg");
   background-repeat: $no-repeat;
+  background-size: contain;
+  background-position: $center;
   width: 147px;
   height: 44.5px;
   margin-top: 36px;
@@ -119,6 +121,7 @@
    height: 40px;
    background-color: $blue;
    background: url("../../img/logotype-blue-desktop.svg");
+   background-size: contain;
    background-repeat: $no-repeat;
    margin-top: -19px;
    margin-bottom: $zero;

@@ -4,11 +4,11 @@
   margin-left: 29px;
   margin-right: 29px;
   margin-bottom: 48px;
-}
-.photos__description:last-child {
-  margin-top: 40px;
-  margin-left: 25px;
-  margin-bottom: 42px;
+  &:last-child {
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-bottom: 42px;
+  }
 }
 .photos__element--panorama .photos__element-comment {
   margin-bottom: 20px;
@@ -77,11 +77,11 @@
     margin-right: 57px;
     margin-bottom: 76px;
     margin-top: 92px;
-  }
-  .photos__description:last-child {
-    margin-top: 45px;
-    margin-left: 55px;
-    margin-bottom: 69px;
+    &:last-child {
+      margin-top: 45px;
+      margin-left: 55px;
+      margin-bottom: 69px;
+    }
   }
   .photos__br-mobile {
     display: $none;
@@ -207,7 +207,8 @@
   .photos__container .photos__element {
     margin-bottom: 54px;
   }
-  .photos__description:last-child {
+  .photos__description.photos__description--bottom {
+    width: $auto;
     margin-top: 5px;
     margin-bottom: 66px;
     margin-left: $auto;

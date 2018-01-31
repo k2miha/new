@@ -1,26 +1,5 @@
 @media (min-width: 1200px) {
 .main-content-container {
-  position: relative;
   overflow: hidden;
-  &::after {
-    display: $block;
-    content: "";
-    position: absolute;
-    top: calc($full-width - 958px);
-    width: $full-width;
-    height: calc($full-width - 246px);
-    z-index: -1;
-    background-color: $grey;
-  }
-  &::before {
-    top: 325px;
-    border-bottom: solid $grey 94px;
-    display: block;
-    content: "";
-    position: absolute;
-    border-left: solid transparent;
-    border-left-width: 100vw;
-    z-index: -1;
-  }
  }
 }

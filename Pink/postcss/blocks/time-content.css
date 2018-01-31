@@ -60,7 +60,7 @@
   }
   .time-content__number {
     font-size: 120px;
-    top: $half-width;
+    top: 175px;
   }
   .time-content__right-side {
     flex-basis: 574px;

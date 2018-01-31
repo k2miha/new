@@ -208,7 +208,10 @@
     font-size: $medium;
     width: 72%;
     margin-top: 92px;
-    margin-bottom: 71px;
+    margin-bottom: $zero;
+  }
+  .personal-info__name-section {
+    margin-top: 71px;
   }
   .personal-info__custom-radio-element, .personal-info__custom-element {
     margin-right: 15px;
@@ -405,6 +408,7 @@
 }
 .personal-info__name-section {
     flex-basis: 435px;
+    margin-top: $zero;
 }
 .personal-info__title-application {
   margin-left: 30px;
@@ -492,6 +496,7 @@
  }
  .personal-info__label-container {
    margin-bottom: 54px;
+   flex-wrap: wrap;
  }
  .personal-info__contacts-tablet .personal-info__name-element-label {
    margin-bottom: 13px;

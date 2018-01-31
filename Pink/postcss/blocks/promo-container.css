@@ -47,24 +47,21 @@
 }
 @media (min-width: 1200px) {
   .promo-container {
-    @mixin desktop_padding;
-    background-position-y: 99px;
-    min-height: 715px;
-    margin-left: $zero;
     &::before {
       top: 114px;
       border-bottom: solid $grey 94px;
+      display: block;
+      content: "";
+      position: absolute;
+      border-left: solid transparent;
+      border-left-width: 100vw;
+      z-index: -1;
     }
     &::after {
       display: $none;
     }
   }
   .promo-container__content-image {
-    display: $none;
-  }
-}
-@media (min-width: 1200px) {
-  .promo-container::before {
     display: $none;
   }
 }

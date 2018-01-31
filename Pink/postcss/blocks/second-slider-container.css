@@ -8,7 +8,7 @@
     content: "";
     position: absolute;
     top: 43px;
-    border-bottom: solid #f2f2f2 27px;
+    border-bottom: solid $grey 27px;
     border-left: solid transparent;
     border-left-width: 100vw;
     z-index: -1;
@@ -30,28 +30,25 @@
     padding-top: 109px;
     &::before {
       top: 18px;
-      border-bottom: solid #f2f2f2 54px;
+      border-bottom: solid $grey 54px;
     }
-  }
-}
-@media (min-width: 983px) {
-  .second-slider-container {
-    background-position: inherit;
   }
 }
 @media (min-width: 1200px) {
   .second-slider-container {
     padding-top: 152px;
-    background-image: url("../../img/Shape 2 copy.svg");
-    background-repeat: $no-repeat;
-    background-position: $zero -4px;
     padding-bottom: 94px;
+    &::before {
+      top: 3px;
+      border-bottom: solid $grey 83px;
+    }
+    &::after {
+      top: 86px;
+    }
   }
 }
 @media (min-width: 1201px) {
   .second-slider-container {
-    background-repeat: $no-repeat;
-    background-size: cover;
     margin-top: 36px;
   }
 }

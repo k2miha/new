@@ -61,6 +61,10 @@
     display: flex;
     margin-top: 100px;
     margin-left: -44px;
+    @mixin desktop_padding;
+    min-height: 715px;
+    margin-left: $zero;
+    margin-bottom: -100px;
   }
   .promo__tablet-br {
     display: $none;
@@ -76,12 +80,16 @@
     display: $block;
   }
   .promo__item:first-child .promo__content-description {
-    padding-left: 48px;
-    padding-right: 25px;
+    padding-left: 32px;
+    padding-right: 38px;
   }
   .promo__item:nth-child(2) .promo__content-description {
-    padding-left: 56px;
+    padding-left: 52px;
     padding-right: 31px;
+  }
+  .promo__item:last-child .promo__content-description {
+    padding-left: 54px;
+    padding-right: 11px;
   }
   .promo__item:nth-child(1) .promo__item-image {
     margin-left: 25px;
@@ -103,7 +111,7 @@
     padding-right: 27px;
   }
   .promo__item:nth-child(3) .promo__content-title {
-    padding-left: 10px;
+    padding-left: 28px;
   }
   .promo__content-description {
     font-size: $medium;
@@ -112,9 +120,5 @@
     padding-left: 44px;
     padding-right: 45px;
     margin-top: 24px;
-  }
-  .promo__item:last-child .promo__content-description {
-    padding-left: 45px;
-    padding-right: 28px;
   }
 }
