@@ -9,8 +9,8 @@
   &:hover {
     background: url("../../img/PINK copy.svg");
     background-repeat: no-repeat;
-    width: 147px;
-    height: 44.5px;
+    width: 145px;
+    height: 44px;
     margin-top: 40px;
     margin-bottom: 37px;
     @mixin margin_auto;
@@ -48,9 +48,8 @@
   background-image: url("../../img/PINK copy.svg");
   background-repeat: $no-repeat;
   background-size: contain;
-  background-position: $center;
-  width: 147px;
-  height: 44.5px;
+  width: 145px;
+  height: 44px;
   margin-top: 36px;
   margin-bottom: 51px;
   margin-right: 3px;
@@ -133,6 +132,8 @@
    margin-top: -19px;
    margin-bottom: $zero;
    margin-right: 11px;
+   background: url("../../img/Pink-logo-footer-3@2x.png");
+   background-size: cover;
  }
  .site-logo:hover:active {
    background: url("../../img/logotype-blue-desktop.svg");

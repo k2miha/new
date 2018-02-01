@@ -54,7 +54,6 @@
 }
 @media (min-width: 1200px) {
   .main-header-container {
-    position: relative;
     min-height: 853px;
     &--short {
       min-height: 394px;

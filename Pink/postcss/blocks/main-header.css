@@ -70,7 +70,7 @@
   .main-header {
     max-width: 1200px;
     @mixin margin_auto;
-    position: static;
+    min-height: 634px;
   }
   .main-header__title {
     font-size: 50px;

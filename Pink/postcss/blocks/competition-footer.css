@@ -6,9 +6,9 @@
   @mixin font_options $OpenSans_regular, $small, $blue, $biggest, $regular, $center, $uppercase;
   margin-top: 35px;
   margin-bottom: 55px;
-  &--desktop {
-    display: $none;
-  }
+}
+.competition-footer__form-field-requirements-desktop {
+  display: $none;
 }
 .competition-footer__form-field-marker {
   color: $magenta;
@@ -38,12 +38,11 @@
     @mixin desktop_padding;
   }
   .competition-footer__form-field-requirements {
-    display: $none;
-    &--desktop {
-      flex-basis: 320px;
-      display: $block;
-      position: relative;
-      left: -1px;
-    }
+    flex-basis: 320px;
    }
+  .competition-footer__form-field-requirements-desktop {
+    display: inline;
+    position: relative;
+    left: -1px;
   }
+}

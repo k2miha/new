@@ -47,17 +47,9 @@
 }
 @media (min-width: 1200px) {
   .promo-container {
-    &::before {
-      top: 114px;
-      border-bottom: solid $grey 94px;
-      display: block;
-      content: "";
-      position: absolute;
-      border-left: solid transparent;
-      border-left-width: 100vw;
-      z-index: -1;
-    }
-    &::after {
+    max-width: 1200px;
+    @mixin margin_auto;
+    &::after, &::before {
       display: $none;
     }
   }

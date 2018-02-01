@@ -1,5 +1,4 @@
 var login = document.querySelector(".personal-info__element-text");
-var modalOpenButton = document.querySelector(".personal-info__form [type=submit]");
 var modalCloseButton = document.querySelector(".pop-up_failure .pop-up__button");
 var modalCloseButtonSuccess = document.querySelector(".pop-up__button");
 var modalSuccess = document.querySelector(".pop-up");

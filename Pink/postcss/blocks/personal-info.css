@@ -39,6 +39,8 @@
   width: $full-width;
   min-height: 63px;
   border-radius: 2px;
+  text-decoration: $none;
+  line-height: 63px;
 }
 .personal-info__form [disabled] {
   background-color: $dark-grey;

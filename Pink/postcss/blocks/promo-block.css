@@ -1,13 +1,25 @@
-.promo-block {
-  position: relative;
-  &::after {
-    display: $block;
-    content: "";
-    position: absolute;
-    top: 208px;
-    width: $full-width;
-    height: calc($full-width - 208px);
-    z-index: -1;
-    background-color: $grey;
+@media (min-width: 1200px) {
+  .promo-block {
+    position: relative;
+    &::before {
+      top: 114px;
+      border-bottom: solid $grey 94px;
+      display: block;
+      content: "";
+      position: absolute;
+      border-left: solid transparent;
+      border-left-width: 100vw;
+      z-index: -1;
+    }
+    &::after {
+      display: $block;
+      content: "";
+      position: absolute;
+      top: 208px;
+      width: $full-width;
+      height: calc($full-width - 208px);
+      z-index: -1;
+      background-color: $grey;
+    }
   }
 }

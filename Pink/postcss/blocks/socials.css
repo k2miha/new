@@ -22,7 +22,7 @@
     border-color: rgba(40, 54, 69, 1);
   }
   &:active {
-    border-color: rgba(40, 54, 69, 0.1);
+    border-color: rgba(40, 54, 69, 0.05);
   }
 }
 .socials__element:active img{
