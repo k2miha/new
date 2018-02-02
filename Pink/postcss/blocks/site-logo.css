@@ -1,5 +1,8 @@
 .site-logo {
   text-decoration: $none;
+  &:active {
+    opacity: .3;
+  }
 }
 .site-logo--footer {
   display: $block;
@@ -29,7 +32,16 @@
   position: relative;
   z-index: 10;
 }
-.site-logo svg:hover {
+.site-logo--footer svg {
+  fill: $magenta;
+}
+.site-logo--footer .st0 {
+  fill: $blue; 
+}
+.site-logo:active:hover .st0 {
+  fill: $white;
+}
+.site-logo:hover .st0 {
   fill: $magenta;
 }
 .site-logo svg:active {
@@ -40,55 +52,46 @@
   max-width: $full-width;
 }
 @media (min-width: 700px) {
-.site-logo:hover {
-  background-image: $none;
-  height: $auto;
-}
-.site-logo--footer:hover {
-  background-image: url("../../img/PINK copy.svg");
-  background-repeat: $no-repeat;
-  background-size: contain;
-  width: 145px;
-  height: 44px;
-  margin-top: 36px;
-  margin-bottom: 51px;
-  margin-right: 3px;
-}
-.site-logo:hover .site-logo__image {
-  display: $none;
-}
-.site-logo:hover:active .site-logo__text {
-  display: $none;
-}
-.site-logo--footer:hover:active {
-  background-color: $blue;
-  background: url("../../img/logotype-blue-tablet.svg");
-  background-repeat: $no-repeat;
-  opacity: .3;
-}
-.site-logo::before {
-  content: "";
-  display: $inline-block;
-  width: 147px;
-  height: 40px;
-  background-color: $white;
-  background: url("../../img/logotype-white-tablet.svg");
-}
-.site-logo svg {
-  display: $none;
-}
-.site-logo:hover::before {
-  background: url("../../img/PINK copy.svg");
-  background-repeat: $no-repeat;
-}
-.site-logo:active::before {
-  background: url("../../img/logotype-white-tablet.svg");
-  opacity: .3;
-}
-.site-logo__text {
-  display: $none;
+  .site-logo:hover {
+    background-image: $none;
+    height: $auto;
   }
-.site-logo--footer {
+  .site-logo:hover .st2 {
+    fill: $magenta;
+  }
+  .site-logo:active:hover .st2 {
+    fill: $white;
+  }
+  .site-logo--footer:hover {
+    background-image: url("../../img/PINK copy.svg");
+    background-repeat: $no-repeat;
+    background-size: contain;
+    width: 145px;
+    height: 44px;
+    margin-top: 36px;
+    margin-bottom: 51px;
+    margin-right: 3px;
+  }
+  .site-logo:hover .site-logo__image {
+    display: $none;
+  }
+  .site-logo:hover:active .site-logo__text {
+    display: $none;
+  }
+  .site-logo--footer:hover:active {
+    background-color: $blue;
+    background: url("../../img/logotype-blue-tablet.svg");
+    background-repeat: $no-repeat;
+    opacity: .3;
+  }
+  .site-logo:hover::before {
+    background: url("../../img/PINK copy.svg");
+    background-repeat: $no-repeat;
+  }
+  .site-logo__text {
+    display: $none;
+    }
+  .site-logo--footer {
     margin-top: 36px;
     margin-bottom: 51px;
     margin-right: 3px;
