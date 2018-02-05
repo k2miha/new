@@ -124,6 +124,9 @@
       max-width: 700px;
     }
   }
+  .tablet-glasses {
+    display: inline;
+  }
   .menu__button {
     height: $auto;
   }
@@ -133,20 +136,11 @@
   .menu__logo g:first-of-type {
     transform: translate($zero);
   }
-  .tablet-glasses {
-    display: inline;
-  }
   .menu__link:hover .st2 {
     fill: $magenta;
   }
-  .menu__element_logo .menu__link:hover::before {
-    content: "";
-    display: $none;
-    width: 147px;
-    height: 40px;
-    background-color: $magenta;
-    background: url("../../img/PINK copy.svg");
-    background-repeat: $no-repeat;
+  .menu__link .tablet-glasses {
+    fill: $white;
   }
   .menu__element:first-child .site-logo {
     display: $none;
@@ -184,6 +178,9 @@
   .menu__logo g:not(:last-of-type) {
     display: inline;
   }
+  .stars .st1 {
+    fill: $white;
+  }
   .stars .st0 {
     fill: $magenta;
   }
@@ -195,7 +192,6 @@
   }
   .menu__link:active:hover .st1, .menu__link:active:hover .st0 {
     fill: $white;
-    opacity: .3;
   }
   .menu__button {
     display: $none;

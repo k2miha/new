@@ -10,18 +10,9 @@
   margin-top: 40px;
   margin-bottom: 37px;
   &:hover {
-    background: url("../../img/PINK copy.svg");
-    background-repeat: no-repeat;
-    width: 145px;
-    height: 44px;
     margin-top: 40px;
     margin-bottom: 37px;
     @mixin margin_auto;
-  }
-  &:hover:active {
-    background: url("../../img/logotype-blue-tablet.svg");
-    background-repeat: no-repeat;
-    opacity: .3;
   }
 }
 .site-logo--footer:hover .site-logo__image {
@@ -32,42 +23,60 @@
   position: relative;
   z-index: 10;
 }
-.site-logo--footer svg {
+.site-logo .tablet-glasses {
+  display: $none;
+}
+.site-logo--footer .tablet-glasses {
+  display: inline;
+}
+.tablet-glasses {
   fill: $magenta;
 }
 .site-logo--footer .st0 {
-  fill: $blue; 
-}
-.site-logo:active:hover .st0 {
-  fill: $white;
+  fill: $blue;
 }
 .site-logo:hover .st0 {
   fill: $magenta;
 }
+.site-logo:hover:active .st0 {
+  fill: $white;
+}
+.site-logo--footer:hover:active .st0 {
+  fill: $blue;
+}
 .site-logo svg:active {
-  opacity: .3;
   fill: $white;
 }
 .site-logo__image {
   max-width: $full-width;
+}
+.site-logo--footer g:first-of-type {
+  transform: translate($zero);
 }
 @media (min-width: 700px) {
   .site-logo:hover {
     background-image: $none;
     height: $auto;
   }
+  .site-logo .st2 {
+    fill: $white;
+  }
   .site-logo:hover .st2 {
     fill: $magenta;
   }
-  .site-logo:active:hover .st2 {
+  .site-logo:hover:active .st2 {
     fill: $white;
   }
+  .site-logo--footer:hover:active .st2 {
+    fill: $magenta;
+  }
+  .site-logo--footer .st2 {
+    fill: $magenta;
+  }
+  .site-logo .tablet-glasses {
+    display: inline;
+  }
   .site-logo--footer:hover {
-    background-image: url("../../img/PINK copy.svg");
-    background-repeat: $no-repeat;
-    background-size: contain;
-    width: 145px;
-    height: 44px;
     margin-top: 36px;
     margin-bottom: 51px;
     margin-right: 3px;
@@ -77,16 +86,6 @@
   }
   .site-logo:hover:active .site-logo__text {
     display: $none;
-  }
-  .site-logo--footer:hover:active {
-    background-color: $blue;
-    background: url("../../img/logotype-blue-tablet.svg");
-    background-repeat: $no-repeat;
-    opacity: .3;
-  }
-  .site-logo:hover::before {
-    background: url("../../img/PINK copy.svg");
-    background-repeat: $no-repeat;
   }
   .site-logo__text {
     display: $none;
@@ -98,55 +97,51 @@
     flex-basis: 145px;
   }
 }
-@media (min-width: 700px) and (min-resolution: 2dppx) {
-  .site-logo::before {
-    background-image: url("../../img/Pink-logo-2@2x.png");
-    background-size: cover;
-  }
-  .site-logo__image {
-    display: $none;
-  }
-  .site-logo--footer {
-    width: 159px;
-    @mixin margin_auto;
-    height: 44px;
-    background: url("../../img/Pink-logo-footer-2@2x.png");
-    background-size: contain;
-    background-repeat: $no-repeat;
-  }
-}
 @media (min-width: 1200px) {
  .site-logo__image {
    display: $none;
  }
  .site-logo--footer {
    height: 40px;
-   background-color: $blue;
-   background: url("../../img/logotype-blue-desktop.svg");
-   background-size: contain;
-   background-repeat: $no-repeat;
    margin-top: -19px;
    margin-bottom: $zero;
    margin-right: 11px;
    flex-basis: 147px;
+ }
+ .site-logo--footer .tablet-glasses {
+   display: $none;
+ }
+ .site-logo--footer .logo-group:nth-of-type(2) {
+   fill: $magenta;
+ }
+ .site-logo--footer:hover .logo-group:nth-of-type(2) {
+   fill: $blue;
+ }
+ .site-logo--footer:hover:active .logo-group:nth-of-type(2) {
+   fill: $magenta;
+ }
+ .site-logo:hover .st0 {
+   fill: $blue;
+ }
+ .stars .st2 {
+   fill: $blue;
+ }
+ .site-logo:hover .st2 {
+   fill: $magenta;
+ }
+ .site-logo:hover:active .st2 {
+   fill: $blue;
+ }
+ .stars .st3 {
+   fill: $magenta;
  }
  .site-logo--footer:hover {
    height: 40px;
    margin-top: -19px;
    margin-bottom: $zero;
    margin-right: 11px;
-   background: url("../../img/Pink-logo-footer-3@2x.png");
-   background-size: cover;
  }
  .site-logo:hover:active {
-   background: url("../../img/logotype-blue-desktop.svg");
-   background-repeat: $no-repeat;
    opacity: .3;
  }
-}
-@media (min-width: 1200px) and (min-resolution: 2dppx) {
-.site-logo--footer {
-  background: url("../../img/Pink-logo-footer-3@2x.png");
-  background-size: cover;
-  }
 }
