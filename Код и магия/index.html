@@ -77,7 +77,7 @@
       <div class="setup-user">
         <div class="upload">
           <img class="setup-user-pic" src="./img/user-1.jpg"/>
-          <input type="file" name="avatar">
+          <!-- <input type="file" name="avatar"> -->
         </div>
         <label>
           <input type="text" name="username"
@@ -180,33 +180,10 @@
     <p class="setup-similar-label">Петр Петров</p>
   </div>
 </template>
-<script>
-  var fireballSize = 22;
-  var getFireballSpeed = function wind(left) {
-    if (left) {
-      return 5;
-    } else {
-      return 2;
-    }
-  };
-  var wizardSpeed = 3;
-  var wizardWidth = 70;
-  var getWizardHeight = function WizardHeight(height) {
-    height = 1.337 * wizardWidth;
-    return height;
-  };
-  function getWizardX(width) {
-    width = width / 2
-    return width;
-  }
-  function getWizardY(height) {
-    height = (height / 3) * 2;
-    return height;
-  }
-  getWizardY(210);
-</script>
+<script src="js/gameBehavior.js"></script>
 <script src="js/stat.js"></script>
 <script src="js/game.js"></script>
+<script src="js/dialog.js"></script>
 <script src="js/setup.js"></script>
 </body>
 </html>
