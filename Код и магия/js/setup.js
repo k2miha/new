@@ -11,7 +11,8 @@ var setup = (function () {
   var form = document.querySelector('.setup-wizard-form');
   var similarListElement = document.querySelector('.setup-similar-list');
   var similarWizardTemplate = document.querySelector('#similar-wizard-template').content.querySelector('.setup-similar-item');
-
+  var setup = document.querySelector('.setup');
+  setup.classList.remove('hidden');
   var generator = function (array) {
     return array[Math.random().toFixed(0)];
   }
