@@ -1,3 +1,5 @@
+'use strict';
+
 var setup = (function () {
   var WIZARD_NAMES = ['Иван', 'Хуан Себастьян', 'Мария', 'Кристоф', 'Виктор', 'Юлия', 'Люпита', 'Вашингтон'];
   var WIZARD_SURNAMES = [' да Марья', ' Верон', 'Мирабелла', 'Вальц', 'Онопко', 'Топольницкая', 'Нионго', 'Ирвинг'];
@@ -7,14 +9,14 @@ var setup = (function () {
   var wizardCoat = document.querySelector('.setup-wizard .wizard-coat');
   var wizardEyes = document.querySelector('.setup-wizard .wizard-eyes');
   var fireballColor = document.querySelector('.setup-fireball-wrap');
+  var fireballInput = fireballColor.querySelector('input');
+  var currentColor;
   var submitButton = document.querySelector('.setup-submit');
   var form = document.querySelector('.setup-wizard-form');
   var similarListElement = document.querySelector('.setup-similar-list');
   var similarWizardTemplate = document.querySelector('#similar-wizard-template').content.querySelector('.setup-similar-item');
-  var setup = document.querySelector('.setup');
-  setup.classList.remove('hidden');
   var generator = function (array) {
-    return array[Math.random().toFixed(0)];
+    return array[Math.floor(Math.random() * ((array.length - 1) - 0 + 1)) + 0];
   }
 
   var fillBlock = function (array) {
@@ -59,7 +61,9 @@ var setup = (function () {
   })
 
   fireballColor.addEventListener('click', function () {
-    fireballColor.style.backgroundColor = generator(FIREBALL_COLORS);
+    currentColor = generator(FIREBALL_COLORS);
+    fireballColor.style.backgroundColor = currentColor;
+    fireballInput.setAttribute('value', currentColor);
   })
 
   submitButton.addEventListener('click', function () {
